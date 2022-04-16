@@ -1,0 +1,34 @@
+{{ with .Site.Data.talkSection }}
+{{ if .enable }}
+<section class="section talk" id="talk">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="talk__header mb-5">
+          <span class="top-title">{{ .topTitle }}</span>
+          {{ .title | markdownify }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="talk-item-grid">
+          {{ range (where $.Site.RegularPages "Type" "talk").Reverse }}
+          <div class="talk-item">
+            <img src="{{ .Params.thumbnail }}" class="talk-item-thumb" alt="talk-thumb" />
+            <div class="talk-item-content">
+              <span>{{ .Params.service }}</span>
+              <h3 class="mb-0">
+                <a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
+              </h3>
+              <a class="see-more-btn" href="{{ .Permalink }}">See details</a>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
