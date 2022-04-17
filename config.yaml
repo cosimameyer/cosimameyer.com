@@ -16,9 +16,6 @@ privacy:
     disable: true
   youtube:
     disable: true
-cookies:
-  enable: false
-  expire_days: 2
 menu:
   main:
     - name: Home
@@ -37,7 +34,7 @@ menu:
     #   url: '#skills'
     #   weight: 6
     - name: Talks
-      url: '#testimonials'
+      url: '#contact'
       weight: 6
     # - name: Publications
     #   url: '#service'
@@ -74,7 +71,7 @@ params:
   contactLink: contact
   copyright: All right reserved copyright © Cosima Meyer 2022
   footerLogo: images/contact/widget-logo.png
-  formspreeURL: YOUR FORMSPREE URL
+#  formspreeURL: YOUR FORMSPREE URL
 #  googleAnalytics: YOUR GOOGLE ANALYTICS CODE
 #  logo: images/site-navigation/logo.png
   # map:
