@@ -24,9 +24,9 @@ menu:
     - name: Home
       url: '#home'
       weight: 1
-    - name: About
-      url: '#about'
-      weight: 2
+    # - name: About
+    #   url: '#about'
+    #   weight: 2
     - name: Portfolio
       url: '#portfolio'
       weight: 4
