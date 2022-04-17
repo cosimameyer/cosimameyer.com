@@ -10,6 +10,8 @@ summary: ''
 authors: []
 featured: yes
 projects: []
+postImage: images/single-blog/security.png
+featureImage: images/single-blog/security.png
 ---
 
 If you host a website, it is worth considering using the secure `HTTPS` encryption instead of `HTTP` (also in light of the GDPR).[^1] As someone who is less experienced in setting this up, this can be challenging, particularly if you use a domain that you do not personally own. This post is meant to give a (really) short step-by-step guide for those in a similar situation.  

@@ -14,6 +14,8 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+postImage: images/single-blog/redirect.png
+featureImage: images/single-blog/redirect.png
 ---
 
 Before hosting my website with [netlify](https://www.netlify.com) (which makes hosting so smooth!), I deployed my website manually using [GitHub pages](https://pages.github.com) for quite some time. GitHub Pages is a great way to host a (more or less) static website. But if you are like me and want to update your website every now and then, it can become challenging, and that's why I'm more than happy that I switched. However, to ensure that people who only have my old website (probably because I forgot to change it somewhere) are directed automatically to my new up-to-date website, I wanted to implement a redirect. To do this, I followed this great [step-by-step guide](https://dev.to/steveblue/setup-a-redirect-on-github-pages-1ok7) and added a bit of of a tweak to adjust it to my taste. If you are looking for an (only slightly) different solution, I recommend reading the original post -- it took me quite some time to find a way to implement the redirect, and I'm more than grateful for Steve's fantastic and straightforward blog post on it! 

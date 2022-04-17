@@ -1,4 +1,4 @@
-baseURL: https://https://spontaneous-seahorse-7ce702.netlify.app/
+baseURL: "cosima.netlify.app"
 languageCode: en-us
 paginate: 6
 theme: portio-hugo
