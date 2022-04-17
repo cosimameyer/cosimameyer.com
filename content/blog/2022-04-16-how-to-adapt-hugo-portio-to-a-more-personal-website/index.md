@@ -22,22 +22,37 @@ I also removed everything in the `hero.html` that calls the button or a video (s
 Adding now a section like the following allows me to add social media icons next to my image.
 
 ```
-      <div class="wrapper">
-        <div class="innerWrapper">
-          <div class="box">
-            <a href="{{ .Params.github | safeURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-github" style="font-size: 2em;"></i></p></a>
-           </div>
-           
-            <div class="box">
-            <a href="{{ .Params.linkedin | safeURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-linkedin" style="font-size: 2em;"></i></p></a>
-            </div>
-           
-           <div class="box">
-            <a href="{{ .Params.twitter | safeURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-twitter" style="font-size: 2em;"></i></p></a>
-            </div>
-      
-            </div>
-            </div>
+<div class="table">
+  <ul id="horizontal-list">
+    <li><a href="{{ .github | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-github" style="font-size: 2em;"></i></p></a></li>
+    <li><a href="{{ .linkedin | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-linkedin" style="font-size: 2em;"></i></p></a></li>
+    <li><a href="{{ .twitter | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-twitter" style="font-size: 2em;"></i></p></a></li>
+  </ul>
+</div>
+```
+
+And you would also add the following parts to your `.css`/`.scss`:
+
+```
+.table {
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+}
+
+i {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline-block;
+	}
 ```
 
 My `hero.yml` looks like this:

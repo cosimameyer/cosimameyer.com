@@ -46,3 +46,23 @@ img[alt=very_small_image] {
 .cookie-box-hide {
   display: none;
 }
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+	text-align: center;
+}
+
+i {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline-block;
+	}

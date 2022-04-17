@@ -41,7 +41,7 @@ menu:
       weight: 6
     # - name: Publications
     #   url: '#service'
-      weight: 7
+    #  weight: 7
     - name: Blog
       url: '#blog'
       weight: 8
