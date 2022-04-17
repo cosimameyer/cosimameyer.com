@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Telegram bot on Cosima Meyer</title>
+    <link>cosima.netlify.app/categories/telegram-bot/</link>
+    <description>Recent content in Telegram bot on Cosima Meyer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/telegram-bot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Telegram bot using Python and AWS Lambda</title>
+      <link>cosima.netlify.app/blog/2020-07-22-telegram-bot/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>cosima.netlify.app/blog/2020-07-22-telegram-bot/</guid>
+      <description>What would you do if you had to learn several hundred flashcards? A great way is to have a bot that automatically sends you these cards and constantly reminds you about the things that you have to learn 🤓
+Dennis Hammerschmidt and I wrote a bot with Python and AWS Lambda. It&amp;rsquo;s just a few line of codes &amp;ndash; if you want to write one yourself, you&amp;rsquo;re lucky: we have a short overview with the necessary steps that you have to follow.</description>
+    </item>
+    
+  </channel>
+</rss>

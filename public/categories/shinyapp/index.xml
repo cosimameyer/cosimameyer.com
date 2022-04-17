@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ShinyApp on Cosima Meyer</title>
+    <link>cosima.netlify.app/categories/shinyapp/</link>
+    <description>Recent content in ShinyApp on Cosima Meyer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/shinyapp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ShinyApp: Conflict elections in Afghanistan 2019</title>
+      <link>cosima.netlify.app/blog/2020-08-10-shinyapp-conflict-elections/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>cosima.netlify.app/blog/2020-08-10-shinyapp-conflict-elections/</guid>
+      <description>ShinyApps are an amazing tool to make research results accessible to a broad audience. This is exactly what talk at CorrelAid’s Open Online Data Meetup is about. The app on conflict elections in Afghanistan is a spin-off of a co-authored publication with Dennis Hammerschmidt that analyzes patterns of violence during conflict elections in Afghanistan in 2005.
+While the geo-spatially disaggregated data for the original publication is based on UCDP data, this ShinyApp is based on ACLED data and shows how violence that includes the Taliban develops starting 180 days up to the election in 2019.</description>
+    </item>
+    
+  </channel>
+</rss>

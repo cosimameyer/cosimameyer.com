@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blogdown on Cosima Meyer</title>
+    <link>cosima.netlify.app/categories/blogdown/</link>
+    <description>Recent content in blogdown on Cosima Meyer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to set up a working HTTPS encryption with Netlify, blogdown, and rbind.io</title>
+      <link>cosima.netlify.app/blog/how-to-set-up-a-working-https-encryption/</link>
+      <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>cosima.netlify.app/blog/how-to-set-up-a-working-https-encryption/</guid>
+      <description>If you host a website, it is worth considering using the secure HTTPS encryption instead of HTTP (also in light of the GDPR).1 As someone who is less experienced in setting this up, this can be challenging, particularly if you use a domain that you do not personally own. This post is meant to give a (really) short step-by-step guide for those in a similar situation.
+The situation I build my homepage using the wonderful blogdown package with a customized version of the Hugo Academic theme.</description>
+    </item>
+    
+  </channel>
+</rss>

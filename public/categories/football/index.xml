@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>football on Cosima Meyer</title>
+    <link>cosima.netlify.app/categories/football/</link>
+    <description>Recent content in football on Cosima Meyer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/football/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Python to scrape and visualize networks in European football</title>
+      <link>cosima.netlify.app/blog/2021-06-19-python-football-network/</link>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>cosima.netlify.app/blog/2021-06-19-python-football-network/</guid>
+      <description>Although I am not an avid European football fan, I sometimes have the chance to watch a match &amp;ndash; and even more so during these days! ⚽️
+Now that I&amp;rsquo;ve been following the German Bundesliga for some seasons (more irregularly than regularly), I was curious to see which players are part of the national teams. To get an idea of the network, I relied on data by The Athletic and followed the steps described below.</description>
+    </item>
+    
+  </channel>
+</rss>

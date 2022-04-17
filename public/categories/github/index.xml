@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Cosima Meyer</title>
+    <link>cosima.netlify.app/categories/github/</link>
+    <description>Recent content in GitHub on Cosima Meyer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personalize your README on GitHub</title>
+      <link>cosima.netlify.app/blog/personalize-your-readme-on-github/</link>
+      <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>cosima.netlify.app/blog/personalize-your-readme-on-github/</guid>
+      <description>Is there anything better than having a personalized landing page that guides the visitors and allows you to point them towards what really matters? It&amp;rsquo;s hard to say yes. Luckily, GitHub offers you exactly this possibility and here&amp;rsquo;s a short guide how I set up my own (personalized) README on GitHub in three steps.1
+ Create a new public repository with a README.md in its root.2 The repository should have the same name as your GitHub username.</description>
+    </item>
+    
+  </channel>
+</rss>
