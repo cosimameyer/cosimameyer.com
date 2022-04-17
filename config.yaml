@@ -37,10 +37,10 @@ menu:
     #   url: '#skills'
     #   weight: 6
     - name: Talks
-      url: '#talks'
+      url: '#testimonials'
       weight: 6
-    - name: Publications
-      url: '#service'
+    # - name: Publications
+    #   url: '#service'
       weight: 7
     - name: Blog
       url: '#blog'
