@@ -22,12 +22,15 @@ I also removed everything in the `hero.html` that calls the button or a video (s
 Adding now a section like the following allows me to add social media icons next to my image.
 
 ```
+<div class="col-lg-9">
 <div class="table">
   <ul id="horizontal-list">
     <li><a href="{{ .github | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-github" style="font-size: 2em;"></i></p></a></li>
     <li><a href="{{ .linkedin | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-linkedin" style="font-size: 2em;"></i></p></a></li>
     <li><a href="{{ .twitter | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-twitter" style="font-size: 2em;"></i></p></a></li>
+    <li><a href="{{ .twitter | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-book" style="font-size: 2em;"></i></p></a></li>
   </ul>
+</div>
 </div>
 ```
 
@@ -185,7 +188,7 @@ The portfolio section links to a short description where you can showcase your s
             <a href="{{ .Params.website | safeURL }}" target="_blank" rel="noopener"><p style="color:#7e7e8a"><i class="fa fa-globe"></i> {{"Website"}}</p></a>
             {{ end }}
             {{ if .Params.publication}}
-            <a href="{{ .Params.publication | safeURL }}" target="_blank" rel="noopener"><p style="color:#7e7e8a"><i class="fa fa-clipboard"></i> {{"Publication"}}</p></a>
+            <a href="{{ .Params.publication | safeURL }}" target="_blank" rel="noopener"><p style="color:#7e7e8a"><i class="fa fa-book"></i> {{"Publication"}}</p></a>
             {{ end }}
             {{ if .Params.github }}
             <a href="{{ .Params.github | safeURL }}" target="_blank" rel="noopener"><p style="color:#7e7e8a"><i class="fa fa-github"></i> {{"GitHub"}}</p></a>
