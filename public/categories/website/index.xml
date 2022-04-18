@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>website on Cosima Meyer</title>
-    <link>cosima.netlify.app/categories/website/</link>
+    <link>https://cosima.netlify.app/categories/website/</link>
     <description>Recent content in website on Cosima Meyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://cosima.netlify.app/categories/website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to implement a redirect from your old GitHub page to your new website</title>
-      <link>cosima.netlify.app/blog/implement-a-redirect-from-your-old-github-page-to-your-new-website/</link>
+      <link>https://cosima.netlify.app/blog/implement-a-redirect-from-your-old-github-page-to-your-new-website/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/implement-a-redirect-from-your-old-github-page-to-your-new-website/</guid>
+      <guid>https://cosima.netlify.app/blog/implement-a-redirect-from-your-old-github-page-to-your-new-website/</guid>
       <description>Before hosting my website with netlify (which makes hosting so smooth!), I deployed my website manually using GitHub pages for quite some time. GitHub Pages is a great way to host a (more or less) static website. But if you are like me and want to update your website every now and then, it can become challenging, and that&amp;rsquo;s why I&amp;rsquo;m more than happy that I switched. However, to ensure that people who only have my old website (probably because I forgot to change it somewhere) are directed automatically to my new up-to-date website, I wanted to implement a redirect.</description>
     </item>
     
     <item>
       <title>How to integrate a typing effect in Hugo Academic</title>
-      <link>cosima.netlify.app/blog/how-to-integrate-a-typing-effect-in-hugo-academic/</link>
+      <link>https://cosima.netlify.app/blog/how-to-integrate-a-typing-effect-in-hugo-academic/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/how-to-integrate-a-typing-effect-in-hugo-academic/</guid>
+      <guid>https://cosima.netlify.app/blog/how-to-integrate-a-typing-effect-in-hugo-academic/</guid>
       <description>Have you ever wondered how to integrate a typing effect in your Hugo Academic theme easily? It shouldn&amp;rsquo;t be too difficult. That&amp;rsquo;s also what I thought when I started with it. One quick disclosure before getting started: I&amp;rsquo;ve never been professionally trained in HTML, CSS, or JS. So for someone more proficient in this field, it might seem to be a straightforward task. Here&amp;rsquo;s my approach that eventually worked for me:</description>
     </item>
     

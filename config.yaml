@@ -58,6 +58,9 @@ menu:
     - name: Privacy & Policy
       url: '/privacy/privacy'
       weight: 3
+    - name: Terms
+      url: '/privacy/terms'
+      weight: 4
     # - name: Latest Article
     #   url: '#'
     #   weight: 4

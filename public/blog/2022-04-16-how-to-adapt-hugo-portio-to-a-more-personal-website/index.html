@@ -9,21 +9,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
   <!-- Slick Carousel -->
-  <link rel="stylesheet" href="cosima.netlify.app/plugins/slick/slick.css" />
-  <link rel="stylesheet" href="cosima.netlify.app/plugins/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://cosima.netlify.app/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://cosima.netlify.app/plugins/slick/slick-theme.css" />
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="cosima.netlify.app/plugins/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cosima.netlify.app/plugins/font-awesome/css/font-awesome.min.css" />
 
   <!-- Magnific Popup -->
-  <link rel="stylesheet" href="cosima.netlify.app/plugins/magnafic-popup/magnific-popup.css" />
+  <link rel="stylesheet" href="https://cosima.netlify.app/plugins/magnafic-popup/magnific-popup.css" />
 
   <!-- Stylesheets -->
   
-  <link href="/cosima.netlify.app/scss/style.min.css" rel="stylesheet" />
+  <link href="https://cosima.netlify.app/scss/style.min.css" rel="stylesheet" />
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="cosima.netlify.app/images/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="cosima.netlify.app/images/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://cosima.netlify.app/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://cosima.netlify.app/images/favicon.png" type="image/x-icon" />
   
 </head>
 
@@ -42,42 +42,32 @@
         
         
         <li class="nav-item">
-          <a href="cosima.netlify.app#home"
+          <a href="/#home"
             class="nav-link text-dark text-sm-center p-2 ">Home</a>
         </li>
         
         <li class="nav-item">
-          <a href="cosima.netlify.app#about"
-            class="nav-link text-dark text-sm-center p-2 ">About</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="cosima.netlify.app#portfolio"
+          <a href="/#portfolio"
             class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
         </li>
         
         <li class="nav-item">
-          <a href="cosima.netlify.app#resume"
+          <a href="/#resume"
             class="nav-link text-dark text-sm-center p-2 ">Resume</a>
         </li>
         
         <li class="nav-item">
-          <a href="cosima.netlify.app#talks"
+          <a href="/#contact"
             class="nav-link text-dark text-sm-center p-2 ">Talks</a>
         </li>
         
         <li class="nav-item">
-          <a href="cosima.netlify.app#service"
-            class="nav-link text-dark text-sm-center p-2 ">Publications</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="cosima.netlify.app#blog"
+          <a href="/#blog"
             class="nav-link text-dark text-sm-center p-2 ">Blog</a>
         </li>
         
         <li class="nav-item">
-          <a href="cosima.netlify.apphttps://cosimameyer.github.io/overviewR/"
+          <a href="https://cosimameyer.github.io/overviewR/"
             class="nav-link text-dark text-sm-center p-2 ">overviewR</a>
         </li>
         
@@ -96,8 +86,8 @@
         <h3 class="breadCrumb__title">Tweaking Hugo Portio theme</h3>
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href=cosima.netlify.app>Home</a></li>
-            <li class="breadcrumb-item"><a href=cosima.netlify.app/blog>All Post</a></li>
+            <li class="breadcrumb-item"><a href=https://cosima.netlify.app/>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://cosima.netlify.app/blog>All Post</a></li>
             <li class="breadcrumb-item active" aria-current="page">Tweaking Hugo Portio theme</li>
           </ol>
         </nav>
@@ -125,7 +115,7 @@
 <section class="section singleBlog">
 
   <div class="animate-shape">
-    <img src=cosima.netlify.app/images/skill/skill-background-shape.svg alt="">
+    <img src=https://cosima.netlify.app/images/skill/skill-background-shape.svg alt="">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
       <defs>
         <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
@@ -154,22 +144,36 @@
 <p>To center my image at the landing page, I replaced the first <code>col-lg-6</code> class with <code>container centered</code> in the <code>layouts/partials/hero.html</code> file. To keep the image right-aligned but to increase the image size, I replaced the second <code>col-lg-6</code> with <code>col-lg-9</code>.</p>
 <p>I also removed everything in the <code>hero.html</code> that calls the button or a video (so for instance <code>&lt;a type=&quot;button&quot; class=&quot;btn btn-lg btn-primary btn-zoom&quot; href=&quot;{{ .buttonURL | absURL }}&quot;&gt;{{ .buttonName }}&lt;/a&gt;</code> or <code>{{ if .videoURL }} ... {{ end }}</code>).</p>
 <p>Adding now a section like the following allows me to add social media icons next to my image.</p>
-<pre tabindex="0"><code>      &lt;div class=&quot;wrapper&quot;&gt;
-        &lt;div class=&quot;innerWrapper&quot;&gt;
-          &lt;div class=&quot;box&quot;&gt;
-            &lt;a href=&quot;{{ .Params.github | safeURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#282f49&quot;&gt;&lt;i class=&quot;fa fa-github&quot; style=&quot;font-size: 2em;&quot;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/a&gt;
-           &lt;/div&gt;
-           
-            &lt;div class=&quot;box&quot;&gt;
-            &lt;a href=&quot;{{ .Params.linkedin | safeURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#282f49&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot; style=&quot;font-size: 2em;&quot;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/a&gt;
-            &lt;/div&gt;
-           
-           &lt;div class=&quot;box&quot;&gt;
-            &lt;a href=&quot;{{ .Params.twitter | safeURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#282f49&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot; style=&quot;font-size: 2em;&quot;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/a&gt;
-            &lt;/div&gt;
-      
-            &lt;/div&gt;
-            &lt;/div&gt;
+<pre tabindex="0"><code>&lt;div class=&quot;col-lg-9&quot;&gt;
+&lt;div class=&quot;table&quot;&gt;
+  &lt;ul id=&quot;horizontal-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;{{ .github | relURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#282f49&quot;&gt;&lt;i class=&quot;fa fa-github&quot; style=&quot;font-size: 2em;&quot;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;{{ .linkedin | relURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#282f49&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot; style=&quot;font-size: 2em;&quot;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;{{ .twitter | relURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#282f49&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot; style=&quot;font-size: 2em;&quot;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;{{ .twitter | relURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#282f49&quot;&gt;&lt;i class=&quot;fa fa-book&quot; style=&quot;font-size: 2em;&quot;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>And you would also add the following parts to your <code>.css</code>/<code>.scss</code>:</p>
+<pre tabindex="0"><code>.table {
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+}
+
+i {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline-block;
+	}
 </code></pre><p>My <code>hero.yml</code> looks like this:</p>
 <pre tabindex="0"><code>---
 enable: true
@@ -270,7 +274,7 @@ image: images/hero/avatar.jpg
             &lt;a href=&quot;{{ .Params.website | safeURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#7e7e8a&quot;&gt;&lt;i class=&quot;fa fa-globe&quot;&gt;&lt;/i&gt; {{&quot;Website&quot;}}&lt;/p&gt;&lt;/a&gt;
             {{ end }}
             {{ if .Params.publication}}
-            &lt;a href=&quot;{{ .Params.publication | safeURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#7e7e8a&quot;&gt;&lt;i class=&quot;fa fa-clipboard&quot;&gt;&lt;/i&gt; {{&quot;Publication&quot;}}&lt;/p&gt;&lt;/a&gt;
+            &lt;a href=&quot;{{ .Params.publication | safeURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#7e7e8a&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; {{&quot;Publication&quot;}}&lt;/p&gt;&lt;/a&gt;
             {{ end }}
             {{ if .Params.github }}
             &lt;a href=&quot;{{ .Params.github | safeURL }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;p style=&quot;color:#7e7e8a&quot;&gt;&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; {{&quot;GitHub&quot;}}&lt;/p&gt;&lt;/a&gt;
@@ -312,7 +316,7 @@ links: true
 </code></pre><p>and either delete it or use <code>&lt;!-- Pattern --&gt;</code> to remove it.</p>
 <hr>
 <h3 id="gdpr-and-cookie-consent">GDPR and cookie consent</h3>
-<p><a href="https://gohugo.io/about/hugo-and-gdpr/">Hugo</a> has a great guide how to disable all services. If you further want to add a cookie consent banner, here&rsquo;s what I have done:</p>
+<p><a href="https://gohugo.io/about/hugo-and-gdpr/">Hugo</a> has a great guide how to disable all services. If you further want to add a cookie consent banner, I followed <a href="https://littlebigtech.net/posts/hugo-gdpr-cookie-consent-banner/">Felipe&rsquo;s guideline</a>, added the <code>cookie-consent.html</code> file and the <code>{{- template &quot;partials/templates/cookie-consent.html&quot; . }}</code> line to <code>footer.html</code>.</p>
 <hr>
 <h3 id="details-tag">Details tag</h3>
 <p>To add the option to unfold code with the common <code>&lt;details&gt; &lt;summary&gt;Summary text&lt;/summary&gt; HERE COMES SOME TEXT &lt;/details&gt;</code> logic, I added a <code>detail-tag.html</code> file to <code>layouts/shortcodes/</code> which contains:</p>
@@ -393,7 +397,7 @@ img[alt=very_small_image] {
 					<ul class="unstyle-list small">
 						
 						
-						<li class="mb-2"><a class="text-light" href="cosima.netlify.app/cosima.netlify.app/privacy/privacy">Privacy &amp; Policy</a></li>
+						<li class="mb-2"><a class="text-light" href="https://cosima.netlify.app/privacy/privacy">Privacy &amp; Policy</a></li>
 						
 					</ul>
 				</div>
@@ -429,18 +433,88 @@ img[alt=very_small_image] {
 	</div>
 </section>
 
-<script src="cosima.netlify.app/plugins/jQuery/jquery.min.js"></script>
-<script src="cosima.netlify.app/plugins/bootstrap/bootstrap.min.js"></script>
-<script src="cosima.netlify.app/plugins/slick/slick.min.js"></script>
-<script src="cosima.netlify.app/plugins/waypoint/jquery.waypoints.min.js"></script>
-<script src="cosima.netlify.app/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
-<script src="cosima.netlify.app/plugins/tweenmax/TweenMax.min.js"></script>
-<script src="cosima.netlify.app/plugins/imagesloaded/imagesloaded.min.js"></script>
-<script src="cosima.netlify.app/plugins/masonry/masonry.min.js"></script>
+<script src="https://cosima.netlify.app/plugins/jQuery/jquery.min.js"></script>
+<script src="https://cosima.netlify.app/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://cosima.netlify.app/plugins/slick/slick.min.js"></script>
+<script src="https://cosima.netlify.app/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://cosima.netlify.app/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://cosima.netlify.app/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://cosima.netlify.app/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://cosima.netlify.app/plugins/masonry/masonry.min.js"></script>
 
-<script src="/cosima.netlify.app/js/form-handler.min.js"></script>
+<script src="https://cosima.netlify.app/js/form-handler.min.js"></script>
 
-<script src="/cosima.netlify.app/js/script.min.js"></script>
+<script src="https://cosima.netlify.app/js/script.min.js"></script><div id="cookie-notice">
+<center><span>I took great care to disable all third party cookies and scripts. However, there might be some cookies left which would like to be used.</span>
+<a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
+<a id="cookie-notice-deny" class="btn btn-primary btn-sm">Deny</a>
+<a href="/privacy" class="btn btn-primary btn-sm">More info</a>
+</center></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-option')=='true') {
+        
+        
+        function loadScriptAsync(scriptSrc, callback) {
+            if (typeof callback !== 'function') {
+                throw new Error('Not a valid callback for async script load');
+            }
+            var script = document.createElement('script');
+            script.onload = callback;
+            script.src = scriptSrc;
+            document.head.appendChild(script);
+        }
+
+        
+
+        
+        loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX', function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true }); 
+        })
+
+        
+    } else if (readCookie('cookie-notice-option')!='false'){
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-option','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+    document.getElementById('cookie-notice-deny').addEventListener("click",function() {
+        createCookie('cookie-notice-option','false',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
 </body>
 
 </html>

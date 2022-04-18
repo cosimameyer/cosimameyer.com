@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>research on Cosima Meyer</title>
-    <link>cosima.netlify.app/categories/research/</link>
+    <link>https://cosima.netlify.app/categories/research/</link>
     <description>Recent content in research on Cosima Meyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosima.netlify.app/categories/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My workflow with academic literature</title>
-      <link>cosima.netlify.app/blog/my-workflow-with-academic-literature/</link>
+      <link>https://cosima.netlify.app/blog/my-workflow-with-academic-literature/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/my-workflow-with-academic-literature/</guid>
+      <guid>https://cosima.netlify.app/blog/my-workflow-with-academic-literature/</guid>
       <description>When I had to (re-)write the literature review for my dissertation, I restructured my workflow to make my literature management more efficient.1 Throughout the past years, it always felt as if I was accumulating masses of knowledge and tons of papers &amp;ndash; and for sure, I did! But it turned out to be so much knowledge that it was hard to keep track. I always liked my way of sorting things (I heavily relied on mind maps to sort the literature) but realized that it was not enough when categorizing, and &amp;ndash; most importantly &amp;ndash; logically structuring a condensed literature review that presents all the knowledge to my readers in an engaging way.</description>
     </item>
     
     <item>
       <title>Interview with WUMAN</title>
-      <link>cosima.netlify.app/blog/2019-12-04-wuman/</link>
+      <link>https://cosima.netlify.app/blog/2019-12-04-wuman/</link>
       <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/2019-12-04-wuman/</guid>
+      <guid>https://cosima.netlify.app/blog/2019-12-04-wuman/</guid>
       <description>WUMAN is the network for female researchers at the University of Mannheim. As part of their initiative to give women in science a voice, they conducted a series of interviews. As part of this series, I also got the chance to tell more about my own research, my passion, and my involvement with Rationale Altruisten Mannheim e.V..
 If you want to know more about this, read my short interview with WUMAN here.</description>
     </item>

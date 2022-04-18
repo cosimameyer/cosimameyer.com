@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python-post on Cosima Meyer</title>
-    <link>cosima.netlify.app/categories/python-post/</link>
+    <link>https://cosima.netlify.app/categories/python-post/</link>
     <description>Recent content in Python-post on Cosima Meyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/python-post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosima.netlify.app/categories/python-post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adding your Hugo Academic blog to R-bloggers and Python-bloggers</title>
-      <link>cosima.netlify.app/blog/adding-your-hugo-academic-blog-to-r-bloggers-and-python-bloggers/</link>
+      <link>https://cosima.netlify.app/blog/adding-your-hugo-academic-blog-to-r-bloggers-and-python-bloggers/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/adding-your-hugo-academic-blog-to-r-bloggers-and-python-bloggers/</guid>
+      <guid>https://cosima.netlify.app/blog/adding-your-hugo-academic-blog-to-r-bloggers-and-python-bloggers/</guid>
       <description>When you have your website up and running and probably already started a little blog about data science related topics, you may want to share it with an even broader community. Here, R-bloggers and Python-bloggers are a great venue!
 Both websites publish a collection of R and Python-related RSS feeds (amongst other, Methods Bites and the cynkra blog are also part of it!). To stay up to date, you can sign up on their newsletters (R-bloggers, Python-bloggers) or follow them on Twitter (R-bloggers, Python-bloggers) and Facebook (R-bloggers, Python-bloggers).</description>
     </item>
     
     <item>
       <title>Using Python to scrape and visualize networks in European football</title>
-      <link>cosima.netlify.app/blog/2021-06-19-python-football-network/</link>
+      <link>https://cosima.netlify.app/blog/2021-06-19-python-football-network/</link>
       <pubDate>Sat, 19 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/2021-06-19-python-football-network/</guid>
+      <guid>https://cosima.netlify.app/blog/2021-06-19-python-football-network/</guid>
       <description>Although I am not an avid European football fan, I sometimes have the chance to watch a match &amp;ndash; and even more so during these days! ⚽️
 Now that I&amp;rsquo;ve been following the German Bundesliga for some seasons (more irregularly than regularly), I was curious to see which players are part of the national teams. To get an idea of the network, I relied on data by The Athletic and followed the steps described below.</description>
     </item>

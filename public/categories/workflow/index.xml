@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>workflow on Cosima Meyer</title>
-    <link>cosima.netlify.app/categories/workflow/</link>
+    <link>https://cosima.netlify.app/categories/workflow/</link>
     <description>Recent content in workflow on Cosima Meyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/workflow/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosima.netlify.app/categories/workflow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My workflow with academic literature</title>
-      <link>cosima.netlify.app/blog/my-workflow-with-academic-literature/</link>
+      <link>https://cosima.netlify.app/blog/my-workflow-with-academic-literature/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/my-workflow-with-academic-literature/</guid>
+      <guid>https://cosima.netlify.app/blog/my-workflow-with-academic-literature/</guid>
       <description>When I had to (re-)write the literature review for my dissertation, I restructured my workflow to make my literature management more efficient.1 Throughout the past years, it always felt as if I was accumulating masses of knowledge and tons of papers &amp;ndash; and for sure, I did! But it turned out to be so much knowledge that it was hard to keep track. I always liked my way of sorting things (I heavily relied on mind maps to sort the literature) but realized that it was not enough when categorizing, and &amp;ndash; most importantly &amp;ndash; logically structuring a condensed literature review that presents all the knowledge to my readers in an engaging way.</description>
     </item>
     
     <item>
       <title>How to structure your data workflow efficiently using R</title>
-      <link>cosima.netlify.app/blog/how-to-structure-your-data-workflow-efficiently-using-r/</link>
+      <link>https://cosima.netlify.app/blog/how-to-structure-your-data-workflow-efficiently-using-r/</link>
       <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/how-to-structure-your-data-workflow-efficiently-using-r/</guid>
+      <guid>https://cosima.netlify.app/blog/how-to-structure-your-data-workflow-efficiently-using-r/</guid>
       <description>The positive aspects of a structured data workflow are at hand: You will always know where your things are &amp;ndash; no matter in which project you are currently working. If you stick to one work frame, you can also access your projects later and easily maneuver your way around. If you end up convincing your collaborators from your workflow or &amp;ndash; if you at least introduce them to yours &amp;ndash; they will also have a more comfortable life.</description>
     </item>
     
     <item>
       <title>Methods Bites - Efficient Data Management in R</title>
-      <link>cosima.netlify.app/blog/2020-02-18-methods-bites-efficient-data-management-in-r/methods-bites-efficient-data-management-in-r/</link>
+      <link>https://cosima.netlify.app/blog/2020-02-18-methods-bites-efficient-data-management-in-r/methods-bites-efficient-data-management-in-r/</link>
       <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/2020-02-18-methods-bites-efficient-data-management-in-r/methods-bites-efficient-data-management-in-r/</guid>
+      <guid>https://cosima.netlify.app/blog/2020-02-18-methods-bites-efficient-data-management-in-r/methods-bites-efficient-data-management-in-r/</guid>
       <description>This blog post (together with Denis Cohen, Marcel Neunhoeffer, and Oliver Rittmann) is all about efficient data management! It gives you a quick intro into how to set up a possible workflow in R and continues with a comparison between base R and the tidyverse, and shows you how to write more complex functions in R.</description>
     </item>
     

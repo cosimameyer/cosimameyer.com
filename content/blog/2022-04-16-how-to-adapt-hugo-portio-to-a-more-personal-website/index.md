@@ -2,7 +2,7 @@
 title: Tweaking Hugo Portio theme
 author: Cosima Meyer
 date: '2022-04-16'
-slug: [tweking-hugo-portio-theme]
+slug: [tweaking-hugo-portio-theme]
 categories: []
 tags: []
 postImage: images/single-blog/hero_section.png
@@ -253,8 +253,7 @@ and either delete it or use `<!-- Pattern -->` to remove it.
 
 ### GDPR and cookie consent
 
-[Hugo](https://gohugo.io/about/hugo-and-gdpr/) has a great guide how to disable all services. If you further want to add a cookie consent banner, here's what I have done:
-
+[Hugo](https://gohugo.io/about/hugo-and-gdpr/) has a great guide how to disable all services. If you further want to add a cookie consent banner, I followed [Felipe's guideline](https://littlebigtech.net/posts/hugo-gdpr-cookie-consent-banner/), added the `cookie-consent.html` file and the `{{- template "partials/templates/cookie-consent.html" . }}` line to `footer.html`.
 
 ---
 

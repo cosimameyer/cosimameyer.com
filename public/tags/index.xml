@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cosima Meyer</title>
-    <link>cosima.netlify.app/tags/</link>
+    <link>https://cosima.netlify.app/tags/</link>
     <description>Recent content in Tags on Cosima Meyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosima.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog post</title>
-      <link>cosima.netlify.app/tags/blog-post/</link>
+      <link>https://cosima.netlify.app/tags/blog-post/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/tags/blog-post/</guid>
+      <guid>https://cosima.netlify.app/tags/blog-post/</guid>
       <description></description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>covid on Cosima Meyer</title>
-    <link>cosima.netlify.app/categories/covid/</link>
+    <link>https://cosima.netlify.app/categories/covid/</link>
     <description>Recent content in covid on Cosima Meyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/covid/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://cosima.netlify.app/categories/covid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HackZurich: CodeVsCovid19</title>
-      <link>cosima.netlify.app/blog/2020-03-30-hackzurich-coro2vid-19/</link>
+      <link>https://cosima.netlify.app/blog/2020-03-30-hackzurich-coro2vid-19/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/2020-03-30-hackzurich-coro2vid-19/</guid>
+      <guid>https://cosima.netlify.app/blog/2020-03-30-hackzurich-coro2vid-19/</guid>
       <description>As you know, I love hackathons. And what better opportunity of joining one of them when you can generate something that is essentially helpful?
 In light of the current Covid19 crisis, HackZurich organized the CodeVsCovid19 hackathon and brought together more than 3,000 motivated people to work on their projects for 72 hours. For this, Dennis Hammerschmidt and I combined forces and generated Coro2vid-19 &amp;ndash; a search engine that analyzes 22,000 academic articles from 1955 to 2020 that are related to coronavirus.</description>
     </item>

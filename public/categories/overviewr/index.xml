@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>overviewR on Cosima Meyer</title>
-    <link>cosima.netlify.app/categories/overviewr/</link>
+    <link>https://cosima.netlify.app/categories/overviewr/</link>
     <description>Recent content in overviewR on Cosima Meyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="cosima.netlify.app/categories/overviewr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosima.netlify.app/categories/overviewr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>overviewR comes with new functions</title>
-      <link>cosima.netlify.app/blog/overviewr-comes-with-new-functions/</link>
+      <link>https://cosima.netlify.app/blog/overviewr-comes-with-new-functions/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/overviewr-comes-with-new-functions/</guid>
+      <guid>https://cosima.netlify.app/blog/overviewr-comes-with-new-functions/</guid>
       <description>New year, betteroverviewR! It comes with some brand new functions and extensions that make visualizing your sample more beautiful (and easy) than ever!
 Most of the functions are currently only available in the development version that can be downloaded from GitHub but we will submit them to CRAN shortly.
 So, what are the major changes and how do they work?
@@ -21,10 +21,10 @@ overview_plot Our old (and beloved) function overview_plot git better. It allows
     
     <item>
       <title>Update of overviewR with new functions!</title>
-      <link>cosima.netlify.app/blog/2020-08-24-overviewr-new-release/</link>
+      <link>https://cosima.netlify.app/blog/2020-08-24-overviewr-new-release/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/2020-08-24-overviewr-new-release/</guid>
+      <guid>https://cosima.netlify.app/blog/2020-08-24-overviewr-new-release/</guid>
       <description>We have updated (and extended) overviewR with three new functions:
  overview_plot overview_heat overview_na  You can also access a detailed overview of all functions in the CheatSheet: 
 overview_plot overview_plot illustrates the information that is generated in overview_table in a ggplot graphic. All scope objects (e.g., countries) are listed on the y-axis where horizontal lines indicate the coverage across the entire time frame of the data (x-axis). This helps to spot gaps in the data for specific scope objects and outlines at what time point they occur.</description>
@@ -32,10 +32,10 @@ overview_plot overview_plot illustrates the information that is generated in ove
     
     <item>
       <title>overviewR - Easily Extracting Information About Your Data</title>
-      <link>cosima.netlify.app/blog/2020-07-02-overviewr/</link>
+      <link>https://cosima.netlify.app/blog/2020-07-02-overviewr/</link>
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>cosima.netlify.app/blog/2020-07-02-overviewr/</guid>
+      <guid>https://cosima.netlify.app/blog/2020-07-02-overviewr/</guid>
       <description>I am super proud to announce that Dennis Hammerschmidt&amp;rsquo;s and my first package is on CRAN!
 overviewR is a small but neat tool for everyone who wants to get a quick glance at their data set. A detailed vignette with all its functions is available here. 👩‍💻</description>
     </item>
