@@ -23,7 +23,7 @@ Stand: 10. April 2021
 ## Kontakt
 
 
-E-Mail-Adresse: cosima.meyer@uni-mannheim.de
+E-Mail-Adresse: cosima.meyer@gmail.com
 
 ## Übersicht der Verarbeitungen
 
