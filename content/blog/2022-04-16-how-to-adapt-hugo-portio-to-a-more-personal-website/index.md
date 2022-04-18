@@ -9,13 +9,13 @@ postImage: images/single-blog/hero_section.png
 featureImage: images/single-blog/hero_section.png
 ---
 
-New year, new website? Well, not really. But when starting to set-up and move [RAM's website](), I decided that it was probably also time for a fresh look for my own. As always, coming up with **the** perfect theme and moving everything to your new and fully polished website takes longer than expected. The main reason is mainly that it is hard to settle on **the** perfect theme. Spoiler alert, there is no such thing. At least not for me. It *always* involves tweaking and learning new things in JS, CSS, HTML and all these things I have never been trained before. But isn't learning new things part of fun? Well, I collected all the essential tweaks that I made to the [Hugo Portio theme]() to make it a good fit for me. I hope my future self (and hopefully also someone else) will find it useful when looking for an answer or some ideas how to tweak the theme.
+New year, new website? Well, not really. But when starting to set up and move [RAM's website](), I decided that it was probably also time for a fresh look on my own. As always, coming up with **the** perfect theme and moving everything to your new and fully polished website takes longer than expected. The main reason is mainly that it is hard to settle on **the** perfect theme. Spoiler alert, there is no such thing. At least not for me. It *always* involves tweaking and learning new things in JS, CSS, HTML, and all these things I have never been trained in before. But isn't learning new things part of the fun? Well, I collected all the essential tweaks that I made to the [Hugo Portio theme](https://github.com/StaticMania/portio-hugo) to make it a good fit for me. I hope my future self (and hopefully also someone else) will find it useful when looking for an answer or some ideas on how to tweak the theme.
 
 ---
 
 ### Adjust "about" section
 
-To center my image at the landing page, I replaced the first `col-lg-6` class with `container centered` in the `layouts/partials/hero.html` file. To keep the image right-aligned but to increase the image size, I replaced the second `col-lg-6` with `col-lg-9`.
+To center my image on the landing page, I replaced the first `col-lg-6` class with `container centered` in the `layouts/partials/hero.html` file. To keep the image right-aligned but to increase the image size, I replaced the second `col-lg-6` with `col-lg-9`.
 
 I also removed everything in the `hero.html` that calls the button or a video (so for instance `<a type="button" class="btn btn-lg btn-primary btn-zoom" href="{{ .buttonURL | absURL }}">{{ .buttonName }}</a>` or `{{ if .videoURL }} ... {{ end }}`). 
 
@@ -75,7 +75,7 @@ twitter: https://twitter.com/cosima_meyer
 image: images/hero/avatar.jpg
 ```
 
-And the website like this:
+And the website is like this:
 
 ![small_image](/images/single-blog/hero_section.png)
 
@@ -86,7 +86,7 @@ And the website like this:
 Adding my beloved typing effect couldn't be easier. I already explained how I did it for [Hugo Academic]() and just did the very same thing for this theme.
 
 1. Add `<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>` to the top part of the `hero.html`
-2. Add `<p class="multipleStrings"></p>` to the `hero.html` where you want the typing effect. It's basically a placeholder and will be filled in a second.
+2. Add `<p class="multipleStrings"></p>` to the `hero.html` where you want the typing effect. It's a placeholder and will be filled in a second.
 3. Add the following snippet to the bottom of the `hero.html`:
 
 ```
@@ -136,7 +136,7 @@ The main part of the file now looks like this:
 ```
 
 
-And this is how the `testimonialSection.yml` input file can look like:
+And this is what the `testimonialSection.yml` input file can look like:
 
 ```
   - event_name:       R-Ladies Bergen
@@ -160,7 +160,7 @@ In the following case, I didn't add a description but the rest looks like this:
 
 ### Add a link section to the portfolio
 
-The portfolio section links to a short description where you can showcase your service, your client, the challenge and your solution. I think this is a fantastic approach to also present a data science portfolio. My projects are mainly open source, so there is usually no "real" client involved and instead of services, I usually rely on languages. So this needed some tweaking. After adjusting the `portfolio/single.html` for the main part like this:
+The portfolio section links to a short description where you can showcase your service, your client, the challenge, and your solution. I think this is a fantastic approach to also presenting a data science portfolio. My projects are mainly open-source, so there is usually no "real" client involved and instead of services, I usually rely on languages. So this needed some tweaking. After adjusting the `portfolio/single.html` for the main part like this:
 
 ```
   <div class="container">
@@ -219,7 +219,7 @@ links: true
 ---
 ```
 
-The `date` option gives a date, with `thumbnail` I can link an image, `challenge` describes a challenge that I was facing and `solution` the respective solution. These were also the default paramters that Hugo Portio comes with. My tweak addressed the options `language`, `field`, `github`, `links` (and, if needed, also `slides`, `recording`, `publication` and `website`). `language` allows you to add the programming languages and in `field` you can specify which areas the project covers (like software development, ML, ...). If the toggle `links` is set to `true`, the theme will now automatically add all the content that you presented in `github`, `slides`, `recording`, `publication` and `website`. The output including links will look like this:
+The `date` option gives a date, with `thumbnail` I can link an image, `challenge` describes a challenge that I was facing, and `solution` the respective solution. These were also the default parameters that Hugo Portio comes with. My tweak addressed the options `language`, `field`, `github`, `links` (and, if needed, also `slides`, `recording`, `publication`, and `website`). `language` allows you to add the programming languages and in `field` you can specify which areas the project covers (like software development, ML, ...). If the toggle `links` is set to `true`, the theme will now automatically add all the content that you presented in `github`, `slides`, `recording`, `publication`, and `website`. The output including links will look like this:
 
 ![small_image](/images/single-blog/output-with-links.png)
 
@@ -227,13 +227,13 @@ And without links like this:
 
 ![small_image](/images/single-blog/output-without-links.png)
 
-If you further add a `| markdownify` after challenge and solution (for instance `{{ .Params.solution | markdownify }}`), you can pass markdown based text and the theme automatically converts markdown links. 
+If you further add a `| markdownify` after challenge and solution (for instance `{{ .Params.solution | markdownify }}`), you can pass markdown-based text and the theme automatically converts markdown links. 
 
 ---
 
 ### Remove pattern
 
-The default theme has a few dynamic pattern (bubbles and patterns of crosses) moving up and down. I like the dynamic effect the bubbles generate because they are more transparent and clean (you can see both patterns in the right upper corner of the image below). 
+The default theme has a few dynamic patterns (bubbles and patterns of crosses) moving up and down. I like the dynamic effect the bubbles generate because they are more transparent and clean (you can see both patterns in the right upper corner of the image below). 
 
 ![small_image](/images/single-blog/pattern.png)
 
@@ -253,7 +253,9 @@ and either delete it or use `<!-- Pattern -->` to remove it.
 
 ### GDPR and cookie consent
 
-[Hugo](https://gohugo.io/about/hugo-and-gdpr/) has a great guide how to disable all services. If you further want to add a cookie consent banner, I followed [Felipe's guideline](https://littlebigtech.net/posts/hugo-gdpr-cookie-consent-banner/), added the `cookie-consent.html` file and the `{{- template "partials/templates/cookie-consent.html" . }}` line to `footer.html`.
+[Hugo](https://gohugo.io/about/hugo-and-gdpr/) has a great guide on how to disable all services which I followed. 
+
+If you further want to add a cookie consent banner, I followed [Felipe's guideline](https://littlebigtech.net/posts/hugo-gdpr-cookie-consent-banner/), added the `cookie-consent.html` file, and the `{{- template "partials/templates/cookie-consent.html" . }}` line to `footer.html`.
 
 ---
 
@@ -306,7 +308,7 @@ img[alt=very_small_image] {
     width: 30%;}
 ```
 
-It basically defines three different sizes of image that I can use calling on the `alt` parameter in the image. Here are examples (from top to bottom):
+It defines three different sizes of the image that I can use by calling on the `alt` parameter in the image. Here are examples (from top to bottom):
 
 ![small_image](/images/single-blog/pythonistr.png)
 
@@ -314,8 +316,8 @@ It basically defines three different sizes of image that I can use calling on th
 
 ![very_small_image](/images/single-blog/pythonistr.png)
 
-I actually prefer using HTML code to adjust the image size and leave the `alt` parameter to what it is really designated to: the alternative text. But I couldn't find a way to make it work in this case. 
+I prefer using HTML code to adjust the image size and leave the `alt` parameter to what it is designated to -- the alternative text. But I couldn't find a way to make it work in this case. 
 
 ---
 
-Well, that's what I have done so far to make it a better fit for me - but there are for sure plenty more options. I did, for instance, not yet include a section on publications (not sure if I will do it in the future because there are always services like [Google Scholar](https://scholar.google.de) or [ORCID](https://orcid.org) that have a good overview of your publications). If you have any other idea or suggestion, feel free to reach out. I'm always curious to learn more cool things ☺️
+Well, that's what I have done so far to make it a better fit for me - but there are for sure plenty more options. I did, for instance, not yet include a section on publications (not sure if I will do it in the future because there are always services like [Google Scholar](https://scholar.google.de) or [ORCID](https://orcid.org) that have a good overview of your publications). If you have any other ideas or suggestions, feel free to reach out. I'm always curious to learn more cool things ☺️
