@@ -168,3 +168,8 @@ Here's a more detailed overview of what each function can do:
 | `overview_overlap`    | &check;                               |                         |                                                     |
 | `overview_print`    | &check;                               |                         |                                                     |
 
+---
+
+7. And, if you want as a bonus, we also updated our [package website](https://cosimameyer.github.io/overviewR/) using the [{preferably} theme](https://preferably.amirmasoudabdol.name/) ✨
+
+[![small_image](/images/single-blog/overviewr-preferably.png)](https://cosimameyer.github.io/overviewR/)
