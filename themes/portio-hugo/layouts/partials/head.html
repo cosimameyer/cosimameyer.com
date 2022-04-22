@@ -34,4 +34,14 @@
   </script>
   {{ end }}
 
+{{ if (findRE "pre" .Content 1) }}
+    {{ $syntax := resources.Get "scss/syntax.css" | minify }}
+    <link href="{{ $syntax.RelPermalink }}" rel="stylesheet">
+    
+    {{ $copyCss := resources.Get "scss/clipboard.css" | minify }}
+    <link href="{{ $copyCss.RelPermalink }}" rel="stylesheet">
+{{ end }}
+
+  
+
 </head>
