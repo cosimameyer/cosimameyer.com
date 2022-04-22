@@ -14,16 +14,15 @@ image:
 projects: []
 ---
 
-[`overviewR`](https://cosimameyer.github.io/overviewR/) comes with new features 🚀 
+[`overviewR`](https://cosimameyer.github.io/overviewR/) (v 0.0.10) comes with new features 🚀 
 
 The package is meant to serve as a Swiss army knife for exploratory data analysis. The basic functions allow you to investigate sample coverage across different time points, missing values across your variables, and also the overlap among two data sets. 
 
 Here are the changes in a nutshell:
 
 ```r
-# Load the GitHub version
-library(devtools) # Tools to Make Developing R Packages Easier
-devtools::install_github("cosimameyer/overviewR")
+# Load the newest CRAN version
+install.packages("overviewR", force = TRUE)
 library(overviewR) # Easily Extracting Information About Your Data
 library(dplyr)
 library(magrittr) # A Forward-Pipe Operator for R
@@ -39,15 +38,17 @@ Time can be a character vector containing **one** time variable (it can come in 
 overview_tab(dat = toydata, id = ccode, time = year)
 ```
 
-<!-- ```{r, eval=TRUE, echo=FALSE} -->
-<!-- # Load the GitHub version -->
-<!-- library(devtools) # Tools to Make Developing R Packages Easier -->
-<!-- devtools::install_github("cosimameyer/overviewR") -->
-<!-- library(overviewR) # Easily Extracting Information About Your Data -->
-<!-- library(dplyr) -->
-<!-- library(magrittr) # A Forward-Pipe Operator for R -->
-<!-- overview_tab(dat = toydata, id = ccode, time = year) -->
-<!-- ``` -->
+```
+# A tibble: 5 × 2
+# Groups:   ccode [5]
+  ccode time_frame                  
+  <chr> <chr>                       
+1 AGO   1990 - 1992                 
+2 BEN   1995 - 1999                 
+3 FRA   1993, 1996, 1999            
+4 GBR   1991, 1993, 1995, 1997, 1999
+5 RWA   1990 - 1995     
+```
 
 It can also be a list containing multiple time variables (`time = list(year = NULL, month = NULL, day = NULL)`).
 
@@ -56,18 +57,21 @@ overview_tab(dat = toydata,
              id = ccode, 
              time = list(year = toydata$year, 
                          month = toydata$month, 
-                         day = toydata$day))
+                         day = toydata$day),
+             complex_date = TRUE)
 ```
 
-<!-- ```{r, eval=FALSE, echo=FALSE} -->
-<!-- # Load the GitHub version -->
-<!-- library(devtools) # Tools to Make Developing R Packages Easier -->
-<!-- devtools::install_github("cosimameyer/overviewR") -->
-<!-- library(overviewR) # Easily Extracting Information About Your Data -->
-<!-- library(dplyr) -->
-<!-- library(magrittr) # A Forward-Pipe Operator for R -->
-<!-- overview_tab(dat = toydata, id = ccode, time = list(year = toydata$year, month = toydata$month, day = toydata$day)) -->
-<!-- ``` -->
+```
+# A tibble: 5 × 2
+# Groups:   ccode [5]
+  ccode time_frame                                                                                                   
+  <chr> <chr>                                                                                                       
+1 AGO   1990-01-01, 1990-02-02,  …
+2 BEN   1995-01-01, 1995-02-02,  …
+3 FRA   1993-01-01, 1993-02-02,  …
+4 GBR   1991-01-01, 1991-02-02,  …
+5 RWA   1990-01-01 - 1990-01-12, …
+```
 
 ---
 
@@ -82,21 +86,7 @@ toydata %<>%
 overview_plot(dat = toydata, id = ccode, time = year, color = before)
 ```
 
-<!-- ```{r, eval=TRUE, echo=FALSE} -->
-<!-- # Load the GitHub version -->
-<!-- library(devtools) # Tools to Make Developing R Packages Easier -->
-<!-- devtools::install_github("cosimameyer/overviewR") -->
-<!-- library(overviewR) # Easily Extracting Information About Your Data -->
-<!-- library(dplyr) -->
-<!-- library(magrittr) # A Forward-Pipe Operator for R -->
-
-<!-- # Code whether a year was before 1995 -->
-<!-- toydata %<>% -->
-<!--   dplyr::mutate(before = ifelse(year < 1995, 1, 0)) -->
-
-<!-- # Plot using the `color` argument -->
-<!-- overview_plot(dat = toydata, id = ccode, time = year, color = before) -->
-<!-- ``` -->
+![small_image](/images/single-blog/colors.png)
 
 ---
 
@@ -107,17 +97,7 @@ overview_plot(dat = toydata, id = ccode, time = year, color = before)
 overview_plot(dat = toydata, id = ccode, time = year, dot_size = 5)
 ```
 
-<!-- ```{r, eval=TRUE, echo=FALSE} -->
-<!-- # Load the GitHub version -->
-<!-- library(devtools) # Tools to Make Developing R Packages Easier -->
-<!-- devtools::install_github("cosimameyer/overviewR") -->
-<!-- library(overviewR) # Easily Extracting Information About Your Data -->
-<!-- library(dplyr) -->
-<!-- library(magrittr) # A Forward-Pipe Operator for R -->
-
-<!-- overview_plot(dat = toydata, id = ccode, time = year, dot_size = 5) -->
-
-<!-- ``` -->
+![small_image](/images/single-blog/large_dots.png)
 
 ---
 
@@ -137,26 +117,7 @@ overview_crossplot(
 )
 ```
 
-<!-- ```{r, eval=TRUE, echo=FALSE} -->
-<!-- # Load the GitHub version -->
-<!-- library(devtools) # Tools to Make Developing R Packages Easier -->
-<!-- devtools::install_github("cosimameyer/overviewR") -->
-<!-- library(overviewR) # Easily Extracting Information About Your Data -->
-<!-- library(dplyr) -->
-<!-- library(magrittr) # A Forward-Pipe Operator for R -->
-
-<!-- overview_crossplot( -->
-<!--   toydata, -->
-<!--   id = ccode, -->
-<!--   time = year, -->
-<!--   cond1 = gdp, -->
-<!--   cond2 = population, -->
-<!--   threshold1 = 25000, -->
-<!--   threshold2 = 27000, -->
-<!--   color = TRUE, -->
-<!--   label = TRUE -->
-<!-- ) -->
-<!-- ``` -->
+![small_image](/images/single-blog/crossplot_color.png)
 
 ---
 
@@ -175,25 +136,7 @@ overview_overlap(
 )
 ```
 
-<!-- ```{r, eval=TRUE, echo=FALSE} -->
-<!-- # Load the GitHub version -->
-<!-- library(devtools) # Tools to Make Developing R Packages Easier -->
-<!-- devtools::install_github("cosimameyer/overviewR") -->
-<!-- library(overviewR) # Easily Extracting Information About Your Data -->
-<!-- library(dplyr) -->
-<!-- library(magrittr) # A Forward-Pipe Operator for R -->
-
-<!-- # Subset one data set for comparison -->
-<!-- toydata2 <- toydata %>% dplyr::filter(year > 1992) -->
-
-<!-- overview_overlap( -->
-<!--   dat1 = toydata, -->
-<!--   dat2 = toydata2, -->
-<!--   dat1_id = ccode, -->
-<!--   dat2_id = ccode, -->
-<!--   plot_type = "bar" # This is the default -->
-<!-- ) -->
-<!-- ``` -->
+![small_image](/images/single-blog/bar_overlap.png)
 
 ```r
 overview_overlap(
@@ -205,20 +148,23 @@ overview_overlap(
 )
 ```
 
-<!-- ```{r, eval=TRUE, echo=FALSE} -->
-<!-- # Load the GitHub version -->
-<!-- library(devtools) # Tools to Make Developing R Packages Easier -->
-<!-- devtools::install_github("cosimameyer/overviewR") -->
-<!-- library(overviewR) # Easily Extracting Information About Your Data -->
-<!-- library(dplyr) -->
-<!-- library(magrittr) # A Forward-Pipe Operator for R -->
+![small_image](/images/single-blog/venn_overlap.png)
 
-<!-- overview_overlap( -->
-<!--   dat1 = toydata, -->
-<!--   dat2 = toydata2, -->
-<!--   dat1_id = ccode, -->
-<!--   dat2_id = ccode, -->
-<!--   plot_type = "venn" -->
-<!-- ) -->
-<!-- ``` -->
+---
+
+6. And, last but not least, `overview_tab` and `overview_na` now also work if you're using `data.table` objects 🥳 (Thanks to my old team @ Kienbaum for being patient enough to explain and let me learn the (not so intuitive) syntax 👩🏼‍💻)
+
+Here's a more detailed overview of what each function can do:
+
+|                       | Works with `data.frame` objects | Works with `data.table` | Multiple time arguments |
+|-----------------------|---------------------------------|-------------------------|-----------------------------------------------------|
+|     |                                |                         |                                                     |
+| `overview_tab`        | &check;                               | &check;                       | &check;                                                   |
+| `overview_na`         | &check;                               | &check;                       |                                                     |
+| `overview_plot`       | &check;                               |                         |                                                     |
+| `overview_crossplot`  | &check;                               |                         |                                                     |
+| `overview_crosstab`   | &check;                               |                         |                                                     |
+| `overview_heat`       | &check;                               |                         |                                                     |
+| `overview_overlap`    | &check;                               |                         |                                                     |
+| `overview_print`    | &check;                               |                         |                                                     |
 
