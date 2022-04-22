@@ -101,3 +101,8 @@
 {{ $script := resources.Get "js/script.js" | minify }}
 <script src="{{ $script.Permalink }}"></script>
 {{- template "partials/cookie_consent.html" . }}
+
+{{ if (findRE "<pre" .Content 1) }}
+  {{ $jsCopy := resources.Get "js/clipboard.js" | minify }}
+  <script src="{{ $jsCopy.RelPermalink }}"></script>
+{{ end }}

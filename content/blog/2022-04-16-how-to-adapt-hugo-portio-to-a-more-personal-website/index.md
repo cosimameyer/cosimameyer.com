@@ -323,7 +323,7 @@ I prefer using HTML code to adjust the image size and leave the `alt` parameter 
 
 ### Add Clipboard Buttons to the code
 
-I like the integration that GitHub offers - to follow this example, I used [Danny's tutorial](https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/) and implemented a "Copy" button that shows up next to code lines.
+I like the integration that GitHub offers - to follow this example, I used [Justin's tutorial](https://digitaldrummerj.me/hugo-add-copy-code-snippet-button/) and implemented a "Copy" button that shows up next to code lines.
 
 ```python
 print('This is a great example how to copy your code')
