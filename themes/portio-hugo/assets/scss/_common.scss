@@ -63,9 +63,10 @@ i {
 }
 
 ul#horizontal-list {
-	min-width: 696px;
+	/*min-width: 696px;*/
 	list-style: none;
 	padding-top: 20px;
+	width: auto;
 	}
 	ul#horizontal-list li {
 		display: inline-block;
