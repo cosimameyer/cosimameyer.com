@@ -31,7 +31,7 @@ menu:
       url: '#resume'
       weight: 5
     # - name: Skills
-    #   url: '#skills'
+    #   url: '#skills' 
     #   weight: 6
     - name: Talks
       url: '#contact'
