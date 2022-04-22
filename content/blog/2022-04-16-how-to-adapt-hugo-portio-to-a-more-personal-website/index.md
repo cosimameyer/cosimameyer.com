@@ -320,4 +320,14 @@ I prefer using HTML code to adjust the image size and leave the `alt` parameter 
 
 ---
 
+### Add Clipboard Buttons to the code
+
+I like the integration that GitHub offers - to follow this example, I used [this tutorial](https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/) and implemented a "Copy" button that shows up next to code lines.
+
+```python
+print('This is a great example how to copy your code')
+```
+
+---
+
 Well, that's what I have done so far to make it a better fit for me - but there are for sure plenty more options. I did, for instance, not yet include a section on publications (not sure if I will do it in the future because there are always services like [Google Scholar](https://scholar.google.de) or [ORCID](https://orcid.org) that have a good overview of your publications). If you have any other ideas or suggestions, feel free to reach out. I'm always curious to learn more cool things ☺️
