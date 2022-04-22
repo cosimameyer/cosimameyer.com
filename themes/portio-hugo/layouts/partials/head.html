@@ -33,5 +33,9 @@
     gtag('config', '{{ . }}');
   </script>
   {{ end }}
+  
+  {{ if (findRE "<pre" .Content 1) }}
+    <link rel="stylesheet" href="/scss/clipboard.scss">
+  {{ end }}
 
 </head>
