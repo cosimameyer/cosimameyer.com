@@ -23,21 +23,21 @@ img[alt=smaller_image] {
     float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 500px; }
+    max-width: 500px; }
     
 img[alt=small_image] { 
     display: block;
     float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 700px; }
+    max-width: 700px; }
 
 img[alt=very_small_image] { 
     display: block;
     float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;}
+    max-width: 30%;}
 
 /* cookie */
 .cookie-box {
