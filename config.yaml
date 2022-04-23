@@ -95,3 +95,17 @@ params:
     # - icon: fa-pinterest-square
     #   url: https://www.pinterest.com/
     #   weight: 3
+markup:
+    highlight:
+      anchorLineNos: false
+      codeFences: true
+      guessSyntax: false
+      hl_Lines: ""
+      lineAnchors: ""
+      lineNoStart: 1
+      lineNos: false
+      lineNumbersInTable: true
+      noClasses: false
+      noHl: false
+      style: monokailight
+      tabWidth: 4
