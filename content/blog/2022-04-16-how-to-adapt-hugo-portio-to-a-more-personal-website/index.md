@@ -22,7 +22,7 @@ I also removed everything in the `hero.html` that calls the button or a video (s
 
 Adding now a section like the following allows me to add social media icons next to my image.
 
-```
+```html
 <div class="col-lg-9">
 <div class="table">
   <ul id="horizontal-list">
@@ -37,7 +37,7 @@ Adding now a section like the following allows me to add social media icons next
 
 And you would also add the following parts to your `.css`/`.scss`:
 
-```
+```css
 .table {
 	display: table;
 	margin: 0 auto;
@@ -61,7 +61,7 @@ ul#horizontal-list {
 
 My `hero.yml` looks like this:
 
-```
+```yml
 ---
 enable: true
 topTitle: 
@@ -90,7 +90,7 @@ Adding my beloved typing effect couldn't be easier. I already explained how I di
 2. Add `<p class="multipleStrings"></p>` to the `hero.html` where you want the typing effect. It's a placeholder and will be filled in a second.
 3. Add the following snippet to the bottom of the `hero.html`:
 
-```
+```html
 <script>
   new TypeIt(".multipleStrings", {
     strings: ["This is a great string.", "But here is a better one."],
@@ -115,7 +115,7 @@ The Portio theme does not come with a talk section by default. I thus adjusted t
 
 The main part of the file now looks like this:
 
-```
+```html
 <p class="testimonial__slider_item-content"> <b>{{ .title }}</b> </p>
           <img src="{{ .thumbnail }}" class="portfolio-item-thumb" alt="" />
           
@@ -139,7 +139,7 @@ The main part of the file now looks like this:
 
 And this is what the `testimonialSection.yml` input file can look like:
 
-```
+```yml
   - event_name:       R-Ladies Bergen
     thumbnail:        images/talks/nlp-rladies-bergen.png
     title:            Taking text data to the next level - Using supervised and unsupervised approaches in NLP
@@ -163,7 +163,7 @@ In the following case, I didn't add a description but the rest looks like this:
 
 The portfolio section links to a short description where you can showcase your service, your client, the challenge, and your solution. I think this is a fantastic approach to also presenting a data science portfolio. My projects are mainly open-source, so there is usually no "real" client involved and instead of services, I usually rely on languages. So this needed some tweaking. After adjusting the `portfolio/single.html` for the main part like this:
 
-```
+```html
   <div class="container">
     <div class="row mb-5">
       <div class="col-lg-10 offset-lg-1 text-center">
@@ -206,7 +206,7 @@ The portfolio section links to a short description where you can showcase your s
 
 I had the following options for each `portfolio.md` file (here's an example of the Telegram bot):
 
-```
+```md
 ---
 date: "2020-07-20T00:00:00Z"
 thumbnail: images/portfolio/telegram-bot.png
@@ -240,7 +240,7 @@ The default theme has a few dynamic patterns (bubbles and patterns of crosses) m
 
 If you are like me and don't enjoy the cross patterns so much, just look out for 
 
-```
+```html
   <div class="animate-pattern">
     <img src={{"images/service/background-pattern.svg" | absURL }}
     alt="background-shape">
@@ -264,7 +264,7 @@ If you further want to add a cookie consent banner, I followed [Felipe's guideli
 
 To add the option to unfold code with the common `<details> <summary>Summary text</summary> HERE COMES SOME TEXT </details>` logic, I added a `detail-tag.html` file to `layouts/shortcodes/` which contains:
 
-```
+```html
 <details>
   <summary>{{ (.Get 0) | markdownify }}</summary>
   {{ .Inner | markdownify }}
@@ -286,7 +286,7 @@ HERE COMES SOME TEXT
 ### Adjust image size
 Images are, by default, quite large in the Portio theme. I added the following code to `_common.scss`:
 
-```
+```css
 img[alt=small_image] { 
     display: block;
     float: none;
