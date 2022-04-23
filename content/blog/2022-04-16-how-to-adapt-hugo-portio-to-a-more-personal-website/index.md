@@ -23,16 +23,15 @@ I also removed everything in the `hero.html` that calls the button or a video (s
 Adding now a section like the following allows me to add social media icons next to my image.
 
 ```html
-<div class="col-lg-9">
 <div class="table">
-  <ul id="horizontal-list">
-    <li><a href="{{ .github | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-github" style="font-size: 2em;"></i></p></a></li>
-    <li><a href="{{ .linkedin | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-linkedin" style="font-size: 2em;"></i></p></a></li>
-    <li><a href="{{ .twitter | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-twitter" style="font-size: 2em;"></i></p></a></li>
-    <li><a href="{{ .twitter | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-book" style="font-size: 2em;"></i></p></a></li>
-  </ul>
-</div>
-</div>
+    <ul id="horizontal-list">
+      <li><a href="{{ .mail | absURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-envelope" style="font-size: 2em;"></i></p></a></li>
+      <li><a href="{{ .github | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-github" style="font-size: 2em;"></i></p></a></li>
+      <li><a href="{{ .linkedin | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-linkedin" style="font-size: 2em;"></i></p></a></li>
+      <li><a href="{{ .twitter | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-twitter" style="font-size: 2em;"></i></p></a></li>
+      <li><a href="{{ .orcid | relURL }}" target="_blank" rel="noopener"><p style="color:#282f49"><i class="fa fa-book" style="font-size: 2em;"></i></p></a></li>
+    </ul>
+</div> 
 ```
 
 And you would also add the following parts to your `.css`/`.scss`:
