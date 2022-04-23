@@ -109,3 +109,6 @@ markup:
       noHl: false
       style: monokailight
       tabWidth: 4
+taxonomies:
+  category: category
+  tag: tags
