@@ -286,25 +286,31 @@ HERE COMES SOME TEXT
 Images are, by default, quite large in the Portio theme. I added the following code to `_common.scss`:
 
 ```css
-img[alt=small_image] { 
-    display: block;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px; }
-
 img[alt=smaller_image] { 
     display: block;
     float: none;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    height: auto;
     width: 500px; }
     
+img[alt=small_image] { 
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    width: 700px; }
+
 img[alt=very_small_image] { 
     display: block;
     float: none;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    height: auto;
     width: 30%;}
 ```
 
