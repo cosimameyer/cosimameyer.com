@@ -1,6 +1,6 @@
 .navbar {
     padding: 40px 0;
-    background: transparent;
+    background: $white;
     transition: all 0.3s ease;
     @include desktop {
         background: $white;
