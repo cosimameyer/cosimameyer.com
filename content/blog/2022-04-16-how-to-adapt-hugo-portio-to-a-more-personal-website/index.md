@@ -10,7 +10,10 @@ featureImage: images/single-blog/hero_section.png
 Code: True
 ---
 
-New year, new website? Well, not really. But when starting to set up and move [RAM's website](), I decided that it was probably also time for a fresh look on my own. As always, coming up with *the* perfect theme and moving everything to your new and fully polished website takes longer than expected. The main reason is mainly that it is hard to settle on *the* perfect theme. Spoiler alert, there is no such thing. At least not for me. It *always* involves tweaking and learning new things in JS, CSS, HTML, and all these things I have never been trained in before. But isn't learning new things part of the fun? Well, I collected all the essential tweaks that I made to the [Hugo Portio theme](https://github.com/StaticMania/portio-hugo) to make it a good fit for me. I hope my future self (and hopefully also someone else) will find it useful when looking for an answer or some ideas on how to tweak the theme.
+New year, new website? Well, not really. But when starting to set up and move [RAM's website](https://www.ram-ev.de), I decided that it was probably also time for a fresh look on my own little blog. As always, coming up with *the* perfect theme and moving everything to your new and fully polished website takes longer than expected. The main reason is that it is hard to settle on *the* perfect theme. Spoiler alert, there is no such thing. At least not for me. It *always* involves tweaking and learning new things in JS, CSS, HTML, and all these things I have never been trained in before. But isn't learning new things part of the fun? Well, I collected all the essential tweaks that I made to the [Hugo Portio theme](https://github.com/StaticMania/portio-hugo) to make it a good fit for me. I hope my future self (and hopefully also someone else) will find it useful when looking for an answer or some ideas on how to tweak the theme.
+
+{{< toc >}}
+
 
 ---
 
@@ -257,6 +260,8 @@ and either delete it or use `<!-- Pattern -->` to remove it.
 
 If you further want to add a cookie consent banner, I followed [Felipe's guideline](https://littlebigtech.net/posts/hugo-gdpr-cookie-consent-banner/), added the `cookie-consent.html` file, and the `{{- template "partials/templates/cookie-consent.html" . }}` line to `footer.html`.
 
+I also hosted the fonts myself. To do this, I followed [Chris' guide](https://www.chrislockard.net/posts/using-local-fonts-hugo-academic-theme/) which is really straightforward.
+
 ---
 
 ### Details tag
@@ -272,13 +277,31 @@ To add the option to unfold code with the common `<details> <summary>Summary tex
 
 Calling now 
 
-`{{< detail-tag "Summary text" >}} HERE COMES SOME TEXT {{< /detail-tag >}}` 
+```
+{{< detail-tag "Summary text" >}} HERE COMES SOME TEXT {{< /detail-tag >}}
+``` 
 
 generates this:
 
 {{< detail-tag "Summary text" >}} 
 HERE COMES SOME TEXT 
 {{< /detail-tag >}}
+
+---
+### Add a table of content to your blog posts
+
+To do this, I set up [another shortcode](https://codingreflections.com/hugo-table-of-contents/). It's really simple - just copy the following lines and create a new `toc.html` file and store it in `layouts/shortcodes/`.
+
+```html
+<div>
+    <h4>What this post is about</h4>
+    {{ .Page.TableOfContents }}
+</div>
+```
+
+You can now call your table of content using 
+
+{{< toc >}}
 
 ---
 
