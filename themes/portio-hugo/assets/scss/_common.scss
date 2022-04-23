@@ -41,6 +41,11 @@ img[alt=very_small_image] {
     margin-right: auto;
     max-width: max-content;
     width: 30%;}
+    
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 /* cookie */
 .cookie-box {
