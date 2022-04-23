@@ -40,21 +40,17 @@ Adding now a section like the following allows me to add social media icons next
 And you would also add the following parts to your `.css`/`.scss`:
 
 ```css
-.table {
-	display: table;
-	margin: 0 auto;
-	text-align: center;
-}
-
 i {
   display: inline-block;
-  margin-right: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.2em;
 }
 
 ul#horizontal-list {
-	min-width: 696px;
+	/*min-width: 696px;*/
 	list-style: none;
 	padding-top: 20px;
+	width: auto;
 	}
 	ul#horizontal-list li {
 		display: inline-block;
