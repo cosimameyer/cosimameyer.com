@@ -273,9 +273,7 @@ To add the option to unfold code with the common `<details> <summary>Summary tex
 
 Calling now 
 
-```
-{{< detail-tag "Summary text" >}} HERE COMES SOME TEXT {{< /detail-tag >}}
-``` 
+`{{</* detail-tag "Summary text" */>}} HERE COMES SOME TEXT {{</* /detail-tag */>}}` 
 
 generates this:
 
@@ -297,7 +295,7 @@ To do this, I set up [another shortcode](https://codingreflections.com/hugo-tabl
 
 You can now call your table of content using 
 
-{{< toc >}}
+{{</* toc */>}}
 
 ---
 
