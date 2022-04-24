@@ -22,7 +22,6 @@ Here are the changes in a nutshell:
 
 {{< toc >}}
 
-
 ---
 
 First we start by installing the newest version and other packages that might be helpful.
