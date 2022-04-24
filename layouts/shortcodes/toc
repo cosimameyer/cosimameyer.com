@@ -1,4 +1,4 @@
 <div>
-    <h4>What this post is about</h4>
+<!--    <h4>What this post is about</h4>-->
     {{ .Page.TableOfContents }}
 </div>

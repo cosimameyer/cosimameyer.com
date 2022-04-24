@@ -113,3 +113,8 @@ markup:
 taxonomies:
   category: category
   tag: tags
+outputs:
+  home: ["HTML", "RSS", "JSON", "WebAppManifest"]
+  section: [ "HTML", "RSS" ]
+  taxonomy: [ "HTML", "RSS" ]
+  taxonomyTerm: [ "HTML", "RSS" ]

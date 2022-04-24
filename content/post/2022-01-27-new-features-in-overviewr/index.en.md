@@ -20,6 +20,13 @@ The package is meant to serve as a Swiss army knife for exploratory data analysi
 
 Here are the changes in a nutshell:
 
+{{< toc >}}
+
+
+---
+
+First we start by installing the newest version and other packages that might be helpful.
+
 ```r
 # Load the newest CRAN version
 install.packages("overviewR", force = TRUE)
@@ -30,7 +37,9 @@ library(magrittr) # A Forward-Pipe Operator for R
 
 ---
 
-1. `overview_tab` allows you to use multiple time arguments. Here are some examples how to use the function:
+## Multiple time arguments 
+
+`overview_tab` allows you to use multiple time arguments. Here are some examples how to use the function:
 
 Time can be a character vector containing **one** time variable (it can come in a `YYYY` or `YYYY-MM-DD` format and can either come as an integer or in the `POSIXt` format)
 
@@ -75,7 +84,9 @@ overview_tab(dat = toydata,
 
 ---
 
-2. You can use colors in `overview_plot` to identify time periods. Here, we introduce a dummy variable that indicates whether the year was before 1995 or not. We use this dummy to color the time lines using the `color` argument. 
+## Colors in `overview_plot`
+
+You can use colors in `overview_plot` to identify time periods. Here, we introduce a dummy variable that indicates whether the year was before 1995 or not. We use this dummy to color the time lines using the `color` argument. 
 
 ```r
 # Code whether a year was before 1995
@@ -90,7 +101,9 @@ overview_plot(dat = toydata, id = ccode, time = year, color = before)
 
 ---
 
-3. You can also change the dot size in `overview_plot`.
+## Change dot size in `overview_plot`
+
+You can also change the dot size in `overview_plot`.
 
 ```r
 # Plot using the `color` argument
@@ -101,7 +114,9 @@ overview_plot(dat = toydata, id = ccode, time = year, dot_size = 5)
 
 ---
 
-4. `overview_crosstab` has now its visualizing counter-part with `overview_crossplot`!
+## Visuale cross plots with `overview_crossplot`
+
+`overview_crosstab` has now its visualizing counter-part with `overview_crossplot`!
 
 ```r
 overview_crossplot(
@@ -121,7 +136,9 @@ overview_crossplot(
 
 ---
 
-5. Using `overview_overlap`, you can now compare the overlap in time and id variables across two data sets visually. The visualization comes with two features - a bar plot and a Venn diagram.
+## Compare two datasets directly
+
+Using `overview_overlap`, you can now compare the overlap in time and id variables across two data sets visually. The visualization comes with two features - a bar plot and a Venn diagram.
 
 ```r
 # Subset one data set for comparison
@@ -152,7 +169,9 @@ overview_overlap(
 
 ---
 
-6. And, last but not least, `overview_tab` and `overview_na` now also work if you're using `data.table` objects 🥳 (Thanks to my old team @ Kienbaum for being patient enough to explain and let me learn the (not so intuitive) syntax 👩🏼‍💻)
+## Use `data.table` under the hood
+
+And, last but not least, `overview_tab` and `overview_na` now also work if you're using `data.table` objects 🥳 (Thanks to my old team @ Kienbaum for being patient enough to explain and let me learn the (not so intuitive) syntax 👩🏼‍💻)
 
 Here's a more detailed overview of what each function can do:
 
@@ -170,6 +189,8 @@ Here's a more detailed overview of what each function can do:
 
 ---
 
-7. And, as a bonus, we also updated our [package website](https://cosimameyer.github.io/overviewR/) using the [{preferably} theme](https://preferably.amirmasoudabdol.name/) ✨
+## New website
+
+And, as a bonus, we also updated our [package website](https://cosimameyer.github.io/overviewR/) using the [{preferably} theme](https://preferably.amirmasoudabdol.name/) ✨
 
 [![small_image](/images/single-blog/overviewr-preferably.png)](https://cosimameyer.github.io/overviewR/)
