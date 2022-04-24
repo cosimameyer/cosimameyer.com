@@ -137,7 +137,7 @@ overview_crossplot(
 
 ## Compare two datasets directly
 
-Using `overview_overlap`, you can now compare the overlap in time and id variables across two data sets visually. The visualization comes with two features - a bar plot and a Venn diagram.
+Using `overview_overlap`, you can now compare the overlap in time and id variables across two data sets visually. <!--The visualization comes with two features - a bar plot and a Venn diagram.-->
 
 ```r
 # Subset one data set for comparison
@@ -154,6 +154,7 @@ overview_overlap(
 
 ![small_image](/images/single-blog/bar_overlap.png)
 
+<!--
 ```r
 overview_overlap(
   dat1 = toydata,
@@ -165,7 +166,7 @@ overview_overlap(
 ```
 
 ![small_image](/images/single-blog/venn_overlap.png)
-
+-->
 ---
 
 ## Use `data.table` under the hood
