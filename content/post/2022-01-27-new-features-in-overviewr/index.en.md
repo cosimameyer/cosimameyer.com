@@ -1,7 +1,7 @@
 ---
 title: New features in {overviewR}
 author: ''
-date: '2022-04-30'
+date: '2022-04-25'
 slug: new-features-in-overviewr
 category: [R-post, R]
 postImage: 
@@ -14,7 +14,7 @@ image:
 projects: []
 ---
 
-[`overviewR`](https://cosimameyer.github.io/overviewR/) (v 0.0.10) comes with new features 🚀 
+[`overviewR`](https://cosimameyer.github.io/overviewR/) (v 0.0.10) is on CRAN and comes with new features 🚀 
 
 The package is meant to serve as a Swiss army knife for exploratory data analysis. The basic functions allow you to investigate sample coverage across different time points, missing values across your variables, and also the overlap among two data sets. 
 

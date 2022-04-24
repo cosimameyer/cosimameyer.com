@@ -1,7 +1,7 @@
 ---
 title: Tweaking Hugo Portio theme
 author: Cosima Meyer
-date: '2022-04-16'
+date: '2022-04-30'
 slug: [tweaking-hugo-portio-theme]
 category: [blog, blogdown, CSS, HTML]
 #tags: [blog, blogdown, CSS, HTML]
