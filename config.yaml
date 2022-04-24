@@ -34,13 +34,13 @@ menu:
     #   url: '#skills' 
     #   weight: 6
     - name: Talks
-      url: '#contact'
+      url: '#testimonial'
       weight: 6
     # - name: Publications
     #   url: '#service'
     #  weight: 7
     - name: Blog
-      url: '#blog'
+      url: '#post'
       weight: 8
     - name: overviewR
       url: 'https://cosimameyer.github.io/overviewR/'
