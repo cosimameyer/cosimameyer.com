@@ -1,7 +1,7 @@
 ---
 title: New features in {overviewR}
 author: ''
-date: '2022-04-25'
+date: '2022-04-24'
 slug: new-features-in-overviewr
 category: [R-post, R]
 postImage: 
