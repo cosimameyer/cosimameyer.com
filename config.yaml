@@ -1,4 +1,4 @@
-baseURL: "https://cosima.netlify.app/"
+baseURL: "https://cosimameyer.rbind.io/"
 languageCode: en-us
 paginate: 6
 theme: portio-hugo
