@@ -5,7 +5,7 @@ date: '2021-03-02'
 slug: cfp-oxford-workshop-on-conflict-dynamics
 postImage: images/single-blog/conflict-dynamics.png
 featureImage: images/single-blog/conflict-dynamics.png
-categories:
+category:
   - Oxford Conflict Dynamics
 tags: []
 subtitle: ''

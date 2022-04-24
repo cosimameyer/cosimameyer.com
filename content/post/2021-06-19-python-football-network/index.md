@@ -4,7 +4,7 @@ subitle: 'Visualizing team compositions with plotly in Python'
 author: Cosima Meyer
 date: '2021-06-19'
 slug: ''
-categories: [Python-post, Python, football, data visualization]
+category: [Python-post, Python, football, data visualization]
 postImage: images/single-blog/python-football-network.png
 featureImage: images/single-blog/python-football-network.png
 tags: []

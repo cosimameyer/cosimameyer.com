@@ -3,7 +3,7 @@ title: Teaching stats and programming
 author: Cosima Meyer
 date: '2021-09-28'
 slug: teaching-stats-and-programming
-categories: [R, Teaching, R-post]
+category: [R, Teaching, R-post]
 postImage: 
 featureImage: images/single-blog/programming-paper.png
 tags: []

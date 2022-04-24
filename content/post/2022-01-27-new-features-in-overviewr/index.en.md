@@ -3,7 +3,7 @@ title: New features in {overviewR}
 author: ''
 date: '2022-04-30'
 slug: new-features-in-overviewr
-categories: [R-post, R]
+category: [R-post, R]
 postImage: 
 featureImage: images/single-blog/overviewr-2022-release.png
 featured: yes

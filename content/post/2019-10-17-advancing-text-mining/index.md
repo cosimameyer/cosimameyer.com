@@ -2,7 +2,7 @@
 title: 'Methods Bites - Advancing Text Mining with R and quanteda'
 summary: ''
 tags: []
-categories: [R, quanteda, Methods Bites]
+category: [R, quanteda, Methods Bites]
 date: "2019-10-17"
 featured: true
 draft: false

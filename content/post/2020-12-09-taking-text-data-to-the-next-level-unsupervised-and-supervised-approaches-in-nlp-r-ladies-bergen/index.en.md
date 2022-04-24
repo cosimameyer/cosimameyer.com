@@ -4,7 +4,7 @@ title: Taking text data to the next level - Unsupervised and supervised approach
 author: Cosima Meyer
 date: '2020-12-09'
 slug: taking-text-data-to-the-next-level-unsupervised-and-supervised-approaches-in-nlp-r-ladies-bergen
-categories: [R-post, R, NLP, quanteda]
+category: [R-post, R, NLP, quanteda]
 postImage: images/single-blog/rladies-bergen.png
 featureImage: images/single-blog/rladies-bergen.png
 tags: []

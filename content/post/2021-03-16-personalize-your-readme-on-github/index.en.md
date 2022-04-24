@@ -5,7 +5,7 @@ date: '2021-03-22'
 slug: personalize-your-readme-on-github
 postImage: images/single-blog/readme.png
 featureImage: images/single-blog/readme.png
-categories: [R-post, R, GitHub]
+category: [R-post, R, GitHub]
 tags: []
 subtitle: ''
 summary: ''

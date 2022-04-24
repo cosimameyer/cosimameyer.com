@@ -5,7 +5,7 @@ date: '2020-09-23'
 slug: latex-cheatsheet
 postImage: images/single-blog/latex-cheatsheet.png
 featureImage: images/single-blog/latex-cheatsheet.png
-categories:
+category:
   - LaTeX
 tags: []
 subtitle: ''

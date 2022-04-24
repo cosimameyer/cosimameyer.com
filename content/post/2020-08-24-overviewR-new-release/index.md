@@ -2,7 +2,7 @@
 title: 'Update of overviewR with new functions!'
 summary: ''
 tags: []
-categories: [R-post, R, package, overviewR]
+category: [R-post, R, package, overviewR]
 date: "2020-08-24"
 featured: false
 draft: false

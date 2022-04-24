@@ -2,7 +2,7 @@
 title: 'overviewR - Easily Extracting Information About Your Data'
 summary: ''
 tags: []
-categories: [R, package, overviewR]
+category: [R, package, overviewR]
 date: "2020-07-02"
 featured: false
 draft: false

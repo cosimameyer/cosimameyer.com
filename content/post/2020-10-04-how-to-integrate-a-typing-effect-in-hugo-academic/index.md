@@ -3,7 +3,7 @@ title: How to integrate a typing effect in Hugo Academic
 author: Cosima Meyer
 date: '2020-10-04'
 slug: how-to-integrate-a-typing-effect-in-hugo-academic
-categories: [Hugo, website, R-post, R]
+category: [Hugo, website, R-post, R]
 postImage: images/single-blog/typing.png
 featureImage: images/single-blog/typing.png
 ---

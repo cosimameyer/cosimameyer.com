@@ -2,7 +2,7 @@
 title: 'Interview with WUMAN'
 summary: ''
 tags: []
-categories: [WUMAN, research]
+category: [WUMAN, research]
 date: "2019-12-04"
 projects: []
 postImage: images/single-blog/wuman.png

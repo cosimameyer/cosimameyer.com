@@ -3,7 +3,7 @@ title: overviewR comes with new functions
 author: Cosima Meyer
 date: '2021-01-04'
 slug: overviewr-comes-with-new-functions
-categories: [R-post, R, package, overviewR]
+category: [R-post, R, package, overviewR]
 tags: []
 subtitle: ''
 summary: ''

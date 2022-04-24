@@ -4,7 +4,7 @@ summary: ''
 tags: []
 postImage: images/single-blog/tidytuesday-tdf.png
 featureImage: images/single-blog/tidytuesday-tdf.png
-categories: [R, tidytuesday, data visualization]
+category: [R, tidytuesday, data visualization]
 date: "2020-04-13"
 featured: false
 draft: false

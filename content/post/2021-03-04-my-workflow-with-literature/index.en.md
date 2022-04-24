@@ -5,9 +5,10 @@ date: '2021-03-10'
 slug: my-workflow-with-academic-literature
 postImage: images/single-blog/workflow-literature.png
 featureImage: images/single-blog/workflow-literature.png
-categories:
+category:
   - research
   - workflow
+  - productivity
 tags:
   - Blog post
 subtitle: ''

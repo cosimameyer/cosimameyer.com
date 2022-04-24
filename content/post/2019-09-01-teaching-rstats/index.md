@@ -2,7 +2,7 @@
 title: 'Teaching material: Data Wrangling and Data Management in R'
 summary: ''
 tags: []
-categories: [R, teaching]
+category: [R, teaching]
 date: "2019-09-01"
 featured: true
 draft: false

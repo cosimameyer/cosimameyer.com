@@ -3,7 +3,7 @@ title: Adding your Hugo Academic blog to R-bloggers and Python-bloggers
 author: Cosima Meyer
 date: '2021-08-10'
 slug: adding-your-hugo-academic-blog-to-r-bloggers-and-python-bloggers
-categories: [R-post, R, Python-post, Python]
+category: [R-post, R, Python-post, Python]
 tags: []
 subtitle: ''
 summary: ''

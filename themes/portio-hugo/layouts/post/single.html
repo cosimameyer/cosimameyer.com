@@ -31,10 +31,10 @@
         {{ end }}
       </li>
       {{ end }}
-      {{ if .Params.categories }}
+      {{ if .Params.category }}
       <li>
         <i class="fa fa-folder-open"></i>
-        {{ range (.GetTerms "categories") }}
+        {{ range (.GetTerms "category") }}
           <a class="text-capitalize" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
         {{ end }}
       </li>

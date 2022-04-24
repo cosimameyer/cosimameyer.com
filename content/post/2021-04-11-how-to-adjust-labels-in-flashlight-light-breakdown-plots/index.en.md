@@ -3,7 +3,7 @@ title: How to adjust labels in {flashlight::light_breakdown} plots
 author: Cosima Meyer
 date: '2021-04-18'
 slug: how-to-adjust-labels-in-flashlight-light-breakdown-plots
-categories: [R-post, R]
+category: [R-post, R]
 postImage: images/single-blog/breakdown-plots.png
 featureImage: images/single-blog/breakdown-plots.png
 tags: []

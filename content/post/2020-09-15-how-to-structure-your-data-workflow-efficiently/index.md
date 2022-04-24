@@ -3,7 +3,7 @@ title: How to structure your data workflow efficiently using R
 author: Cosima Meyer
 date: '2020-09-15'
 slug: how-to-structure-your-data-workflow-efficiently-using-r
-categories: [R-post, R, workflow]
+category: [R-post, R, workflow]
 postImage: images/single-blog/git.png
 featureImage: images/single-blog/git.png
 ---

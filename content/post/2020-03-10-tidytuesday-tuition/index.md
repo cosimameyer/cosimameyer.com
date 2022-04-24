@@ -2,7 +2,7 @@
 title: 'TidyTuesday - Tuition fees'
 summary: ''
 tags: []
-categories: [R, tidytuesday, data visualization]
+category: [R, tidytuesday, data visualization]
 date: "2020-03-10"
 featured: true
 draft: false

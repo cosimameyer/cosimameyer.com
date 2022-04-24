@@ -2,7 +2,7 @@
 title: 'Telegram bot using Python and AWS Lambda'
 summary: ''
 tags: []
-categories: [Python, Telegram bot, AWS Lambda]
+category: [Python, Telegram bot, AWS Lambda]
 date: "2020-07-22"
 featured: true
 draft: false

@@ -3,7 +3,7 @@ title: How to set up a working HTTPS encryption with Netlify, blogdown, and rbin
 author: Cosima Meyer
 date: '2021-06-18'
 slug: how-to-set-up-a-working-https-encryption
-categories: [R-post, R, blogdown, Hugo, Netlify]
+category: [R-post, R, blogdown, Hugo, Netlify]
 tags:
 subtitle: ''
 summary: ''

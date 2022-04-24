@@ -5,7 +5,7 @@ date: '2021-03-16'
 slug: how-to-get-a-zero-inbox-using-apple-mail
 postImage: images/single-blog/zero-mail-box.png
 featureImage: images/single-blog/zero-mail-box.png
-categories: []
+category: [productivity, workflow]
 tags: []
 subtitle: ''
 summary: ''

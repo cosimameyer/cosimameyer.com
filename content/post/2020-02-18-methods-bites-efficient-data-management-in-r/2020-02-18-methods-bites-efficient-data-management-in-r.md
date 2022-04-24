@@ -5,7 +5,7 @@ date: '2020-02-18'
 slug: methods-bites-efficient-data-management-in-r
 postImage: images/single-blog/methods-bites.png
 featureImage: images/single-blog/methods-bites.png
-categories: [R, workflow, Methods Bites]
+category: [R, workflow, Methods Bites]
 tags: []
 subtitle: ''
 summary: ''

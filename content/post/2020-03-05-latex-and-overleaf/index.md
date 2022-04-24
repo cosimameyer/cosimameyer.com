@@ -1,7 +1,7 @@
 ---
 date: "2020-03-05"
 title: Methods Bites - LaTeX and Overleaf
-categories: [Overleaf, LaTeX, Methods Bites]
+category: [Overleaf, LaTeX, Methods Bites]
 postImage: images/single-blog/latex-overleaf.png
 featureImage: images/single-blog/latex-overleaf.png
 ---

@@ -3,7 +3,7 @@ title: Helpful R commands
 author: Cosima Meyer
 date: '2020-09-22'
 slug: helpful-r-commands
-categories: [R]
+category: [R]
 tags: []
 subtitle: ''
 summary: ''

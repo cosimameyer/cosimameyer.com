@@ -2,7 +2,7 @@
 title: 'TidyTuesday - GDPR violations'
 summary: ''
 tags: []
-categories: [R, tidytuesday, data visualization]
+category: [R, tidytuesday, data visualization]
 date: "2020-04-22"
 featured: true
 draft: false

@@ -4,7 +4,7 @@ author: ''
 date: '2022-04-14'
 slug: new-r-ladies-chapter-cologne
 featureImage: images/single-blog/rladies-cologne.png
-categories: [R-post, R]
+category: [R-post, R]
 tags: []
 subtitle: ''
 summary: ''

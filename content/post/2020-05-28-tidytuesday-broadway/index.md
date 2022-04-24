@@ -2,7 +2,7 @@
 title: 'TidyTuesday - Broadway'
 summary: ''
 tags: []
-categories: [R, tidytuesday, data visualization]
+category: [R, tidytuesday, data visualization]
 date: "2020-05-28"
 featured: true
 draft: false

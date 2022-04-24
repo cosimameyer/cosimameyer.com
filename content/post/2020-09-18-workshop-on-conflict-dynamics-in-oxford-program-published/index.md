@@ -3,7 +3,7 @@ title: Workshop on Conflict Dynamics in Oxford - Program Published
 author: Cosima Meyer
 date: '2020-09-18'
 slug: workshop-on-conflict-dynamics-in-oxford-program-published
-categories: [Oxford Conflict Dynamics]
+category: [Oxford Conflict Dynamics]
 featureImage: images/single-blog/conflict-dynamics-new.png
 tags: []
 subtitle: ''

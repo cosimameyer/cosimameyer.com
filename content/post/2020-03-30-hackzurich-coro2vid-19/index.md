@@ -2,7 +2,7 @@
 title: 'HackZurich: CodeVsCovid19'
 summary: ''
 tags: []
-categories: [hackathon, covid, R-post, R, NLP]
+category: [hackathon, covid, R-post, R, NLP]
 date: "2020-03-30"
 postImage: images/single-blog/hackzurich.png
 featureImage: images/single-blog/hackzurich.png

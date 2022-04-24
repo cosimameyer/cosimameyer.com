@@ -2,7 +2,7 @@
 title: 'ShinyApp: Conflict elections in Afghanistan 2019'
 summary: ''
 tags: []
-categories: [R, ShinyApp]
+category: [R, ShinyApp]
 date: "2020-08-10"
 featured: false
 draft: false

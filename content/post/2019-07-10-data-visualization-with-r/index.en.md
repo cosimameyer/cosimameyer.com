@@ -3,7 +3,7 @@ title: Methods Bites - Data Visualization with R
 author: Cosima Meyer
 date: '2019-07-10'
 slug: data-visualization-with-r
-categories: [R, data visualization, Methods Bites]
+category: [R, data visualization, Methods Bites]
 postImage: images/single-blog/data-viz.png
 featureImage: images/single-blog/data-viz.png
 ---
