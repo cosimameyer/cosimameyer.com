@@ -23,7 +23,7 @@ Stand: 10. April 2021
 ## Kontakt
 
 
-E-Mail-Adresse: cosima.meyer@gmail.com
+E-Mail-Adresse: contact@cosimameyer.com
 
 ## Übersicht der Verarbeitungen
 

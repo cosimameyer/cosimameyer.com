@@ -12,7 +12,7 @@ title: Privacy Policy
 
 ## Kontaktmöglichkeiten
 
-E-Mail-Adresse: cosima.meyer@gmail.com
+E-Mail-Adresse: contact@cosimameyer.com
 
 ## Haftungs- und Schutzrechtshinweise
 
