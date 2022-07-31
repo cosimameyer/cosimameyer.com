@@ -61,9 +61,6 @@ menu:
     - name: Terms
       url: '/privacy/terms'
       weight: 2
-    # - name: Latest Article
-    #   url: '#'
-    #   weight: 4
 params:
   # address:
   #   address: 23 Khan Niketon, Grand Street, NYK.

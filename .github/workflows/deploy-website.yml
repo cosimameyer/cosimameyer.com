@@ -14,6 +14,7 @@ on:
       - "static/**"
       - ".github/**"
       - "config.toml"
+      - "config.yaml"
       - "index.Rmd"
 
 jobs:
