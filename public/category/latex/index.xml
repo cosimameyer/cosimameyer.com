@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX on Cosima Meyer</title>
+    <link>https://cosimameyer.com/category/latex/</link>
+    <description>Recent content in LaTeX on Cosima Meyer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://cosimameyer.com/category/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LaTeX CheatSheet</title>
+      <link>https://cosimameyer.com/post/latex-cheatsheet/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/latex-cheatsheet/</guid>
+      <description>As part of the informatica feminale, Anna-Lena Hönig and I gave a course on Efficient Academic Writing with LaTeX and prepared this CheatSheet with all important LaTeX code.</description>
+    </item>
+    
+    <item>
+      <title>Methods Bites - LaTeX and Overleaf</title>
+      <link>https://cosimameyer.com/post/2020-03-05-latex-and-overleaf/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-03-05-latex-and-overleaf/</guid>
+      <description>Do you fancy learning LaTeX? LaTeX is a high quality typesetting system that that facilitates the production of well-formatted document. It has become highly popular in academic settings as an alternative to common typewriting systems (e.g., Word). Dennis Hammerschmidt and I wrote a hands-on tutorial that shows you how to use LaTeX with Overleaf and is now published on MZES Methods Bites.
+We also introduce you to a template for scientific papers (you can access it in the Overleaf templates gallery).</description>
+    </item>
+    
+  </channel>
+</rss>

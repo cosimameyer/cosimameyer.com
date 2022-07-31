@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>How to adjust labels in {flashlight::light_breakdown} plots</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://cosimameyer.com/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://cosimameyer.com/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://cosimameyer.com/images/favicon.png" type="image/x-icon" />
+  
+
+
+    
+    <link href="/scss/syntax.min.css" rel="stylesheet">
+    
+    
+    <link href="/scss/clipboard.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+   
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="/#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#resume"
+            class="nav-link text-dark text-sm-center p-2 ">Resume</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#testimonial"
+            class="nav-link text-dark text-sm-center p-2 ">Talks</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#post"
+            class="nav-link text-dark text-sm-center p-2 ">Blog</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://cosimameyer.github.io/overviewR/"
+            class="nav-link text-dark text-sm-center p-2 ">overviewR</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">How to adjust labels in {flashlight::light_breakdown} plots</h3>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://cosimameyer.com/>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://cosimameyer.com/post>All Post</a></li>
+            <li class="breadcrumb-item active" aria-current="page">How to adjust labels in {flashlight::light_breakdown} plots</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <ul class="post-meta">
+      <li>
+        <i class="fa fa-calendar"></i>
+        April 18, 2021
+      </li>
+      <li>
+        <i class="fa fa-clock-o"></i>
+        4 mins read
+      </li>
+      
+      
+      <li>
+        <i class="fa fa-folder-open"></i>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/r-post/">R-post</a>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/r/">R</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+
+  <div class="animate-shape">
+    <img src=https://cosimameyer.com/images/skill/skill-background-shape.svg alt="">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+      <defs>
+        <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+          <stop offset="0" stop-color="#f1f6f9" />
+          <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <g data-name="blob-shape (3)">
+        <path class="blob" fill="url(#d)"
+          d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+      </g>
+    </svg>
+  </div>
+ 
+  <div class="container">
+   
+    <div class="row mt-5">
+      <div class="col-lg-12">
+        <div class="singleBlog__content">
+
+          
+
+          <!-- raw HTML omitted -->
+<p>To get a better (and more substantive) understanding of models' black boxes, <a href="https://journal.r-project.org/archive/2018/RJ-2018-072/RJ-2018-072.pdf">breakdown plots</a> are extremely helpful and intuitive. The package <a href="https://cran.r-project.org/web/packages/flashlight/index.html">{flashlight}</a> makes generating these plots straightforward &ndash; but it has one shortcoming: It&rsquo;s not intuitive how to adjust the labels of your features (or at least I couldn&rsquo;t find an easy answer). This post shows a workaround that I used and I hope it helps others to save some time googling for a solution.</p>
+<p>I will use the Palmer <a href="https://allisonhorst.github.io/palmerpenguins/articles/intro.html"><code>penguins</code></a> data set to show my steps.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Load the packages</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">flashlight</span><span class="p">)</span>     <span class="c1"># Shed Light on Black Box Machine Learning Models</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">palmerpenguins</span><span class="p">)</span> <span class="c1"># Palmer Archipelago (Antarctica) Penguin Data</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>          <span class="c1"># A Grammar of Data Manipulation</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span>       <span class="c1"># A Forward-Pipe Operator for R</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>        <span class="c1"># Create Elegant Data Visualizations Using </span>
+                        <span class="c1"># the Grammar of Graphics</span>
+
+<span class="c1"># Load the data</span>
+<span class="nf">data</span><span class="p">(</span><span class="s">&#34;penguins&#34;</span><span class="p">)</span>
+</code></pre></div><p>A detailed description how {flashlight} and the breakdown plots work, can be read up <a href="https://cran.r-project.org/web/packages/flashlight/vignettes/flashlight.html">here</a>. I will use a similar example as presented in the manual. In the first step, I show you the result of the common breakdown plot.</p>
+<p><img src="/images/single-blog/breakdown.png" alt="small_image"></p>
+<details>
+  <summary>Code to generate the breakdown plot</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Fit model</span>
+<span class="n">fit</span> <span class="o">&lt;-</span> <span class="nf">lm</span><span class="p">(</span><span class="n">bill_length_mm</span> <span class="o">~</span> <span class="n">.,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">penguins</span><span class="p">)</span>
+
+<span class="c1"># Make flashlight</span>
+<span class="n">fl</span> <span class="o">&lt;-</span>
+  <span class="nf">flashlight</span><span class="p">(</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">fit</span><span class="p">,</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">penguins</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s">&#34;bill_length_mm&#34;</span><span class="p">,</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="s">&#34;ols&#34;</span><span class="p">,</span>
+    <span class="n">metrics</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">rmse</span> <span class="o">=</span> <span class="n">MetricsWeighted</span><span class="o">::</span><span class="n">rmse</span><span class="p">,</span> 
+                   <span class="n">`R-squared`</span> <span class="o">=</span> <span class="n">MetricsWeighted</span><span class="o">::</span><span class="n">r_squared</span><span class="p">)</span>
+  <span class="p">)</span>
+
+<span class="c1"># Plot the breakdown plot</span>
+<span class="nf">plot</span><span class="p">(</span><span class="nf">light_breakdown</span><span class="p">(</span><span class="n">fl</span><span class="p">,</span> <span class="n">new_obs</span> <span class="o">=</span> <span class="n">penguins[3</span><span class="p">,</span> <span class="n">]</span><span class="p">,</span> <span class="n">digits</span> <span class="o">=</span> <span class="m">2</span><span class="p">))</span>
+</code></pre></div>
+</details>
+<!-- raw HTML omitted -->
+<p>The plot shows the single variables' (or <em>feature</em>) contributions. Put differently, it visualizes how much each single variable contributes to the prediction. It starts with the average value of the dependent variable (or <em>target</em>) in the data. The value 44 indicates that the average bill of the penguins in the data is 44 mm long. Red bars show a negative contribution and blue bars a positive contribution (also indicated with the sign before the variable value). This means that if the penguin is from the species Adelie the bill length is shorter whereas a greater bill depth (here 18 mm) is more likely to contribute to a longer bill length. The order of the variables is sorted by contribution size. This means that variables with greater contributions come first and variables with less contribution least.</p>
+<p>While this figure already tells a lot, it is not publication-ready. To make the appearance visually more attractive, we would want to adjust the labels in an easily readable way and probably also change some other aesthetics.</p>
+<p>To do this, we deviate from the procedure and prepare the data before we get started. I tried various ways (labelling the data, adding labels later, etc.) and only the way I show you worked for me. From my understanding, this happens because the <a href="https://github.com/cran/flashlight/blob/master/R/light_breakdown.R"><code>light_breakdown</code></a> function generates the labels in the plot internally before plotting it. To generate the labels, the function uses the variable names as well as their values.</p>
+<details>
+  <summary>More details on the output produced by <code>light_breakdown</code></summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">light_breakdown</span><span class="p">(</span><span class="n">fl</span><span class="p">,</span> <span class="n">new_obs</span> <span class="o">=</span> <span class="n">penguins[3</span><span class="p">,</span> <span class="n">]</span><span class="p">,</span> <span class="n">digits</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">I am an object with class<span class="o">(</span>es<span class="o">)</span> light_breakdown, light, list 
+
+data.frames <span class="o">(</span>maximum <span class="m">6</span> rows shown<span class="o">)</span>:
+
+ data 
+<span class="c1"># A tibble: 6 x 6</span>
+   step variable          after before label description                   
+  &lt;int&gt; &lt;chr&gt;             &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;                         
+<span class="m">1</span>     <span class="m">0</span> baseline           44.0   44.0 ols   average in data: <span class="m">44</span>           
+<span class="m">2</span>     <span class="m">1</span> species            39.7   44.0 ols   <span class="nv">species</span> <span class="o">=</span> Adelie: -4.3        
+<span class="m">3</span>     <span class="m">2</span> sex                38.6   39.7 ols   <span class="nv">sex</span> <span class="o">=</span> female: -1              
+<span class="m">4</span>     <span class="m">3</span> body_mass_g        37.5   38.6 ols   <span class="nv">body_mass_g</span> <span class="o">=</span> 3250: -1.1      
+<span class="m">5</span>     <span class="m">4</span> flipper_length_mm  37.2   37.5 ols   <span class="nv">flipper_length_mm</span> <span class="o">=</span> 195: -0.34
+<span class="m">6</span>     <span class="m">5</span> bill_depth_mm      37.5   37.2 ols   <span class="nv">bill_depth_mm</span> <span class="o">=</span> 18: +0.28     
+</code></pre></div><p>Everything stored in <code>description</code> will be later plotted as labels in your plot.</p>
+
+</details>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="n">penguins</span> <span class="o">%&lt;&gt;%</span>
+  <span class="c1"># First adjust the labels</span>
+   <span class="n">dplyr</span><span class="o">::</span><span class="nf">mutate</span><span class="p">(</span>
+    <span class="n">sex</span> <span class="o">=</span> <span class="nf">case_when</span><span class="p">(</span><span class="n">sex</span> <span class="o">==</span> <span class="s">&#34;female&#34;</span> <span class="o">~</span> <span class="s">&#34;Female&#34;</span><span class="p">,</span>
+                    <span class="n">sex</span> <span class="o">==</span> <span class="s">&#34;male&#34;</span> <span class="o">~</span> <span class="s">&#34;Male&#34;</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+  <span class="n">dplyr</span><span class="o">::</span><span class="nf">rename</span><span class="p">(</span>
+    <span class="n">`Penguin species`</span> <span class="o">=</span> <span class="n">species</span><span class="p">,</span>
+    <span class="n">`Island`</span> <span class="o">=</span> <span class="n">island</span><span class="p">,</span>
+    <span class="n">`Length of bill (in mm)`</span> <span class="o">=</span> <span class="n">bill_length_mm</span><span class="p">,</span>
+    <span class="n">`Depth of bill (in mm)`</span> <span class="o">=</span> <span class="n">bill_depth_mm</span><span class="p">,</span>
+    <span class="n">`Length of flipper (in mm)`</span> <span class="o">=</span> <span class="n">flipper_length_mm</span><span class="p">,</span>
+    <span class="n">`Body mass (in g)`</span> <span class="o">=</span> <span class="n">body_mass_g</span><span class="p">,</span>
+    <span class="n">`Sex`</span> <span class="o">=</span> <span class="n">sex</span><span class="p">,</span>
+    <span class="n">`Year`</span> <span class="o">=</span> <span class="n">year</span><span class="p">)</span>
+</code></pre></div><p>And we&rsquo;re all set. Now we fit the model again and generate a flashlight.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Fit model</span>
+<span class="n">fit</span> <span class="o">&lt;-</span> <span class="nf">lm</span><span class="p">(</span><span class="n">`Length of bill (in mm)`</span> <span class="o">~</span> <span class="n">.,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">penguins</span><span class="p">)</span>
+
+<span class="c1"># Make flashlight</span>
+<span class="n">fl</span> <span class="o">&lt;-</span>
+  <span class="nf">flashlight</span><span class="p">(</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">fit</span><span class="p">,</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">penguins</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s">&#34;Length of bill (in mm)&#34;</span><span class="p">,</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="s">&#34;ols&#34;</span><span class="p">,</span>
+    <span class="n">metrics</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">rmse</span> <span class="o">=</span> <span class="n">MetricsWeighted</span><span class="o">::</span><span class="n">rmse</span><span class="p">,</span> 
+                   <span class="n">`R-squared`</span> <span class="o">=</span> <span class="n">MetricsWeighted</span><span class="o">::</span><span class="n">r_squared</span><span class="p">)</span>
+  <span class="p">)</span>
+</code></pre></div><p>We can use the flashlight object <code>fl</code> and plot our breakdown plot</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="nf">plot</span><span class="p">(</span><span class="nf">light_breakdown</span><span class="p">(</span><span class="n">fl</span><span class="p">,</span> <span class="n">new_obs</span> <span class="o">=</span> <span class="n">penguins[3</span><span class="p">,</span><span class="n">]</span><span class="p">,</span> <span class="n">digits</span> <span class="o">=</span> <span class="m">2</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">theme_classic</span><span class="p">()</span> <span class="o">+</span>
+  <span class="nf">theme</span><span class="p">(</span>
+    <span class="n">axis.text.y</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">(),</span>
+    <span class="n">axis.ticks.y</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">(),</span>
+    <span class="n">axis.title.y</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">()</span>
+  <span class="p">)</span> <span class="o">+</span>
+  <span class="nf">scale_fill_grey</span><span class="p">()</span>
+</code></pre></div><p><img src="/images/single-blog/polished-breakdown.png" alt="small_image"></p>
+<p><code>theme()</code>, <code>theme_classic()</code>, and <code>scale_fill_grey()</code> are further adjustments to make the figure publishable in a later manuscript &ndash; but there are <a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">endless possibilities and you can pick whichever works best for you</a>.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+	 		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	 <div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Sitemap</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://cosimameyer.com/privacy/privacy">Privacy &amp; Policy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://cosimameyer.com/privacy/terms">Terms</a></li>
+						
+					</ul>
+				</div>
+			</div>
+
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All right reserved copyright © Cosima Meyer 2022</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/cosimameyer/"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://twitter.com/cosima_meyer"><i
+									class="fa fa-twitter-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://github.com/cosimameyer"><i
+									class="fa fa-github"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="https://cosimameyer.com/plugins/jQuery/jquery.min.js"></script>
+<script src="https://cosimameyer.com/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://cosimameyer.com/plugins/slick/slick.min.js"></script>
+<script src="https://cosimameyer.com/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://cosimameyer.com/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://cosimameyer.com/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://cosimameyer.com/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://cosimameyer.com/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://cosimameyer.com/js/form-handler.min.js"></script>
+
+<script src="https://cosimameyer.com/js/script.min.js"></script><div id="cookie-notice">
+<center><span>I took great care to disable all third party cookies and scripts. However, there might be some cookies left which would like to be used.</span>
+<a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
+<a id="cookie-notice-deny" class="btn btn-primary btn-sm">Deny</a>
+<a href="/privacy/privacy/" class="btn btn-primary btn-sm">More info</a>
+</center></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-option')=='true') {
+        
+        
+        function loadScriptAsync(scriptSrc, callback) {
+            if (typeof callback !== 'function') {
+                throw new Error('Not a valid callback for async script load');
+            }
+            var script = document.createElement('script');
+            script.onload = callback;
+            script.src = scriptSrc;
+            document.head.appendChild(script);
+        }
+
+        
+
+        
+        loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX', function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true }); 
+        })
+
+        
+    } else if (readCookie('cookie-notice-option')!='false'){
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-option','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+    document.getElementById('cookie-notice-deny').addEventListener("click",function() {
+        createCookie('cookie-notice-option','false',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
+
+
+  
+  <script src="/js/clipboard.min.js"></script>
+
+</body>
+
+</html>

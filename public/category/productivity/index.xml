@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>productivity on Cosima Meyer</title>
+    <link>https://cosimameyer.com/category/productivity/</link>
+    <description>Recent content in productivity on Cosima Meyer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosimameyer.com/category/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to get a zero inbox using Apple Mail</title>
+      <link>https://cosimameyer.com/post/how-to-get-a-zero-inbox-using-apple-mail/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/how-to-get-a-zero-inbox-using-apple-mail/</guid>
+      <description>Have you ever wondered how to set up a smart sorting system for Apple Mail that allows you to keep an eye on the emails that really matter? Well, then you are in a similar situation as I was. The approach that I present here works perfectly for me, and it is surprising how a few tweaks in your mailbox can make such a big difference!
+If you have too many unnecessary e-mails, it is easy to find a solution: sign off the mailing lists you don&amp;rsquo;t need.</description>
+    </item>
+    
+    <item>
+      <title>My workflow with academic literature</title>
+      <link>https://cosimameyer.com/post/my-workflow-with-academic-literature/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/my-workflow-with-academic-literature/</guid>
+      <description>When I had to (re-)write the literature review for my dissertation, I restructured my workflow to make my literature management more efficient.1 Throughout the past years, it always felt as if I was accumulating masses of knowledge and tons of papers &amp;ndash; and for sure, I did! But it turned out to be so much knowledge that it was hard to keep track. I always liked my way of sorting things (I heavily relied on mind maps to sort the literature) but realized that it was not enough when categorizing, and &amp;ndash; most importantly &amp;ndash; logically structuring a condensed literature review that presents all the knowledge to my readers in an engaging way.</description>
+    </item>
+    
+  </channel>
+</rss>

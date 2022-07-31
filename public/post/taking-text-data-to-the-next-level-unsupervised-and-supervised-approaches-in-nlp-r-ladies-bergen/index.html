@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Taking text data to the next level - Unsupervised and supervised approaches in NLP @R-Ladies Bergen</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://cosimameyer.com/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://cosimameyer.com/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://cosimameyer.com/images/favicon.png" type="image/x-icon" />
+  
+
+
+    
+    <link href="/scss/syntax.min.css" rel="stylesheet">
+    
+    
+    <link href="/scss/clipboard.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+   
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="/#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#resume"
+            class="nav-link text-dark text-sm-center p-2 ">Resume</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#testimonial"
+            class="nav-link text-dark text-sm-center p-2 ">Talks</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#post"
+            class="nav-link text-dark text-sm-center p-2 ">Blog</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://cosimameyer.github.io/overviewR/"
+            class="nav-link text-dark text-sm-center p-2 ">overviewR</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">Taking text data to the next level - Unsupervised and supervised approaches in NLP @R-Ladies Bergen</h3>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://cosimameyer.com/>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://cosimameyer.com/post>All Post</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Taking text data to the next level - Unsupervised and supervised approaches in NLP @R-Ladies Bergen</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <ul class="post-meta">
+      <li>
+        <i class="fa fa-calendar"></i>
+        December 9, 2020
+      </li>
+      <li>
+        <i class="fa fa-clock-o"></i>
+        4 mins read
+      </li>
+      
+      
+      <li>
+        <i class="fa fa-folder-open"></i>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/r-post/">R-post</a>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/r/">R</a>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/nlp/">NLP</a>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/quanteda/">quanteda</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+
+  <div class="animate-shape">
+    <img src=https://cosimameyer.com/images/skill/skill-background-shape.svg alt="">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+      <defs>
+        <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+          <stop offset="0" stop-color="#f1f6f9" />
+          <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <g data-name="blob-shape (3)">
+        <path class="blob" fill="url(#d)"
+          d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+      </g>
+    </svg>
+  </div>
+ 
+  <div class="container">
+   
+    <div class="row mt-5">
+      <div class="col-lg-12">
+        <div class="singleBlog__content">
+
+          
+
+          <p>I had the great pleasure to talk about NLP at <a href="https://www.meetup.com/rladies-bergen/events/274392883/">R-Ladies Bergen</a> yesterday. Thanks to everyone for making this event so much fun!
+The talk covers both unsupervised and supervised approaches and introduces you to <a href="https://quanteda.io/"><code>quanteda</code></a>, an R package that allows you to perform NLP tasks.</p>
+<p>All material can be accessed <a href="https://github.com/cosimameyer/nlp-rladies-bergen"><strong>here</strong></a> (including <a href="http://cosimameyer.rbind.io/slides/nlp-rladies/talk#1">slides</a>, <a href="https://github.com/cosimameyer/nlp-rladies-bergen/tree/main/code">raw</a> and <a href="https://nlp-bergen.netlify.app/">deployed</a> code as well as the <a href="https://youtu.be/bvqur70ZmyM">recording</a>). The talk itself is heavily based on this <a href="https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/advancing-text-mining/">blogpost</a>.</p>
+<p>Here are some further insights into the talk:</p>
+<p><img src="/images/single-blog/terms.png" alt="small_image"></p>
+<!-- raw HTML omitted -->
+<details>
+  <summary>Code</summary>
+  <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Plot a word cloud</span>
+<span class="n">quanteda</span><span class="o">::</span><span class="nf">textplot_wordcloud</span><span class="p">(</span>
+  <span class="c1"># Load the DFM object</span>
+  <span class="n">mydfm</span><span class="p">,</span>
+  <span class="c1"># Define the minimum number the words have to occur</span>
+  <span class="n">min_count</span> <span class="o">=</span> <span class="m">3</span><span class="p">,</span>
+  <span class="c1"># Define the maximum number the words can occur</span>
+  <span class="n">max_words</span> <span class="o">=</span> <span class="m">500</span><span class="p">,</span>
+  <span class="c1"># Define a color</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="nf">wes_palette</span><span class="p">(</span><span class="s">&#34;Darjeeling1&#34;</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div>
+</details>
+<p><img src="/images/single-blog/wordcloud.png" alt="small_image"></p>
+<!-- raw HTML omitted -->
+<details>
+  <summary>Code</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1"># This code is heavily inspired by Julia Silge&#39;s blog post</span>
+<span class="c1"># (https://juliasilge.com/blog/sherlock-holmes-stm/)</span>
+</code></pre></div>
+</details>
+<p><img src="/images/single-blog/topicmodel.png" alt="small_image"></p>
+<!-- raw HTML omitted -->
+<details>
+  <summary>Code</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1"># This code is heavily inspired by this blog post:</span>
+<span class="c1"># (https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/advancing-text-mining/)</span>
+</code></pre></div>
+</details>
+<p><img src="/images/single-blog/share_un.png" alt="small_image"></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<details>
+  <summary>Code</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="n">data</span> <span class="o">%&gt;%</span>
+<span class="c1"># Generate the country name for each country using the </span>
+<span class="c1"># `countrycode()` command</span>
+  <span class="n">dplyr</span><span class="o">::</span><span class="nf">mutate</span><span class="p">(</span><span class="n">countryname</span> <span class="o">=</span> <span class="nf">countrycode</span><span class="p">(</span><span class="n">ccode</span><span class="p">,</span> <span class="s">&#34;iso3c&#34;</span><span class="p">,</span> <span class="s">&#34;country.name&#34;</span><span class="p">))</span> <span class="o">%&gt;%</span>
+<span class="c1"># Filter and only select specific countries that we want to compare</span>
+  <span class="n">dplyr</span><span class="o">::</span><span class="nf">filter</span><span class="p">(</span><span class="n">countryname</span> <span class="o">%in%</span> <span class="nf">c</span><span class="p">(</span>
+    <span class="s">&#34;Germany&#34;</span><span class="p">,</span>
+    <span class="s">&#34;France&#34;</span><span class="p">,</span>
+    <span class="s">&#34;United Kingdom&#34;</span><span class="p">,</span>
+    <span class="s">&#34;Norway&#34;</span><span class="p">,</span>
+    <span class="s">&#34;Spain&#34;</span><span class="p">,</span>
+    <span class="s">&#34;Sweden&#34;</span>
+<span class="p">))</span> <span class="o">%&gt;%</span>
+<span class="c1"># Now comes the plotting part :-)</span>
+  <span class="nf">ggplot</span><span class="p">()</span> <span class="o">+</span>
+<span class="c1"># We do a bar plot that has the years on the x-axis and the level of the </span>
+<span class="c1"># net-sentiment on the y-axis</span>
+<span class="c1"># We also color it so that all the net-sentiments greater 0 get a </span>
+<span class="c1"># different color</span>
+  <span class="nf">geom_col</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">year</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">net_perc</span><span class="p">,</span>
+    <span class="n">fill</span> <span class="o">=</span> <span class="p">(</span><span class="n">net_perc</span> <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span>
+  <span class="p">))</span> <span class="o">+</span>
+<span class="c1"># Here we define the colors as well as the labels and title of the legend</span>
+  <span class="nf">scale_fill_manual</span><span class="p">(</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">&#34;Sentiment&#34;</span><span class="p">,</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;Negative&#34;</span><span class="p">,</span> <span class="s">&#34;Positive&#34;</span><span class="p">),</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;#C93312&#34;</span><span class="p">,</span> <span class="s">&#34;#446455&#34;</span><span class="p">)</span>
+  <span class="p">)</span> <span class="o">+</span>
+<span class="c1"># Now we add the axes labels</span>
+  <span class="nf">xlab</span><span class="p">(</span><span class="s">&#34;Time&#34;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">ylab</span><span class="p">(</span><span class="s">&#34;Net sentiment&#34;</span><span class="p">)</span> <span class="o">+</span>
+<span class="c1"># And do a facet_wrap by country to get a more meaningful visualization</span>
+  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">countryname</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<p><img src="/images/single-blog/share_un_country.png" alt="small_image"></p>
+<!-- raw HTML omitted -->
+<details>
+  <summary>Code</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Inspired here: https://bit.ly/37MCEHg</span>
+
+<span class="c1"># Get the 30 top features from the DFM</span>
+<span class="n">freq_feature</span> <span class="o">&lt;-</span> <span class="nf">topfeatures</span><span class="p">(</span><span class="n">mydfm</span><span class="p">,</span> <span class="m">30</span><span class="p">)</span>
+
+<span class="c1"># Create a data.frame for ggplot</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span>
+  <span class="n">term</span> <span class="o">=</span> <span class="nf">names</span><span class="p">(</span><span class="n">freq_feature</span><span class="p">),</span>
+  <span class="n">frequency</span> <span class="o">=</span> <span class="nf">unname</span><span class="p">(</span><span class="n">freq_feature</span><span class="p">)</span>
+<span class="p">))</span>
+
+<span class="c1"># Plot the plot</span>
+<span class="n">data</span> <span class="o">%&gt;%</span>
+    <span class="c1"># Call ggplot</span>
+    <span class="nf">ggplot</span><span class="p">()</span> <span class="o">+</span>
+    <span class="c1"># Add geom_segment (this will give us the lines of the lollipops)</span>
+    <span class="nf">geom_segment</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span>
+      <span class="n">x</span> <span class="o">=</span> <span class="nf">reorder</span><span class="p">(</span><span class="n">term</span><span class="p">,</span> <span class="n">frequency</span><span class="p">),</span>
+      <span class="n">xend</span> <span class="o">=</span> <span class="nf">reorder</span><span class="p">(</span><span class="n">term</span><span class="p">,</span> <span class="n">frequency</span><span class="p">),</span>
+      <span class="n">y</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span>
+      <span class="n">yend</span> <span class="o">=</span> <span class="n">frequency</span>
+    <span class="p">),</span> <span class="n">color</span> <span class="o">=</span> <span class="s">&#34;grey&#34;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="c1"># Call a point plot with the terms on the x-axis </span>
+  <span class="c1"># and the frequency on the y-axis</span>
+    <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="nf">reorder</span><span class="p">(</span><span class="n">term</span><span class="p">,</span> <span class="n">frequency</span><span class="p">),</span> <span class="n">y</span> <span class="o">=</span> <span class="n">frequency</span><span class="p">))</span> <span class="o">+</span>
+  <span class="c1"># Flip the plot</span>
+    <span class="nf">coord_flip</span><span class="p">()</span> <span class="o">+</span>
+  <span class="c1"># Add labels for the axes</span>
+    <span class="nf">xlab</span><span class="p">(</span><span class="s">&#34;&#34;</span><span class="p">)</span> <span class="o">+</span>
+    <span class="nf">ylab</span><span class="p">(</span><span class="s">&#34;Absolute frequency of the features&#34;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<p><img src="/images/single-blog/freq_plot.png" alt="small_image"></p>
+<!-- raw HTML omitted -->
+<details>
+  <summary>Code</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="n">data</span> <span class="o">%&gt;%</span>
+<span class="c1"># Generate the continent for each country using the `countrycode()` command</span>
+  <span class="n">dplyr</span><span class="o">::</span><span class="nf">mutate</span><span class="p">(</span><span class="n">continent</span> <span class="o">=</span> <span class="nf">countrycode</span><span class="p">(</span><span class="n">ccode</span><span class="p">,</span> <span class="s">&#34;iso3c&#34;</span><span class="p">,</span> <span class="s">&#34;continent&#34;</span><span class="p">,</span> 
+                            <span class="n">custom_match</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;YUG&#34;</span> <span class="o">=</span> <span class="s">&#34;Europe&#34;</span><span class="p">)))</span> <span class="o">%&gt;%</span>
+<span class="c1"># We group by continent and year to generate the average sentiment by </span>
+<span class="c1"># continent and and year  </span>
+  <span class="nf">group_by</span><span class="p">(</span><span class="n">continent</span><span class="p">,</span> <span class="n">year</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="n">dplyr</span><span class="o">::</span><span class="nf">mutate</span><span class="p">(</span><span class="n">avg</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">net_perc</span><span class="p">))</span> <span class="o">%&gt;%</span>
+<span class="c1"># We now plot it</span>
+  <span class="nf">ggplot</span><span class="p">()</span> <span class="o">+</span>
+<span class="c1"># Using a line chart with year on the x-axis, the average sentiment </span>
+<span class="c1"># by continent on the y-axis and colored by continent</span>
+  <span class="nf">geom_line</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">year</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">avg</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="n">continent</span><span class="p">))</span> <span class="o">+</span>
+<span class="c1"># Define the colors</span>
+  <span class="nf">scale_color_manual</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="nf">wes_palette</span><span class="p">(</span><span class="s">&#34;Darjeeling1&#34;</span><span class="p">))</span> <span class="o">+</span>
+<span class="c1"># Label the axes</span>
+  <span class="nf">xlab</span><span class="p">(</span><span class="s">&#34;Time&#34;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">ylab</span><span class="p">(</span><span class="s">&#34;Average net sentiment&#34;</span><span class="p">)</span> 
+</code></pre></div>
+</details>
+<p><img src="/images/single-blog/negative-sentiment.png" alt="small_image"></p>
+<!-- raw HTML omitted -->
+<p>These figures above show the output of more basic supervised and unsupervised models in NLP that you can use and that we covered during the talk. And as you work more and more with textual data, you will see that there is so much more in the field of NLP including <a href="http://cosimameyer.rbind.io/slides/nlp-rladies/talk#56">document similarity</a>, <a href="https://arxiv.org/abs/1906.01946">text generation</a> or even <a href="http://cosimameyer.rbind.io/slides/nlp-rladies/talk#57">chat bots</a> that you can create using your knowledge and starting with the same simple steps that I presented in the talk 👩🏼‍💻</p>
+<p>If you want more resources, you can access them here:</p>
+<ul>
+<li>
+<p>Quanteda</p>
+<ul>
+<li><a href="https://tutorials.quanteda.io">Kohei Watanabe and Stefan Müller: Quanteda Tutorials</a></li>
+<li><a href="https://muellerstefan.net/files/quanteda-cheatsheet.pdf">Quanteda Cheat Sheet</a></li>
+</ul>
+</li>
+<li>
+<p>More on text mining and NLP</p>
+<ul>
+<li><a href="https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/advancing-text-mining/">Cosima Meyer and Cornelius Puschmann: Advancing Text Mining with R and quanteda</a></li>
+<li><a href="https://www.cambridge.org/core/journals/political-analysis/article/text-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-texts/F7AAC8B2909441603FEB25C156448F20">Justin Grimmer and Brandon Stewart: Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts</a></li>
+<li><a href="https://web.stanford.edu/~jurafsky/slp3/">Dan Jurafsky and James H. Martin: Speech and Language Processing</a></li>
+</ul>
+</li>
+<li>
+<p>Sentiment analysis</p>
+<ul>
+<li><a href="https://github.com/trinker/sentimentr">sentimentr</a></li>
+<li><a href="https://www.tectum-shop.de/titel/chinas-rolle-in-einer-neuen-weltordnung-id-97867/">Hammerschmidt/Meyer 2020: Money Makes the World Go Frowned - Analyzing the Impact of Chinese Foreign Aid on States' Sentiment Using Natural Language Processing</a> (for an applied example of sentiment analysis)</li>
+</ul>
+</li>
+<li>
+<p>Model validation</p>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/oolong/index.html">oolong: Validation of dictionary approaches and topic models</a></li>
+<li><a href="https://github.com/cschwem2er/stminsights">stminsights</a></li>
+</ul>
+</li>
+<li>
+<p>More general resource</p>
+<ul>
+<li><a href="https://dssoc.github.io/schedule/">Data Science &amp; Society</a></li>
+<li><a href="https://rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf">RegEx Cheat Sheet</a></li>
+<li><a href="https://github.com/rstudio/cheatsheets/blob/master/strings.pdf">Stringr Cheat Sheet</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+	 		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	 <div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Sitemap</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://cosimameyer.com/privacy/privacy">Privacy &amp; Policy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://cosimameyer.com/privacy/terms">Terms</a></li>
+						
+					</ul>
+				</div>
+			</div>
+
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All right reserved copyright © Cosima Meyer 2022</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/cosimameyer/"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://twitter.com/cosima_meyer"><i
+									class="fa fa-twitter-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://github.com/cosimameyer"><i
+									class="fa fa-github"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="https://cosimameyer.com/plugins/jQuery/jquery.min.js"></script>
+<script src="https://cosimameyer.com/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://cosimameyer.com/plugins/slick/slick.min.js"></script>
+<script src="https://cosimameyer.com/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://cosimameyer.com/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://cosimameyer.com/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://cosimameyer.com/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://cosimameyer.com/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://cosimameyer.com/js/form-handler.min.js"></script>
+
+<script src="https://cosimameyer.com/js/script.min.js"></script><div id="cookie-notice">
+<center><span>I took great care to disable all third party cookies and scripts. However, there might be some cookies left which would like to be used.</span>
+<a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
+<a id="cookie-notice-deny" class="btn btn-primary btn-sm">Deny</a>
+<a href="/privacy/privacy/" class="btn btn-primary btn-sm">More info</a>
+</center></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-option')=='true') {
+        
+        
+        function loadScriptAsync(scriptSrc, callback) {
+            if (typeof callback !== 'function') {
+                throw new Error('Not a valid callback for async script load');
+            }
+            var script = document.createElement('script');
+            script.onload = callback;
+            script.src = scriptSrc;
+            document.head.appendChild(script);
+        }
+
+        
+
+        
+        loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX', function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true }); 
+        })
+
+        
+    } else if (readCookie('cookie-notice-option')!='false'){
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-option','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+    document.getElementById('cookie-notice-deny').addEventListener("click",function() {
+        createCookie('cookie-notice-option','false',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
+
+
+  
+  <script src="/js/clipboard.min.js"></script>
+
+</body>
+
+</html>

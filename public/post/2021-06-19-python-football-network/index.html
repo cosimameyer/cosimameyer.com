@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Using Python to scrape and visualize networks in European football</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/font-awesome/css/font-awesome.min.css" />
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://cosimameyer.com/plugins/magnafic-popup/magnific-popup.css" />
+
+  <!-- Stylesheets -->
+  
+  <link href="https://cosimameyer.com/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://cosimameyer.com/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://cosimameyer.com/images/favicon.png" type="image/x-icon" />
+  
+
+
+    
+    <link href="/scss/syntax.min.css" rel="stylesheet">
+    
+    
+    <link href="/scss/clipboard.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+   
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        
+        
+        <li class="nav-item">
+          <a href="/#home"
+            class="nav-link text-dark text-sm-center p-2 ">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#portfolio"
+            class="nav-link text-dark text-sm-center p-2 ">Portfolio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#resume"
+            class="nav-link text-dark text-sm-center p-2 ">Resume</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#testimonial"
+            class="nav-link text-dark text-sm-center p-2 ">Talks</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#post"
+            class="nav-link text-dark text-sm-center p-2 ">Blog</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://cosimameyer.github.io/overviewR/"
+            class="nav-link text-dark text-sm-center p-2 ">overviewR</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  <div id="content">
+    
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
+        <h3 class="breadCrumb__title">Using Python to scrape and visualize networks in European football</h3>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href=https://cosimameyer.com/>Home</a></li>
+            <li class="breadcrumb-item"><a href=https://cosimameyer.com/post>All Post</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Using Python to scrape and visualize networks in European football</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <ul class="post-meta">
+      <li>
+        <i class="fa fa-calendar"></i>
+        June 19, 2021
+      </li>
+      <li>
+        <i class="fa fa-clock-o"></i>
+        11 mins read
+      </li>
+      
+      
+      <li>
+        <i class="fa fa-folder-open"></i>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/python-post/">Python-post</a>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/python/">Python</a>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/football/">football</a>
+        
+          <a class="text-capitalize" href="https://cosimameyer.com/category/data-visualization/">data visualization</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+
+  <div class="animate-shape">
+    <img src=https://cosimameyer.com/images/skill/skill-background-shape.svg alt="">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+      <defs>
+        <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+          <stop offset="0" stop-color="#f1f6f9" />
+          <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <g data-name="blob-shape (3)">
+        <path class="blob" fill="url(#d)"
+          d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+      </g>
+    </svg>
+  </div>
+ 
+  <div class="container">
+   
+    <div class="row mt-5">
+      <div class="col-lg-12">
+        <div class="singleBlog__content">
+
+          
+
+          <!-- raw HTML omitted -->
+<p>Although I am not an avid European football fan, I sometimes have the chance to watch a match &ndash; and even more so during these days! ⚽️</p>
+<p>Now that I&rsquo;ve been following the German Bundesliga for some seasons (more irregularly than regularly), I was curious to see which players are part of the national teams. To get an idea of the network, I relied on data by <a href="https://theathletic.com/2594478/2021/06/15/euro-2020-squads-teams-list/">The Athletic</a> and followed the steps described below. I get an interactive visualization that allows me to compare across national teams.</p>
+<p><img src="/images/single-blog/teams.png" alt="small_image"></p>
+<!-- raw HTML omitted -->
+<p>The complete code can also be accessed in my <a href="https://github.com/cosimameyer/uefa-networks-2020/">GitHub</a>.</p>
+<h2 id="how-do-i-get-there">How do I get there?</h2>
+<h3 id="import-relevant-libraries">Import relevant libraries</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="n">DataFrame</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">interact</span>
+<span class="kn">from</span> <span class="nn">plotly.offline</span> <span class="kn">import</span> <span class="n">download_plotlyjs</span><span class="p">,</span> <span class="n">init_notebook_mode</span><span class="p">,</span> <span class="n">plot</span><span class="p">,</span> <span class="n">iplot</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">import</span> <span class="nn">plotly</span>
+<span class="kn">import</span> <span class="nn">chart_studio.plotly</span> <span class="k">as</span> <span class="nn">py</span>
+</code></pre></div><p>If these libraries are not installed yet, <a href="https://packaging.python.org/tutorials/installing-packages/">here</a> is a detailed guide how to do it.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="scrape-the-data">Scrape the data</h3>
+<p>To scrape the data, I followed this <a href="https://medium.com/@devkosal/scraping-data-with-beautifulsoup-and-selectorgadget-in-python-3-decf798e1a1e">guide</a>.
+It is a combination of <a href="https://selectorgadget.com">SelectorGadget</a> and <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a>. BeautifulSoup pulls data from HTML and XML files. SelectorGadget helps to define the CSS selectors to extract specific parts of BeautifulSoup&rsquo;s output.
+You will get an HTML output that I restrict to the desired text (using SelectorGadget to define which text I need). However, since the resulting object still contains output that I did not want to have included, I further had to do some data wrangling until I got the desired data frame.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Load URL in beautiful soup</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://theathletic.com/2594478/2021/06/15/euro-2020-squads-teams-list/&#39;</span>
+
+<span class="c1"># Get the data</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="c1"># Use beautiful soup to parse it</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s2">&#34;html.parser&#34;</span><span class="p">)</span>
+
+<span class="c1"># This is how the output looks like -- not really beautiful, right?</span>
+<span class="n">soup</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div><p>Now that this does not look too nice, I first rely on SelectorGadget and determine the parts that interest me most. Then, I select them and subset the output to this part.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># SelectorGadget to the rescue :-) </span>
+<span class="c1"># I extract the required content (I determined the selection criteria &#34;p , h3&#34; using the SelectorGadget)</span>
+<span class="n">plain_text</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&#34;p , h3&#34;</span><span class="p">)</span>
+
+<span class="c1"># Extract the plain text (it turned out to work best for me)</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+
+<span class="c1"># It&#39;s now way better:</span>
+<span class="n">text</span>
+</code></pre></div><pre tabindex="0"><code>\n\n\nEuro 2020: Every national team’s squad list for this summer’s European Championship – The Athletic\n(window.NREUM||(NREUM={})).loader_config={xpid:&quot;VQUEVVZVDRABU1FRAQkAVQ==&quot;,licenseKey:&quot;e5d6a2e943&quot;,applicationID:&quot;17036873&quot;};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if(&quot;function&quot;==typeof __nr_require)return __nr_require;for(var o=0;o&lt;n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&amp;&amp;console.log(t)}catch(e){}}var o,i=t(&quot;ee&quot;),a=t(29),c={};try{o=localStorage.getItem(&quot;__nr_flags&quot;).split(&quot;,&quot;),
+console&amp;&amp;&quot;function&quot;==typeof console.log&amp;&amp;(c.console=!0,o.indexOf(&quot;dev&quot;)!==-1&amp;&amp;(c.dev=!0),o.indexOf(&quot;nr_dev&quot;)!==-1&amp;&amp;(c.nrDev=!0))}catch(s){}c.nrDev&amp;&amp;i.on(&quot;internal-error&quot;,function(t){r(t.stack)}),c.dev&amp;&amp;i.on(&quot;fn-err&quot;,function(t,e,n){r(n.stack)}),c.dev&amp;&amp;(r(&quot;NR AGENT IN DEVELOPMENT MODE&quot;),r(&quot;flags: &quot;+a(c,function(t,e){return t}).join(&quot;, &quot;)))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i(&quot;ierr&quot;,[f,s.now(),!0])}catch(d){}}return&quot;function&quot;==typeof u&amp;&amp;u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||&quot;Uncaught error with no additional information&quot;,this.sourceURL=e,this.line=n}function o(t,e)
+{var n=e?null:s.now();i(&quot;err&quot;,[t,n])}var i=t(&quot;handle&quot;),a=t(30),c=t(&quot;ee&quot;),s=t(&quot;loader&quot;),f=t(&quot;gos&quot;)
+</code></pre><p>This looks already way better than before! But what you see, I have many <code>&quot;\n\n\n\n\n&quot;</code>. I will make use of it and use it to split the string.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Split the text string (this will lead to separate string on which we can filter)</span>
+<span class="n">text_split</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n\n\n\n\n</span><span class="s2">&#34;</span><span class="p">)</span>
+
+<span class="n">text_split</span>
+</code></pre></div><pre tabindex="0"><code>['\n\n\nEuro 2020: Every national team’s squad list for this summer’s European Championship – The Athletic\n(window.NREUM||(NREUM={})).loader_config={xpid:&quot;VQUEVVZVDRABU1FRAQkAVQ==&quot;,licenseKey:&quot;e5d6a2e943&quot;,applicationID:&quot;17036873&quot;};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if(&quot;function&quot;==typeof __nr_require)return __nr_require;for(var o=0;o&lt;n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&amp;&amp;console.log(t)}catch(e){}}var o,i=t(&quot;ee&quot;),a=t(29),c={};try{o=localStorage.getItem(&quot;__nr_flags&quot;).split(&quot;,&quot;),
+console&amp;&amp;&quot;function&quot;==typeof console.log&amp;&amp;(c.console=!0,o.indexOf(&quot;dev&quot;)!==-1&amp;&amp;(c.dev=!0),o.indexOf(&quot;nr_dev&quot;)!==-1&amp;&amp;(c.nrDev=!0))}catch(s){}c.nrDev&amp;&amp;i.on(&quot;internal-error&quot;,function(t){r(t.stack)}),c.dev&amp;&amp;i.on(&quot;fn-err&quot;,function(t,e,n){r(n.stack)}),c.dev&amp;&amp;(r(&quot;NR AGENT IN DEVELOPMENT MODE&quot;),r(&quot;flags: &quot;+a(c,function(t,e){return t}).join(&quot;, &quot;)))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i(&quot;ierr&quot;,[f,s.now(),!0])}catch(d){}}return&quot;function&quot;==typeof u&amp;&amp;u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||&quot;Uncaught error with no additional information&quot;,
+this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i(&quot;err&quot;,[t,n])}var i=t(&quot;handle&quot;),a=t(30),c=t(&quot;ee&quot;),s=t(&quot;loader&quot;),f=t(&quot;gos&quot;)
+</code></pre><p>While the American cities at the top are great places, they do not have anything to do with the European Championship. I thus restrict the data further to the required part. To do this, I rely on the index:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Using the index, I select the part that is relevant for me:</span>
+<span class="n">text_split</span><span class="p">[</span><span class="mi">119</span><span class="p">]</span>
+</code></pre></div><pre tabindex="0"><code>'Group A\nTurkey\nGoalkeepers: Altay Bayindir (Fenerbahce), Ugurcan Cakır (Trabzonspor), Mert Gunok (Istanbul Basaksehir)\nDefenders: Kaan Ayhan (Sassuolo), Zeki Celik (LOSC Lille), Merih Demiral (Juventus), Ozan Kabak (Liverpool), Umut Meras (Le Havre), Mert Muldur (Sassuolo), Caglar Soyuncu (Leicester), Ridvan Yilmaz (Besiktas)\nMidfielders: Taylan Antalyali (Galatasaray), Hakan Calhanoglu (AC Milan), Halil Dervisoglu (Brentford), Irfan Can Kahveci (Fenerbahce), Orkun Kokcu (Feyenoord), Abdulkadir Omur (Trabzonspor), Dorukhan Tokoz (Besiktas), Ozan Tufan (Fenerbahce), Okay Yokuslu (West Brom)\nForwards: Kerem Akturkoglu (Galatasaray), Kenan Karaman (Fortuna Düsseldorf), Enes Unal (Getafe), Cengiz Under (Leicester), Yusuf Yazici (LOSC Lille), Burak Yilmaz (LOSC Lille)\nItaly\nGoalkeepers: Gianluigi Donnarumma (Milan), Alex Meret (Napoli), Salvatore Sirigu (Torino)\nDefenders: Francesco Acerbi (Lazio), Alessandro Bastoni (Inter), Leonardo Bonucci (Juventus),
+</code></pre><p>This is precisely what I want!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># And I restrict my data to this part only</span>
+<span class="n">player</span> <span class="o">=</span> <span class="n">text_split</span><span class="p">[</span><span class="mi">119</span><span class="p">]</span>
+</code></pre></div><pre tabindex="0"><code>['Group A',
+ 'Turkey',
+ 'Goalkeepers: Altay Bayindir (Fenerbahce), Ugurcan Cakır (Trabzonspor), Mert Gunok (Istanbul Basaksehir)',
+ 'Defenders: Kaan Ayhan (Sassuolo), Zeki Celik (LOSC Lille), Merih Demiral (Juventus), Ozan Kabak (Liverpool), Umut Meras (Le Havre), Mert Muldur (Sassuolo), Caglar Soyuncu (Leicester), Ridvan Yilmaz (Besiktas)',
+ 'Midfielders: Taylan Antalyali (Galatasaray), Hakan Calhanoglu (AC Milan), Halil Dervisoglu (Brentford), Irfan Can Kahveci (Fenerbahce), Orkun Kokcu (Feyenoord), Abdulkadir Omur (Trabzonspor), Dorukhan Tokoz (Besiktas), Ozan Tufan (Fenerbahce), Okay Yokuslu (West Brom)',
+ 'Forwards: Kerem Akturkoglu (Galatasaray), Kenan Karaman (Fortuna Düsseldorf), Enes Unal (Getafe), Cengiz Under (Leicester), Yusuf Yazici (LOSC Lille), Burak Yilmaz (LOSC Lille)',
+ 'Italy,'
+ 'Goalkeepers: Gianluigi Donnarumma (Milan), Alex Meret (Napoli), Salvatore Sirigu (Torino)',
+ 'Defenders: Francesco Acerbi (Lazio), Alessandro Bastoni (Inter), Leonardo Bonucci (Juventus),
+</code></pre><h3 id="do-some-data-wrangling">Do some data wrangling</h3>
+<p>As always, some data wrangling is needed.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Remove \xao (better, otherwise we have do deal with it later)</span>
+<span class="n">player</span> <span class="o">=</span> <span class="n">player</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;</span><span class="se">\xa0</span><span class="s1">&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+<span class="c1"># And I again split the data -- but this time based on \n</span>
+<span class="n">player_row</span> <span class="o">=</span> <span class="n">player</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+
+<span class="c1"># And that&#39;s how it looks like now: </span>
+<span class="n">player_row</span>
+</code></pre></div><pre tabindex="0"><code>['Turkey',
+ 'Goalkeepers: Altay Bayindir (Fenerbahce), Ugurcan Cakır (Trabzonspor), Mert Gunok (Istanbul Basaksehir)',
+ 'Defenders: Kaan Ayhan (Sassuolo), Zeki Celik (LOSC Lille), Merih Demiral (Juventus), Ozan Kabak (Liverpool), Umut Meras (Le Havre), Mert Muldur (Sassuolo), Caglar Soyuncu (Leicester), Ridvan Yilmaz (Besiktas)',
+ 'Midfielders: Taylan Antalyali (Galatasaray), Hakan Calhanoglu (AC Milan), Halil Dervisoglu (Brentford), Irfan Can Kahveci (Fenerbahce), Orkun Kokcu (Feyenoord), Abdulkadir Omur (Trabzonspor), Dorukhan Tokoz (Besiktas), Ozan Tufan (Fenerbahce), Okay Yokuslu (West Brom)',
+ 'Forwards: Kerem Akturkoglu (Galatasaray), Kenan Karaman (Fortuna Düsseldorf), Enes Unal (Getafe), Cengiz Under (Leicester), Yusuf Yazici (LOSC Lille), Burak Yilmaz (LOSC Lille)',
+ 'Italy',
+ 'Goalkeepers: Gianluigi Donnarumma (Milan), Alex Meret (Napoli), Salvatore Sirigu (Torino)',
+ 'Defenders: Francesco Acerbi (Lazio), Alessandro Bastoni (Inter), Leonardo Bonucci (Juventus),
+</code></pre><p>As you&rsquo;ll see, there are still some empty rows and rows that we do not necessarily need (for instance &ldquo;Group A&rdquo; etc.). I&rsquo;ll deal with this now:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Replace &#34;Group A&#34; etc. with an empty string (&#34;&#34;)</span>
+<span class="n">player_row</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Group A&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">player_row</span><span class="p">]</span>
+<span class="n">player_row</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Group B&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">player_row</span><span class="p">]</span>
+<span class="n">player_row</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Group C&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">player_row</span><span class="p">]</span>
+<span class="n">player_row</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Group D&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">player_row</span><span class="p">]</span>
+<span class="n">player_row</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Group E&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">player_row</span><span class="p">]</span>
+<span class="n">player_row</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Group F&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">player_row</span><span class="p">]</span>
+<span class="n">player_row</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;(Photo: Getty Images)&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">player_row</span><span class="p">]</span>
+</code></pre></div><p>My initial idea was to automatize these steps with a loop, but it did not work &ndash; so I went back to a few copy-pasted lines of code.</p>
+<p>Now that these rows turned into empty strings, we can remove them:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Filter for non-empty strings</span>
+<span class="n">player_row</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">player_row</span><span class="p">))</span>
+
+<span class="n">player_row</span>
+</code></pre></div><p><img src="/images/single-blog/uefa-table1.png" alt="smaller_image"></p>
+<!-- raw HTML omitted -->
+<p>The next step is a bit tricky but straightforward. I define an empty dictionary <code>teams</code> and loop over the list <code>player_row</code> to extract the national team identity (defined by <code>teams[player_row[i]]</code>) as well as all the information on the national teams (who the players are, what their home clubs are, and which position they play). The last part is extracted using <code>player_row[start:end]</code>.
+If you look at the data above, you&rsquo;ll see that all the information is located in 5 rows (each comma shows a new row). I thus use the <code>range()</code> function and start counting in a row <code>0</code>, over the length of the list <code>len(player_row)</code> and jump in <code>5</code> row steps.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Define a dictionary</span>
+<span class="n">teams</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="c1"># Extract sub sets for each national team</span>
+<span class="c1"># I use the &#34;start, stop, step&#34; arguments from range</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">player_row</span><span class="p">),</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">5</span>
+    <span class="n">teams</span><span class="p">[</span><span class="n">player_row</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">player_row</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">]</span>
+</code></pre></div><p>In the next step, I turn it into a data frame.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Turn it into a DF and do some wranglin</span>
+<span class="n">teams_df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">teams</span><span class="p">)</span>
+
+<span class="n">teams_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div><p><img src="/images/single-blog/uefa-table1.png" alt="smaller_image"></p>
+<!-- raw HTML omitted -->
+<p>While this already looks promising, it is not exactly what I was looking for.
+The easiest way to deal with the data here was to transpose it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Transpose DF</span>
+<span class="n">teams_t</span> <span class="o">=</span> <span class="n">teams_df</span><span class="o">.</span><span class="n">T</span>
+
+<span class="n">teams_t</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div><p><img src="/images/single-blog/uefa-table2.png" alt="smaller_image"></p>
+<!-- raw HTML omitted -->
+<p>The following steps are about moving the index column, renaming columns, and removing unnecessary strings.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Move index to column</span>
+<span class="n">teams_t</span> <span class="o">=</span> <span class="n">teams_t</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="c1"># Rename columns</span>
+<span class="n">teams_t</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span> <span class="n">teams_t</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span> <span class="s2">&#34;national_team&#34;</span> <span class="p">},</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">teams_t</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span> <span class="n">teams_t</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="s2">&#34;goalkeeper&#34;</span> <span class="p">},</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">teams_t</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span> <span class="n">teams_t</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="s2">&#34;defender&#34;</span> <span class="p">},</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">teams_t</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span> <span class="n">teams_t</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="s2">&#34;midfield&#34;</span> <span class="p">},</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">teams_t</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span> <span class="n">teams_t</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="s2">&#34;forward&#34;</span> <span class="p">},</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Remove strings from columns</span>
+<span class="n">teams_t</span><span class="p">[</span><span class="s2">&#34;goalkeeper&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Goalkeepers: &#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">teams_t</span><span class="p">[</span><span class="s2">&#34;goalkeeper&#34;</span><span class="p">]]</span>
+<span class="n">teams_t</span><span class="p">[</span><span class="s2">&#34;defender&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Defenders: &#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">teams_t</span><span class="p">[</span><span class="s2">&#34;defender&#34;</span><span class="p">]]</span>
+<span class="n">teams_t</span><span class="p">[</span><span class="s2">&#34;midfield&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Midfielders: &#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">teams_t</span><span class="p">[</span><span class="s2">&#34;midfield&#34;</span><span class="p">]]</span>
+<span class="n">teams_t</span><span class="p">[</span><span class="s2">&#34;forward&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;Forwards: &#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">teams_t</span><span class="p">[</span><span class="s2">&#34;forward&#34;</span><span class="p">]]</span>
+
+<span class="n">teams_t</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div><p><img src="/images/single-blog/uefa-table3.png" alt="smaller_image"></p>
+<!-- raw HTML omitted -->
+<p>I still have all the names of the player in each position in one column. I know R has a great package called <a href="https://www.r-project.org/nosvn/pandoc/splitstackshape.html"><code>splitstackshape</code></a> that automatically splits strings, based on a separation criterion in X columns. Unfortunately, I couldn&rsquo;t find a Python equivalent, so I did it in a bit more tedious way.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># And now we can split each column based on &#34;,&#34;</span>
+<span class="n">teams_t</span><span class="p">[[</span><span class="s1">&#39;goalkeeper1&#39;</span><span class="p">,</span> <span class="s1">&#39;goalkeeper2&#39;</span><span class="p">,</span> <span class="s1">&#39;goalkeeper3&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">teams_t</span><span class="p">[</span><span class="s1">&#39;goalkeeper&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">teams_t</span><span class="p">[[</span><span class="s1">&#39;defender1&#39;</span><span class="p">,</span> <span class="s1">&#39;defender2&#39;</span><span class="p">,</span> <span class="s1">&#39;defender3&#39;</span><span class="p">,</span> <span class="s1">&#39;defender4&#39;</span><span class="p">,</span> <span class="s1">&#39;defender5&#39;</span><span class="p">,</span> <span class="s1">&#39;defender6&#39;</span><span class="p">,</span> <span class="s1">&#39;defender7&#39;</span><span class="p">,</span> <span class="s1">&#39;defender8&#39;</span><span class="p">,</span> <span class="s1">&#39;defender9&#39;</span><span class="p">,</span> <span class="s1">&#39;defender10&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">teams_t</span><span class="p">[</span><span class="s1">&#39;defender&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">teams_t</span><span class="p">[[</span><span class="s1">&#39;midfield1&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield2&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield3&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield4&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield5&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield6&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield7&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield8&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield9&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield10&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield11&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield12&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">teams_t</span><span class="p">[</span><span class="s1">&#39;midfield&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">teams_t</span><span class="p">[[</span><span class="s1">&#39;forward1&#39;</span><span class="p">,</span> <span class="s1">&#39;forward2&#39;</span><span class="p">,</span> <span class="s1">&#39;forward3&#39;</span><span class="p">,</span> <span class="s1">&#39;forward4&#39;</span><span class="p">,</span> <span class="s1">&#39;forward5&#39;</span><span class="p">,</span> <span class="s1">&#39;forward6&#39;</span><span class="p">,</span> <span class="s1">&#39;forward7&#39;</span><span class="p">,</span> <span class="s1">&#39;forward8&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">teams_t</span><span class="p">[</span><span class="s1">&#39;forward&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">teams_t</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div><p><img src="/images/single-blog/uefa-table4.png" alt="smaller_image"></p>
+<!-- raw HTML omitted -->
+<p>Not exactly what I want, so I still have to do some cleaning :-)
+To get the format I am looking for, I use <code>pd.melt</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Now transform columns into rows and keep the content</span>
+<span class="n">teams_m</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">teams_t</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;national_team&#39;</span><span class="p">],</span>
+        <span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;goalkeeper1&#39;</span><span class="p">,</span> <span class="s1">&#39;goalkeeper2&#39;</span><span class="p">,</span> <span class="s1">&#39;goalkeeper3&#39;</span><span class="p">,</span> <span class="s1">&#39;defender1&#39;</span><span class="p">,</span> <span class="s1">&#39;defender2&#39;</span><span class="p">,</span> <span class="s1">&#39;defender3&#39;</span><span class="p">,</span> <span class="s1">&#39;defender4&#39;</span><span class="p">,</span> <span class="s1">&#39;defender5&#39;</span><span class="p">,</span> <span class="s1">&#39;defender6&#39;</span><span class="p">,</span> <span class="s1">&#39;defender7&#39;</span><span class="p">,</span> <span class="s1">&#39;defender8&#39;</span><span class="p">,</span> <span class="s1">&#39;defender9&#39;</span><span class="p">,</span> <span class="s1">&#39;defender10&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;midfield1&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield2&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield3&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield4&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield5&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield6&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield7&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield8&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield9&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield10&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield11&#39;</span><span class="p">,</span> <span class="s1">&#39;midfield12&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;forward1&#39;</span><span class="p">,</span> <span class="s1">&#39;forward2&#39;</span><span class="p">,</span> <span class="s1">&#39;forward3&#39;</span><span class="p">,</span> <span class="s1">&#39;forward4&#39;</span><span class="p">,</span> <span class="s1">&#39;forward5&#39;</span><span class="p">,</span> <span class="s1">&#39;forward6&#39;</span><span class="p">,</span> <span class="s1">&#39;forward7&#39;</span><span class="p">,</span> <span class="s1">&#39;forward8&#39;</span><span class="p">],</span> <span class="n">var_name</span> <span class="o">=</span> <span class="s2">&#34;position&#34;</span><span class="p">,</span> <span class="n">value_name</span> <span class="o">=</span> <span class="s2">&#34;player&#34;</span><span class="p">)</span>
+
+<span class="n">teams_m</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div><p><img src="/images/single-blog/uefa-table5.png" alt="smaller_image"></p>
+<!-- raw HTML omitted -->
+<p>That looks almost like I want it to look! I want to remove the numbers in the position and empty rows (with no player).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Remove numbers from &#34;position&#34; column</span>
+<span class="n">teams_m</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">teams_m</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;\d+&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="c1"># Remove also empty rows with no value in &#34;player&#34;</span>
+<span class="n">teams_m</span> <span class="o">=</span> <span class="n">teams_m</span><span class="p">[</span><span class="n">teams_m</span><span class="p">[</span><span class="s1">&#39;player&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()]</span>
+
+<span class="n">teams_m</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div><p><img src="/images/single-blog/uefa-table6.png" alt="smaller_image"></p>
+<!-- raw HTML omitted -->
+<p>Well, almost there :-) Now I need to split the last string (&ldquo;player&rdquo;) into &ldquo;player_name&rdquo; and &ldquo;home_club.&rdquo;</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">teams_m</span><span class="p">[</span><span class="s1">&#39;home_club&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">teams_m</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;\((.*?)\)&#34;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">teams_m</span><span class="p">[</span><span class="s1">&#39;player_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">teams_m</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;\(.*\)&#34;</span><span class="p">,</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+
+<span class="c1"># And, for the visualization, I also add a &#34;count&#34;</span>
+<span class="n">teams_m</span><span class="p">[</span><span class="s2">&#34;count&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">teams_m</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div><p><img src="/images/single-blog/uefa-table7.png" alt="smaller_image"></p>
+<!-- raw HTML omitted -->
+<p>Et voilà, that&rsquo;s my data frame!</p>
+<h3 id="getting-the-visualization">Getting the visualization</h3>
+<p>Now the fun part of visualization starts :-) I follow <a href="https://medium.com/kenlok/how-to-create-sankey-diagrams-from-dataframes-in-python-e221c1b4d6b0">this approach</a>, which also provides the great function <code>genSankey</code> below.</p>
+<details>
+  <summary><code>getSankey</code> function provided in <a href="https://medium.com/kenlok/how-to-create-sankey-diagrams-from-dataframes-in-python-e221c1b4d6b0">this post</a></summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">genSankey</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">cat_cols</span><span class="o">=</span><span class="p">[],</span> <span class="n">value_cols</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Sankey Diagram&#39;</span><span class="p">):</span>
+    <span class="c1"># maximum of 6 value cols -&gt; 6 colors</span>
+    <span class="n">colorPalette</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#4B8BBE&#39;</span><span class="p">,</span> <span class="s1">&#39;#306998&#39;</span><span class="p">,</span> <span class="s1">&#39;#FFE873&#39;</span><span class="p">,</span> <span class="s1">&#39;#FFD43B&#39;</span><span class="p">,</span> <span class="s1">&#39;#646464&#39;</span><span class="p">]</span>
+    <span class="n">labelList</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">colorNumList</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">catCol</span> <span class="ow">in</span> <span class="n">cat_cols</span><span class="p">:</span>
+        <span class="n">labelListTemp</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">catCol</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
+        <span class="n">colorNumList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">labelListTemp</span><span class="p">))</span>
+        <span class="n">labelList</span> <span class="o">=</span> <span class="n">labelList</span> <span class="o">+</span> <span class="n">labelListTemp</span>
+
+    <span class="c1"># remove duplicates from labelList</span>
+    <span class="n">labelList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">dict</span><span class="o">.</span><span class="n">fromkeys</span><span class="p">(</span><span class="n">labelList</span><span class="p">))</span>
+
+    <span class="c1"># define colors based on number of levels</span>
+    <span class="n">colorList</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">colorNum</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">colorNumList</span><span class="p">):</span>
+        <span class="n">colorList</span> <span class="o">=</span> <span class="n">colorList</span> <span class="o">+</span> <span class="p">[</span><span class="n">colorPalette</span><span class="p">[</span><span class="n">idx</span><span class="p">]]</span> <span class="o">*</span> <span class="n">colorNum</span>
+
+    <span class="c1"># transform df into a source-target pair</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cat_cols</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">sourceTargetDf</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="n">cat_cols</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">cat_cols</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">value_cols</span><span class="p">]]</span>
+            <span class="n">sourceTargetDf</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">,</span> <span class="s1">&#39;target&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">tempDf</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="n">cat_cols</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">cat_cols</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">value_cols</span><span class="p">]]</span>
+            <span class="n">tempDf</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">,</span> <span class="s1">&#39;target&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">]</span>
+            <span class="n">sourceTargetDf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">sourceTargetDf</span><span class="p">,</span> <span class="n">tempDf</span><span class="p">])</span>
+        <span class="n">sourceTargetDf</span> <span class="o">=</span> <span class="n">sourceTargetDf</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;source&#39;</span><span class="p">,</span> <span class="s1">&#39;target&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;count&#39;</span><span class="p">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+    <span class="c1"># add index for source-target pair</span>
+    <span class="n">sourceTargetDf</span><span class="p">[</span><span class="s1">&#39;sourceID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sourceTargetDf</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">labelList</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+    <span class="n">sourceTargetDf</span><span class="p">[</span><span class="s1">&#39;targetID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sourceTargetDf</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">labelList</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+    <span class="c1"># creating the sankey diagram</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;sankey&#39;</span><span class="p">,</span>
+        <span class="n">node</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">pad</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+            <span class="n">thickness</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+            <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+                <span class="n">color</span><span class="o">=</span><span class="s2">&#34;black&#34;</span><span class="p">,</span>
+                <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span>
+            <span class="p">),</span>
+            <span class="n">label</span><span class="o">=</span><span class="n">labelList</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">colorList</span>
+        <span class="p">),</span>
+        <span class="n">link</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">source</span><span class="o">=</span><span class="n">sourceTargetDf</span><span class="p">[</span><span class="s1">&#39;sourceID&#39;</span><span class="p">],</span>
+            <span class="n">target</span><span class="o">=</span><span class="n">sourceTargetDf</span><span class="p">[</span><span class="s1">&#39;targetID&#39;</span><span class="p">],</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">sourceTargetDf</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="n">layout</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span>
+        <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">10</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="n">fig</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">data</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">fig</span>
+</code></pre></div>
+</details>
+<p>The function takes four arguments:</p>
+<ul>
+<li><code>df</code> - the data frame</li>
+<li><code>cat_cols</code> - the columns that you want to visualize in your Sankey diagram (for me it&rsquo;s <code>'player_name','home_club', 'national_team'</code>)</li>
+<li><code>value_cols</code> - to define how thick the Sankeys are</li>
+<li><code>title</code> - the title of your Sankey</li>
+</ul>
+<p>I could plot the Sankey as it is using</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Generate figure</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">genSankey</span><span class="p">(</span><span class="n">teams_m</span><span class="p">,</span> <span class="n">cat_cols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;player_name&#39;</span><span class="p">,</span><span class="s1">&#39;home_club&#39;</span><span class="p">,</span> <span class="s1">&#39;national_team&#39;</span><span class="p">],</span> <span class="n">value_cols</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Composition of national teams&#39;</span><span class="p">)</span>
+
+<span class="c1"># Visualize it</span>
+<span class="n">ploty</span><span class="o">.</span><span class="n">offline</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sankey</span><span class="p">,</span> <span class="n">validate</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</code></pre></div><p>But this would lead to an overload of Sankeys &ndash; and it might be hard to see anything. Python also has a way to make your results interactively accessible using <a href="https://ipywidgets.readthedocs.io/en/latest/index.html"><code>ipywidgets</code></a>. I mainly follow <a href="https://blog.ouseful.info/2016/12/29/simple-view-controls-for-pandas-dataframes-using-ipython-widgets/">this guide</a> to visualize my plot.</p>
+<p>The code below produces an interactive plot to pick a national team and see which players are part of which club and how the clubs themselves contribute to the national team.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Select the items that I want to have as a selection</span>
+<span class="n">items</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">teams_m</span><span class="p">[</span><span class="s1">&#39;national_team&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+<span class="c1"># Define the `view` function</span>
+<span class="c1"># This function basically takes care of the visualization for me</span>
+<span class="k">def</span> <span class="nf">view</span><span class="p">(</span><span class="n">Team</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">teams_m</span><span class="p">[</span><span class="n">teams_m</span><span class="p">[</span><span class="s1">&#39;national_team&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">Team</span><span class="p">]</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">genSankey</span><span class="p">(</span><span class="n">df</span><span class="p">,</span>
+                    <span class="n">cat_cols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;player_name&#39;</span><span class="p">,</span><span class="s1">&#39;home_club&#39;</span><span class="p">,</span> <span class="s1">&#39;national_team&#39;</span><span class="p">],</span>
+                    <span class="n">value_cols</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span>
+                    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Composition of national teams&#39;</span><span class="p">)</span>
+    <span class="n">iplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Define the selection widget</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Select</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">items</span><span class="p">)</span>
+
+<span class="c1"># And make it interactive</span>
+<span class="n">interactive</span><span class="p">(</span><span class="n">view</span><span class="p">,</span> <span class="n">Team</span><span class="o">=</span><span class="n">w</span><span class="p">)</span>
+</code></pre></div><p>And now I can get to the most interesting part - and the reason why I initially started this little project: from which club do most players in the German national team come from? I more or less frequently have the pleasure to watch football on Saturdays, and watching the match by the German team felt as if I was watching a Bayern Munich match. And in fact - I was not off! Eight players (and that&rsquo;s almost 1/3 of the entire national team) come from this club!</p>
+<p><img src="/images/single-blog/viz.gif" alt="small_image"></p>
+<!-- raw HTML omitted -->
+<p>If you want to visualize the networks yourself, just run the <a href="https://github.com/cosimameyer/uefa-networks-2020/">Juypter notebook</a>.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+	 		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	 <div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Sitemap</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://cosimameyer.com/privacy/privacy">Privacy &amp; Policy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://cosimameyer.com/privacy/terms">Terms</a></li>
+						
+					</ul>
+				</div>
+			</div>
+
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All right reserved copyright © Cosima Meyer 2022</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/cosimameyer/"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://twitter.com/cosima_meyer"><i
+									class="fa fa-twitter-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://github.com/cosimameyer"><i
+									class="fa fa-github"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="https://cosimameyer.com/plugins/jQuery/jquery.min.js"></script>
+<script src="https://cosimameyer.com/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://cosimameyer.com/plugins/slick/slick.min.js"></script>
+<script src="https://cosimameyer.com/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://cosimameyer.com/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://cosimameyer.com/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://cosimameyer.com/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://cosimameyer.com/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://cosimameyer.com/js/form-handler.min.js"></script>
+
+<script src="https://cosimameyer.com/js/script.min.js"></script><div id="cookie-notice">
+<center><span>I took great care to disable all third party cookies and scripts. However, there might be some cookies left which would like to be used.</span>
+<a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
+<a id="cookie-notice-deny" class="btn btn-primary btn-sm">Deny</a>
+<a href="/privacy/privacy/" class="btn btn-primary btn-sm">More info</a>
+</center></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-option')=='true') {
+        
+        
+        function loadScriptAsync(scriptSrc, callback) {
+            if (typeof callback !== 'function') {
+                throw new Error('Not a valid callback for async script load');
+            }
+            var script = document.createElement('script');
+            script.onload = callback;
+            script.src = scriptSrc;
+            document.head.appendChild(script);
+        }
+
+        
+
+        
+        loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX', function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true }); 
+        })
+
+        
+    } else if (readCookie('cookie-notice-option')!='false'){
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-option','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+    document.getElementById('cookie-notice-deny').addEventListener("click",function() {
+        createCookie('cookie-notice-option','false',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
+
+
+  
+  <script src="/js/clipboard.min.js"></script>
+
+</body>
+
+</html>

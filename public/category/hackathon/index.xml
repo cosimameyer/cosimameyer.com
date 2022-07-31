@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hackathon on Cosima Meyer</title>
+    <link>https://cosimameyer.com/category/hackathon/</link>
+    <description>Recent content in hackathon on Cosima Meyer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://cosimameyer.com/category/hackathon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HackZurich: CodeVsCovid19</title>
+      <link>https://cosimameyer.com/post/2020-03-30-hackzurich-coro2vid-19/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-03-30-hackzurich-coro2vid-19/</guid>
+      <description>As you know, I love hackathons. And what better opportunity of joining one of them when you can generate something that is essentially helpful?
+In light of the current Covid19 crisis, HackZurich organized the CodeVsCovid19 hackathon and brought together more than 3,000 motivated people to work on their projects for 72 hours. For this, Dennis Hammerschmidt and I combined forces and generated Coro2vid-19 &amp;ndash; a search engine that analyzes 22,000 academic articles from 1955 to 2020 that are related to coronavirus.</description>
+    </item>
+    
+  </channel>
+</rss>

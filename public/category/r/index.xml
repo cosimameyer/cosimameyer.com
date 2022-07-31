@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Cosima Meyer</title>
+    <link>https://cosimameyer.com/category/r/</link>
+    <description>Recent content in R on Cosima Meyer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cosimameyer.com/category/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New features in {overviewR}</title>
+      <link>https://cosimameyer.com/post/new-features-in-overviewr/</link>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/new-features-in-overviewr/</guid>
+      <description>overviewR (v 0.0.10) is on CRAN and comes with new features 🚀
+The package is meant to serve as a Swiss army knife for exploratory data analysis. The basic functions allow you to investigate sample coverage across different time points, missing values across your variables, and also the overlap among two data sets.
+Here are the changes in a nutshell:
+  Multiple time arguments Colors in overview_plot Change dot size in overview_plot Visuale cross plots with overview_crossplot Compare two datasets directly Use data.</description>
+    </item>
+    
+    <item>
+      <title>R-Ladies Cologne joins the family</title>
+      <link>https://cosimameyer.com/post/new-r-ladies-chapter-cologne/</link>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/new-r-ladies-chapter-cologne/</guid>
+      <description>R-Ladies Cologne is a new R-Ladies chapter which was founded in September 2021. It joins R-Ladies&#39; mission to promote and support gender equality in the field. Together with Luciana and Gabe, we have hosted three events so far.
+Kicking it off, we had an exciting roundtable with Alison Hill, Ana Carolina Leote, Angélica Becerra and Nina Hauser talking about empowering women in data (science). Contributing with their diverse backgrounds, we discussed perspectives of working in different fields, challenges and wins in the professional life, the importance of mentoring, how to find a good mentor, and much more.</description>
+    </item>
+    
+    <item>
+      <title>Teaching stats and programming</title>
+      <link>https://cosimameyer.com/post/teaching-stats-and-programming/</link>
+      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/teaching-stats-and-programming/</guid>
+      <description>I am thrilled to share that my article &amp;ldquo;Bringing the World to the Classroom: Teaching Statistics and Programming in a Project-Based Setting&amp;rdquo; is published in PS: Political Science and Politics as an open-access article. I set up and tested the concept while teaching programming and statistics classes. It gives instructors a blueprint for teaching stats and programming in a project-based setting. It also shows how this can be applied in a virtual format or as a block seminar and how to integrate open science and peer group support practices in this teaching setting.</description>
+    </item>
+    
+    <item>
+      <title>Adding your Hugo Academic blog to R-bloggers and Python-bloggers</title>
+      <link>https://cosimameyer.com/post/adding-your-hugo-academic-blog-to-r-bloggers-and-python-bloggers/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/adding-your-hugo-academic-blog-to-r-bloggers-and-python-bloggers/</guid>
+      <description>When you have your website up and running and probably already started a little blog about data science related topics, you may want to share it with an even broader community. Here, R-bloggers and Python-bloggers are a great venue!
+Both websites publish a collection of R and Python-related RSS feeds (amongst other, Methods Bites and the cynkra blog are also part of it!). To stay up to date, you can sign up on their newsletters (R-bloggers, Python-bloggers) or follow them on Twitter (R-bloggers, Python-bloggers) and Facebook (R-bloggers, Python-bloggers).</description>
+    </item>
+    
+    <item>
+      <title>How to set up a working HTTPS encryption with Netlify, blogdown, and rbind.io</title>
+      <link>https://cosimameyer.com/post/how-to-set-up-a-working-https-encryption/</link>
+      <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/how-to-set-up-a-working-https-encryption/</guid>
+      <description>If you host a website, it is worth considering using the secure HTTPS encryption instead of HTTP (also in light of the GDPR).1 As someone who is less experienced in setting this up, this can be challenging, particularly if you use a domain that you do not personally own. This post is meant to give a (really) short step-by-step guide for those in a similar situation.
+The situation I build my homepage using the wonderful blogdown package with a customized version of the Hugo Academic theme.</description>
+    </item>
+    
+    <item>
+      <title>How to adjust labels in {flashlight::light_breakdown} plots</title>
+      <link>https://cosimameyer.com/post/how-to-adjust-labels-in-flashlight-light-breakdown-plots/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/how-to-adjust-labels-in-flashlight-light-breakdown-plots/</guid>
+      <description>To get a better (and more substantive) understanding of models&#39; black boxes, breakdown plots are extremely helpful and intuitive. The package {flashlight} makes generating these plots straightforward &amp;ndash; but it has one shortcoming: It&amp;rsquo;s not intuitive how to adjust the labels of your features (or at least I couldn&amp;rsquo;t find an easy answer). This post shows a workaround that I used and I hope it helps others to save some time googling for a solution.</description>
+    </item>
+    
+    <item>
+      <title>Personalize your README on GitHub</title>
+      <link>https://cosimameyer.com/post/personalize-your-readme-on-github/</link>
+      <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/personalize-your-readme-on-github/</guid>
+      <description>Is there anything better than having a personalized landing page that guides the visitors and allows you to point them towards what really matters? It&amp;rsquo;s hard to say yes. Luckily, GitHub offers you exactly this possibility and here&amp;rsquo;s a short guide how I set up my own (personalized) README on GitHub in three steps.1
+ Create a new public repository with a README.md in its root.2 The repository should have the same name as your GitHub username.</description>
+    </item>
+    
+    <item>
+      <title>overviewR comes with new functions</title>
+      <link>https://cosimameyer.com/post/overviewr-comes-with-new-functions/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/overviewr-comes-with-new-functions/</guid>
+      <description>New year, betteroverviewR! It comes with some brand new functions and extensions that make visualizing your sample more beautiful (and easy) than ever!
+Most of the functions are currently only available in the development version that can be downloaded from GitHub but we will submit them to CRAN shortly.
+So, what are the major changes and how do they work?
+overview_plot Our old (and beloved) function overview_plot git better. It allows you to add colors now!</description>
+    </item>
+    
+    <item>
+      <title>How to implement a redirect from your old GitHub page to your new website</title>
+      <link>https://cosimameyer.com/post/implement-a-redirect-from-your-old-github-page-to-your-new-website/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/implement-a-redirect-from-your-old-github-page-to-your-new-website/</guid>
+      <description>Before hosting my website with netlify (which makes hosting so smooth!), I deployed my website manually using GitHub pages for quite some time. GitHub Pages is a great way to host a (more or less) static website. But if you are like me and want to update your website every now and then, it can become challenging, and that&amp;rsquo;s why I&amp;rsquo;m more than happy that I switched. However, to ensure that people who only have my old website (probably because I forgot to change it somewhere) are directed automatically to my new up-to-date website, I wanted to implement a redirect.</description>
+    </item>
+    
+    <item>
+      <title>Taking text data to the next level - Unsupervised and supervised approaches in NLP @R-Ladies Bergen</title>
+      <link>https://cosimameyer.com/post/taking-text-data-to-the-next-level-unsupervised-and-supervised-approaches-in-nlp-r-ladies-bergen/</link>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/taking-text-data-to-the-next-level-unsupervised-and-supervised-approaches-in-nlp-r-ladies-bergen/</guid>
+      <description>I had the great pleasure to talk about NLP at R-Ladies Bergen yesterday. Thanks to everyone for making this event so much fun! The talk covers both unsupervised and supervised approaches and introduces you to quanteda, an R package that allows you to perform NLP tasks.
+All material can be accessed here (including slides, raw and deployed code as well as the recording). The talk itself is heavily based on this blogpost.</description>
+    </item>
+    
+    <item>
+      <title>How to integrate a typing effect in Hugo Academic</title>
+      <link>https://cosimameyer.com/post/how-to-integrate-a-typing-effect-in-hugo-academic/</link>
+      <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/how-to-integrate-a-typing-effect-in-hugo-academic/</guid>
+      <description>Have you ever wondered how to integrate a typing effect in your Hugo Academic theme easily? It shouldn&amp;rsquo;t be too difficult. That&amp;rsquo;s also what I thought when I started with it. One quick disclosure before getting started: I&amp;rsquo;ve never been professionally trained in HTML, CSS, or JS. So for someone more proficient in this field, it might seem to be a straightforward task. Here&amp;rsquo;s my approach that eventually worked for me:</description>
+    </item>
+    
+    <item>
+      <title>Helpful R commands</title>
+      <link>https://cosimameyer.com/post/helpful-r-commands/</link>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/helpful-r-commands/</guid>
+      <description>This blog post will be regularly updated and is a &amp;ldquo;brain dump&amp;rdquo; for all the cool commands that I came across. I hope it helps me to remember them and can also serve others as a repository 👩🏼‍💻
+Frequency tables A next step in our overviewR package will be the implementation of a good-looking and easy to access frequency tables and plots (something that I use all the time). Until we have a ready-to-print version in overviewR, here is a snippet of tidyverse code that can easily generate them :)</description>
+    </item>
+    
+    <item>
+      <title>How to structure your data workflow efficiently using R</title>
+      <link>https://cosimameyer.com/post/how-to-structure-your-data-workflow-efficiently-using-r/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/how-to-structure-your-data-workflow-efficiently-using-r/</guid>
+      <description>The positive aspects of a structured data workflow are at hand: You will always know where your things are &amp;ndash; no matter in which project you are currently working. If you stick to one work frame, you can also access your projects later and easily maneuver your way around. If you end up convincing your collaborators from your workflow or &amp;ndash; if you at least introduce them to yours &amp;ndash; they will also have a more comfortable life.</description>
+    </item>
+    
+    <item>
+      <title>Update of overviewR with new functions!</title>
+      <link>https://cosimameyer.com/post/2020-08-24-overviewr-new-release/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-08-24-overviewr-new-release/</guid>
+      <description>We have updated (and extended) overviewR with three new functions:
+ overview_plot overview_heat overview_na  You can also access a detailed overview of all functions in the CheatSheet: 
+overview_plot overview_plot illustrates the information that is generated in overview_table in a ggplot graphic. All scope objects (e.g., countries) are listed on the y-axis where horizontal lines indicate the coverage across the entire time frame of the data (x-axis). This helps to spot gaps in the data for specific scope objects and outlines at what time point they occur.</description>
+    </item>
+    
+    <item>
+      <title>ShinyApp: Conflict elections in Afghanistan 2019</title>
+      <link>https://cosimameyer.com/post/2020-08-10-shinyapp-conflict-elections/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-08-10-shinyapp-conflict-elections/</guid>
+      <description>ShinyApps are an amazing tool to make research results accessible to a broad audience. This is exactly what talk at CorrelAid’s Open Online Data Meetup is about. The app on conflict elections in Afghanistan is a spin-off of a co-authored publication with Dennis Hammerschmidt that analyzes patterns of violence during conflict elections in Afghanistan in 2005.
+While the geo-spatially disaggregated data for the original publication is based on UCDP data, this ShinyApp is based on ACLED data and shows how violence that includes the Taliban develops starting 180 days up to the election in 2019.</description>
+    </item>
+    
+    <item>
+      <title>overviewR - Easily Extracting Information About Your Data</title>
+      <link>https://cosimameyer.com/post/2020-07-02-overviewr/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-07-02-overviewr/</guid>
+      <description>I am super proud to announce that Dennis Hammerschmidt&amp;rsquo;s and my first package is on CRAN!
+overviewR is a small but neat tool for everyone who wants to get a quick glance at their data set. A detailed vignette with all its functions is available here. 👩‍💻</description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday - Broadway</title>
+      <link>https://cosimameyer.com/post/2020-05-28-tidytuesday-broadway/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-05-28-tidytuesday-broadway/</guid>
+      <description>This is a late version of a TidyTuesday. I started working on it a while ago and could not finish it &amp;ndash; but here you go! The TidyTuesday was about Broadway musicals with a dataset by Playbill. I plotted an arc diagram with ggraph visualizing how long the musical was played, coloring the top 6 musicals based on the weekly gross the plays generated. I colored those six musicals with colors from their original logo.</description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday - GDPR violations</title>
+      <link>https://cosimameyer.com/post/2020-04-22-tidytuesday-gdpr/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-04-22-tidytuesday-gdpr/</guid>
+      <description>When the GDPR regulations went into full force in May 2018, it came a bit like a shock. While people tried to make everything as GDPR-proof as possible, it felt as if no one really knew what is enough and how hard how hard possible fines would hit. I really enjoyed this week&amp;rsquo;s TidyTuesday to explore the data to answer the question.
+I generated an annual map for the countries in the data and colored it by the cumulated fine (standardized by the cases per country).</description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday - Tour de France</title>
+      <link>https://cosimameyer.com/post/2020-04-13-tidytuesday-tdf/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-04-13-tidytuesday-tdf/</guid>
+      <description>It&amp;rsquo;s time for TidyTuesday again! As a kid, when Lance Armstrong and Jan Ullrich were competing over the title, I would spend a good part of my summer holidays watching the Tour de France and being impressed by the fascinating and (fast changing) landscape the stages have to offer.
+This week&amp;rsquo;s sankey plot shows the distribution of stage winners by stage type, distance, and nationality. And, what do we get out of it?</description>
+    </item>
+    
+    <item>
+      <title>HackZurich: CodeVsCovid19</title>
+      <link>https://cosimameyer.com/post/2020-03-30-hackzurich-coro2vid-19/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-03-30-hackzurich-coro2vid-19/</guid>
+      <description>As you know, I love hackathons. And what better opportunity of joining one of them when you can generate something that is essentially helpful?
+In light of the current Covid19 crisis, HackZurich organized the CodeVsCovid19 hackathon and brought together more than 3,000 motivated people to work on their projects for 72 hours. For this, Dennis Hammerschmidt and I combined forces and generated Coro2vid-19 &amp;ndash; a search engine that analyzes 22,000 academic articles from 1955 to 2020 that are related to coronavirus.</description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday - Traumatic Brain Injury</title>
+      <link>https://cosimameyer.com/post/2020-03-29-tidytuesday-cdc/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-03-29-tidytuesday-cdc/</guid>
+      <description>This week&amp;rsquo;s TidyTuesday was all about traumatic brain injuries with data by the CDC. Dennis Hammerschmidt and I looked at how different levels of severity in traumatic brain injuries change over time and across military services. We adjusted the theme so that it fits CDC&amp;rsquo;s color scheme and animated our graphs using gganimate.
+The code is available on my GitHub. You also find a larger version of the figure here.</description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday - The Office</title>
+      <link>https://cosimameyer.com/post/2020-03-20-tidytuesday-office/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-03-20-tidytuesday-office/</guid>
+      <description>And here comes the next edition of TidyTuesday. This week was all about the series The Office. The schrute package, were the data was partially based on, offers all scripts from the writers and I was wondering if also The Office writers have their pet words that they frequently use. I plotted the top10 words for four different writers (writing teams): The script writers from the original British version (Ricky Gervais, Stephen Merchant, and Greg Daniels), Steve Carell (who plays Michael Scott), Benjamin Novak (who plays Ryan Howard), and Mindy Kaling (Kelly Kapoor in the series).</description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday - Tuition fees</title>
+      <link>https://cosimameyer.com/post/2020-03-10-tidytuesday-tuition/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-03-10-tidytuesday-tuition/</guid>
+      <description>Playing around with the data for TidyTuesday is like joining a mini hackathon — lots of fun, some manageable challenges, and so many new insights! I wonder why I have never done it before. So, this plot is my first try and my contribution to the TidyTuesday on tuition fees.
+I was wondering whether it really pays off going to an expensive school — and, if so, whether the type of school (public, private, Ivy league, Top10 ranked) makes a difference.</description>
+    </item>
+    
+    <item>
+      <title>Methods Bites - Efficient Data Management in R</title>
+      <link>https://cosimameyer.com/post/2020-02-18-methods-bites-efficient-data-management-in-r/methods-bites-efficient-data-management-in-r/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2020-02-18-methods-bites-efficient-data-management-in-r/methods-bites-efficient-data-management-in-r/</guid>
+      <description>This blog post (together with Denis Cohen, Marcel Neunhoeffer, and Oliver Rittmann) is all about efficient data management! It gives you a quick intro into how to set up a possible workflow in R and continues with a comparison between base R and the tidyverse, and shows you how to write more complex functions in R.</description>
+    </item>
+    
+    <item>
+      <title>Methods Bites - Advancing Text Mining with R and quanteda</title>
+      <link>https://cosimameyer.com/post/2019-10-17-advancing-text-mining/</link>
+      <pubDate>Thu, 17 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2019-10-17-advancing-text-mining/</guid>
+      <description>Everyone is talking about text analysis. Is it puzzling that this data source is so popular right now? Actually no. Many of our data sets in social sciences rely on (hand-)coded textual information. If you want to learn more about how you an automatically extract information from textual data and what you can then do with it, have a look at the newest blog post on MZES Methods Bites that I co-authored with Cornelius Puschmann.</description>
+    </item>
+    
+    <item>
+      <title>Teaching material: Data Wrangling and Data Management in R</title>
+      <link>https://cosimameyer.com/post/2019-09-01-teaching-rstats/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/2019-09-01-teaching-rstats/</guid>
+      <description>You can now access my teaching material for the course Complexities in analyzing conflicts: Data Wrangling and Data Management in R in a bookdown format here.
+It walks you through an introduction to R, basic steps when it comes to wrangling and data manipulation, merging, and data visualization using the tidyverse.</description>
+    </item>
+    
+    <item>
+      <title>Methods Bites - Data Visualization with R</title>
+      <link>https://cosimameyer.com/post/data-visualization-with-r/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosimameyer.com/post/data-visualization-with-r/</guid>
+      <description>This blog post kicks off our new blog Methods Bites!
+The blog post by Richard Traunmüller and me provides illustrative examples from Richard Traunmüller’s one-day workshop in the MZES Social Science Data Lab in Fall 2016. It walks you through several ways of visualizing your data effectively and gives you some neat code lines that are ready to (re)use for your own projects!</description>
+    </item>
+    
+  </channel>
+</rss>
