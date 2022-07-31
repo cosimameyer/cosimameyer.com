@@ -8,7 +8,7 @@ postImage: images/single-blog/rladies-pyladies.jpg
 featureImage: images/single-blog/rladies-pyladies.jpg
 ---
 
-Together with [PyLadies Tunis](https://twitter.com/pyladiestunis) and [PyLadies Munich](https://twitter.com/pyladiesmunich) we kicked off a fantastic event last Wednesday - and I'm still overwhelmed and touched by the impressions. 
+Together with [PyLadies Tunis](https://twitter.com/pyladiestunis) and [PyLadies Munich](https://twitter.com/pyladiesmunich) we kicked off a fantastic event last Wednesday - and I'm still overwhelmed and touched by the impressions.
 
 When I started the [R-Ladies Cologne](https://twitter.com/rladies_cologne) chapter in 2021, I envisioned an event that seeks to bring both R and Python communities together. From my experience, both communities are so generous and helpful and I wanted to overcome the (why the heck this ever started existing) "divide" between both languages. Instead, I wanted to show how great multilingualism can be and how Python and R can complement each other. And I believe that, with the help of our amazing speakers [Rhian Davis](https://twitter.com/StatsRhian) and [Deena Gergis](https://www.linkedin.com/in/deena-gergis/), we made a step towards this direction.[^1] If you didn't have a chance to attend our event, here's a short wrap-up that hopefully inspires you ✨
 
