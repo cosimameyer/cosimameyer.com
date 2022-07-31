@@ -66,4 +66,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps 
           local-dir: ./public/
-          server-dir: /web/
+          server-dir: /web/cosimameyer.com/
