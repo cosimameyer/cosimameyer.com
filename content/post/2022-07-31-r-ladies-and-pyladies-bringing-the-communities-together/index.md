@@ -3,7 +3,7 @@ title: R-Ladies & PyLadies - Bringing the Communities Together
 author: Cosima
 date: '2022-07-31'
 slug: r-ladies-and-pyladies-bringing-the-communities-together
-categories: [R, Python, Python-post, R-post]
+category: [R, Python, Python-post, R-post]
 postImage: images/single-blog/rladies-pyladies.jpg
 featureImage: images/single-blog/rladies-pyladies.jpg
 ---
