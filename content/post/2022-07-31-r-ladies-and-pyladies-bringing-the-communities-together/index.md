@@ -34,7 +34,7 @@ If you want to revisit them yourself, here are the questions and answers (and a 
 
 {{<detail-tag "What are (originally) specific IDEs for Python and R?">}} ![smaller_image](/images/single-blog/ide.png) While you can also work in other languages in RStudio, it was originally [developed for R](https://www.rstudio.com/products/rstudio/) (as the name tells, but it will be soon renamed to [Posit](https://www.rstudio.com/blog/rstudio-is-becoming-posit/) - signalling it's inclusiveness 💜) {{</detail-tag>}}</br>
 
-{{<detail-tag "Which packages can you use to call the other language?">}} ![smaller_image](/images/single-blog/call.png) If you want to see `RPy2` in action, check out the question with the Jupyter notebook - we have a demo there!{{</detail-tag>}}</br> 
+{{<detail-tag "Which packages can you use to call the other language?">}} ![smaller_image](/images/single-blog/call.png) If you want to see `RPy2` in action, check out the question with the Jupyter notebook - we have a demo there!{{</detail-tag>}}</br>
 
 {{<detail-tag "How do you assign objects in R and Python? (Good coding style 😉)">}} ![smaller_image](/images/single-blog/assigned.png) Teams may have varying preferences and working guidelines, but according to [Hadley Wickham's style guide](http://adv-r.had.co.nz/Style.html), it's preferred to use the `<-` operator for assignments in R (although `=` also works in R). {{</detail-tag>}}</br>
 
