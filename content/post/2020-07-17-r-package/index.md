@@ -2,7 +2,7 @@
 title: 'Methods Bites - How to write your own R package and publish it on CRAN'
 summary: ''
 tags: []
-categories: [R, package, Methods Bites]
+category: [R, package, Methods Bites]
 date: "2020-07-17"
 featured: false
 draft: false
