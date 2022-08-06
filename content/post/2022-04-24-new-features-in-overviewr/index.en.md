@@ -16,7 +16,7 @@ projects: []
 
 [`overviewR`](https://cosimameyer.github.io/overviewR/) (v 0.0.10) is on CRAN and comes with new features 🚀 
 
-The package is meant to serve as a Swiss army knife for exploratory data analysis. The basic functions allow you to investigate sample coverage across different time points, missing values across your variables, and also the overlap among two data sets. 
+The package is meant to serve as a Swiss army knife for exploratory data analysis. The basic functions allow you to investigate sample coverage across different time points, missing values across your variables, and also the overlap among two data sets.
 
 Here are the changes in a nutshell:
 
