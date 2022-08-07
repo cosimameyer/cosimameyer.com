@@ -10,7 +10,9 @@ featureImage: images/single-blog/hero_section.png
 Code: True
 ---
 
-New year, new website? Well, not really. But when starting to set up and move [RAM's website](https://www.ram-ev.de), I decided that it was probably also time for a fresh look on my own little blog. As always, coming up with *the* perfect theme and moving everything to your new and fully polished website takes longer than expected. The main reason is that it is hard to settle on *the* perfect theme. Spoiler alert, there is no such thing. At least not for me. It *always* involves tweaking and learning new things in JS, CSS, HTML, and all these things I have never been trained in before. But isn't learning new things part of the fun? Well, I collected all the essential tweaks that I made to the [Hugo Portio theme](https://github.com/StaticMania/portio-hugo) to make it a good fit for me. I hope my future self (and hopefully also someone else) will find it useful when looking for an answer or some ideas on how to tweak the theme.
+New year, new website? Well, not really. But when starting to set up and move [RAM's website](https://www.ram-ev.de), I decided that it was probably also time for a fresh look on my own little blog. As always, coming up with *the* perfect theme and moving everything to your new and fully polished website takes longer than expected. The main reason is that it is hard to settle on *the* perfect theme. Spoiler alert, there is no such thing. At least not for me. It *always* involves tweaking and learning new things in JS, CSS, HTML, and all these things I have never been trained in before.
+
+I collected all the essential tweaks that I made to the [Hugo Portio theme](https://github.com/StaticMania/portio-hugo) to make it a good fit for me. I hope my future self (and hopefully also someone else) will find it useful when looking for an answer or some ideas on how to tweak the theme.
 
 {{< toc >}}
 
@@ -343,13 +345,26 @@ I prefer using HTML code to adjust the image size and leave the `alt` parameter 
 
 ---
 
-## Add Clipboard Buttons to the code
+## Add clipboard buttons to the code
 
 I like the integration that GitHub offers - to follow this example, I used [Justin's tutorial](https://digitaldrummerj.me/hugo-add-copy-code-snippet-button/) and implemented a "Copy" button that shows up next to code lines.
 
 ```python
 print('This is a great example how to copy your code')
 ```
+
+---
+
+## Setting up an RSS feed of your website
+
+An RSS feed can come in handy if you want to publish the content of your blog, [for instance on R-bloggers](post/adding-your-hugo-academic-blog-to-r-bloggers-and-python-bloggers/).
+For Hugo Portio, you need to add an `rss.xlm` file and tweak it a bit. But that ist straightforward:
+
+1. Copy and paste the content of [this file](https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml) (it's Hugo's default RSS settings)
+2. Store it under `layouts/_default/rss.xml ` (if there is no file, you need to create this one).
+3. Exchange one line. Instead of `<description>{{ .Summary | html }}</description>`, we want `<description>{{ .Content | html }}</description>` (it's at the very bottom of the file). This way, you RSS feed doesn't show an excerpt but the full text.
+
+And that's all you need 🥳
 
 ---
 

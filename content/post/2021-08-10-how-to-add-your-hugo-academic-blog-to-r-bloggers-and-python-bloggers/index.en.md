@@ -39,7 +39,14 @@ When googling, I found various solutions (see for instance [here](https://lmyint
   taxonomyTerm = [ "HTML", "RSS" ]
 ```
 
-In my case, there was not much more I needed to change (anymore).[^1] 
+For the Hugo Academic theme, there was not much more I needed to change (anymore).[^1] When switching to [Hugo Portio](/post/2022-04-16-how-to-adapt-hugo-portio-to-a-more-personal-website/), I had to add an `rss.xlm` file and tweak it a bit. But that was straightforward:
+
+1. Copy and paste the content of [this file](https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml) (it's Hugo's default RSS settings)
+2. Store it under `layouts/_default/rss.xml ` (if there is no file, you need to create this one).
+3. Exchange one line. Instead of `<description>{{ .Summary | html }}</description>`, we want `<description>{{ .Content | html }}</description>` (it's at the very bottom of the file). This way, you RSS feed doesn't show an excerpt but the full text.
+
+And that's all you need 🥳
+
 
 I categorize all blog posts (as I also have non-R/Python-related posts and want to keep R and Python-bloggers clean and tidy). It's also in their policies where both feeds request to feed in only ["meaty" posts and to avoid submitting short snippets](https://www.r-bloggers.com/add-your-blog/). To access all R and Python-related posts, I use the categories `R-post` and `Python-post`. I sometimes make short (data science) posts that link to new Methods Bites posts, for instance, or also have a [blog post with helpful code snippets](https://cosimameyer.rbind.io/post/helpful-r-commands/), which I do not want to include in the feeds. 
 
