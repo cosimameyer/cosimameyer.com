@@ -21,7 +21,7 @@ If you are interested, there are multiple posts that I all read beforehand about
 But let's start from the beginning ⭐ It's easy and everyone can become a curator who [meets the requirements described here](https://guide.rladies.org/rocur/about/). You can either be nominated or sign up by yourself - just hop over to the [R-Ladies RoCur Guide](https://guide.rladies.org/rocur/about/) where you find all the information and the sign-up info.
 
 ------
-### How do you prepare?
+### How do I prepare?
 
 #### Thinking about topics and preparing tweets
 This definitely depends on your personality and your time flexibility. I knew that my work weeks would be probably really busy which leaves me with little time for other things (and preparing good tweets takes time for me) and I also like to have things sorted beforehand. Otherwise, I always feel like I am forgetting the cool things and only remember them when it's too late. 
