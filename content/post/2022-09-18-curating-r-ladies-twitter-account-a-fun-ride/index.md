@@ -26,11 +26,12 @@ But let's start from the beginning ⭐ It's easy and everyone can become a curat
 #### Thinking about topics and preparing tweets
 This definitely depends on your personality and your time flexibility. I knew that my work weeks would be probably really busy which leaves me with little time for other things (and preparing good tweets takes time for me) and I also like to have things sorted beforehand. Otherwise, I always feel like I am forgetting the cool things and only remember them when it's too late. 
 
-So I sat down once I knew I was curating and started making a sketch. I roughly knew what I wanted to talk about (function programming, debugging, package development, and git because they are so helpful but often put people off) and also some other helpful add-ons such as Shiny and NLP. I allocated days for each topic and thought about a rough outline:[^1]
+So I sat down once I knew I was curating and started making a sketch. I roughly knew what I wanted to talk about (function programming, debugging, package development, and git because they are so helpful but often put people off) and also some other helpful add-ons such as Shiny and NLP. I allocated days for each topic and thought about a rough outline:
 
 ![small_image](/images/single-blog/plan_curation.png)
+{{< detail-tag "Alternative text" >}}
+The image shows a table from Monday to Saturday noting the individual topics that I prepared for each day (Monday (Intro and Writing functions in R), Tuesday (Debugging), Wednesday (Writing packages in R), Thursday (Git and version control), Friday (Shiny), Saturday (NLP and goodbye).
 
-<!--
 | Days      	| Topic                  	|                                                          	|
 |-----------	|------------------------	|----------------------------------------------------------	|
 | **Monday**    	| **Intro**                	| Some info about me                                       	|
@@ -53,12 +54,15 @@ So I sat down once I knew I was curating and started making a sketch. I roughly 
 |           	|                        	| Basic terms and concepts                                 	|
 |           	|                        	| BERT                                                     	|
 |           	| Goodbye                	|                                                          	|
--->
+
+{{< /detail-tag >}}
 
 
-I enjoy writing blog posts, so I also started writing my tweets like blog posts on my computer (it brings me into the writing mode. I used [NotePlan](https://noteplan.co) but any other program works as well).[^2]
+
+I enjoy writing blog posts, so I also started writing my tweets like blog posts on my computer (it brings me into the writing mode. I used [NotePlan](https://noteplan.co) but any other program works as well).
 
 ![small_image](/images/single-blog/overview_curation_prep.png)
+{{< detail-tag "Alternative text" >}}  The image shows a snapshot of how I prepared for my curation week at R-Ladies. I wrote all the text in verbose, added already images to it (to have an idea of where they should end up), and also prepared alternative text for each visualization beforehand. {{< /detail-tag >}}
 
 I also used this time to already prepare all the alternative texts for the visualizations and verbose text for the GIFs.
 
@@ -77,9 +81,10 @@ If you are curious about what ended up being my content, here's an amazing summa
 
 #### Turning the text into tweets
 
-Before tweeting a Twitter thread, you have to turn them into single tweets. I relied on [Chirr App](https://getchirrapp.com/#) and it worked really well! Just copy-paste your tweet and if you want a forced tweet break add `[...]`. I then copy-pasted the tweets on the right side, added my images, GIFs, and alternative texts, and tweeted them[^3] 🎉
+Before tweeting a Twitter thread, you have to turn them into single tweets. I relied on [Chirr App](https://getchirrapp.com/#) and it worked really well! Just copy-paste your tweet and if you want a forced tweet break add `[...]`. I then copy-pasted the tweets on the right side, added my images, GIFs, and alternative texts, and tweeted them 🎉
 
 ![small_image](/images/single-blog/chirr_app.png)
+{{< detail-tag "Alternative text" >}} The image shows a screenshot of the Chirr App where you paste your text in a text window (left-hand side) and it gets split up into single tweets that you can copy-paste from the right-hand side.  {{< /detail-tag >}}
 
 #### More interaction - polls and (interactive) illustrations
 
@@ -91,9 +96,10 @@ When thinking back to when I learned most, it almost always involves some kind o
 
 To visualize code, I relied on the code snippets output by [carbon.now.sh](https://carbon.now.sh) where you copy-paste your code, choose a nice theme, and export it as a `.png` file.
 
-I also tried to prepare an infographic for each day to briefly summarize what I tweeted about. I used Procreate to create them, added a bit of my flavor to them, and also colored them in R-Ladies' corporate design. [If you want access to them, they are here for you to use (both as a PDF and PNG).](https://github.com/cosimameyer/illustrations)[^4]
+I also tried to prepare an infographic for each day to briefly summarize what I tweeted about. I used Procreate to create them, added a bit of my flavor to them, and also colored them in R-Ladies' corporate design. [If you want access to them, they are here for you to use (both as a PDF and PNG).](https://github.com/cosimameyer/illustrations)
 
 ![smaller_image](/images/single-blog/CS_Debugging.png)
+{{< detail-tag "Alternative text" >}} The image shows a mole as a comparison for the debugging process (a mole digs in using `debug()`, stops when there is a `browser()`, and leaves the tunnel when calling `undebug()`). It also shows how the flow package works, reiterating the previous tweets. {{< /detail-tag >}}
 
 -----
 
@@ -111,9 +117,10 @@ But there are some cool things:
 
 - It has emojis (I believe TweetDeck doesn't have them)
 - It works relatively reliably
-- You have "decks" - and that's the best part! I opened a couple of decks to keep track of different things: posts with the `#rladies` and `#debuggingflow` hashtags so that I can retweet them, reactions to my posts only containing some kind of message (otherwise you don't see them), general reactions, and my own posts. And that's what it looks like:[^5]
+- You have "decks" - and that's the best part! I opened a couple of decks to keep track of different things: posts with the `#rladies` and `#debuggingflow` hashtags so that I can retweet them, reactions to my posts only containing some kind of message (otherwise you don't see them), general reactions, and my own posts. And that's what it looks like:
 
 ![small_image](/images/single-blog/bettertweetdeck.png)
+{{< detail-tag "Alternative text" >}} Screenshot of a TweetDeck showing different "decks". Most important (for me) was the possibility to further disaggregate the notifications that I was following. I had one deck open with `#rladies`, one with `#debuggingflow`, another one where I de-selected "Retweets", "Likes", "Followers", and "Lists" from the "Notifications", and a standard "Notifications" deck including all types of notifications. {{< /detail-tag >}}
 
 I also tried to engage with and actively retweet tweets by other R-Ladies to give everyone a broader audience 💜 
 
@@ -134,13 +141,3 @@ Prior to curating R-Ladies, I did some trial runs with the BetterTweetDeck and w
 
 **So if you're considering curating the Twitter account, go ahead - it's worth it!**
 
-
-[^1]: The image shows a table from Monday to Saturday noting the individual topics that I prepared for each day (Monday (Intro and Writing functions in R), Tuesday (Debugging), Wednesday (Writing packages in R), Thursday (Git and version control), Friday (Shiny), Saturday (NLP and goodbye)
-
-[^2]: The image shows a snapshot of how I prepared for my curation week at R-Ladies. I wrote all the text in verbose, added already images to it (to have an idea of where they should end up), and also prepared alternative text for each visualization beforehand.
-
-[^3]: The image shows a screenshot of the Chirr App where you paste your text in a text window (left-hand side) and it gets split up into single tweets that you can copy-paste from the right-hand side. 
-
-[^4]: The image shows a mole as a comparison for the debugging process (a mole digs in using `debug()`, stops when there is a `browser()`, and leaves the tunnel when calling `undebug()`). It also shows how the flow package works, reiterating the previous tweets.
-
-[^5]: Screenshot of a TweetDeck showing different "decks". Most important (for me) was the possibility to further disaggregate the notifications that I was following. I had one deck open with `#rladies`, one with `#debuggingflow`, another one where I de-selected "Retweets", "Likes", "Followers", and "Lists" from the "Notifications", and a standard "Notifications" deck including all types of notifications.
