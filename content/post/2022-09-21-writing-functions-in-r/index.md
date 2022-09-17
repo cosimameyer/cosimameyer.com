@@ -8,7 +8,7 @@ postImage: images/single-blog/CS_Functions.png
 featureImage: images/single-blog/CS_Functions.png
 ---
 
-The beauty of R is its versatility and of course the community 💜 you can use R for literally anything (I use [blogdown]() to set up and maintain my website, [xaringan]() to create slide decks, [Shiny]() to build web applications, ….). All these great tools build upon one "little" (or not so little) thing: functions! 
+The beauty of R is its versatility and of course the community 💜 you can use R for literally anything (I use [blogdown](https://bookdown.org/yihui/blogdown/) to set up and maintain my website, [xaringan](https://bookdown.org/yihui/rmarkdown/xaringan.html) to create slide decks, [Shiny](https://shiny.rstudio.com) to build web applications, ….). All these great tools build upon one "little" (or not so little) thing: functions! 
 
 
 ### 💡 What are functions? 
@@ -20,8 +20,13 @@ A function is an inherent code block that performs a specific task, such as calc
 In R, functions can be as simple as this: 
 
 ![small_image](/images/single-blog/function1.png)
-{{< detail-tag "Alternative text" >}} Code showing how a simple function is set up `name_of_the_function <- function(arguments) {
-function_content}` {{< /detail-tag >}}
+{{< detail-tag "Alternative text" >}} 
+Code showing how a simple function is set up 
+```r
+name_of_the_function <- function(arguments) {
+function_content}
+```
+{{< /detail-tag >}}
 
 You give your function a name (`name_of_the_function`), define some arguments (`arguments`), and put some content in the function. Here you define how the function should proceed with the input (`function_content`).
 
@@ -29,10 +34,14 @@ Let’s use a simple example - a function that calculates the sum:
 
 ![small_image](/images/single-blog/function2.png)
 
-{{< detail-tag "Alternative text" >}} Setting up a function that calculates the sum
-`make_sum <- function(a, b) {
+{{< detail-tag "Alternative text" >}} 
+Setting up a function that calculates the sum
+```r
+make_sum <- function(a, b) {
 c <-a + b
-return(c)}` {{< /detail-tag >}}
+return(c)}
+```
+{{< /detail-tag >}}
 
 You have the name of your function (`make_sum`), two arguments (`a` and `b`), and the operation inside the function (calculating the sum, storing it in c, and returning `c`). You theoretically don't have to use the return statement here because the function will implicitly return the last object created but I prefer to be more explicit and to have more control (and understanding) of what my function does 🤓
 
@@ -40,24 +49,35 @@ When I write functions, I usually have a more or less working code in my head or
 
 ### Writing more complex functions
 
-Writing functions is like a flower that blooms - you start simple and add more and more parts to it (like petals) 🌸 To explain what I mean, I will use the function `overview_na` from the [{overviewR}]() package. The function allows you to plot the share of missing values in your data set. 
-When writing a function, I usually first set up a simple architecture of the function. The code snippet shows such an example: The function takes the data object, 1) uses an apply function to get the number of NAs by column, 2) converts the result to a data frame object and 3) plots it with [{ggplot2}]().
+Writing functions is like a flower that blooms - you start simple and add more and more parts to it (like petals) 🌸 To explain what I mean, I will use the function `overview_na` from the [{overviewR}](https://cosimameyer.github.io/overviewR/) package. The function allows you to plot the share of missing values in your data set. 
+When writing a function, I usually first set up a simple architecture of the function. The code snippet shows such an example: The function takes the data object, 1) uses an apply function to get the number of NAs by column, 2) converts the result to a data frame object and 3) plots it with [{ggplot2}](https://ggplot2.tidyverse.org).
 
 ![small_image](/images/single-blog/complex_function_simple.png)
 
-{{< detail-tag "Alternative text" >}}  {{< /detail-tag >}}
+{{< detail-tag "Alternative text" >}} Simple code plotting your missing values (first it calculates NAs by column, second it converts the result to a dataframe and it then plots it using `ggplot2`). {{< /detail-tag >}}
 
 The function already works but you can tweak it further (and that's what I mean with the blooming and flower petal part 🌸 - it's like adding another piece of beauty to it). You can now, for instance, allow the user to manually define the label of your x axis by adding an "xlabel" argument to your function (you are generally free to select an argument name that you want). The new parts are in-between the sparkles ✨
 
 ![small_image](/images/single-blog/complex_function_xlabel.png)
 
-{{< detail-tag "Alternative text" >}}  {{< /detail-tag >}}
+{{< detail-tag "Alternative text" >}} 
+Similar code as the image above but it adds `xlabel` as an argument and `ggplot2::xlab(xlabel)` as another part to the code.
+{{< /detail-tag >}}
 
 Or use a pre-defined theme 💅 You can add the theme to your function but you can also put it in extra function as I did (makes debugging so much better (and your code cleaner 👍, the theme that we use in {overviewR} is [here](https://t.co/UGi2R5gNsS))).
 
 ![small_image](/images/single-blog/complex_function_theme.png)
 
-{{< detail-tag "Alternative text" >}}  {{< /detail-tag >}}
+{{< detail-tag "Alternative text" >}} Similar function as above but it adds a `theme` in the beginning: 
+```r
+# Set theme ---------------------------------------------------------------
+# Create a theme for the plot   
+# The theme is created here:    
+# https://github.com/cosimameyer/overviewR/blob/master/R/theme_na_plot.R   
+# It is a basic ggplot2::theme      
+theme_plot <- theme_na_plot()
+```
+{{< /detail-tag >}}
 
 ### ✨ Best practices when writing functions
 
@@ -68,20 +88,22 @@ Let's dig into best practices when it comes to function writing. This list conta
 ![small_image](/images/single-blog/good_practice.png)
 
 {{< detail-tag "Alternative text" >}} 
-Good practice vs. not-so-good practice
 
+Good practice vs. not-so-good practice
+```r
 ##Good practice
-`make_sum <- function(a, b) {
+make_sum <- function(a, b) {
 c<-a+ b
-return(c)}`
+return(c)}
 
 ##Not so good practice
-`make_sum <- function(a, b) a + c`
- {{< /detail-tag >}}
+make_sum <- function(a, b) a + c
+```
+{{< /detail-tag >}}
 
 - Use meaningful names for your functions. It's good to use verbs for functions.
 - Use also meaningful names for your arguments. It's common practice to use nouns to name the arguments. 
-- Once your function gets longer, write assertions, warnings, and stops. This allows you (and the user) to prevent something goes wrong and/or to learn immediately when something goes wrong (and is also helpful for future debugging - we will talk about this in the next post 🎊 If you're curious, here's a [Twitter thread about it that I wrote]())
+- Once your function gets longer, write assertions, warnings, and stops. This allows you (and the user) to prevent something goes wrong and/or to learn immediately when something goes wrong (and is also helpful for future debugging - we will talk about this in the next post 🎊 If you're curious, here's a [Twitter thread that I wrote about it](https://twitter.com/WeAreRLadies/status/1569630926627291136?s=20&t=wSjlMYpW468Unu7-p6EYPg))
 - If your function is too long, refactor it and build multiple sub-functions. Each function should do one thing at a time. This also makes your debugging life much easier.
 - While it's not necessary, I prefer to use an explicit `return(...)` statement at the end of my function. By default, your function will return your last generated output. Returning it explicitly, however, allows you more control over your function (at least that's how I feel about it and why I do it)
 - If you have a construct of functions, consider putting them into a package (that’s also what we’ll learn 😊) 
@@ -95,6 +117,12 @@ If you want to quickly look up what this blog post tells you about writing funct
 
 ![small_image](/images/single-blog/CS_Functions.png)
 
-{{< detail-tag "Alternative text" >}} Image showing how a general function in R looks like (a function has arguments, a function statement, and usually a return function). Good practices when writing functions are: 
-Use meaningful names for your functions. It’s good to use verbs for functions; Make your function short and simple - each function should do one thing at a time; Use an explicit return statement;
-Writing assertions, warnings and stops is helpful {{< /detail-tag >}}
+{{< detail-tag "Alternative text" >}} 
+Image showing how a general function in R looks like (a function has arguments, a function statement, and usually a return function). Good practices when writing functions are: 
+
+- Use meaningful names for your functions. It’s good to use verbs for functions
+- Make your function short and simple - each function should do one thing at a time
+- Use an explicit return statement
+- Writing assertions, warnings and stops is helpful 
+
+{{< /detail-tag >}}
