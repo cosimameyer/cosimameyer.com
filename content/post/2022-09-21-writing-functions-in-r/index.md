@@ -41,6 +41,7 @@ Let’s use a simple example - a function that calculates the sum:
 Setting up a function that calculates the sum
 {{< /detail-tag >}}
 -->
+
 ```r
 make_sum <- function(a, b) {
   c <- a + b
