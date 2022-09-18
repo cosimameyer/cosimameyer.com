@@ -67,7 +67,7 @@ When writing a function, I usually first set up a simple architecture of the fun
 overview_na <-
   function(dat
   ) {
-    # Generate necessary variables ------------------------------------------
+    # Generate necessary variables ----------------------------------------
     # Calculate the number of NAs per column
     na_count <-
       sapply(dat, function(y)
@@ -80,7 +80,7 @@ overview_na <-
     dat_frame <-
       tibble::rownames_to_column(dat_frame, var = "variable")
     
-    # Plot vour visualization -----------------------------------------------
+    # Plot vour visualization ---------------------------------------------
     # Create a aaplot2 with vour normal wav to create a ggplot2
     plot <- ggplot2::ggplot(data = dat_ frame)
     ggplot2::geom_col(ggplotz::aes(y = reorder(variable,-na_count),
@@ -113,7 +113,7 @@ overview_na <-
            xlabel = "Showing your NAs"
            # ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
   ) {
-    # Generate necessary variables ------------------------------------------
+    # Generate necessary variables ----------------------------------------
     # Calculate the number of NAs per column
     na_count <-
       sapply(dat, function(y)
@@ -126,7 +126,7 @@ overview_na <-
     dat_frame <-
       tibble::rownames_to_column(dat_frame, var = "variable")
     
-    # Plot vour visualization -----------------------------------------------
+    # Plot vour visualization ---------------------------------------------
     # Create a aaplot2 with vour normal wav to create a ggplot2
     plot <- ggplot2::ggplot(data = dat_ frame)
     ggplot2::geom_col(ggplotz::aes(y = reorder(variable,-na_count),
@@ -159,15 +159,15 @@ overview_na <-
   function(dat,
            xlabel = "Showing your NAs") {
     # ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
-    # Set theme -------------------------------------------------------------
+    # Set theme -----------------------------------------------------------
     # Create a theme for the plot
     # The theme is created here:
-    # https://github.com/cosimameyer/overviewR/blob/master/R/theme_na_plot.R
+    # https://bit.ly/theme_na_plot
     # It is a basic ggplot2::theme
     theme_plot <- theme_na_plot()
     # ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
     
-    # Generate necessary variables ------------------------------------------
+    # Generate necessary variables ----------------------------------------
     # Calculate the number of NAs per column
     na_count <-
       sapply(dat, function(y)
@@ -180,7 +180,7 @@ overview_na <-
     dat_frame <-
       tibble::rownames_to_column(dat_frame, var = "variable")
     
-    # Plot vour visualization -----------------------------------------------
+    # Plot vour visualization ---------------------------------------------
     # Create a aaplot2 with vour normal wav to create a ggplot2
     plot <- ggplot2::ggplot(data = dat_ frame)
     ggplot2::geom_col(ggplotz::aes(y = reorder(variable, -na_count),
