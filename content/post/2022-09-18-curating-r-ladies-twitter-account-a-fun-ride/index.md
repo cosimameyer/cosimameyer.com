@@ -92,7 +92,7 @@ I didn't actually plan it but I ended up having a poll for almost every day (I l
 
 {{< statictweet "1570273730588250113" >}}
 
-When thinking back to when I learned most, it almost always involves some kind of visual clue. That's why I tried to add as many images or illustrations as possible and also used GIFs to show interactive behavior. To create the GIFs, I used the screen recording (that comes as a default program on a Mac and you can activate it using Cmd + Shift + 5) and converted the `.mov` files into `.gif` files using [Convertio](https://convertio.co).
+When thinking back to when I learned most, it almost always involves some kind of visual cue. That's why I tried to add as many images or illustrations as possible and also used GIFs to show interactive behavior. To create the GIFs, I used the screen recording (that comes as a default program on a Mac and you can activate it using Cmd + Shift + 5) and converted the `.mov` files into `.gif` files using [Convertio](https://convertio.co).
 
 To visualize code, I relied on the code snippets output by [carbon.now.sh](https://carbon.now.sh) where you copy-paste your code, choose a nice theme, and export it as a `.png` file.
 
