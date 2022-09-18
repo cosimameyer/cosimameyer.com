@@ -19,29 +19,34 @@ A function is an inherent code block that performs a specific task, such as calc
 
 In R, functions can be as simple as this: 
 
-![small_image](/images/single-blog/function1.png)
+<!--![small_image](/images/single-blog/function1.png)
 {{< detail-tag "Alternative text" >}} 
 Code showing how a simple function is set up 
+{{< /detail-tag >}}
+-->
 ```r
 name_of_the_function <- function(arguments) {
-function_content}
+  function_content
+}
 ```
-{{< /detail-tag >}}
 
 You give your function a name (`name_of_the_function`), define some arguments (`arguments`), and put some content in the function. Here you define how the function should proceed with the input (`function_content`).
 
 Let’s use a simple example - a function that calculates the sum:
 
+<!--
 ![small_image](/images/single-blog/function2.png)
 
 {{< detail-tag "Alternative text" >}} 
 Setting up a function that calculates the sum
+{{< /detail-tag >}}
+-->
 ```r
 make_sum <- function(a, b) {
-c <-a + b
-return(c)}
+  c <- a + b
+  return(c)
+}
 ```
-{{< /detail-tag >}}
 
 You have the name of your function (`make_sum`), two arguments (`a` and `b`), and the operation inside the function (calculating the sum, storing it in c, and returning `c`). You theoretically don't have to use the return statement here because the function will implicitly return the last object created but I prefer to be more explicit and to have more control (and understanding) of what my function does 🤓
 
@@ -50,22 +55,143 @@ When I write functions, I usually have a more or less working code in my head or
 ### Writing more complex functions
 
 Writing functions is like a flower that blooms - you start simple and add more and more parts to it (like petals) 🌸 To explain what I mean, I will use the function `overview_na` from the [{overviewR}](https://cosimameyer.github.io/overviewR/) package. The function allows you to plot the share of missing values in your data set. 
+
 When writing a function, I usually first set up a simple architecture of the function. The code snippet shows such an example: The function takes the data object, 1) uses an apply function to get the number of NAs by column, 2) converts the result to a data frame object and 3) plots it with [{ggplot2}](https://ggplot2.tidyverse.org).
 
+```r
+# How to plot NAs in your data 🕵
+# # Based on `overview_na` from {overviewR}:
+# https://github.com/cosimameyer/overviewR/blob/master/R/overview_na.R
+
+
+overview_na <-
+  function(dat
+  ) {
+    # Generate necessary variables ------------------------------------------
+    # Calculate the number of NAs per column
+    na_count <-
+      sapply(dat, function(y)
+        sum(length(which(is.na(
+          y
+        )))))
+    # Convert it to the a data.frame
+    dat_frame <- data.frame(na_count)
+    # Add rownames_to_columns
+    dat_frame <-
+      tibble::rownames_to_column(dat_frame, var = "variable")
+    
+    # Plot vour visualization -----------------------------------------------
+    # Create a aaplot2 with vour normal wav to create a ggplot2
+    plot <- ggplot2::ggplot(data = dat_ frame)
+    ggplot2::geom_col(ggplotz::aes(y = reorder(variable,-na_count),
+                                   x = na_count)) 
+
+    # Return the plot
+    return(plot)
+  }
+```
+<!--
 ![small_image](/images/single-blog/complex_function_simple.png)
 
 {{< detail-tag "Alternative text" >}} Simple code plotting your missing values (first it calculates NAs by column, second it converts the result to a dataframe and it then plots it using `ggplot2`). {{< /detail-tag >}}
+-->
 
 The function already works but you can tweak it further (and that's what I mean with the blooming and flower petal part 🌸 - it's like adding another piece of beauty to it). You can now, for instance, allow the user to manually define the label of your x axis by adding an "xlabel" argument to your function (you are generally free to select an argument name that you want). The new parts are in-between the sparkles ✨
 
+```r
+# How to plot NAs in your data 🕵
+# # Based on `overview_na` from {overviewR}:
+# https://github.com/cosimameyer/overviewR/blob/master/R/overview_na.R
+
+
+overview_na <-
+  function(dat,
+           # ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+           # Add a manual xlabel for your plot ✨
+           # The default will be "Showing your NAs" but
+           # you can change it and also add a different label
+           xlabel = "Showing your NAs"
+           # ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+  ) {
+    # Generate necessary variables ------------------------------------------
+    # Calculate the number of NAs per column
+    na_count <-
+      sapply(dat, function(y)
+        sum(length(which(is.na(
+          y
+        )))))
+    # Convert it to the a data.frame
+    dat_frame <- data.frame(na_count)
+    # Add rownames_to_columns
+    dat_frame <-
+      tibble::rownames_to_column(dat_frame, var = "variable")
+    
+    # Plot vour visualization -----------------------------------------------
+    # Create a aaplot2 with vour normal wav to create a ggplot2
+    plot <- ggplot2::ggplot(data = dat_ frame)
+    ggplot2::geom_col(ggplotz::aes(y = reorder(variable,-na_count),
+                                   x = na_count)) +
+      # ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+      ggplot2::xlab(xlabel)
+      # ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+    # Return the plot
+    return(plot)
+  }
+```
+<!--
 ![small_image](/images/single-blog/complex_function_xlabel.png)
 
 {{< detail-tag "Alternative text" >}} 
 Similar code as the image above but it adds `xlabel` as an argument and `ggplot2::xlab(xlabel)` as another part to the code.
 {{< /detail-tag >}}
+-->
 
 Or use a pre-defined theme 💅 You can add the theme to your function but you can also put it in extra function as I did (makes debugging so much better (and your code cleaner 👍, the theme that we use in {overviewR} is [here](https://t.co/UGi2R5gNsS))).
 
+
+```r
+# How to plot NAs in your data 🕵
+# # Based on `overview_na` from {overviewR}:
+# https://github.com/cosimameyer/overviewR/blob/master/R/overview_na.R
+
+
+overview_na <-
+  function(dat,
+           xlabel = "Showing your NAs") {
+    # ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+    # Set theme -------------------------------------------------------------
+    # Create a theme for the plot
+    # The theme is created here:
+    # https://github.com/cosimameyer/overviewR/blob/master/R/theme_na_plot.R
+    # It is a basic ggplot2::theme
+    theme_plot <- theme_na_plot()
+    # ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+    
+    # Generate necessary variables ------------------------------------------
+    # Calculate the number of NAs per column
+    na_count <-
+      sapply(dat, function(y)
+        sum(length(which(is.na(
+          y
+        )))))
+    # Convert it to the a data.frame
+    dat_frame <- data.frame(na_count)
+    # Add rownames_to_columns
+    dat_frame <-
+      tibble::rownames_to_column(dat_frame, var = "variable")
+    
+    # Plot vour visualization -----------------------------------------------
+    # Create a aaplot2 with vour normal wav to create a ggplot2
+    plot <- ggplot2::ggplot(data = dat_ frame)
+    ggplot2::geom_col(ggplotz::aes(y = reorder(variable, -na_count),
+                                   x = na_count)) +
+      ggplot2::xlab(xlabel)
+    
+    # Return the plot
+    return(plot)
+  }
+```
+<!--
 ![small_image](/images/single-blog/complex_function_theme.png)
 
 {{< detail-tag "Alternative text" >}} Similar function as above but it adds a `theme` in the beginning: 
@@ -78,6 +204,7 @@ Or use a pre-defined theme 💅 You can add the theme to your function but you c
 theme_plot <- theme_na_plot()
 ```
 {{< /detail-tag >}}
+-->
 
 ### ✨ Best practices when writing functions
 
@@ -93,11 +220,12 @@ Good practice vs. not-so-good practice
 ```r
 ##Good practice
 make_sum <- function(a, b) {
-c<-a+ b
-return(c)}
+  c <- a + b
+  return(c)
+}
 
 ##Not so good practice
-make_sum <- function(a, b) a + c
+make_sum <- function(a, b)  a + c
 ```
 {{< /detail-tag >}}
 
