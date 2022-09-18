@@ -1,7 +1,7 @@
 ---
-title: Mastering debugging in R
+title: Mastering Debugging in R
 author: Cosima Meyer
-date: '2022-09-28'
+date: '2022-10-03'
 slug: mastering-debugging-in-r
 category: [R, R-post]
 postImage: images/single-blog/CS_Debugging.png

@@ -1,7 +1,7 @@
 ---
-title: Writing functions in R
+title: Writing Functions in R
 author: Cosima
-date: '2022-09-21'
+date: '2022-09-27'
 slug: writing-functions-in-r
 category: [R, R-post]
 postImage: images/single-blog/CS_Functions.png

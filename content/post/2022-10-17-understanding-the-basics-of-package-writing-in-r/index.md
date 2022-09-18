@@ -1,7 +1,7 @@
 ---
-title: Understanding the basics of package writing in R
+title: Understanding the Basics of Package Writing in R
 author: Cosima Meyer
-date: '2022-10-06'
+date: '2022-10-17'
 slug: understanding-the-basics-of-package-writing-in-r
 category: [R, R-post]
 postImage: images/single-blog/CS_Package.png

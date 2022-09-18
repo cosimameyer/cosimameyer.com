@@ -1,7 +1,7 @@
 ---
 title: GitHub - The Perks of Collaboration and Version Control
 author: Cosima Meyer
-date: '2022-10-21'
+date: '2022-09-20'
 slug: git-the-perks-of-collaboration-and-version-control
 category: [R, R-post]
 postImage: images/single-blog/CS_GitHub.png
@@ -152,7 +152,7 @@ The GIF below shows it works in a local R project environment. Just start typing
 ![small_image](/images/single-blog/code_snippet_setup.gif)
 {{< detail-tag "Alternative text" >}}GIF showing how using the code snippet "academic" automatically fills the folder structure in your R project{{< /detail-tag >}}
 
-📺 I you are looking for a tutorial into code snippets, have a look at [Sharon Machlis'](https://twitter.com/sharon000) [tutorial](https://t.co/zXe3Mmruq7). 
+📺 If you are looking for a tutorial into code snippets, have a look at [Sharon Machlis'](https://twitter.com/sharon000) [tutorial](https://t.co/zXe3Mmruq7). 
 
 <!--📑 If you want more detailed insight into how to get the most out of a (semi)automatic setup of your workflow, here’s a [short blog post I wrote](https://bit.ly/r-project-setup).-->
 
