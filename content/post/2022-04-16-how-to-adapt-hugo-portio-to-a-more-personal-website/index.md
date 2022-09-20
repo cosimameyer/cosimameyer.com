@@ -79,6 +79,7 @@ image: images/hero/avatar.jpg
 And the website is like this:
 
 ![small_image](/images/single-blog/hero_section.png)
+{{< detail-tag "Alternative text" >}}Image showing the landing page with where it says "Hello, I am Cosima. I love to work with data" including a photo and social network icons.{{< /detail-tag >}}
 
 ---
 
@@ -107,6 +108,7 @@ Adding my beloved typing effect couldn't be easier. I already explained how I di
 And that's it, here's your typing effect 🥳
 
 ![small_image](/images/single-blog/typing-new.gif)
+{{< detail-tag "Alternative text" >}}GIF showing the landing page with a typing effect where the words "I love to work with data" get typed.{{< /detail-tag >}}
 
 ---
 
@@ -156,6 +158,7 @@ The snippet allows the user to add an `event_name` (usually the conference name 
 In the following case, I didn't add a description but the rest looks like this:
 
 ![smaller_image](/images/single-blog/testimonial.png)
+{{< detail-tag "Alternative text" >}}Image showing the presentation slide of "Taking text data to the next level" including links to the GitHub repo, slides, and the recording.{{< /detail-tag >}}
 
 ---
 
@@ -223,10 +226,12 @@ links: true
 The `date` option gives a date, with `thumbnail` I can link an image, `challenge` describes a challenge that I was facing, and `solution` the respective solution. These were also the default parameters that Hugo Portio comes with. My tweak addressed the options `language`, `field`, `github`, `links` (and, if needed, also `slides`, `recording`, `publication`, and `website`). `language` allows you to add the programming languages and in `field` you can specify which areas the project covers (like software development, ML, ...). If the toggle `links` is set to `true`, the theme will now automatically add all the content that you presented in `github`, `slides`, `recording`, `publication`, and `website`. The output including links will look like this:
 
 ![small_image](/images/single-blog/output-with-links.png)
+{{< detail-tag "Alternative text" >}}Image showing the portfolio on building a telegram bot (with a link section).{{< /detail-tag >}}
 
 And without links like this:
 
 ![small_image](/images/single-blog/output-without-links.png)
+{{< detail-tag "Alternative text" >}}Image showing the portfolio on computer visions to identify sentiments (without a link section).{{< /detail-tag >}}
 
 If you further add a `| markdownify` after challenge and solution (for instance `{{ .Params.solution | markdownify }}`), you can pass markdown-based text and the theme automatically converts markdown links. 
 
@@ -237,6 +242,7 @@ If you further add a `| markdownify` after challenge and solution (for instance 
 The default theme has a few dynamic patterns (bubbles and patterns of crosses) moving up and down. I like the dynamic effect the bubbles generate because they are more transparent and clean (you can see both patterns in the right upper corner of the image below). 
 
 ![small_image](/images/single-blog/pattern.png)
+{{< detail-tag "Alternative text" >}}Image showing R-posts with a pattern on the right side with crosses.{{< /detail-tag >}}
 
 If you are like me and don't enjoy the cross patterns so much, just look out for 
 
@@ -336,12 +342,15 @@ img[alt=very_small_image] {
 It defines three different sizes of the image that I can use by calling on the `alt` parameter in the image. Here are examples (from top to bottom):
 
 ![small_image](/images/single-blog/pythonistr.png)
+{{< detail-tag "Alternative text" >}}Image showing a small version of the PythonistR logo. The logo is a blue R, an eye-mask and a pirate's hat with a snake on one leg.{{< /detail-tag >}}
 
 ![smaller_image](/images/single-blog/pythonistr.png)
+{{< detail-tag "Alternative text" >}}Image showing a smaller version of the PythonistR logo.{{< /detail-tag >}}
 
 ![very_small_image](/images/single-blog/pythonistr.png)
+{{< detail-tag "Alternative text" >}}Image showing a very small version of the PythonistR logo.{{< /detail-tag >}}
 
-I prefer using HTML code to adjust the image size and leave the `alt` parameter to what it is designated to -- the alternative text. But I couldn't find a way to make it work in this case. 
+I prefer using HTML code to adjust the image size and leave the `alt` parameter to what it is designated to -- the alternative text. But I couldn't find a way to make it work in this case. As a workaround, I currently use the details tag (described above).
 
 ---
 
