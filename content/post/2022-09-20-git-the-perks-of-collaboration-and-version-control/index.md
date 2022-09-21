@@ -9,7 +9,7 @@ featureImage: images/single-blog/CS_GitHub.png
 ---
 
 Let’s talk about version control and collaboration today and one of its powerful tools: git ✨
-
+ 
 ### 💡What is Git?
 
 Using Git can be a lifesaver (and it has often been one in the past for me 🙏). It’s basically like a mini time travel machine that you use - it allows you to have version control of your work progress. But unlike Dropbox or other tools, it does not automatically save the status quo of your work but requires you to do it actively with commits and pushes. A typical workflow looks like this:
