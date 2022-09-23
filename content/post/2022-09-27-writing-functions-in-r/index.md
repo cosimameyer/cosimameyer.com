@@ -240,7 +240,7 @@ make_sum <- function(a, b)  a + c
 
 --------------------
 
-For more tips and tricks, also have a look at Hadley Wickham's and Garett Grolemund's excellent [R for Data Science](https://r4ds.had.co.nz/functions.html).
+For more tips and tricks, also have a look at Hadley Wickham's and Garett Grolemund's excellent book ["R for Data Science"](https://r4ds.had.co.nz/functions.html).
 
 If you want to quickly look up what this blog post tells you about writing functions, here's a summary (also as 📄PDF for you to [download here](/media/CS_Functions.pdf)): 
 
