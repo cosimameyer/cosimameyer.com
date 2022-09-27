@@ -236,7 +236,7 @@ make_sum <- function(a, b)  a + c
 - If your function is too long, refactor it and build multiple sub-functions. Each function should do one thing at a time. This also makes your debugging life much easier.
 - While it's not necessary, I prefer to use an explicit `return(...)` statement at the end of my function. By default, your function will return your last generated output. Returning it explicitly, however, allows you more control over your function (at least that's how I feel about it and why I do it)
 - If you have a construct of functions, consider putting them into a package (that’s also what we’ll learn 😊) 
-- If you package your functions, create one R file for each function and name the R file the same way as your function. 
+- If you package your functions, create one R file for each function and name the R file the same way as your function.
 
 --------------------
 
