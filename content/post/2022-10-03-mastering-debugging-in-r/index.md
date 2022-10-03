@@ -39,7 +39,7 @@ While there is also `debugonce()`, I hardly use it because I usually go back int
 
 ### 👩🏼‍💻 More helpful tools for debugging
 
-Another great tool that you can use to better understand code structures is [`{flow}`](https://github.com/moodymudskipper/flow) by [Antoine Fabri](https://github.com/moodymudskipper) - it visualizes a chart diagram of the functional architecture. Let’s take a look at this simple function that calculates the sum:
+Another great tool that you can use to better understand code structures is [`{flow}`](https://github.com/moodymudskipper/flow) by [Antoine Fabri](https://github.com/moodymudskipper) - it visualizes a chart diagram of the functional architecture. Let’s take a look at this [simple function](https://cosimameyer.com/post/writing-functions-in-r/) that calculates the sum:
 
 ```r
 make_sum <- function(a, b) {
@@ -67,10 +67,12 @@ flow_run(make_sum(a=2, b=3))
 This looks relatively simple, right? Well, that's the case because it IS a simple function - but it becomes more and more complex, the larger the function gets and the more sub-functions it has. 
 Just try it out yourself with one of your favorite functions 👩‍💻 
 
-If you look for more example, search on Twitter for the `#debuggingflow` hashtag that we used when I was curating the R-Ladies' Twitter account 🥳
+If you look for more examples, search on Twitter for the `#debuggingflow` hashtag that we used when I was curating the R-Ladies' Twitter account 🥳
 
 {{< statictweet "1569728252360499201" >}}
+
 {{< statictweet "1569742444488527872" >}}
+
 {{< statictweet "1569809174795792385" >}}
 
 --------------------
