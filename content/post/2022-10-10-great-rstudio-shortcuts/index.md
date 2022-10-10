@@ -5,6 +5,9 @@ date: '2022-10-10'
 slug: [great-rstudio-shortcuts]
 categories: [R, R-post]
 tags: [R, R-post]
+postImage: images/single-blog/rocket.png
+featureImage: images/single-blog/rocket.png
+
 ---
 
 There are so many [RStudio shortcuts out there](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts) but these are my TOP5 that I regularly use 😊
