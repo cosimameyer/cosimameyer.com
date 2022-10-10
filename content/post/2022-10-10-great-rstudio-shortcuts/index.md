@@ -5,8 +5,8 @@ date: '2022-10-10'
 slug: [great-rstudio-shortcuts]
 categories: [R, R-post]
 tags: [R, R-post]
-postImage: images/single-blog/rocket.png
-featureImage: images/single-blog/rocket.png
+postImage: images/single-blog/r-pirate.png
+featureImage: images/single-blog/r-pirate.png
 
 ---
 
