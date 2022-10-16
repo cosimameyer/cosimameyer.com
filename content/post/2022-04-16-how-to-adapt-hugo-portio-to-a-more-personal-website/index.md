@@ -377,4 +377,37 @@ And that's all you need 🥳
 
 ---
 
+## Embedding a slide show in your blog post
+
+I added a `slideshow.html` file to `layouts/shortcodes/slideshow.html` which has the following content: 
+
+```html
+<iframe src="{{.Get 0}}" width=100% height="400" frameborder="0" scrolling="auto" allowfullscreen="allowfullscreen"></iframe>
+```
+
+Calling now {{</* slideshow "https://cosimameyer.com/slides/correlcon2021/talk.html#1" */>}} reveals this slide show:
+
+{{< slideshow "https://cosimameyer.com/slides/correlcon2021/talk.html#1" >}}
+
+---
+
+## Embedding a tweet
+
+To embed tweets, I follow a similar logic. I created a shortcode in `layouts/shortcodes/statictweet.html` with the following content:
+
+```html
+<div>
+  <center>
+    {{ (getJSON "https://api.twitter.com/1.1/statuses/oembed.json?dnt=1&hide_thread=1&id=" (index
+    .Params 0)).html | safeHTML }}
+  </center>
+</div>
+```
+
+Calling now {{</* statictweet "1570081183081402370" */>}} embeds this tweet:
+
+{{< statictweet "1570081183081402370" >}}
+
+---
+
 Well, that's what I have done so far to make it a better fit for me - but there are for sure plenty more options. I did, for instance, not yet include a section on publications (not sure if I will do it in the future because there are always services like [Google Scholar](https://scholar.google.de) or [ORCID](https://orcid.org) that have a good overview of your publications). If you have any other ideas or suggestions, feel free to reach out. I'm always curious to learn more cool things ☺️
