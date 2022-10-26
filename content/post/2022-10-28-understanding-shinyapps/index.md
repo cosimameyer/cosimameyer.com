@@ -15,10 +15,13 @@ Shiny is a framework that allows you to create web applications - ShinyApps 😊
 You can use them for multiple purposes - a common example is visualizing data (for instance the [Scottish Household Survey](https://bit.ly/3TqZevY)), building [interactive appendices](https://bit.ly/shiny-appendix), [search engines](https://bit.ly/shiny-se), and so much more ✨
 
 [![small_image](/images/single-blog/scotland.png)](https://bit.ly/3TqZevY)
+{{< detail-tag "Alternative text" >}}Scottish Household Survey showing a visualization of data in a line chart{{< /detail-tag >}}
 
 [![small_image](/images/single-blog/appendix.png)](https://bit.ly/shiny-appendix)
+{{< detail-tag "Alternative text" >}}Appendix of an academic paper showing a correlation matrix{{< /detail-tag >}}
 
 [![small_image](/images/single-blog/coro2vid.png)](https://bit.ly/shiny-se)
+{{< detail-tag "Alternative text" >}}Search engine showing a coordinate system where papers are located and a sidebar on the left-hand side that allows the users to select papers relevant to them{{< /detail-tag >}}
 
 ### 💡 What does a ShinApp need?
 
@@ -29,25 +32,88 @@ A ShinyApp consists of two central components. The UI and the server -- or, as I
 The user interface (or short UI) is like the body of your app 👤 It allows you to define how it looks and where the components (such as text, visualizations, or tables) are placed. It defines the outer appearance of your app. The code works as follows:
 
 ![small_image](/images/single-blog/ui.png)
+{{< detail-tag "Alternative text" >}}An image showing a pseudo UI
+```r
+ui <- fluidPage(
+titltePanel("Your Title"),
+sidebarLayout(sidebarPanel(... Some content...), 
+mainPanel(...place-your-plot...))
+```
+{{< /detail-tag >}}
 
 ### 💡 What is the server?
 The server is the brain - here's where all the computing happens 🧠 You can dump (more or less) all your typical functions (such as plotting something with [📦{ggplot2}](https://ggplot2.tidyverse.org)) in here 🤗 
 It can look like this:
 
 ![small_image](/images/single-blog/server.png)
+{{< detail-tag "Alternative text" >}}An image showing a pseudo server
+```r
+server <- function(input, output{output$first_plot <- renderPlot({...create-your-plot....})}
+```
+{{< /detail-tag >}}
 
 
 ### 👩🏼‍💻 How do you set up your own ShinyApp?
 But how do we set it up? Easy! 
 
 ![small_image](/images/single-blog/shiny_workflow.png)
+{{< detail-tag "Alternative text" >}} 
+Code snapshot showing how to create a simple ShinyApp
 
+```r
+###Build your first ShinyApp ✨
+
+library(shiny) # Shiny
+library(ggplot2) # For plotting
+library(dplyr) # For data wrangling
+library(overviewR) # To get the data
+
+data(toydata)
+
+#---------------------------------------------------------#
+##UI 👤
+ui <- fluidPage(titlePanel ("Visualization"),
+                ###Define sidebar
+                sidebarLayout(sidebarPanel(
+                  checkboxGroupInput(
+                    "countries",
+                    h4("Select the countries"),
+                    choices = unique(toydata$ccode),
+                    selected = c("RWA", "AGO")
+                  )
+                ),
+                ###Show the visualization
+                mainPanel(plotOutput("first_plot"))))
+🙋🏼‍♀️
+#---------------------------------------------------------# 
+##Server 🧠
+server <- function (input, output) {
+  output$first_plot <-
+    renderPlot({
+      ###Generate a normal ggplot2 with some data wrangling
+      toydata %>%
+        dplyr::filter(ccode %in% input$countries) %>%
+        dplyr::mutate(year = as.integer(year)) %>% 
+        ggplot2::ggplot(aes(x = year, y = population)) +
+        ggplot2::geom_col() +
+        ggplot2::facet_wrap( ~ ccode) + 
+        ggplot2::theme_minimal()
+    })
+}
+
+#---------------------------------------------------------#
+##Let it run 🏃️
+shinyApp (ui = ui, server = server)
+
+```
+{{< /detail-tag >}}
 
 What you now see in code is how you can fill the UI and server with content. I picked checkboxes for the selection in the sidebar of the UI [(but there are multiple other possibilities for more control widgets)](https://shiny.rstudio.com/tutorial/written-tutorial/lesson3/) and added a ggplot2 inside the `renderPlot` function in the server to generate the visualization 👩🏼‍🎨
 
 And here's how it "runs" (just highlight the code and let it run - a new window with your first ShinyApp will open 🙌)
 
 ![small_image](/images/single-blog/shiny_workflow.gif)
+{{< detail-tag "Alternative text" >}}GIF showing how to run code and how a simple ShinyApp showing bar graphs opens{{< /detail-tag >}}
 
 What I learned from building ShinyApps:
 
@@ -65,6 +131,7 @@ To better understand how a ShinyApp works, it's good to understand reactivity. T
 What reactivity does is ["a magic trick [that] creates the illusion that one thing is happening, when in fact something else is going on"](https://shiny.rstudio.com/articles/understanding-reactivity.html). Your ShinyApp only re-runs those parts where it is necessary. But what does this have to do with a carrier pigeon? Have a look at the GIF:
 
 ![small_image](/images/single-blog/shiny_flow.gif)
+{{< detail-tag "Alternative text" >}}GIF showing a pigeon carrier flying to the server to update a visualization when it is relevant{{< /detail-tag >}}
 
 It shows your ShinyApp (bottom right) and the server (top right). The user (bottom left) asks for something. In the first round, the user asks for "Rwanda" and - after checking, the ShinyApp does not re-run because it already shows Rwanda. In the next round, the user asks for "Rwanda" and "Angola" - the ShinyApp evaluates and initiates a re-run to update the requested selection. Here comes the carrier pigeon 🐦 It starts sending the signal to update to the server. Once it has delivered the message, it comes back to where it started and waits until it gets a new message to deliver (just like a carrier pigeon 😊). 
 
@@ -82,4 +149,23 @@ More helpful resources:
 📝 And if you also keep thinking about brains and bodies, here is more of it to summarize the key points 🤓 (also as 📄PDF for you to [download here](/media/CS_Shiny.pdf)): 
 
 ![small_image](/images/single-blog/CS_Shiny.png)
+{{< detail-tag "Alternative text" >}}A visual summary of ShinyApps
+
+left side: 
+User interface (body) that defines the outer appearance of the app 
+An image showing a pseudo UI
+```r
+ui <- fluidPage(
+titltePanel("Your Title"),
+sidebarLayout(sidebarPanel(... Some content...), 
+mainPanel(...place-your-plot...))
+```
+
+right side: 
+```r
+server (brain) where all the calculation happens
+An image showing a pseudo server
+server <- function(input, output{output$first_plot <- renderPlot({...create-your-plot....})}
+```
+{{< /detail-tag >}}
 
