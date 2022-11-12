@@ -84,12 +84,12 @@ params:
     - icon: fa-linkedin-square
       url: https://www.linkedin.com/in/cosimameyer/
       weight: 1
-    - icon: fa-twitter-square
-      url: https://twitter.com/cosima_meyer
-      weight: 2
     - icon: fa-github
       url: https://github.com/cosimameyer
       weight: 3
+    - icon: fa-twitter-square
+      url: https://twitter.com/cosima_meyer
+      weight: 4
     # - icon: fa-pinterest-square
     #   url: https://www.pinterest.com/
     #   weight: 3
