@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }}" />
   {{ "<!-- Font Awesome -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/font-awesome/css/font-awesome.min.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "plugins/font-awesome/css/brands.min.css" | absURL }}" />
 
   {{ "<!-- Magnific Popup -->" | safeHTML }}
   <link rel="stylesheet" href="{{"plugins/magnafic-popup/magnific-popup.css" | absURL }}" />
@@ -46,6 +47,7 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-
+<!-- Link for Mastodon -->
+<a href="https://mas.to/@cosima_meyer" rel="me"></a>
 
 </head>
