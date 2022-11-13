@@ -13,7 +13,7 @@ With the events in the past [days/weeks/months](https://www.theguardian.com/tech
 
 This post is meant by no means to be a complete guide -- I'm still a very beginner with this (for me) new platform. I see it more as a constant WIP where I collect tips and tricks and complement my understanding along the way of discovering "the other side".
 
-For all those of you who are thinking of moving to Mastodon, the best words to describe it over there: friendly and calm 🐘 
+For all those of you who are thinking of moving to Mastodon, the best words to describe it over there: friendly and calm 🐘
 My experience has been only positive so far (it may of course change, the longer I'm there - but let's hope not 😉). The only glitch I experienced: The phone app is a bit laggy and my instance had some capacity/performance issues but I'm optimistic it will improve. 
 One thing one has to always keep in mind: it's voluntary-based and it’s impressive what people have set up and keep running 👏
 
