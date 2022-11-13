@@ -4,7 +4,6 @@ author: Cosima Meyer
 date: '2022-11-13'
 slug: [first-steps-in-mastodon]
 categories: [Mastodon, Social Media]
-tags: [Mastodon, Social Media]
 postImage: images/single-blog/mastodon_hello.png
 featureImage: images/single-blog/mastodon_hello.png
 
