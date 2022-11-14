@@ -4,6 +4,7 @@ author: Cosima Meyer
 date: '2022-11-13'
 slug: [first-steps-in-mastodon]
 categories: [Mastodon, Social Media]
+tags: [Mastodon, Social Media]
 postImage: images/single-blog/mastodon_hello.png
 featureImage: images/single-blog/mastodon_hello.png
 
@@ -14,10 +15,12 @@ With the events in the past [days/weeks/months](https://www.theguardian.com/tech
 This post is meant by no means to be a complete guide -- I'm still a very beginner with this (for me) new platform. I see it more as a constant WIP where I collect tips and tricks and complement my understanding along the way of discovering "the other side".
 
 For all those of you who are thinking of moving to Mastodon, the best words to describe it over there: friendly and calm 🐘
-My experience has been only positive so far (it may of course change, the longer I'm there - but let's hope not 😉). The only glitch I experienced: The phone app is a bit laggy and my instance had some capacity/performance issues but I'm optimistic it will improve. 
+My experience has been only positive so far (it may of course change, the longer I'm there - but let's hope not 😉). The only glitch I experienced: The iPhone app "Mastodon" was a bit laggy and my instance had some capacity/performance issues but I'm optimistic it will improve. 
 One thing one has to always keep in mind: it's voluntary-based and it’s impressive what people have set up and keep running 👏
 
-With Mastodon, social media is thought differently and it feels much more like a quiet haven compared to what a busy Facebook or Twitter timeline looks like. I enjoy being over here and my feeling is that conversations are more important than writing posts that generate likes. When you start using Mastodon, it really feels like some kind of a Pied Piper vision coming true - and the best part (I think) is actually that it doesn’t have an algorithm that feeds your "news feed" or your "timeline" but it’s really the people you follow and the topics you’re interested in.
+With Mastodon, social media is thought differently and it feels much more like a quiet haven compared to what a busy Facebook or Twitter timeline looks like. If you want to know more and why Mastodon won't be exactly like Twitter, [The Conversation](https://theconversation.com/what-is-mastodon-a-social-media-expert-explains-how-the-federated-network-works-and-why-it-wont-be-a-new-twitter-194329) has a good overview.
+
+I enjoy being over at Mastodon and my feeling is that conversations are more important than writing posts that generate likes. When you start using Mastodon, it really feels like some kind of a Pied Piper vision coming true - and the best part (I think) is actually that it doesn’t have an algorithm that feeds your "news feed" or your "timeline" but it’s really the people you follow and the topics you’re interested in.
 
 I hope we’ll all be able to maintain this environment (although some changes may be inevitable (and maybe also positive) with so many people coming over and forming the network). I'm curious about what the future holds for us 🤗
 
@@ -35,9 +38,11 @@ It's easy to choose between instances (the first question you'll encounter when 
 If you have your Mastodon account now up and running, add a bio 😊 This helps people to get to know you and it feels more like a social gathering than an anonymous network.
 You can also add your Mastodon handle to your Twitter profile so that people can find you.
 
-### Migrate your contacts 
+### Migrate your contacts and find new ones
 
-To find your contacts on Mastodon, there are great tools such as [debirdify](https://pruvisto.org/debirdify/). The steps are simple: 
+To find your contacts on Mastodon, there are great tools such as [debirdify](https://pruvisto.org/debirdify/), [Fedifinder](https://fedifinder.glitch.me), or [Twitodon](https://twitodon.com).
+
+The next steps show how it works with [debirdify](https://pruvisto.org/debirdify/). 
 
 1. Authorize access to your Twitter account
 2. Click "Search followed accounts" (you can also go for blocked or muted accounts)
@@ -51,6 +56,13 @@ And now you'll have to wait a bit (it took a few hours for me but it worked 😊
 
 ![small_image](/images/single-blog/screenshot_debirdify.png)
 {{< detail-tag "Alternative text" >}}Image showing a donut chart with the distribution of users across server instances.{{< /detail-tag >}}
+
+If you are looking for interesting (new) people to follow, [Social Search](https://search.noc.social) helps you to find people based on keywords. Here's how it looks like when I type in "rladies":
+
+![smaller_image](/images/single-blog/social_search.png)
+{{< detail-tag "Alternative text" >}}Screenshot showing a list of accounts at Mastodon when looking for the keyword "rladies"{{< /detail-tag >}}
+
+There are also static lists that you directly import - one of them is [this Google Sheet for data folks](https://docs.google.com/spreadsheets/d/1ihzEGJDi1h1WM13k3T3jlld0RpXoWQrhUw5ftkTS1SM/edit#gid=0) initiated by [Randy Au](https://mas.to/@Randy_Au@recsys.social).
 
 ### Tooting at Mastodon
 
@@ -92,6 +104,9 @@ Writing direct messages is tricky (I didn’t fully figure it out yet, to be hon
 Here’s [a good guide on how it works (and why you should rethink the use of private messages on social media platforms)](https://t.co/NIQKSuFUiy). 
 
 But with all the contact info that people provide in their bios, it’s also easy to reach out to them in other ways - which is a nice feature 😊
+
+### Mobile app
+I am using iOS, so I can only compare apps here. I first started with ["Mastodon"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) and experienced some lags. I read that [there will be more work on the app](https://mastodon.social/@Gargron/109340170654544788) - so good news! Until then, I switched to ["Metatext"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) which, for me, works like a charm.
 
 ### And more
 
