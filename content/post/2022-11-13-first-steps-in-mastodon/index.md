@@ -29,16 +29,18 @@ But how do you get started if you also want to join the party?
 ![very_small_image](/images/single-blog/mastodon_hello.png)
 {{< detail-tag "Alternative text" >}}Image an elephant/mastodon in blue holding a "hello" sign.{{< /detail-tag >}}
 
-### Choosing an instance
+{{< toc >}}
+
+## Choosing an instance
 
 It's easy to choose between instances (the first question you'll encounter when thinking about signing up). There's a [questionnaire/filter function that suggests possible ones](https://t.co/9wEHJSh5ZR). While the choice is important (Mastodon is decentralized and an influx of users on "your chosen server instance" can affect your experience), I didn’t overthink it. Things change so quickly these days and, as far as I understand, [migration within Mastodon is also generally possible](https://t.co/PSImD4lQph). And choosing one server instance over another doesn’t mean that you’re limited to your specific instance and cannot interact with others. You can interact with (and follow - unless they restrict it) everyone on Mastodon across servers! 
 
-### Housekeeping at Mastodon
+## Housekeeping at Mastodon
 
 If you have your Mastodon account now up and running, add a bio 😊 This helps people to get to know you and it feels more like a social gathering than an anonymous network.
 You can also add your Mastodon handle to your Twitter profile so that people can find you.
 
-### Migrate your contacts and find new ones
+## Migrate your contacts and find new ones
 
 To find your contacts on Mastodon, there are great tools such as [debirdify](https://pruvisto.org/debirdify/), [Fedifinder](https://fedifinder.glitch.me), or [Twitodon](https://twitodon.com).
 
@@ -64,51 +66,58 @@ If you are looking for interesting (new) people to follow, [Social Search](https
 
 There are also static lists that you directly import - one of them is [this Google Sheet for data folks](https://docs.google.com/spreadsheets/d/1ihzEGJDi1h1WM13k3T3jlld0RpXoWQrhUw5ftkTS1SM/edit#gid=0) initiated by [Randy Au](https://mas.to/@Randy_Au@recsys.social).
 
-### Tooting at Mastodon
+## Tooting at Mastodon
+
+### General points 
 
 While it's a decentralized system where servers have their own rules and manners, here’s a [nice summary of how tooting works at Mastodon](https://axbom.com/mastodon-tips/). 
 
-One important thing, I think, is to keep the server capacities in mind when sharing large files such as videos (I’m also guilty of it - funded social media platforms easily spoil you 😉). When sharing these files, it might be best to upload them outside of the fediverse - but I haven’t figured out a good place for explanatory GIFs yet (for instance the GIF below):
+There are a few things that I discovered that are different than on Twitter:
 
-![small_image](/images/single-blog/git_flow.gif)
+- Content Warning (CW) seems to be important. I find it hard to figure out when it's appropriate (to be honest) so I gave it a try when I feel like I post some content that might not be of interest for everyone.
+- Another important thing, I think, is to keep the server capacities in mind when sharing large files such as videos (I’m also guilty of it - funded social media platforms easily spoil you 😉). When sharing these files, it might be best to upload them outside of the fediverse - but I haven’t figured out a good place for explanatory GIFs yet (for instance the GIF below). I believe [GIPHY](https://giphy.com) might not be the right place, so uploading them to the static folder of your website might be an option. But I’m more than open to suggestions!
+
+![smaller_image](/images/single-blog/git_flow.gif)
 {{< detail-tag "Alternative text" >}}GIF showing the commands git add, git commit, git push, git pull in a sequential order{{< /detail-tag >}}
 
-I believe [GIPHY](https://giphy.com) might not be the right place, so uploading them to the static folder of your website might be an option. But I’m more than open to suggestions!
 
-#### Netiquette: Introduce yourself
+### Netiquette: Introduce yourself
 
 And now, and that's definitely one thing I really like about Mastodon: there's a great netiquette of introductions. So just introduce yourself by adding the hashtag `#introduction` 🤗 (and pin it to your profile)
 
-#### Cross-posting at Twitter and Mastodon
+### Cross-posting at Twitter and Mastodon
 
 If you want to cross-post on both services, there are also helper tools for this such as [crossposter](https://crossposter.masto.donte.com.br) or [Moa](https://t.co/0yF6DbEpKy).
 
-#### The search function
+### The search function
 
 The search function does not work as you expect it to. It doesn't have a full text search. So it's best to bookmark a toot once you see (and like) it. 
 
 <!--If you want to find someone on another Mastodon instance, you have to add the instance to the person's handle - but there's a [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/mastodon-simplified-federation/) that helps you skip this step. -->
 
-### Verification at Mastodon
+## Verification at Mastodon
+
+### Your website
 
 If you want to have a verification sign (it's not a blue check mark but green and for free ✅), you can add 
 `<a rel="me" href="instance/your_mastodon-handle"></a>` on your website and link the website to your profile. I use Hugo Portio and added it to the `head.html` file. [Here's more to it](https://cedricbatailler.me/blog/how-verification-works-on-mastodon/) and [Alison Hill]() also Hugo also updated the Apéro theme.
 
 {{< statictweet "1591166271353225221" >}}
 
-It also works for your GitHub page if your Mastadon page is the only website you're referring to in your GitHub profile (adding the reference to your README doesn't work - unfortunately).
+### Your GitHub profile
+It also works for your GitHub profile if your Mastadon page is the only website you're referring to in your GitHub profile ([adding the reference to your README doesn't work - unfortunately](https://github.com/community/community/discussions/5720)). [Jan Wildeboer](https://jan.wildeboer.net/2022/06/Quick-Fix-Verified-Mastodon-Github/) has a nice description how you can add your Mastodon reference as your website to your GitHub profile to get the verification check here.
 
-### Writing DMs
+## Writing DMs
 
 Writing direct messages is tricky (I didn’t fully figure it out yet, to be honest). 
 Here’s [a good guide on how it works (and why you should rethink the use of private messages on social media platforms)](https://t.co/NIQKSuFUiy). 
 
 But with all the contact info that people provide in their bios, it’s also easy to reach out to them in other ways - which is a nice feature 😊
 
-### Mobile app
+## Mobile app
 I am using iOS, so I can only compare apps here. I first started with ["Mastodon"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) and experienced some lags. I read that [there will be more work on the app](https://mastodon.social/@Gargron/109340170654544788) - so good news! Until then, I switched to ["Metatext"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) which, for me, works like a charm.
 
-### And more
+## And more
 
 For all the academics (and more) who are looking into Twitter data and will likely miss [`{rtweet}`](https://cran.r-project.org/web/packages/rtweet/index.html), [`{rtoot}`](https://cran.r-project.org/web/packages/rtoot/index.html)[^1] is on CRAN 🎉 
 
