@@ -126,6 +126,7 @@ For all the academics (and more) who are looking into Twitter data and will like
 And, if you're curious about what your Twitter data looks like and want to get some insights out of them, [Observable](https://twitter.com/observablehq) has a [nice framework (and guide) for you](https://observablehq.com/@observablehq/save-and-analyze-your-twitter-archive).
 
 
+*This blog post was last updated November 13, 2022.*
 
 
 [^1]: Tooting is tweeting at Mastodon.
