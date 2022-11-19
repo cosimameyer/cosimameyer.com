@@ -80,6 +80,8 @@ There are a few things that I discovered that are different than on Twitter:
 ![smaller_image](/images/single-blog/git_flow.gif)
 {{< detail-tag "Alternative text" >}}GIF showing the commands git add, git commit, git push, git pull in a sequential order{{< /detail-tag >}}
 
+- Reblog/"retweet" posts! Just a "like" (or a favorite) doesn't work to make it visible to others.
+
 
 ### Netiquette: Introduce yourself
 
@@ -116,6 +118,8 @@ But with all the contact info that people provide in their bios, it’s also eas
 
 ## Mobile app
 I am using iOS, so I can only compare apps here. I first started with ["Mastodon"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) and experienced some lags. I read that [there will be more work on the app](https://mastodon.social/@Gargron/109340170654544788) - so good news! Until then, I switched to ["Metatext"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) which, for me, works like a charm.
+
+*Update - November 17, 2022:* The official Mastodon app seems to work better now (at least I can favorite and reblog posts there). That's a feature that stopped working on Metatext for me (and I have the latest version). If you experience the same: hang in there and be patient, I'm sure both apps will be fine once the influx is handled 😊
 
 ## And more
 
