@@ -408,6 +408,28 @@ Calling now {{</* statictweet "1570081183081402370" */>}} embeds this tweet:
 
 {{< statictweet "1570081183081402370" >}}
 
+
+## Embedding a toot
+
+In a similar way, you can also add a toot (that's what the [tweets on Mastodon are called](https://cosimameyer.com/post/2022-11-13-first-steps-in-mastodon/)). 🐘 I followed the example by [Seb](https://github.com/Wivik/hugo-shortcodes/tree/master/toot) here. It's straightforward:
+
+1. Create a new file in `layouts/shortcodes/` and call it `statictoot.html`. 
+2. Now you can use the following HTML code (it's here in [Seb's solution](https://github.com/Wivik/hugo-shortcodes/blob/master/toot/shortcodes/toot.html) - I tweaked it a bit and increased the width):
+
+```html
+{{- $link := .Get "link" -}}
+
+<div style="text-align:center;">
+  <iframe src="{{ $link }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600" allowfullscreen="allowfullscreen">
+  </iframe>
+  <script src="https://fosstodon.org/embed.js" async="async"></script>
+</div>
+```
+3. When you now call {{</* statictoot link="https://mas.to/@cosima_meyer/109335531125958011" */>}}, it embeds the toot! 🎉
+
+{{< statictoot link="https://mas.to/@cosima_meyer/109335531125958011" >}}
+
+
 ---
 
 Well, that's what I have done so far to make it a better fit for me - but there are for sure plenty more options. I did, for instance, not yet include a section on publications (not sure if I will do it in the future because there are always services like [Google Scholar](https://scholar.google.de) or [ORCID](https://orcid.org) that have a good overview of your publications). If you have any other ideas or suggestions, feel free to reach out. I'm always curious to learn more cool things ☺️

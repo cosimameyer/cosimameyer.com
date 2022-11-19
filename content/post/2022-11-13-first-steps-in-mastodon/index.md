@@ -123,10 +123,17 @@ I am using iOS, so I can only compare apps here. I first started with ["Mastodon
 
 ## And more
 
+### Embed your toots on your Hugo website
+If you want to embed a toot in your Hugo website, I describe how to do it in an easy way [here](https://cosimameyer.com//post/2022-04-16-how-to-adapt-hugo-portio-to-a-more-personal-website/#embedding-a-toot) based on [Seb's solution](https://github.com/Wivik/hugo-shortcodes). 
+
+{{< statictoot link="https://fosstodon.org/@rladies_cologne/109369690415656565" >}}
+
+### Using the Mastodon API with `{rtoot}`
 For all the academics (and more) who are looking into Twitter data and will likely miss [`{rtweet}`](https://cran.r-project.org/web/packages/rtweet/index.html), [`{rtoot}`](https://cran.r-project.org/web/packages/rtoot/index.html)[^1] is on CRAN 🎉 
 
 {{< statictweet "1591103455699296256" >}}
 
+### Analyze your Twitter data
 And, if you're curious about what your Twitter data looks like and want to get some insights out of them, [Observable](https://twitter.com/observablehq) has a [nice framework (and guide) for you](https://observablehq.com/@observablehq/save-and-analyze-your-twitter-archive).
 
 
