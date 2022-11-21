@@ -107,7 +107,11 @@ If you want to have a verification sign (it's not a blue check mark but green an
 {{< statictweet "1591166271353225221" >}}
 
 ### Your GitHub profile
-It also works for your GitHub profile if your Mastadon page is the only website you're referring to in your GitHub profile ([adding the reference to your README doesn't work - unfortunately](https://github.com/community/community/discussions/5720)). [Jan Wildeboer](https://jan.wildeboer.net/2022/06/Quick-Fix-Verified-Mastodon-Github/) has a nice description how you can add your Mastodon reference as your website to your GitHub profile to get the verification check here.
+
+It also works for your GitHub profile if your Mastadon page is the only website you're referring to in your GitHub profile ([adding the reference to your README doesn't work - unfortunately](https://github.com/community/community/discussions/5720)). There are two options, how you can add the verification on your GitHub page:
+
+1. [Jan Wildeboer](https://jan.wildeboer.net/2022/06/Quick-Fix-Verified-Mastodon-Github/) has a nice description how you can add your Mastodon reference as your website to your GitHub profile.
+2. If you need the space for your personal website and don't want to give it to your Mastodon handle, [Simon Willison](https://til.simonwillison.net/mastodon/verifying-github-on-mastodon) has a solution for you: build a redirect with GitHub pages and link to your Mastodon reference. It's all nicely described in the [blog post](https://til.simonwillison.net/mastodon/verifying-github-on-mastodon).
 
 ## Writing DMs
 
@@ -119,7 +123,7 @@ But with all the contact info that people provide in their bios, it’s also eas
 ## Mobile app
 I am using iOS, so I can only compare apps here. I first started with ["Mastodon"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) and experienced some lags. I read that [there will be more work on the app](https://mastodon.social/@Gargron/109340170654544788) - so good news! Until then, I switched to ["Metatext"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) which, for me, works like a charm.
 
-*Update - November 17, 2022:* The official Mastodon app seems to work better now (at least I can favorite and reblog posts there). That's a feature that stopped working on Metatext for me (and I have the latest version). If you experience the same: hang in there and be patient, I'm sure both apps will be fine once the influx is handled 😊
+*Update - November 21, 2022:* The official Mastodon app works better now (and it has also a multi-account view - very neat!). My Metatext app stopped accepting favorites and boosts. If you experience the same: hang in there and be patient, I'm sure both apps will be fine once the influx is handled 😊
 
 ## And more
 
