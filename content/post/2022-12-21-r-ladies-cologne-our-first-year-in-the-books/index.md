@@ -78,7 +78,7 @@ But let’s recap 2022 in more in-depth...
 
 ------
 
-✨ And because it was such a pleasure, we continued the series with [Tanya Shapiro's](https://www.linkedin.com/in/shapirotanya/) workshop on `{plotnine}` - a Python library that combines the logic of `{ggplot2}` with Python's `{seaborn}`.
+✨ And because it was such a pleasure, we continued the series with [Tanya Shapiro's](https://www.linkedin.com/in/shapirotanya/) workshop on `{plotnine}` - a Python library that combines the logic of `{ggplot2}` with Python's `{matplotlib}`.
 
 ![small_image](/images/single-blog/RLadies_PyLadies_plotnine.png)
 {{< detail-tag "Alternative text" >}}Banner of the R-Ladies and PyLadies meetup with Tanya Shapiro.{{< /detail-tag >}}
