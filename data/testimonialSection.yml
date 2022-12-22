@@ -6,11 +6,11 @@ title: >
 
 testimonial:
 
-  - name: R Lernen von und für die Zivilgesellschaft
+  - name: Learning R for and With the Civil Society
     thumbnail:
-    title: Datenvisualisierung und ShinyApps
-    comment: Ein zwölfwöchiger Kurs bei dem ich die Einheiten zu **Datenvisualisierung** und **ShinyApp-Programmierung** konzipiere, umsetze und halte. 
-    time: 2021-2022
+    title: Data Visualization and ShinyApps
+    comment: A twelve week course where I design, implement and deliver the units on **Data Visualization** and **ShinyApp Programming** (in German). The course was awarded as 'Excellent Volunteering' by [GoVolunteer](https://blog.govolunteer.com/ausgezeichnetes-engagement/)
+    time: 2021-2023
     event_url: https://correlaid.org/blog/r-lernen-kurs/
     
   - name: Women in Data Science 2022
