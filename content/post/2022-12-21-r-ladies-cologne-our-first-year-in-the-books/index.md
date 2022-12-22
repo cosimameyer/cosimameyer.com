@@ -8,15 +8,15 @@ featureImage: images/single-blog/rladies-worldmap.png
 date: '2022-12-22'
 ---
 
-Thank you all for a fantastic a year at [R-Ladies Cologne](https://t.co/clTXFsDpf5)!
+Thank you all for a fantastic year at [R-Ladies Cologne](https://t.co/clTXFsDpf5)!
 
-We had a series of great of events which gave us the chance to meet so many wonderful and kindhearted people across the globe. This is one thing that always makes me so thankful to be part of the community 🥰
+We had a series of great events which gave us the chance to meet so many wonderful and kindhearted people across the globe. This is one thing that always makes me so thankful to be part of the community 🥰
 
 ![small_image](/images/single-blog/rladies-worldmap.png)
 {{< detail-tag "Alternative text" >}}Worldmap showing hearts and stars that symbolize where the organizers (Botswana, France, Germany, Nairobi, and Tunisia) and the speakers (Germany, Switzerland, UK, and the US) are from.{{< /detail-tag >}}
 
 
-But let’s recap 2022 more in-depth...
+But let’s recap 2022 in more in-depth...
 
 ✨ While we started [R-Ladies Cologne](https://t.co/clTXFsDpf5) in 2021, we kicked off our chapter in February 2022 with an excellent roundtable hosting the fantastic [Alison Hill](https://www.apreshill.com), [Ana Caroline Leote](https://github.com/anacarolinaleote), [Angelica Becerra](https://www.linkedin.com/in/angelicambg/) as well as [Nina Hauser](https://www.linkedin.com/in/nina-hauser-a6b87211a/) and talked about empowering women in data (science). This [blog post](https://cosimameyer.com/post/new-r-ladies-chapter-cologne/) also summarizes the kick-off event.
 
@@ -58,7 +58,7 @@ But let’s recap 2022 more in-depth...
 
 ------
 
-✨ June was a "first time" month - we partnered up with  [R-Ladies Nairobi](https://www.meetup.com/rladies-nairobi/) to host the first ever R-Ladies "#rstats hangout" on Twitter (including funny preparations and experiments how to get the thing running) with a chat with [Shannon Pileggi](https://www.pipinghotdata.com) 💜 
+✨ June was a "first-time" month - we partnered up with  [R-Ladies Nairobi](https://www.meetup.com/rladies-nairobi/) to host the first-ever R-Ladies "#rstats hangout" on Twitter (including funny preparations and experiments how to get the thing running) with a chat with [Shannon Pileggi](https://www.pipinghotdata.com) 💜 
 
 ![small_image](/images/single-blog/rladies-twitterspaces.jpeg)
 {{< detail-tag "Alternative text" >}}Banner of the #rstats hangout with an image showing Shannon Pileggi.{{< /detail-tag >}}
