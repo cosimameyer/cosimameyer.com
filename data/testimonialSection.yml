@@ -6,6 +6,14 @@ title: >
 
 testimonial:
 
+  - name: Women in Data Science 2023
+    thumbnail: images/talks/wids-2023.png
+    title: PythonistR - A Match Made in Data Heaven
+    comment:
+    time: March 23, 2023
+    slides: /slides/wids_2023_workshop/#/title-slide
+    event_url: https://wuman307139351.wordpress.com/wids/
+
   - name: Learning R for and With the Civil Society
     thumbnail:
     title: Data Visualization and ShinyApps
