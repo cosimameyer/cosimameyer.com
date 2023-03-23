@@ -11,6 +11,7 @@ testimonial:
     title: PythonistR - A Match Made in Data Heaven
     comment:
     time: March 23, 2023
+    github: https://github.com/cosimameyer/r-python-talk/blob/main/README.md
     slides: /slides/wids_2023_workshop/#/title-slide
     event_url: https://wuman307139351.wordpress.com/wids/
 
