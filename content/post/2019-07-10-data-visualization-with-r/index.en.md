@@ -6,6 +6,8 @@ slug: data-visualization-with-r
 category: [R, data visualization, Methods Bites]
 postImage: images/single-blog/data-viz.png
 featureImage: images/single-blog/data-viz.png
+tags:
+  - Visualization
 ---
 
 ![small_image](/images/single-blog/data-viz.png)

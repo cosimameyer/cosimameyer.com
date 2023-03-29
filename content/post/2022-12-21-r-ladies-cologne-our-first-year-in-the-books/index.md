@@ -6,6 +6,10 @@ category: [R, R-post, Python, Python-post]
 postImage: images/single-blog/rladies-worldmap.png
 featureImage: images/single-blog/rladies-worldmap.png
 date: '2022-12-22'
+tags:
+  - R-Ladies
+  - PyLadies
+  - Community
 ---
 
 Thank you all for a fantastic year at [R-Ladies Cologne](https://t.co/clTXFsDpf5)!

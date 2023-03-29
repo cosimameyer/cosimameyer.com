@@ -7,7 +7,9 @@ categories: [Mastodon, Social Media]
 tags: [Mastodon, Social Media]
 postImage: images/single-blog/mastodon_hello.png
 featureImage: images/single-blog/mastodon_hello.png
-
+tags:
+  - Mastodon
+  - Social Media
 ---
 
 With the events in the past [days/weeks/months](https://www.theguardian.com/technology/2022/nov/12/elon-musk-twitter-chaos-enleashed), more and more people decided to give [Mastodon](https://www.theguardian.com/technology/2022/nov/12/joining-the-herd-whats-it-like-moving-from-twitter-to-mastodon) a try. 
