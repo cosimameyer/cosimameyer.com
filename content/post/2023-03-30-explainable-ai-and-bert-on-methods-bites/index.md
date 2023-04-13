@@ -33,4 +33,3 @@ If this made you curious, here's a short wrap-up of all essential links:
 - [Blog post](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/bert-explainable-ai/)
 - [Google Colab Jupyter Notebook](https://colab.research.google.com/drive/1fkQG8Px6Ug69lcexKUrEPHpr_tfo_qCd?usp=sharing#offline=true&sandboxMode=true)
 - [Illustrations](https://github.com/cosimameyer/illustrations)
-
