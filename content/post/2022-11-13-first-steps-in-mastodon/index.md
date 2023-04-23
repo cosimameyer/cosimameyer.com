@@ -12,7 +12,7 @@ tags:
   - Social Media
 ---
 
-With the events in the past [days/weeks/months](https://www.theguardian.com/technology/2022/nov/12/elon-musk-twitter-chaos-enleashed), more and more people decided to give [Mastodon](https://www.theguardian.com/technology/2022/nov/12/joining-the-herd-whats-it-like-moving-from-twitter-to-mastodon) a try. 
+With the events in the past [days/weeks/months](https://www.theguardian.com/technology/2022/nov/12/elon-musk-twitter-chaos-enleashed), more and more people decided to give [Mastodon](https://www.theguardian.com/technology/2022/nov/12/joining-the-herd-whats-it-like-moving-from-twitter-to-mastodon) a try.
 
 This post is meant by no means to be a complete guide -- I'm still a very beginner with this (for me) new platform. I see it more as a constant WIP where I collect tips and tricks and complement my understanding along the way of discovering "the other side".
 
@@ -123,9 +123,9 @@ Here’s [a good guide on how it works (and why you should rethink the use of pr
 But with all the contact info that people provide in their bios, it’s also easy to reach out to them in other ways - which is a nice feature 😊
 
 ## Mobile app
-I am using iOS, so I can only compare apps here. I first started with ["Mastodon"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) and experienced some lags. I read that [there will be more work on the app](https://mastodon.social/@Gargron/109340170654544788) - so good news! Until then, I switched to ["Metatext"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) which, for me, works like a charm.
+At the time of writing this post, there were two major apps for iOS around that I tried. I first started with ["Mastodon"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) and experienced some lags. I read that [there will be more work on the app](https://mastodon.social/@Gargron/109340170654544788) - so good news! Until then, I switched to ["Metatext"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) which, for me, works like a charm.
 
-*Update - November 21, 2022:* The official Mastodon app works better now (and it has also a multi-account view - very neat!). My Metatext app stopped accepting favorites and boosts. If you experience the same: hang in there and be patient, I'm sure both apps will be fine once the influx is handled 😊
+*Update - April 23, 2023:* The official Mastodon app works better now (and it has also a multi-account view - very neat!). There is also a "new kid" around: [Ice Cubes](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884) - it's my favorite so far!
 
 ## And more
 
@@ -143,7 +143,7 @@ For all the academics (and more) who are looking into Twitter data and will like
 And, if you're curious about what your Twitter data looks like and want to get some insights out of them, [Observable](https://twitter.com/observablehq) has a [nice framework (and guide) for you](https://observablehq.com/@observablehq/save-and-analyze-your-twitter-archive).
 
 
-*This blog post was last updated November 13, 2022.*
+*This blog post was last updated April 23, 2023.*
 
 
 [^1]: Tooting is tweeting at Mastodon.
