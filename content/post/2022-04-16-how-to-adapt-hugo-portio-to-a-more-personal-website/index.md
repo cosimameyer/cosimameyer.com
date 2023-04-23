@@ -12,10 +12,9 @@ Code: True
 
 New year, new website? Well, not really. But when starting to set up and move [RAM's website](https://www.ram-ev.de), I decided that it was probably also time for a fresh look on my own little blog. As always, coming up with *the* perfect theme and moving everything to your new and fully polished website takes longer than expected. The main reason is that it is hard to settle on *the* perfect theme. Spoiler alert, there is no such thing. At least not for me. It *always* involves tweaking and learning new things in JS, CSS, HTML, and all these things I have never been trained in before.
 
-I collected all the essential tweaks that I made to the [Hugo Portio theme](https://github.com/StaticMania/portio-hugo) to make it a good fit for me. I hope my future self (and hopefully also someone else) will find it useful when looking for an answer or some ideas on how to tweak the theme.
+I collected all the essential tweaks that I made to the [Hugo Portio theme](https://github.com/StaticMania/portio-hugo) to make it a good fit for me. I hope my future self (and hopefully also someone else) will find it useful when looking for an answer or some ideas on how to tweak their own theme.
 
 {{< toc >}}
-
 
 ---
 
