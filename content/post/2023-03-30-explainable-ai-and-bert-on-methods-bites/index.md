@@ -3,18 +3,8 @@ title: Explainable AI and BERT on Methods Bites
 author: Cosima Meyer
 date: '2023-03-31'
 slug: [explainable-ai-bert]
-tags:
-  - R-post
-  - Python-post
-  - NLP
-  - ML
-  - XAI
-categories:
-  - R-post
-  - Python-post
-  - NLP
-  - ML
-  - XAI
+category: [R, R-post, Python, Python-post, NLP, ML, XAI]
+tags: [R, R-post, Python, Python-post, NLP, ML, XAI]
 postImage: images/single-blog/bert_embed.png
 featureImage: images/single-blog/bert_embed.png
 ---
