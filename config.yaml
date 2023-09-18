@@ -3,7 +3,6 @@ languageCode: en-us
 paginate: 6
 theme: 
   - portio-hugo
-#  - hugo-shortcode-gallery
 title: Cosima Meyer
 privacy:
   disqus:
