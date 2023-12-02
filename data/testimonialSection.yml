@@ -6,6 +6,15 @@ title: >
 
 testimonial:
 
+  - name: PyLadiesCon 2023
+    thumbnail: images/talks/pyladiescon-2023.png
+    title: Sparkling Connections - Making PyLadies' Contributions Visible Through Mastodon Bots
+    comment:
+    time: December 2, 2023
+    github: https://bit.ly/py-list
+    slides: https://bit.ly/pyladiescon2023-slides
+    event_url: https://pretalx.com/pyladiescon-2023/talk/NLLJLT/
+    
   - name: NHS-R/NHS.pycom Conference 2023
     thumbnail: images/talks/nhs-r-nhs-pycom-2023.png
     title: Building Bridges - Exploring Open-Source Library Development in R and Python
