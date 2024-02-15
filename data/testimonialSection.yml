@@ -6,6 +6,13 @@ title: >
 
 testimonial:
 
+  - name: Career Talks 2024
+    thumbnail: images/talks/career-talks-2024.png
+    title: From Social Sciences to Data Science
+    comment:
+    time: February 15, 2024
+    slides: /slides/Career_Talk_2024/index.html#0
+
   - name: PyLadiesCon 2023
     thumbnail: images/talks/pyladiescon-2023.png
     title: Sparkling Connections - Making PyLadies' Contributions Visible Through Mastodon Bots
