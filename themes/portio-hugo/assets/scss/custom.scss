@@ -24,3 +24,56 @@
   src: local(''),
        url('/fonts/YesevaOne-Regular.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
+section {
+    margin: auto;
+    padding-top: 10px;
+}
+div#sectionleft {
+    float: left;
+    margin-right: 10px;
+}
+div#sectionright {
+    margin: auto;
+}
+
+####
+
+.tabs {
+  font-family: Arial, sans-serif;
+}
+
+.tab-titles {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-title {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px 5px 0 0;
+  background: #f0f0f0;
+}
+
+.tab-title.active {
+  background: white;
+  border-bottom: 1px solid white;
+}
+
+.tab-content {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+
