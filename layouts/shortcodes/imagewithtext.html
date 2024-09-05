@@ -1,0 +1,8 @@
+<section>
+    <div id="sectionright" style="float: right; margin-left: 20px;">
+        <img src='{{ .Get "img" }}' alt='{{ .Get "altText" }}' style="width: 200px; height: auto;">
+    </div>
+    <div id="sectionleft">
+        {{ .Get "text" | markdownify }}
+    </div>
+</section>
