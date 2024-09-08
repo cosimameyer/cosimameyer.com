@@ -43,6 +43,9 @@ menu:
     - name: overviewR
       url: 'https://cosimameyer.github.io/overviewR/'
       weight: 9
+    - name: overviewpy
+      url: 'https://cosimameyer.github.io/overviewpy/'
+      weight: 10
     # - name: Contact
     #   url: '#contact'
     #   weight: 8
@@ -62,7 +65,7 @@ menu:
 params:
   blogPageURL: post
   contactLink: contact
-  copyright: All right reserved copyright © Cosima Meyer 2023
+  copyright: All right reserved copyright © Cosima Meyer 2024
   footerLogo: images/contact/widget-logo.png
   logo: images/site-navigation/logo.png
   social:
@@ -72,9 +75,9 @@ params:
     - icon: fa-github
       url: https://github.com/cosimameyer
       weight: 3
-    - icon: fa-twitter-square
-      url: https://twitter.com/cosima_meyer
-      weight: 4
+    #- icon: fa-twitter-square
+    #  url: https://twitter.com/cosima_meyer
+    #  weight: 4
     # - icon: fa-pinterest-square
     #   url: https://www.pinterest.com/
     #   weight: 3
