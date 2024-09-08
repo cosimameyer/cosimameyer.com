@@ -1,7 +1,7 @@
 ---
 title: Exploratory Data Analysis in R
 author: Cosima Meyer
-date: '2024-09-09'
+date: '2024-09-08'
 slug: exploratory-data-analysis-in-r
 categories:
   - R
