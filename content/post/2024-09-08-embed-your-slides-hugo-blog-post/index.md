@@ -7,6 +7,9 @@ categories:
   - Hugo
 tags:
   - Hugo
+postImage: images/single-blog/embed_slides.png
+featureImage: images/single-blog/embed_slides.png
+
 ---
 
 Who spends way too much time making beautiful slides? 🙋🏼‍♀️ 
