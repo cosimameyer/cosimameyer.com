@@ -21,6 +21,7 @@ In this two-part series, I will cover both packages in R and in Python. We'll st
 In the paper ["overviewR - Easily Explore Your Data in R" (published in JOSS)](https://joss.theoj.org/papers/10.21105/joss.04740), my co-author and I compare the key features of other available EDA packages in R with our package [overviewR](https://cosimameyer.github.io/overviewR/). While overviewR was developed with a specific focus on time series data, its functionality can be applied to a broader range of use cases. I'll use this comparison as a basis here to show the key features of each package:
 
 ![small_image](/images/single-blog/overview_eda_r.png)
+{{< detail-tag "Alternative text" >}}Table showing the comparison of different packages in R with respect to their functionality in exploratory data analysis.{{< /detail-tag >}}
 
 (The table is taken from the paper ([Meyer & Hammerschmidt (2022), p. 2](https://joss.theoj.org/papers/10.21105/joss.04740)))
 
@@ -244,6 +245,8 @@ tbl_summary(penguins)
 ```
 
 ![very_small_image](/images/single-blog/gtsummary_table.png)
+{{< detail-tag "Alternative text" >}}Screenshot of the output of tbl_summary. It shows a nicely formatted table with key descriptive statistics of the variables.{{< /detail-tag >}}
+
 
 You can also subset your dataset first to include only certain variables (or tweak the data a bit to get better labels) - but this function produces a very nice and publication-ready table! It also comes with [examples of how to further customize the appearance of your tables](https://www.danieldsjoberg.com/gtsummary/articles/rmarkdown.html).
 
@@ -414,6 +417,7 @@ overview_plot(dat = penguins, id = species, time = year)
 ```
 
 ![small_image](/images/single-blog/plot_penguins_overviewr.png)
+{{< detail-tag "Alternative text" >}}Plot showing the distribution of the time variable (year) across the id variable (species).{{< /detail-tag >}}
 
 As we can clearly see, all species are present for the entire time frame. 
 
@@ -426,6 +430,7 @@ overview_na(penguins)
 ```
 
 ![small_image](/images/single-blog/overview_na_penguins.png)
+{{< detail-tag "Alternative text" >}}Screenshot showing the missing values in a dataset with a bar plot.{{< /detail-tag >}}
 
 As we can see, the time, species, and island are completely covered, but other variables have missing values. It's up to you to determine how serious these missing values are and what to do with them.
 
@@ -547,6 +552,7 @@ view(dfSummary(penguins))
 This gives you a nice visual, descriptive overview in your viewer window in RStudio with all the essential information you need to get started: 
 
 ![small_image](/images/single-blog/summarytools_dfsummary.png)
+{{< detail-tag "Alternative text" >}}Screenshot of the output of dfSummary showing distributions visually with histograms and (bar) plots.{{< /detail-tag >}}
 
 -----
 
@@ -555,3 +561,4 @@ Finally, as you have seen, R already provides a good starting set of functions f
 So let's start exploring your data!
 
 [![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDI4cXRwa2I3NTJzYXN6eHc3cjV5OHRjM3h2ZDFkZGYxZmNzc29wOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UAkLHNaScd6Zjlx5eZ/giphy.gif)](https://giphy.com/gifs/disneyprincess-UAkLHNaScd6Zjlx5eZ)
+{{< detail-tag "Alternative text" >}}A gif showing a person on a simple sailing boat sailing away (to new shores) and exploring the world.{{< /detail-tag >}}
