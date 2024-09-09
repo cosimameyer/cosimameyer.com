@@ -11,6 +11,8 @@ tags:
   - R
   - R-post
   - EDA
+postImage: images/single-blog/eda_cover.png
+featureImage: images/single-blog/eda_cover.png
 ---
 
 
