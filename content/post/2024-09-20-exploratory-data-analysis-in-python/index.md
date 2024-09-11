@@ -230,7 +230,7 @@ This gives you a nice visual, descriptive overview with all the essential inform
 
 ### SweetViz
 
-[`SweetViz` (https://pypi.org/project/sweetviz/) is a neat library that helps to generate nice EDA reports with only two lines of code! 
+[`SweetViz`](https://pypi.org/project/sweetviz/) is a neat library that helps to generate nice EDA reports with only two lines of code! 
 
 ```python
 report = sv.analyze(df)
