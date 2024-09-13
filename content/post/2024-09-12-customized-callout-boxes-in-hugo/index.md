@@ -150,7 +150,6 @@ Replace the `.callout::before` in your `callout.html`:
 Now there's no need to add the line to your `layouts/_default/baseof.html`.
 {{< /detail-tag >}}
 
-
 Now you're ready to use the shortcode:
 
 ```markdown
