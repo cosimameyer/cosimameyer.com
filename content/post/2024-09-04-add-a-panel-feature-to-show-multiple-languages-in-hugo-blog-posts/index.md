@@ -17,7 +17,6 @@ tags:
   - Hugo
 postImage: images/single-blog/panel_set_example.png
 featureImage: images/single-blog/panel_set_example.png
-
 ---
 
 I often want to show multiple languages in one post. Instead of posten them sequentially, I enjoy to have them in tabs that allow me to easily switch between them. I didn't find an out-of-the box feature that Hugo (or my theme) provides, so here's a step-by-step guide to implement this feature in your own blog:
