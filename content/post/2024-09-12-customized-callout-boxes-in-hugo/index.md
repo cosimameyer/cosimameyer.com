@@ -127,7 +127,7 @@ And add the following part to your `layouts/_default/baseof.html` (this will all
 ```
 
 {{< callout type="warning" title="Caution" >}}
-This is a tricky part - depending on if and how you implemented Fontawesome before, there may be conflicts. For example, I'm using a local version of Fontawesome 4, so you may need to make some additional adjustments to get the code to work. Since this may be an exception, I'm adding the instructions on how to handle such a case as a foldout below.
+This is a tricky part - depending on if and how you implemented Fontawesome before, there may be conflicts. For example, I'm using a local version of fontawesome 4, so you may need to make some additional adjustments to get the code to work. Since this may be an exception, I'm adding the instructions on how to handle such a case as a foldout below.
 {{< /callout >}}
 {{< detail-tag "Alternative approach" >}}
 Replace the `.callout::before` in your `callout.html`:
@@ -146,8 +146,9 @@ Replace the `.callout::before` in your `callout.html`:
     color: inherit;
   }
 ```
-{{< /detail-tag >}}
 
+Now there's no need to add the line to your `layouts/_default/baseof.html`.
+{{< /detail-tag >}}
 
 
 Now you're ready to use the shortcode:
