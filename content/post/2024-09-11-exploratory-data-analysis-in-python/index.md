@@ -253,7 +253,7 @@ ProfileReport(df, title="Penguins' Profiling Report")
 [![small_image](/images/single-blog/ydata_penguins.gif)](/images/single-blog/ydata_penguins.gif)
 {{< detail-tag "Alternative text" >}}Jupyter output showing an interactive YData Profiling dashboard.{{< /detail-tag >}}
 
-This report also provides variable-level insights, including descriptive statistics, but also shows a bivariate scatter plot of different variables, alerts (if there are too many misses), and information about the configurations that generated the report.
+This report also provides variable-level insights, including descriptive statistics, but also shows a bivariate scatter plot of different variables, alerts (if there are too many missings), and information about the configurations that generated the report.
 
 -----
 
