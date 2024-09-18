@@ -13,7 +13,7 @@ postImage: images/single-blog/eda_cover_python.png
 featureImage: images/single-blog/eda_cover_python.png
 ---
 
-Following up on the [Explanatory Data Analysis in R](https://cosimameyer.com/post/exploratory-data-analysis-in-r/), here's the Python edition 🎉
+Following up on the [Explanatory Data Analysis in R](https://cosimameyer.com/post/exploratory-data-analysis-in-r/), here's the Python edition 🐍 🎉 
 
 Never heard of EDA before? Here's the short summary: 
 
