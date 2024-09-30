@@ -136,7 +136,7 @@ To study the question, we work with data from a Mental Health Survey in Tech, pr
 We store the URL of the data in an object called `path`. In a next step, we use `pandas` [read_csv](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html) function to open the data and store it in `df_python`.
 
 ```python
-url = "https://raw.githubusercontent.com/cosimameyer/r-python-talk/main/data/survey.csv"
+path = "https://raw.githubusercontent.com/cosimameyer/r-python-talk/main/data/survey.csv"
 
 df_python = pd.read_csv(path)
 ```
