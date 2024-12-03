@@ -13,6 +13,8 @@ tags:
   - Python
   - Python-post
   - R-Ladies
+postImage: images/single-blog/pyladies_bot_megaphone.png
+featureImage: images/single-blog/pyladies_bot_megaphone.png
 ---
 
 I extended the PyLadies and R-Ladies bot with a new feature using the support of Google Gemini. If you want to learn more about the bots and the project behind them, here are two posts that I wrote about [the bots and their architecture](/post/2023-09-17-building-mastodon-bots-and-promoting-the-community-part-2/) and the [Awesome PyLadies' repository (as well as Awesome R-Ladies' repository)](/post/2023-04-25-building-mastodon-bots-and-promoting-the-community/).
