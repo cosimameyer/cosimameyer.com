@@ -90,7 +90,7 @@ name: Deploy Website
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - hugo-portio-theme  # Set a branch to deploy
     paths:
       - "archetypes/**"
       - "content/**"
@@ -100,26 +100,42 @@ on:
       - "resources/**"
       - "static/**"
       - ".github/**"
-      - "hugo.toml"
+      - "config.toml"
+      - "config.yaml"
+      - "index.Rmd"
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - uses: r-lib/actions/setup-r@v1
+        with:
+          r-version: 'release'
+          rspm: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"
+
+      - uses: r-lib/actions/setup-pandoc@v1
+  
+      - name: Install packages and build website
+        run: |
+          install.packages('blogdown')
+          blogdown::install_hugo()
+          blogdown::build_site()
+        shell: Rscript {0}
         
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.143.1'
+          hugo-version: '0.89.1'
           extended: true
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
@@ -130,12 +146,12 @@ jobs:
         run: hugo --minify
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps 
+          protocol: ftps
           local-dir: ./public/
           server-dir: <website>
 ```
