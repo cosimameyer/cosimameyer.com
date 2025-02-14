@@ -2,7 +2,7 @@ baseURL: "https://cosimameyer.com/"
 languageCode: en-us
 paginate: 6
 theme: 
-  - portio-hugo
+  - "portio-hugo"
 title: Cosima Meyer
 privacy:
   disqus:
@@ -40,12 +40,15 @@ menu:
     - name: Media
       url: '#service'
       weight: 8
+    - name: Gallery
+      url: 'https://gallery.cosimameyer.com'
+      weight: 9
     - name: overviewR
       url: 'https://cosimameyer.github.io/overviewR/'
-      weight: 9
+      weight: 10
     - name: overviewpy
       url: 'https://cosimameyer.github.io/overviewpy/'
-      weight: 10
+      weight: 11
     # - name: Contact
     #   url: '#contact'
     #   weight: 8

@@ -7,11 +7,38 @@ title: >
   I am a data lover working in data science and trained in social sciences across the globe. 
 
 
-tab1Name: Education
-tab2Name: Experiences
-tab1Target: education
-tab2Target: experience
+tab1Name: Experiences
+tab2Name: Education
+tab1Target: experience
+tab2Target: education
 
+
+experience:
+  - content: >
+      #### Futuremaker 2024 by Business Insider
+  - content: >
+      #### Google's Women Techmakers Ambassador
+
+  - content: >
+      #### SAP
+
+      Senior Data Scientist
+  - content: >
+      #### IBM
+
+      Senior Data Scientist
+  - content: >
+      #### Kienbaum 
+
+      Data Scientist
+  - content: >
+      #### cynkra 
+
+      Data Scientist
+  - content: >
+      #### University of Mannheim 
+
+      Researcher and lecturer, co-founder of Methods Bites
 education:
   - content: >
       #### PhD in Political Science
@@ -38,20 +65,3 @@ education:
 
       Uppsala University, Sweden
 
-experience:
-  - content: >
-      #### IBM
-
-      AI and Data Science | Data Scientist
-  - content: >
-      #### Kienbaum 
-
-      Data Scientist
-  - content: >
-      #### cynkra 
-
-      Data Scientist
-  - content: >
-      #### University of Mannheim 
-
-      Researcher and lecturer, co-founder of Methods Bites
