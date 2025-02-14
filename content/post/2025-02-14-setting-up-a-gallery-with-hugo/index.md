@@ -39,7 +39,7 @@ Now make sure that Hugo is installed (if not, you can do so by [using Homebrew o
 hugo new site .
 ```
 
-This creates a template for a Hugo site. 
+This creates a template for a Hugo site that we can populate in the next steps.
 
 ### Get Theme
 
