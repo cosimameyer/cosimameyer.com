@@ -82,7 +82,7 @@ hugo server --disableFastRender
 
 ### Publish Your Gallery
 
-Once your gallery is populated, you can publish it. To do this, I set up a subdomain with my web hosting provider. Once this was set up, I needed my FTP details (username, server and password). How you get this may vary depending on your provider. Once I had these, I set them up as secrets in the GitHub repo and added the following GitHub Actions workflow (it is stored in `.github/workflows/deploy_website.yaml` in my gallery repository):
+Once your gallery is populated, you can publish it. To do this, you have different options. For instance, I set up a subdomain with my web hosting provider. Once this was set up, I needed my FTP details (username, server and password). How you get this may vary depending on your provider. Once I had these, I set them up as secrets in the GitHub repo and added the following GitHub Actions workflow (it is stored in `.github/workflows/deploy_website.yaml` in my gallery repository):
 
 ```yaml
 name: Deploy Website
