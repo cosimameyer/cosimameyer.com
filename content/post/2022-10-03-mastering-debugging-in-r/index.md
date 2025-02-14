@@ -67,7 +67,7 @@ flow_run(make_sum(a=2, b=3))
 This looks relatively simple, right? Well, that's the case because it IS a simple function - but it becomes more and more complex, the larger the function gets and the more sub-functions it has. 
 Just try it out yourself with one of your favorite functions 👩‍💻 
 
-<!--If you look for more examples, search on Twitter for the `#debuggingflow` hashtag that we used when I was curating the R-Ladies' Twitter account 🥳-->
+<!--If you look for more examples, search on Twitter for the `#debuggingflow` hashtag that we used when I was curating the R-Ladies' Twitter account 🥳 -->
 
 <!--{{< statictweet "1569728252360499201" >}}-->
 
