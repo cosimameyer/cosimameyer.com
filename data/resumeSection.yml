@@ -4,7 +4,7 @@ topTitle: My Resume
 title: >
   ## My Expertises
 
-  I am a data lover working in data science and trained in social sciences across the globe. 
+  I am a data lover working in data science and passionate about building sustainable machine learning products. 
 
 
 tab1Name: Experiences
@@ -13,6 +13,31 @@ tab1Target: experience
 tab2Target: education
 
 
+education:
+  - content: >
+      #### PhD in Political Science
+
+      University of Mannheim, Germany
+  - content: >
+      #### Visiting researcher
+
+      Rice University, Houston, TX, USA
+  - content: >
+      #### Master of Arts in Political Science
+
+      University of Mannheim, Germany
+  - content: >
+      #### Visiting student
+
+      SciencesPo Paris, France
+  - content: >
+      #### Bachelor of Arts in Political Science and Economics
+
+      University of Mannheim, Germany
+  - content: >
+      #### Visiting student
+
+      Uppsala University, Sweden
 experience:
   - content: >
       #### Futuremaker 2024 by Business Insider
@@ -39,29 +64,3 @@ experience:
       #### University of Mannheim 
 
       Researcher and lecturer, co-founder of Methods Bites
-education:
-  - content: >
-      #### PhD in Political Science
-
-      University of Mannheim, Germany
-  - content: >
-      #### Visiting researcher
-
-      Rice University, Houston, TX, USA
-  - content: >
-      #### Master of Arts in Political Science
-
-      University of Mannheim, Germany
-  - content: >
-      #### Visiting student
-
-      SciencesPo Paris, France
-  - content: >
-      #### Bachelor of Arts in Political Science and Economics
-
-      University of Mannheim, Germany
-  - content: >
-      #### Visiting student
-
-      Uppsala University, Sweden
-
