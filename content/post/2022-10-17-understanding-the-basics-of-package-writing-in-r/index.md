@@ -84,9 +84,9 @@ If this inspired you and you want to write your package now, there are plenty of
 - ["DIY R Package" (Dr Fonti Kar) @ R-Ladies Sydney](https://www.youtube.com/watch?v=4-9jX5F_l8g)
 - ["R package development" (Maëlle Salmon) @ R-Ladies East Lansing and R-Ladies Chicago](https://www.youtube.com/watch?v=IlWMkz769B4)
 
-📑 [Dennis Hammerschmidt](http://dennis-hammerschmidt.rbind.io/) and I wrote a [blog post](https://bit.ly/r-package-development) about our experience when building our package [{overviewR}](https://github.com/cosimameyer/overviewR) and (hopefully) an easy how-to guide that also features more resources at the end (and it also comes with a checklist that I always use when I update our package and before sending it to [CRAN](https://cran.r-project.org)). If you want a teaser, here's more about it:
+📑 [Dennis Hammerschmidt](http://dennis-hammerschmidt.rbind.io/) and I wrote a [blog post](https://bit.ly/r-package-development) about our experience when building our package [{overviewR}](https://github.com/cosimameyer/overviewR) and (hopefully) an easy how-to guide that also features more resources at the end (and it also comes with a checklist that I always use when I update our package and before sending it to [CRAN](https://cran.r-project.org)). 
 
-{{< statictweet "1570024600636981248" >}}
+<!--If you want a teaser, here's more about it: {{< statictweet "1570024600636981248" >}}-->
 
 ------------
 

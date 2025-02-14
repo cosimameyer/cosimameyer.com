@@ -133,7 +133,7 @@ You can either always copy-paste this code or turn it into a code snippet that l
 
 This example shows how it works with a header, but it can also be transferred to other setups:
 
-{{< statictweet "1570081183081402370" >}}
+<!--{{< statictweet "1570081183081402370" >}}-->
 
 
 If you go for the snippets, here's how it works:
@@ -214,7 +214,7 @@ Another cool thing about VS Code is admittedly its extensions. There are for ins
 
 While most of you use Git(Hub) for version control, there are also other use cases.
 
-{{< statictweet "1570273730588250113" >}}
+<!--{{< statictweet "1570273730588250113" >}}-->
 
 GitHub is a code hosting platform (like GitLab or Bitbucket) that allows you to share your code with others but also to have it as version control for yourself. GitHub becomes more and more social — it now allows you for instance to generate a personalized README where you have a mini website. Here you can post things about yourself and your work👩‍💻
 

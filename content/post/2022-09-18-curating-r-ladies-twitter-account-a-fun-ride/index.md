@@ -66,7 +66,9 @@ I enjoy writing blog posts, so I also started writing my tweets like blog posts 
 
 I also used this time to already prepare all the alternative texts for the visualizations and verbose text for the GIFs.
 
-Although I planned to keep last-minute changes to a minimum, it didn't work out and I ended up tweaking and adding new things just before tweeting it because it felt was better this way - but I guess that's normal. This way, we got to these shortcuts in RStudio:
+Although I planned to keep last-minute changes to a minimum, it didn't work out and I ended up tweaking and adding new things just before tweeting it because it felt was better this way - but I guess that's normal. 
+<!--
+This way, we got to these shortcuts in RStudio:
 
 {{< statictweet "1569924800264474626" >}}
 
@@ -77,6 +79,7 @@ Or me explaining why function writing is basically a flower that starts blooming
 If you are curious about what ended up being my content, here's an amazing summary by [Pilar Elizalde](https://twitter.com/pilizalde):
 
 {{< statictweet "1570741209806798854" >}}
+-->
 
 
 #### Turning the text into tweets
@@ -90,7 +93,7 @@ Before tweeting a Twitter thread, you have to turn them into single tweets. I re
 
 I didn't actually plan it but I ended up having a poll for almost every day (I love answering them - that's probably my social science background 🤓) and I think they are great to interact with others.
 
-{{< statictweet "1570273730588250113" >}}
+<!--{{< statictweet "1570273730588250113" >}}-->
 
 When thinking back to when I learned most, it almost always involves some kind of visual cue. That's why I tried to add as many images or illustrations as possible and also used GIFs to show interactive behavior. To create the GIFs, I used the screen recording (that comes as a default program on a Mac and you can activate it using Cmd + Shift + 5) and converted the `.mov` files into `.gif` files using [Convertio](https://convertio.co).
 

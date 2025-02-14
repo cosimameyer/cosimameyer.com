@@ -16,19 +16,19 @@ When I started the [R-Ladies Cologne](https://twitter.com/rladies_cologne) chapt
 
 Rhian showed us how she programs [bilingually at work](https://statsrhian.github.io/presentations/2022-07-27-tale-of-two-languages/2022-07-27-tale-two-languages.pdf) and told us how [Jumping Rivers](http://jumpingrivers.com) overcomes possible hurdles and benefits from working as a bilingual team. And most importantly, as Rhian said, it's not about the language you should think of but of the great people you will be working with 😊
 
-{{< statictweet "1552357448488521728" >}}
+<!--{{< statictweet "1552357448488521728" >}}-->
 
 -----
 
 Deena then walked us through the [MLflow framework and showed us how to use it in action](https://github.com/Deena-Gergis/mlflow_tracking) and how it can be applied to both languages. [MLflow](https://www.mlflow.org/docs/latest/index.html) is a powerful library that allows you to manage end-to-end machine learning cycles. Deena showed us a demo of a typical workflow both theoretically and practically. If you're up for trying it out yourself, have a look at Deena's [GitHub repository](https://github.com/Deena-Gergis/mlflow_tracking) where you'll get everything you need.
 
-{{< statictweet "1552354284662149127" >}}
+<!--{{< statictweet "1552354284662149127" >}}-->
 
 -----
 
 Along with the input talks, we had two quiz rounds showing the audience how similar both languages are and telling some tips and tricks. 
 
-{{< statictweet "1552356844491915266" >}}
+<!--{{< statictweet "1552356844491915266" >}}-->
 
 If you want to revisit them yourself, here are the questions and answers (and a bit more) 🤓
 
@@ -47,7 +47,7 @@ If you want to revisit them yourself, here are the questions and answers (and a 
 {{<detail-tag "What are the commands to use to know the type of a variable in R and Python?">}} ![smaller_image](/images/single-blog/type.png) Here's more on the [class() function in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/class.html) and the [type() method in Python](https://www.geeksforgeeks.org/python-type-function/).{{</detail-tag>}}</br>
 
 
-{{< statictweet "1552347731858948097" >}}
+<!--{{< statictweet "1552347731858948097" >}}-->
 
 We are incredibly thankful to [aiven](https://aiven.io/) and [O'Reilly](https://www.oreilly.com/) for sponsoring the prizes for our quiz.
 
@@ -55,7 +55,7 @@ We are incredibly thankful to [aiven](https://aiven.io/) and [O'Reilly](https://
 
 And last but not least, big shoutout to my co-organizers [Amal Tlili](https://twitter.com/AmalTlili20), [Hédia Tnani](https://twitter.com/TnaniHedia), [Laysa Uchoa](@laysauchoa), and [Mouna Belaid](https://twitter.com/mounaa_belaid) - organizing this event with you showed me once more how fun it is to work with people from the community and how much dedication there is. It was a big pleasure starting this journey with all of you 💜
 
-{{< statictweet "1552510588911341568" >}}
+<!--{{< statictweet "1552510588911341568" >}}-->
 
 I'm very much looking forward to what's coming next!
 

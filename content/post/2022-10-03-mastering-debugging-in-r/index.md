@@ -12,7 +12,7 @@ One major thing that I learned throughout the years is the power of debugging. I
 
 As a fun fact, when I wrote the initial version of my first R package, I wasn’t aware of how debugging works in R and I used a lot of `print()` statements to understand my functions. And there's nothing wrong with using `print()` (or other ways) to understand your function (and is also often the go-to solution for many people 😊) 
 
-{{< statictweet "1569565278861774849" >}}
+<!--{{< statictweet "1569565278861774849" >}}-->
 
 It works in particular well for smaller functions but once your code universe gets larger, unleashing the power of debugging is a game changer!
 
@@ -69,11 +69,11 @@ Just try it out yourself with one of your favorite functions 👩‍💻
 
 If you look for more examples, search on Twitter for the `#debuggingflow` hashtag that we used when I was curating the R-Ladies' Twitter account 🥳
 
-{{< statictweet "1569728252360499201" >}}
+<!--{{< statictweet "1569728252360499201" >}}-->
 
-{{< statictweet "1569742444488527872" >}}
+<!--{{< statictweet "1569742444488527872" >}}-->
 
-{{< statictweet "1569809174795792385" >}}
+<!--{{< statictweet "1569809174795792385" >}}-->
 
 --------------------
 

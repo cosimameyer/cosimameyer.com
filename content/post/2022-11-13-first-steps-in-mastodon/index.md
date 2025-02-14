@@ -106,7 +106,7 @@ The search function does not work as you expect it to. It doesn't have a full te
 If you want to have a verification sign (it's not a blue check mark but green and for free ✅), you can add 
 `<a rel="me" href="instance/your_mastodon-handle"></a>` on your website and link the website to your profile. I use Hugo Portio and added it to the `head.html` file. [Here's more to it](https://cedricbatailler.me/blog/how-verification-works-on-mastodon/) and [Alison Hill]() also Hugo also updated the Apéro theme.
 
-{{< statictweet "1591166271353225221" >}}
+<!--{{< statictweet "1591166271353225221" >}}-->
 
 ### Your GitHub profile
 
@@ -137,7 +137,7 @@ If you want to embed a toot in your Hugo website, I describe how to do it in an 
 ### Using the Mastodon API with `{rtoot}`
 For all the academics (and more) who are looking into Twitter data and will likely miss [`{rtweet}`](https://cran.r-project.org/web/packages/rtweet/index.html), [`{rtoot}`](https://cran.r-project.org/web/packages/rtoot/index.html)[^1] is on CRAN 🎉 
 
-{{< statictweet "1591103455699296256" >}}
+<!--{{< statictweet "1591103455699296256" >}}-->
 
 ### Analyze your Twitter data
 And, if you're curious about what your Twitter data looks like and want to get some insights out of them, [Observable](https://twitter.com/observablehq) has a [nice framework (and guide) for you](https://observablehq.com/@observablehq/save-and-analyze-your-twitter-archive).

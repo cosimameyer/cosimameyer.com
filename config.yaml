@@ -1,6 +1,6 @@
 baseURL: "https://cosimameyer.com/"
 languageCode: en-us
-paginate: 6
+pagerSize: 6
 theme: 
   - "portio-hugo"
 title: Cosima Meyer

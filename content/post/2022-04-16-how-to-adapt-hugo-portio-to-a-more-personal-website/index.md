@@ -390,27 +390,9 @@ Calling now {{</* slideshow "https://cosimameyer.com/slides/correlcon2021/talk.h
 
 ---
 
-## Embedding a tweet
-
-To embed tweets, I follow a similar logic. I created a shortcode in `layouts/shortcodes/statictweet.html` with the following content:
-
-```html
-<div>
-  <center>
-    {{ (getJSON "https://api.twitter.com/1.1/statuses/oembed.json?dnt=1&hide_thread=1&id=" (index
-    .Params 0)).html | safeHTML }}
-  </center>
-</div>
-```
-
-Calling now {{</* statictweet "1570081183081402370" */>}} embeds this tweet:
-
-{{< statictweet "1570081183081402370" >}}
-
-
 ## Embedding a toot
 
-In a similar way, you can also add a toot (that's what the [tweets on Mastodon are called](https://cosimameyer.com/post/2022-11-13-first-steps-in-mastodon/)). 🐘 I followed the example by [Seb](https://github.com/Wivik/hugo-shortcodes/tree/master/toot) here. It's straightforward:
+To embed toots (that's what the [tweets on Mastodon are called](https://cosimameyer.com/post/2022-11-13-first-steps-in-mastodon/)), I follow a similar logic. 🐘 I followed the example by [Seb](https://github.com/Wivik/hugo-shortcodes/tree/master/toot) here. It's straightforward:
 
 1. Create a new file in `layouts/shortcodes/` and call it `statictoot.html`. 
 2. Now you can use the following HTML code (it's here in [Seb's solution](https://github.com/Wivik/hugo-shortcodes/blob/master/toot/shortcodes/toot.html) - I tweaked it a bit and increased the width):
