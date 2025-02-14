@@ -15,7 +15,7 @@ I have been creating stats and other visualizations for a couple of years now an
 {{< detail-tag "Alternative text" >}} Screenshot of the Illustrations Gallery website showing a preview on "Amazing Women in Tech". It shows hexagon tiles with small portraits of different amazing women in tech.{{< /detail-tag >}}
 
 
-I couldn't set it up as a separate theme in my site, so I took a different approach and registered a subdomain for my site (`gallery.cosimameyer.com`) where I publish the theme separately as a standalone. If you're looking for an alternative approach, here's what I did.
+I couldn't set it up as a separate theme in my site, so I took a different approach and registered a subdomain for my site (`gallery.cosimameyer.com`) where I publish the theme separately as a standalone. If you're looking for an alternative approach, here's how I did it.
 
 ### Set up GitHub Repository
 
