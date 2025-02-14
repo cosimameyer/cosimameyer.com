@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: Deploy website
 
 on:
   push:
@@ -19,11 +19,11 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -48,7 +48,7 @@ jobs:
           hugo-version: '0.89.1'
           extended: true
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
@@ -59,11 +59,11 @@ jobs:
         run: hugo --minify
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps 
+          protocol: ftps
           local-dir: ./public/
           server-dir: /web/cosimameyer.com/
