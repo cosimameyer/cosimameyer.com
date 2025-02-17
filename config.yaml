@@ -37,9 +37,6 @@ menu:
     - name: Blog
       url: '#post'
       weight: 7
-    - name: Media
-      url: '#service'
-      weight: 8
     - name: Gallery
       url: 'https://gallery.cosimameyer.com'
       weight: 9
@@ -68,7 +65,7 @@ menu:
 params:
   blogPageURL: post
   contactLink: contact
-  copyright: All right reserved copyright © Cosima Meyer 2024
+  copyright: All right reserved copyright © Cosima Meyer 2025
   footerLogo: images/contact/widget-logo.png
   logo: images/site-navigation/logo.png
   social:
