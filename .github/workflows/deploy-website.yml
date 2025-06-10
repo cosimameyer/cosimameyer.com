@@ -67,4 +67,4 @@ jobs:
           protocol: ftps
           local-dir: ./public/
           server-dir: /web/cosimameyer.com/
-          timeout: 1860000
+          timeout: 3600000
