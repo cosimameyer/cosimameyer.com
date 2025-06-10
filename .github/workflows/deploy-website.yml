@@ -68,5 +68,5 @@ jobs:
           local-dir: ./public/
           server-dir: /web/cosimameyer.com/
           timeout: 3600000
-          exclude: |
+          exclude-upload: |
               static/slides/**
