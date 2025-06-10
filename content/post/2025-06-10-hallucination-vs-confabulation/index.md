@@ -7,10 +7,16 @@ categories:
   - AI
   - Machine Learning
   - NLP
+  - Python
+  - R
+  - Data Science
 tags:
   - Blog post
   - ML
   - NLP
+  - Python
+  - R
+  - Data Science
 postImage: images/single-blog/hallucination_vs_confabulation.png
 featureImage: images/single-blog/hallucination_vs_confabulation.png
 ---

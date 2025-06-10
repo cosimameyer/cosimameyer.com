@@ -6,6 +6,15 @@ title: >
 
 testimonial:
 
+  - name: PyCon DE & PyData 2025
+    thumbnail: images/talks/code_and_community.png
+    title: Code & Community - The Synergy of Community Building and Task Automation
+    comment:
+    time: April 25, 2025
+    github: https://github.com/cosimameyer/awesome-pyladies-blogs
+    slides: https://drive.google.com/file/d/1vMlaJ3vbV7ONJg24dqBFIUp6sJUjYL_u/view?usp=share_link
+    event_url: https://2025.pycon.de/
+    
   - name: R-Ladies Abuja
     thumbnail: images/talks/from_complex_to_clear.png
     title: From Complex to Clear - Understanding Your NLP Models

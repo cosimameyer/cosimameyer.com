@@ -75,12 +75,6 @@ params:
     - icon: fa-github
       url: https://github.com/cosimameyer
       weight: 3
-    #- icon: fa-twitter-square
-    #  url: https://twitter.com/cosima_meyer
-    #  weight: 4
-    # - icon: fa-pinterest-square
-    #   url: https://www.pinterest.com/
-    #   weight: 3
 markup:
   highlight:
     anchorLineNos: false
