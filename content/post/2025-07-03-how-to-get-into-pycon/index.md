@@ -1,5 +1,5 @@
 ---
-title: How To Get Into PyCon?
+title: How To Get Into PyCon
 author: Cosima Meyer
 date: '2025-07-03'
 slug: []
