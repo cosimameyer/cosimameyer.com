@@ -14,7 +14,7 @@ postImage: images/single-blog/pycon.png
 featureImage: images/single-blog/pycon.png
 ---
 
-It's conference season, and my social media feed is buzzing with all the excitement! I love attending conferences, connecting with fellow tech enthusiasts, and learning from diverse perspectives. 
+It's conference season, and my social media feed is buzzing with all the excitement! I love attending conferences, connecting with fellow tech enthusiasts, and learning from diverse perspectives.
 
 Over the years, I've had the chance of experiencing conferences from many angles: as an attendee, an organizer of academic events, a reviewer for both academic and non-academic conferences, and most recently, as a volunteer reviewer for EuroPython and PyLadiesCon. 
 
