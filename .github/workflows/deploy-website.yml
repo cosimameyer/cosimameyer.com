@@ -3,19 +3,16 @@ name: Deploy website
 on:
   push:
     branches:
-      - hugo-portio-theme  # Set a branch to deploy
-    paths:
-      - "archetypes/**"
-      - "content/**"
-      - "data/**"
-      - "i18n/**"
-      - "layouts/**"
-      - "resources/**"
-      - "static/**"
-      - ".github/**"
-      - "config.toml"
-      - "config.yaml"
-      - "index.Rmd"
+      - hugo-portio-theme # Set a branch to deploy
+    paths-ignore:
+      - "*.md" # Adjust this based on your content strategy
+      - "README.md"
+      - "LICENSE"
+      - ".git/**"
+      - "public/**"
+      - "node_modules/**"
+      - "*.Rproj" # Definitely remove if no R
+      - "*.Rmd" # If you pre-render Rmd locally
 
 jobs:
   deploy:
@@ -25,27 +22,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: 'release'
-          rspm: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"
+      # Remove R-related steps
+      # - name: Setup R and Install blogdown
+      #   uses: r-lib/actions/setup-r@v2
+      #   with:
+      #     r-version: 'release'
+      #     rspm: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"
+      #   env:
+      #     R_LIBS_USER: ~/R/library
+      #   run: |
+      #     install.packages('blogdown')
 
-      - uses: r-lib/actions/setup-pandoc@v2
-  
-      - name: Install packages and build website
-        run: |
-          install.packages('blogdown')
-          blogdown::install_hugo()
-          blogdown::build_site()
-        shell: Rscript {0}
-        
-      - name: Setup Hugo
+      # - uses: r-lib/actions/setup-pandoc@v2 # Pandoc is generally only needed if you're compiling Rmd
+
+      # - name: Build R Markdown and Hugo Site
+      #   run: |
+      #     blogdown::build_site(local = FALSE)
+      #   shell: Rscript {0}
+
+      - name: Setup Hugo # Keep this, as Hugo is your static site generator
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.143.1'
+          hugo-version: '0.143.1' # Ensure you have the exact Hugo version you want
           extended: true
 
       - uses: actions/cache@v4
@@ -55,8 +56,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-
 
-      - name: Build
-        run: hugo --minify
+      - name: Build Hugo Site
+        run: hugo --minify # Directly call Hugo to build and minify
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
