@@ -1,8 +1,8 @@
 ---
-title: How To Get Into PyCon
+title: My Conference Journey - What I've Learned About Submitting and Reviewing Talks
 author: Cosima Meyer
 date: '2025-07-03'
-slug: []
+slug: submitting-reviewing-talks-insights
 categories:
   - Python
   - Python-post
