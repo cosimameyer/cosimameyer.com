@@ -10,6 +10,7 @@ categories:
 tags:
   - Python-post
   - AI
+  - Python
 postImage: images/single-blog/welcome_sign_io_connect.png
 featureImage: images/single-blog/welcome_sign_io_connect.png
 ---
