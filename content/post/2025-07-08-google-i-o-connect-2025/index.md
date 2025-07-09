@@ -78,7 +78,7 @@ All in its early stages but it looks promising! Google announced that [GenAI SDK
 ##### Gemma
 
 I'm a big fan of open and light-weight models. That's why I'm really fond of [Gemma](https://deepmind.google/models/gemma/) and the work the team is doing. As part of the keynote, Gus Martins highlighted that [Gemma 3n runs on as little as 2GB RAM](https://developers.googleblog.com/en/introducing-gemma-3n/). 
-This is particularly fascinating because one of the significant ecological footprints of large models comes from their usage. 
+This is particularly fascinating because one of the significant ecological footprints of large models can come from their usage.[^1]
 
 The reason Gemma 3n can be so lightweight lies in its selective parameter activation, which leverages the [Matryoshka Transformer architecture](https://arxiv.org/pdf/2310.07707) to selectively activate the model's parameters per request. This way, they are able to reduce compute cost and response times. [Here's](https://ai.google.dev/gemma/docs/gemma-3n#matformer) more on it.
 
@@ -115,3 +115,5 @@ Ice cream in the form of a dinosaur served at the event.
 If you missed Google I/O 2025, [there are many on-demand videos](https://io.google/2025/explore/) for you to watch and to explore!
 
 Overall, Google I/O Connect was an enriching experience that left me inspired and excited about the future of technology and our community 🫶
+
+[^1]: It's not easy to find reliable numbers for the environmental impact of AI models as a [research paper by Sasha Luccioni, Boris Gamazaychikov, Théo Alves da Costa, and Emma Strubell from 2025 shows](https://arxiv.org/pdf/2506.15572).
