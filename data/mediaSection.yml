@@ -1,0 +1,25 @@
+enable: true
+topTitle: "Media & Press"
+title: "## In the Media"
+
+items:
+  - type: podcast
+    source: "Your Podcast Name"
+    title: "Placeholder Podcast Episode Title"
+    date: "2024"
+    url: "#"
+    cta: "Listen"
+
+  - type: press
+    source: "Your Publication"
+    title: "Placeholder Press Article Title"
+    date: "2024"
+    url: "#"
+    cta: "Read"
+
+  - type: interview
+    source: "Your Outlet"
+    title: "Placeholder Interview Title"
+    date: "2023"
+    url: "#"
+    cta: "Read"

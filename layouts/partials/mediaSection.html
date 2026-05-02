@@ -1,0 +1,42 @@
+{{ with .Site.Data.mediaSection }}
+{{ if .enable }}
+<section class="section media-section" id="media">
+  <div class="container">
+
+    <div class="row text-center mb-5">
+      <div class="col-lg-6 offset-lg-3">
+        <span class="top-title pre-line">{{ .topTitle }}</span>
+        {{ .title | markdownify }}
+      </div>
+    </div>
+
+    <div class="media-grid">
+      {{ range .items }}
+      {{ $type := .type | lower }}
+      <div class="media-card media-type-{{ $type }}">
+
+        <div class="media-meta">
+          <span class="media-type-icon">
+            {{ if eq $type "podcast" }}<i class="fa-solid fa-microphone"></i>
+            {{ else if eq $type "interview" }}<i class="fa-solid fa-comments"></i>
+            {{ else }}<i class="fa-regular fa-newspaper"></i>{{ end }}
+          </span>
+          <span class="media-source">{{ .source }}</span>
+        </div>
+
+        <h4 class="media-title">{{ .title }}</h4>
+        <p class="media-date">{{ .date }}</p>
+
+        <a href="{{ .url | safeURL }}" target="_blank" rel="noopener" class="media-cta">
+          {{ with .cta }}{{ . }}{{ else }}Read{{ end }}
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+{{ end }}
+{{ end }}
