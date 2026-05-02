@@ -175,6 +175,46 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Pre-line dash — use accent colour instead of dark navy */
+.pre-line::before {
+  background: var(--c-accent) !important;
+}
+
+/* ---- Portfolio filter bar ---- */
+.portfolio-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.pf-btn {
+  background: none;
+  border: 1.5px solid var(--c-border);
+  color: var(--c-body);
+  font-family: var(--f-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: border-color 0.18s, color 0.18s, background 0.18s;
+}
+.pf-btn:hover {
+  border-color: var(--c-accent);
+  color: var(--c-accent);
+}
+.pf-btn.active {
+  background: var(--c-accent);
+  border-color: var(--c-accent);
+  color: #fff;
+}
+.portfolio-no-results {
+  text-align: center;
+  color: var(--c-muted);
+  padding: 40px 0;
+  font-size: 0.95rem;
+}
+
 /* ---- Portfolio ---- */
 .portfolio {
   background: var(--c-white) !important;

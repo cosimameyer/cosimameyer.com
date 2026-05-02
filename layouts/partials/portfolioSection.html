@@ -6,7 +6,7 @@
     <div class="row mb-5 align-items-end">
       <div class="col-lg-6">
         <div class="portfolio__header">
-          <span class="top-title">{{ .topTitle }}</span>
+          <span class="top-title pre-line">{{ .topTitle }}</span>
           {{ .title | markdownify }}
         </div>
       </div>
@@ -19,27 +19,54 @@
     </div>
 
     <div class="portfolio-grid">
-      {{ range first 3 (where $.Site.RegularPages "Type" "portfolio").Reverse }}
-      <div class="portfolio-card">
-        {{ with .Params.thumbnail }}
-        <div class="portfolio-card-img">
-          <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
+      {{ $portfolio := where $.Site.RegularPages "Type" "portfolio" }}
+      {{ $featured  := where $portfolio "Params.featured" true }}
+      {{ if $featured }}
+        {{ range $featured }}
+        <div class="portfolio-card">
+          {{ with .Params.thumbnail }}
+          <div class="portfolio-card-img">
+            <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
+          </div>
+          {{ end }}
+          <div class="portfolio-card-body">
+            <div class="portfolio-card-tags">
+              {{ with .Params.language }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+              {{ with .Params.field }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+            </div>
+            <h3 class="portfolio-card-title">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
+            {{ with .Params.shortDescription }}
+            <p class="portfolio-card-desc">{{ . }}</p>
+            {{ end }}
+            <a class="portfolio-card-link" href="{{ .Permalink }}">View project →</a>
+          </div>
         </div>
         {{ end }}
-        <div class="portfolio-card-body">
-          <div class="portfolio-card-tags">
-            {{ with .Params.language }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
-            {{ with .Params.field }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+      {{ else }}
+        {{ range first 3 ($portfolio.ByDate.Reverse) }}
+        <div class="portfolio-card">
+          {{ with .Params.thumbnail }}
+          <div class="portfolio-card-img">
+            <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
           </div>
-          <h3 class="portfolio-card-title">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </h3>
-          {{ with .Params.shortDescription }}
-          <p class="portfolio-card-desc">{{ . }}</p>
           {{ end }}
-          <a class="portfolio-card-link" href="{{ .Permalink }}">View project →</a>
+          <div class="portfolio-card-body">
+            <div class="portfolio-card-tags">
+              {{ with .Params.language }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+              {{ with .Params.field }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+            </div>
+            <h3 class="portfolio-card-title">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
+            {{ with .Params.shortDescription }}
+            <p class="portfolio-card-desc">{{ . }}</p>
+            {{ end }}
+            <a class="portfolio-card-link" href="{{ .Permalink }}">View project →</a>
+          </div>
         </div>
-      </div>
+        {{ end }}
       {{ end }}
     </div>
 

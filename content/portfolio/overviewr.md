@@ -8,6 +8,7 @@ solution: A CRAN package that lets you easily extract information about your dat
 language: R
 field: Software development
 title: overviewR
+featured: true
 website: https://cosimameyer.github.io/overviewR/
 github: https://github.com/cosimameyer/overviewR
 slides: https://cosimameyer.rbind.io/slides/overviewr/talk#1

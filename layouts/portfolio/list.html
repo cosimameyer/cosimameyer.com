@@ -3,7 +3,7 @@
 
   <div class="portfolio-list-hero">
     <div class="container">
-      <span class="top-title">My Projects</span>
+      <span class="top-title pre-line">My Projects</span>
       <h1 class="portfolio-list-title">Open source, research &amp; data science</h1>
       <p class="portfolio-list-lead">Packages, tools, and projects built in R and Python.</p>
     </div>
@@ -11,9 +11,41 @@
 
   <section class="section portfolio">
     <div class="container">
-      <div class="portfolio-grid portfolio-grid--full">
+
+      <!-- Filter bar -->
+      <div class="portfolio-filter-bar">
+        <button class="pf-btn active" data-filter="all">All</button>
+        {{ $pages := .Pages }}
+        {{ $languages := slice }}
+        {{ range $pages }}
+          {{ with .Params.language }}{{ $languages = $languages | append . }}{{ end }}
+        {{ end }}
+        {{ $fields := slice }}
+        {{ range $pages }}
+          {{ with .Params.field }}{{ $fields = $fields | append . }}{{ end }}
+        {{ end }}
+        <!-- Language filters -->
+        {{ range ($languages | uniq) }}
+        <button class="pf-btn" data-filter="{{ . }}">{{ . }}</button>
+        {{ end }}
+        <!-- Field filters (split on comma) -->
+        {{ $fieldTags := slice }}
+        {{ range $fields }}
+          {{ range (split . ", ") }}
+            {{ $fieldTags = $fieldTags | append (trim . " ") }}
+          {{ end }}
+        {{ end }}
+        {{ range ($fieldTags | uniq) }}
+        <button class="pf-btn" data-filter="{{ . }}">{{ . }}</button>
+        {{ end }}
+      </div>
+
+      <!-- Cards -->
+      <div class="portfolio-grid portfolio-grid--full" id="portfolio-cards">
         {{ range .Pages.ByDate.Reverse }}
-        <div class="portfolio-card">
+        <div class="portfolio-card"
+          data-language="{{ .Params.language }}"
+          data-field="{{ .Params.field }}">
           {{ with .Params.thumbnail }}
           <div class="portfolio-card-img">
             <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
@@ -35,8 +67,41 @@
         </div>
         {{ end }}
       </div>
+
+      <p class="portfolio-no-results" id="portfolio-no-results" style="display:none;">
+        No projects match this filter.
+      </p>
+
     </div>
   </section>
 
 </div>
+
+<script>
+(function () {
+  var btns  = document.querySelectorAll('.pf-btn');
+  var cards = document.querySelectorAll('#portfolio-cards .portfolio-card');
+  var none  = document.getElementById('portfolio-no-results');
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      btns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+
+      var f = btn.dataset.filter;
+      var visible = 0;
+
+      cards.forEach(function (card) {
+        var lang  = (card.dataset.language || '').toLowerCase();
+        var field = (card.dataset.field    || '').toLowerCase();
+        var match = f === 'all' || lang.indexOf(f.toLowerCase()) > -1 || field.indexOf(f.toLowerCase()) > -1;
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+
+      none.style.display = visible === 0 ? 'block' : 'none';
+    });
+  });
+}());
+</script>
 {{ end }}

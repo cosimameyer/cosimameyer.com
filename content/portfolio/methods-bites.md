@@ -8,6 +8,7 @@ solution: A data science blog on topics in computational social science
 language: Mainly R but also language-agnostic blog posts
 field: Blog
 title: Methods Bites
+featured: true
 website: https://www.mzes.uni-mannheim.de/socialsciencedatalab/
 links: true
 ---

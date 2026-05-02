@@ -8,6 +8,7 @@ solution: Keyword spotting algorithm for audio data as part of the coding challe
 language: Python, R
 field: ML, Computer Vision
 title: Audio Keyword Spotting Algorithm
+featured: true
 github: https://github.com/CorrelAid/codingchallenge1020_team2
 links: true
 ---
