@@ -231,8 +231,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-mask: none !important;
   mask: none !important;
   box-shadow: none;
-  /* transparent PNG — render over the bg colour cleanly */
-  mix-blend-mode: multiply;
 }
 
 /* ---- Responsive ---- */
