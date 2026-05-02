@@ -208,12 +208,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Soft circle behind photo */
 .hero-circle {
   position: absolute;
-  width: 520px;
-  height: 520px;
-  background: rgba(180, 200, 220, 0.22);
+  width: 580px;
+  height: 580px;
+  background: rgba(155, 185, 210, 0.28);
   border-radius: 50%;
-  top: 50%;
-  left: 42%;
+  top: 54%;
+  left: 46%;
   transform: translate(-50%, -50%);
   z-index: 0;
 }
@@ -221,15 +221,18 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
   display: block;
-  height: 92vh;
-  max-height: 860px;
+  height: 88vh;
+  max-height: 820px;
   width: auto;
-  object-fit: cover;
-  object-position: top center;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: bottom center;
   border-radius: 0;
   -webkit-mask: none !important;
   mask: none !important;
   box-shadow: none;
+  /* transparent PNG — render over the bg colour cleanly */
+  mix-blend-mode: multiply;
 }
 
 /* ---- Responsive ---- */
