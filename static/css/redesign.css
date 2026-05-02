@@ -8,8 +8,8 @@
   --c-heading:      #1E293B;
   --c-body:         #475569;
   --c-muted:        #94A3B8;
-  --c-accent:       #557C99;
-  --c-accent-light: #EBF4FA;
+  --c-accent:       #3D6A8C;
+  --c-accent-light: #E8F2F8;
   --c-white:        #FFFFFF;
   --c-border:       #E2E8F0;
 
@@ -684,8 +684,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #436080 !important;
-  border-color: #436080 !important;
+  background-color: #2E5472 !important;
+  border-color: #2E5472 !important;
   color: #fff !important;
 }
 
