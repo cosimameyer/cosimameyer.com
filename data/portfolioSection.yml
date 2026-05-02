@@ -1,8 +1,8 @@
 ---
 enable: true
-topTitle: My Projects
+topTitle: Open Source
 title: >
-  ## Some of my open source projects
+  ## Tools Built for the Community
 
   Tools and packages built for the R and Python community.
 
