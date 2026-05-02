@@ -602,9 +602,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 8px 24px rgba(85, 124, 153, 0.35) !important;
 }
 
-/* Cookie notice — slate blue strip */
+/* Cookie notice — same deep slate as footer */
 #cookie-notice {
-  background: var(--c-accent) !important;
+  background: #1E3448 !important;
   color: #fff !important;
   font-size: 0.9rem;
 }
@@ -623,7 +623,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---- Footer ---- */
 .footer,
 .site-footer {
-  background: var(--c-accent) !important;
+  background: #1E3448 !important;
   margin-top: 0 !important;
 }
 .footer__background_shape,
