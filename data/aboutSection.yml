@@ -1,20 +1,8 @@
 ---
-enable: false
-topTitle: About
-title: >
-  ## About me
-
-  Enjoy team diversity and increase their networks among others people in
-  various fields by provided.
-content: >
-  ### I design and build ultimate things.
-
-  I love to work in User Experience & User Interface designing. Because I love
-  to solve the design problem and find easy and better solutions to solve it. I always
-  try my best to make good user interface with the best user experience. I have been
-  working as a Visual designer from.
-button1Name: Hire me
-button2Name: Download CV
-button1Target: contact
-button2Target: contact
-image: images/about/about-img.jpg
+enable: true
+bio: >
+  I'm a data scientist, open-source developer, and international conference
+  speaker. I work at the intersection of machine learning, data, and community —
+  building tools for R and Python and making complex methods more accessible to
+  practitioners worldwide. Currently Senior Data Scientist at SAP, where I lead
+  the Data Science Methods Community.

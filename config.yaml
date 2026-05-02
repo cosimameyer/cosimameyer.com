@@ -19,32 +19,18 @@ privacy:
     disable: true
 menu:
   main:
-    - name: Home
-      url: '#home'
+    - name: About Me
+      url: '#about'
       weight: 1
-    - name: Portfolio
-      url: '#portfolio'
-      weight: 4
-    - name: Resume
-      url: '#resume'
-      weight: 5
-    # - name: Skills
-    #   url: '#skills' 
-    #   weight: 6
     - name: Talks
       url: '#testimonial'
-      weight: 6
+      weight: 2
+    - name: Portfolio
+      url: '#portfolio'
+      weight: 3
     - name: Blog
       url: '#post'
-      weight: 7
-    - name: Gallery
-      url: 'https://gallery.cosimameyer.com'
-      weight: 9
-    - name: overviewR
-      url: 'https://cosimameyer.github.io/overviewR/'
-      weight: 10
-    - name: overviewpy
-      url: 'https://cosimameyer.github.io/overviewpy/'
+      weight: 4
       weight: 11
     # - name: Contact
     #   url: '#contact'

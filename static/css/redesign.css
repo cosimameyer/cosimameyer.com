@@ -298,6 +298,22 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--c-accent) !important;
 }
 
+/* ---- About Me combined section ---- */
+.about-combined {
+  background: var(--c-bg);
+}
+.about-bio-block {
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+.about-bio-text {
+  font-size: 1.1rem;
+  color: var(--c-body);
+  line-height: 1.8;
+  margin-top: 16px;
+}
+.about-bio-text p { margin-bottom: 0; }
+
 /* ---- Portfolio filter bar ---- */
 .portfolio-filter-bar {
   display: flex;
