@@ -134,11 +134,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---- Left panel ---- */
+/* padding-left mirrors Bootstrap .container's left edge so hero text
+   aligns with the navbar brand at every viewport width:
+   992–1199 px  → container = 960 px  → edge = (100vw - 960) / 2 + 15
+   ≥ 1200 px    → container = 1140 px → edge = (100vw - 1140) / 2 + 15 */
 .hero-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 120px 48px 80px 80px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  padding-right: 48px;
+  padding-left: max(24px, calc((100vw - 960px) / 2 + 15px));
+}
+@media (min-width: 1200px) {
+  .hero-left {
+    padding-left: max(24px, calc((100vw - 1140px) / 2 + 15px));
+  }
 }
 .hero-pretitle {
   font-size: 0.9rem;
@@ -270,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-rows: auto auto;
   }
   .hero-left {
-    padding: 120px 32px 40px;
+    padding: 40px 24px 40px 15px;
     order: 2;
   }
   .hero-right {
