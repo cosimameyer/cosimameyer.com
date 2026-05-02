@@ -167,8 +167,34 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--c-body);
   line-height: 1.65;
   max-width: 420px;
-  min-height: 2em;
   margin-bottom: 40px;
+}
+
+/* CSS phrase rotator — 4 phrases × 5s = 20s cycle */
+.rotating-text {
+  position: relative;
+  height: 3.4em; /* room for up to 2 wrapped lines */
+  overflow: hidden;
+}
+.rotating-text span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: rotatePhrase 20s ease-in-out infinite;
+}
+.rotating-text span:nth-child(1) { animation-delay:  0s; }
+.rotating-text span:nth-child(2) { animation-delay:  5s; }
+.rotating-text span:nth-child(3) { animation-delay: 10s; }
+.rotating-text span:nth-child(4) { animation-delay: 15s; }
+
+@keyframes rotatePhrase {
+  0%   { opacity: 0; transform: translateY(10px); }
+  4%   { opacity: 1; transform: translateY(0);    }
+  21%  { opacity: 1; transform: translateY(0);    }
+  25%  { opacity: 0; transform: translateY(-10px);}
+  100% { opacity: 0; transform: translateY(-10px);}
 }
 
 /* Dark circle social icon buttons */
