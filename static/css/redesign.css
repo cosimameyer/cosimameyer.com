@@ -9,7 +9,7 @@
   --c-body:         #475569;
   --c-muted:        #94A3B8;
   --c-accent:       #3D6A8C;
-  --c-accent-dark:  #2E5472;
+  --c-accent-dark:  #264D6B;
   --c-accent-light: #E8F2F8;
   --c-white:        #FFFFFF;
   --c-border:       #E2E8F0;
@@ -755,6 +755,19 @@ h1, h2, h3, h4, h5, h6 {
 /* Zoom hover — use slate blue shadow instead of purple */
 .btn-zoom:hover {
   box-shadow: 0 8px 24px rgba(85, 124, 153, 0.35) !important;
+}
+
+/* Pagination — replace Bootstrap $primary (#282f49) with slate blue */
+.page-item.active .page-link {
+  background-color: var(--c-accent-dark) !important;
+  border-color:     var(--c-accent-dark) !important;
+  color: #fff !important;
+}
+.page-link {
+  color: var(--c-accent) !important;
+}
+.page-link:hover {
+  color: var(--c-accent-dark) !important;
 }
 
 /* Cookie notice — same deep slate as footer */
