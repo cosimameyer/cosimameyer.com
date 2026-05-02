@@ -132,22 +132,13 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 .hero-social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  border: 1.5px solid var(--c-border);
   color: var(--c-heading) !important;
-  font-size: 0.95rem;
+  font-size: 1.35rem;
   text-decoration: none !important;
-  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  transition: color 0.18s;
 }
 .hero-social a:hover {
-  border-color: var(--c-accent);
   color: var(--c-accent) !important;
-  background: var(--c-accent-light);
 }
 
 /* Hero photo offset block */
