@@ -3,11 +3,9 @@
 <section class="section media-section" id="media">
   <div class="container">
 
-    <div class="row text-center mb-5">
-      <div class="col-lg-6 offset-lg-3">
-        <span class="top-title pre-line">{{ .topTitle }}</span>
-        {{ .title | markdownify }}
-      </div>
+    <div class="media__header mb-5">
+      <span class="top-title pre-line">{{ .topTitle }}</span>
+      {{ .title | markdownify }}
     </div>
 
     <div class="media-grid">
