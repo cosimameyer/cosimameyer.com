@@ -18,10 +18,9 @@
           <img src="{{ .thumbnail | absURL }}" alt="{{ .title }}" loading="lazy" />
           {{ with .type }}<span class="talk-type-badge talk-type-{{ . | lower }}">{{ . }}</span>{{ end }}
         </div>
-        {{ else }}
-        {{ with .type }}<span class="talk-type-badge talk-type-{{ . | lower }} talk-type-no-img">{{ . }}</span>{{ end }}
         {{ end }}
         <div class="talk-card-body">
+          {{ if not .thumbnail }}{{ with .type }}<span class="talk-type-badge talk-type-{{ . | lower }} talk-type-no-img">{{ . }}</span>{{ end }}{{ end }}
           <p class="talk-event">{{ .name }}</p>
           <h4 class="talk-title">{{ .title }}</h4>
           <p class="talk-time">{{ .time }}</p>

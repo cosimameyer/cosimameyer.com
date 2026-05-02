@@ -587,11 +587,11 @@ h1, h2, h3, h4, h5, h6 {
 .talk-type-keynote { background: #4A3F6B; }
 .talk-type-workshop { background: var(--c-accent); }
 .talk-type-talk { background: var(--c-accent-dark); }
-/* Badge when there's no thumbnail */
+/* Badge when there's no thumbnail — sits inside card-body, aligns with text */
 .talk-type-no-img {
   position: static;
   display: inline-block;
-  margin: 0 18px 6px;
+  margin: 0 0 10px;
 }
 .talk-card-body {
   padding: 16px 18px 18px;
