@@ -19,19 +19,19 @@ privacy:
     disable: true
 menu:
   main:
-    - name: About Me
+    - name: About
       url: '#about'
       weight: 1
-    - name: Talks
+    - name: Speaking
       url: '#testimonial'
       weight: 2
-    - name: Media
+    - name: Press
       url: '#media'
       weight: 3
-    - name: Portfolio
+    - name: Open Source
       url: '#portfolio'
       weight: 4
-    - name: Blog
+    - name: Writing
       url: '#post'
       weight: 5
     # - name: Contact
