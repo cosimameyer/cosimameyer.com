@@ -4,14 +4,29 @@ topTitle: My Resume
 title: >
   ## My Expertises
 
-  I am a data lover working in data science and passionate about building sustainable machine learning products. 
+  I am a data lover working in data science and passionate about building sustainable machine learning products.
 
+experience:
+  - content: >
+      #### SAP
 
-tab1Name: Experiences
-tab2Name: Education
-tab1Target: experience
-tab2Target: education
+      Senior Data Scientist and Lead of Data Science Methods Community
+  - content: >
+      #### IBM
 
+      Senior Data Scientist
+  - content: >
+      #### Kienbaum
+
+      Data Scientist
+  - content: >
+      #### cynkra
+
+      Data Scientist
+  - content: >
+      #### University of Mannheim
+
+      Researcher and lecturer, co-founder of Methods Bites
 
 education:
   - content: >
@@ -38,29 +53,13 @@ education:
       #### Visiting student
 
       Uppsala University, Sweden
-experience:
-  - content: >
-      #### Futuremaker 2024 by Business Insider
-  - content: >
-      #### Google's Women Techmakers Ambassador
 
+achievements:
   - content: >
-      #### SAP
+      #### Futuremaker 2024
 
-      Senior Data Scientist and Lead of Data Science Methods Community
+      Selected by Business Insider as one of the Futuremakers shaping the future of their field.
   - content: >
-      #### IBM
+      #### Google Women Techmakers Ambassador
 
-      Senior Data Scientist
-  - content: >
-      #### Kienbaum 
-
-      Data Scientist
-  - content: >
-      #### cynkra 
-
-      Data Scientist
-  - content: >
-      #### University of Mannheim 
-
-      Researcher and lecturer, co-founder of Methods Bites
+      Recognised by Google for contributions to diversity and inclusion in tech.

@@ -2,40 +2,72 @@
 {{ if .enable }}
 <section class="section resume" id="resume">
   <div class="container">
-    <div class="resume__heading-row mb-5">
+
+    <div class="resume__heading-row mb-4">
       <span class="top-title">{{ .topTitle }}</span>
       {{ .title | markdownify }}
     </div>
-    <div class="resume-columns">
 
-      <div class="resume-col">
-        <p class="resume-col-label">
-          <i class="fa fa-briefcase"></i> Experience
-        </p>
-        <div class="resume-timeline">
-          {{ range .experience }}
-          <div class="resume-item">
-            {{ .content | markdownify }}
-          </div>
-          {{ end }}
-        </div>
-      </div>
-
-      <div class="resume-col">
-        <p class="resume-col-label">
-          <i class="fa fa-graduation-cap"></i> Education
-        </p>
-        <div class="resume-timeline">
-          {{ range .education }}
-          <div class="resume-item">
-            {{ .content | markdownify }}
-          </div>
-          {{ end }}
-        </div>
-      </div>
-
+    <!-- Tab navigation -->
+    <div class="resume-tabs" role="tablist">
+      <button class="resume-tab active" data-tab="experience" role="tab" aria-selected="true">
+        <i class="fa fa-briefcase"></i> Experience
+      </button>
+      <button class="resume-tab" data-tab="education" role="tab" aria-selected="false">
+        <i class="fa fa-graduation-cap"></i> Education
+      </button>
+      <button class="resume-tab" data-tab="achievements" role="tab" aria-selected="false">
+        <i class="fa fa-star"></i> Achievements
+      </button>
     </div>
+
+    <!-- Tab panels -->
+    <div class="resume-panel active" id="resume-experience" role="tabpanel">
+      <div class="resume-timeline">
+        {{ range .experience }}
+        <div class="resume-item">{{ .content | markdownify }}</div>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="resume-panel" id="resume-education" role="tabpanel">
+      <div class="resume-timeline">
+        {{ range .education }}
+        <div class="resume-item">{{ .content | markdownify }}</div>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="resume-panel" id="resume-achievements" role="tabpanel">
+      <div class="resume-timeline">
+        {{ range .achievements }}
+        <div class="resume-item">{{ .content | markdownify }}</div>
+        {{ end }}
+      </div>
+    </div>
+
   </div>
 </section>
+
+<script>
+(function () {
+  var tabs   = document.querySelectorAll('.resume-tab');
+  var panels = document.querySelectorAll('.resume-panel');
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      panels.forEach(function (p) { p.classList.remove('active'); });
+
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      document.getElementById('resume-' + tab.dataset.tab).classList.add('active');
+    });
+  });
+}());
+</script>
 {{ end }}
 {{ end }}
