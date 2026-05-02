@@ -2,13 +2,9 @@
 {{ if .enable }}
 <section class="section talks" id="testimonial">
   <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-6 offset-lg-3">
-        <div class="talks__header mb-5">
-          <span class="top-title pre-line">{{ .topTitle }}</span>
-          {{ .title | markdownify }}
-        </div>
-      </div>
+    <div class="talks__header mb-5">
+      <span class="top-title pre-line">{{ .topTitle }}</span>
+      {{ .title | markdownify }}
     </div>
     <div class="talks-carousel">
       {{ range .testimonial }}
