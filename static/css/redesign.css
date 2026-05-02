@@ -667,9 +667,58 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio-grid--full { grid-template-columns: 1fr; }
 }
 
-/* ---- Blog section ---- */
+/* ---- Hide all decorative blob/shape elements site-wide ---- */
+.animate-shape,
+.animate-pattern,
+.svg-img {
+  display: none !important;
+}
+
+/* ---- Blog / post single page ---- */
 .blog-section {
   background: var(--c-white) !important;
+}
+
+/* Breadcrumb page header (blog posts, portfolio single pages) */
+.breadCrumb {
+  padding: 110px 0 32px !important;
+  background: var(--c-bg) !important;
+}
+.breadCrumb__title {
+  font-family: var(--f-heading) !important;
+  font-size: clamp(1.5rem, 3vw, 2.25rem) !important;
+  color: var(--c-heading) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 12px !important;
+}
+.breadCrumb .breadcrumb-item a,
+.breadCrumb .breadcrumb-item.active {
+  color: var(--c-muted) !important;
+  font-size: 0.85rem;
+}
+.breadCrumb .breadcrumb-item a:hover {
+  color: var(--c-accent) !important;
+}
+.breadCrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--c-border) !important;
+}
+.post-meta li,
+.post-meta a {
+  color: var(--c-muted) !important;
+  font-size: 0.85rem;
+}
+.post-meta a:hover {
+  color: var(--c-accent) !important;
+}
+
+/* Single blog post content — readable width */
+.singleBlog {
+  background: var(--c-white) !important;
+}
+.singleBlog__content {
+  margin: 0 auto !important;
+  max-width: 720px !important;
 }
 
 /* =============================================
