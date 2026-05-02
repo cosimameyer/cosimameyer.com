@@ -13,22 +13,31 @@
       {{ $type := .type | lower }}
       <div class="media-card media-type-{{ $type }}">
 
-        <div class="media-meta">
-          <span class="media-type-icon">
-            {{ if eq $type "podcast" }}<i class="fa-solid fa-microphone"></i>
+        <!-- Image / placeholder -->
+        <div class="media-card-img media-card-img--{{ $type }}">
+          {{ if .image }}
+          <img src="{{ .image | absURL }}" alt="{{ .title }}" loading="lazy" />
+          {{ else }}
+          <div class="media-card-placeholder">
+            {{ if eq $type "podcast" }}<i class="fa-solid fa-microphone-lines"></i>
             {{ else if eq $type "interview" }}<i class="fa-solid fa-comments"></i>
             {{ else }}<i class="fa-regular fa-newspaper"></i>{{ end }}
-          </span>
-          <span class="media-source">{{ .source }}</span>
+          </div>
+          {{ end }}
+          <!-- Type badge overlaid on image -->
+          <span class="media-type-badge media-type-badge--{{ $type }}">{{ .type }}</span>
         </div>
 
-        <h4 class="media-title">{{ .title }}</h4>
-        <p class="media-date">{{ .date }}</p>
-
-        <a href="{{ .url | safeURL }}" target="_blank" rel="noopener" class="media-cta">
-          {{ with .cta }}{{ . }}{{ else }}Read{{ end }}
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        <!-- Body -->
+        <div class="media-card-body">
+          <p class="media-source">{{ .source }}</p>
+          <h4 class="media-title">{{ .title }}</h4>
+          <p class="media-date">{{ .date }}</p>
+          <a href="{{ .url | safeURL }}" target="_blank" rel="noopener" class="media-cta">
+            {{ with .cta }}{{ . }}{{ else }}Read{{ end }}
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
 
       </div>
       {{ end }}

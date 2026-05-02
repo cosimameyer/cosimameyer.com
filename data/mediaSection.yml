@@ -9,6 +9,7 @@ items:
     date: "2024"
     url: "#"
     cta: "Listen"
+    image: ""   # e.g. images/media/podcast-cover.jpg
 
   - type: press
     source: "Your Publication"
@@ -16,6 +17,7 @@ items:
     date: "2024"
     url: "#"
     cta: "Read"
+    image: ""   # e.g. images/media/article-thumb.jpg
 
   - type: interview
     source: "Your Outlet"
@@ -23,3 +25,4 @@ items:
     date: "2023"
     url: "#"
     cta: "Read"
+    image: ""   # e.g. images/media/interview-thumb.jpg
