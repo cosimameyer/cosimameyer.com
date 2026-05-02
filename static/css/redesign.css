@@ -192,6 +192,17 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio__header h2 {
   font-family: var(--f-heading) !important;
 }
+.portfolio__header-button.desktop {
+  text-align: right;
+}
+.portfolio__header-button.mobile {
+  display: none;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .portfolio__header-button.desktop { display: none; }
+  .portfolio__header-button.mobile  { display: block; }
+}
 /* Replace staggered flexbox with a clean 3-col grid */
 .portfolio-item-grid {
   display: none !important;
@@ -556,10 +567,63 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--c-white) !important;
 }
 
+/* =============================================
+   SLATE BLUE — buttons + contrast backgrounds
+   ============================================= */
+
+/* Primary buttons */
+.btn-primary {
+  background-color: var(--c-accent) !important;
+  border-color: var(--c-accent) !important;
+  color: #fff !important;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #436080 !important;
+  border-color: #436080 !important;
+  color: #fff !important;
+}
+
+/* Outline buttons (See all post / See all projects) */
+.btn-outline-secondary {
+  color: var(--c-accent) !important;
+  border-color: var(--c-accent) !important;
+  background: transparent !important;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  background-color: var(--c-accent) !important;
+  border-color: var(--c-accent) !important;
+  color: #fff !important;
+}
+
+/* Zoom hover — use slate blue shadow instead of purple */
+.btn-zoom:hover {
+  box-shadow: 0 8px 24px rgba(85, 124, 153, 0.35) !important;
+}
+
+/* Cookie notice — slate blue strip */
+#cookie-notice {
+  background: var(--c-accent) !important;
+  color: #fff !important;
+  font-size: 0.9rem;
+}
+#cookie-notice .btn-primary {
+  background-color: rgba(255,255,255,0.18) !important;
+  border-color: rgba(255,255,255,0.4) !important;
+  color: #fff !important;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+}
+#cookie-notice .btn-primary:hover {
+  background-color: rgba(255,255,255,0.3) !important;
+  border-color: rgba(255,255,255,0.6) !important;
+}
+
 /* ---- Footer ---- */
 .footer,
 .site-footer {
-  background: var(--c-heading) !important;
+  background: var(--c-accent) !important;
   margin-top: 0 !important;
 }
 .footer__background_shape,
@@ -587,7 +651,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .site-footer__tagline {
   font-size: 0.83rem;
-  color: rgba(255,255,255,.45);
+  color: rgba(255,255,255,.75);
   margin: 0;
   letter-spacing: 0.02em;
 }
@@ -597,7 +661,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 6px 0 4px;
 }
 .site-footer__social a {
-  color: rgba(255,255,255,.55);
+  color: rgba(255,255,255,.8);
   font-size: 1rem;
   text-decoration: none !important;
   transition: color 0.2s;
@@ -611,16 +675,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .site-footer__links a {
   font-size: 0.78rem;
-  color: rgba(255,255,255,.35);
+  color: rgba(255,255,255,.7);
   text-decoration: none !important;
   transition: color 0.2s;
 }
 .site-footer__links a:hover {
-  color: rgba(255,255,255,.7);
+  color: var(--c-white);
 }
 .site-footer__copy {
   font-size: 0.75rem;
-  color: rgba(255,255,255,.25);
+  color: rgba(255,255,255,.6);
   margin: 2px 0 0;
 }
 
