@@ -3,38 +3,43 @@
 {{ with .Site.Data.hero }}
 {{ if .enable }}
 <section class="hero" id="home">
-  <div class="container">
-    <div class="row align-items-center">
+  <div class="hero-split">
 
-      <div class="col-lg-6">
-        <div class="hero_content">
-          <h1 class="hero-name">Cosima Meyer</h1>
-          <p class="hero-typeit"><span class="multipleStrings"></span></p>
-          <div class="hero-social">
-            <a href="{{ .mail | absURL }}" target="_blank" rel="noopener" aria-label="Email">
-              <i class="fa fa-envelope"></i>
-            </a>
-            <a href="{{ .github }}" target="_blank" rel="noopener" aria-label="GitHub">
-              <i class="fa fa-github"></i>
-            </a>
-            <a href="{{ .linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a href="{{ .orcid }}" target="_blank" rel="noopener" aria-label="ORCID">
-              <i class="fa fa-book"></i>
-            </a>
-          </div>
-        </div>
+    <!-- ========== Left: text ========== -->
+    <div class="hero-left">
+      <p class="hero-pretitle">Data Scientist &amp; Conference Speaker</p>
+
+      <h1 class="hero-name">
+        <span class="hero-name-accent">Cosima</span><br>
+        <span class="hero-name-main">Meyer</span>
+      </h1>
+
+      <p class="hero-tagline"><span class="multipleStrings"></span>&nbsp;</p>
+
+      <div class="hero-social">
+        <a href="{{ .mail }}" class="hero-social-btn" target="_blank" rel="noopener" aria-label="Email">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a href="{{ .github }}" class="hero-social-btn" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="{{ .linkedin }}" class="hero-social-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="{{ .orcid }}" class="hero-social-btn" target="_blank" rel="noopener" aria-label="ORCID">
+          <i class="fa fa-book"></i>
+        </a>
       </div>
-
-      <div class="col-lg-6">
-        <div class="hero-photo-wrap">
-          <div class="hero-photo-offset"></div>
-          <img class="hero-photo" src="{{ .image | absURL }}" alt="Cosima Meyer" />
-        </div>
-      </div>
-
     </div>
+
+    <!-- ========== Right: photo ========== -->
+    <div class="hero-right">
+      <div class="hero-circle"></div>
+      <img class="hero-photo"
+           src="{{ .image | absURL }}"
+           alt="Cosima Meyer" />
+    </div>
+
   </div>
 </section>
 {{ end }}
