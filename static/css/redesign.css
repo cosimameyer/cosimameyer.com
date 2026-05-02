@@ -304,9 +304,11 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial__background_shape {
   display: none !important;
 }
-.testimonial__slider,
-.testimonial__slider_item {
-  /* neutralise slick carousel on this section */
+/* Neutralise any leftover slick styles on the talks section */
+.talks .testimonial__slider,
+.talks .testimonial__slider_item,
+.talks .slick-list,
+.talks .slick-track {
   all: unset;
   display: contents;
 }
@@ -314,16 +316,30 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial__header h2 {
   font-family: var(--f-heading) !important;
 }
-.talks-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+/* Scroll-snap carousel — shows ~3 cards, drag/scroll to see rest */
+.talks-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 16px;
+  cursor: grab;
 }
-@media (max-width: 991px) {
-  .talks-grid { grid-template-columns: repeat(2, 1fr); }
+.talks-carousel:active {
+  cursor: grabbing;
 }
-@media (max-width: 575px) {
-  .talks-grid { grid-template-columns: 1fr; }
+.talks-carousel::-webkit-scrollbar {
+  height: 4px;
+}
+.talks-carousel::-webkit-scrollbar-track {
+  background: var(--c-border);
+  border-radius: 2px;
+}
+.talks-carousel::-webkit-scrollbar-thumb {
+  background: var(--c-accent);
+  border-radius: 2px;
+  opacity: 0.5;
 }
 .talk-card {
   background: var(--c-white);
@@ -333,6 +349,16 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.22s ease;
+  /* Carousel sizing: ~3 visible on desktop */
+  flex: 0 0 calc(33.333% - 14px);
+  min-width: 260px;
+  scroll-snap-align: start;
+}
+@media (max-width: 991px) {
+  .talk-card { flex: 0 0 calc(50% - 10px); }
+}
+@media (max-width: 575px) {
+  .talk-card { flex: 0 0 82vw; }
 }
 .talk-card:hover {
   box-shadow: var(--shadow-md);
@@ -403,9 +429,78 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--c-accent);
 }
 
-/* ---- Resume section ---- */
-.resume .section__header h2 {
+/* ---- Global heading size reduction ---- */
+.section h2,
+.portfolio__header h2,
+.talks__header h2,
+.testimonial__header h2,
+.resume__heading-row h2,
+.blog-section h2 {
+  font-size: clamp(1.6rem, 2.8vw, 2.25rem) !important;
+  line-height: 1.2 !important;
+}
+
+/* ---- Resume — light + two columns ---- */
+.resume {
+  background: var(--c-white) !important;
+  padding: 80px 0 !important;
+  margin-bottom: 0 !important;
+}
+.resume__background {
+  display: none !important;
+}
+.resume__heading-row {
+  text-align: left;
+}
+.resume-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+@media (max-width: 767px) {
+  .resume-columns { grid-template-columns: 1fr; }
+}
+.resume-col-label {
+  font-family: var(--f-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--c-accent);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.resume-col-label .fa {
+  font-size: 0.85rem;
+  margin: 0;
+}
+.resume-item {
+  background: var(--c-bg);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  border-left: 3px solid var(--c-accent);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.resume-item:hover {
+  border-left-color: var(--c-heading);
+  box-shadow: var(--shadow-sm);
+}
+.resume-item h4 {
   font-family: var(--f-heading) !important;
+  font-size: 0.95rem !important;
+  font-weight: 700;
+  color: var(--c-heading);
+  margin-bottom: 3px;
+}
+.resume-item p {
+  font-size: 0.82rem;
+  color: var(--c-muted);
+  margin: 0;
+  line-height: 1.45;
 }
 
 /* ---- Blog section ---- */

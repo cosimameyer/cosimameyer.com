@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="portfolio-grid">
-      {{ range (where $.Site.RegularPages "Type" "portfolio").Reverse }}
+      {{ range first 6 (where $.Site.RegularPages "Type" "portfolio").Reverse }}
       <div class="portfolio-card">
         {{ with .Params.thumbnail }}
         <div class="portfolio-card-img">
