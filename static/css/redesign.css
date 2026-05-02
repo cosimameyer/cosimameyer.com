@@ -9,6 +9,7 @@
   --c-body:         #475569;
   --c-muted:        #94A3B8;
   --c-accent:       #3D6A8C;
+  --c-accent-dark:  #2E5472;
   --c-accent-light: #E8F2F8;
   --c-white:        #FFFFFF;
   --c-border:       #E2E8F0;
@@ -733,8 +734,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #2E5472 !important;
-  border-color: #2E5472 !important;
+  background-color: var(--c-accent-dark) !important;
+  border-color: var(--c-accent-dark) !important;
   color: #fff !important;
 }
 
@@ -758,7 +759,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Cookie notice — same deep slate as footer */
 #cookie-notice {
-  background: #1E3448 !important;
+  background: var(--c-accent-dark) !important;
   color: #fff !important;
   font-size: 0.9rem;
 }
@@ -777,7 +778,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---- Footer ---- */
 .footer,
 .site-footer {
-  background: #1E3448 !important;
+  background: var(--c-accent-dark) !important;
   margin-top: 0 !important;
 }
 .footer__background_shape,
