@@ -1,0 +1,55 @@
+{{ with .Site.Data.testimonialSection }}
+{{ if .enable }}
+<section class="section talks" id="testimonial">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="talks__header mb-5">
+          <span class="top-title">{{ .topTitle }}</span>
+          {{ .title | markdownify }}
+        </div>
+      </div>
+    </div>
+    <div class="talks-grid">
+      {{ range .testimonial }}
+      <div class="talk-card">
+        {{ if .thumbnail }}
+        <div class="talk-card-img">
+          <img src="{{ .thumbnail | absURL }}" alt="{{ .title }}" loading="lazy" />
+        </div>
+        {{ end }}
+        <div class="talk-card-body">
+          <p class="talk-event">{{ .name }}</p>
+          <h4 class="talk-title">{{ .title }}</h4>
+          <p class="talk-time">{{ .time }}</p>
+          {{ with .comment }}<p class="talk-comment">{{ . | markdownify }}</p>{{ end }}
+          <div class="talk-links">
+            {{ if .github }}
+            <a href="{{ .github | safeURL }}" target="_blank" rel="noopener">
+              <i class="fa fa-github"></i> Code
+            </a>
+            {{ end }}
+            {{ if .slides }}
+            <a href="{{ .slides | safeURL }}" target="_blank" rel="noopener">
+              <i class="fa fa-file-text-o"></i> Slides
+            </a>
+            {{ end }}
+            {{ if .recording }}
+            <a href="{{ .recording | safeURL }}" target="_blank" rel="noopener">
+              <i class="fa fa-play-circle-o"></i> Recording
+            </a>
+            {{ end }}
+            {{ if .event_url }}
+            <a href="{{ .event_url | safeURL }}" target="_blank" rel="noopener">
+              <i class="fa fa-external-link"></i> Event
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

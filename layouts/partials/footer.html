@@ -1,0 +1,40 @@
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="site-footer__inner">
+      <p class="site-footer__name">Cosima Meyer</p>
+      <p class="site-footer__tagline">Data Scientist · Speaker · Open Source</p>
+      <div class="site-footer__social">
+        {{ range .Site.Params.social }}
+        <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .icon }}">
+          <i class="fa {{ .icon }}"></i>
+        </a>
+        {{ end }}
+      </div>
+      <div class="site-footer__links">
+        {{ range .Site.Menus.sitemap }}
+        <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+      <p class="site-footer__copy">{{ .Site.Params.copyright }}</p>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ "plugins/jQuery/jquery.min.js" | absURL }}"></script>
+<script src="{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "plugins/slick/slick.min.js" | absURL }}"></script>
+<script src="{{ "plugins/waypoint/jquery.waypoints.min.js" | absURL }}"></script>
+<script src="{{ "plugins/magnafic-popup/jquery.magnific-popup.min.js" | absURL }}"></script>
+<script src="{{ "plugins/tweenmax/TweenMax.min.js" | absURL }}"></script>
+<script src="{{ "plugins/imagesloaded/imagesloaded.min.js" | absURL }}"></script>
+<script src="{{ "plugins/masonry/masonry.min.js" | absURL }}"></script>
+{{ $formhandler := resources.Get "js/form-handler.js" | minify }}
+<script src="{{ $formhandler.Permalink }}"></script>
+{{ $script := resources.Get "js/script.js" | minify }}
+<script src="{{ $script.Permalink }}"></script>
+{{- template "partials/cookie_consent.html" . }}
+
+{{ if (findRE "<pre" .Content 1) }}
+  {{ $jsCopy := resources.Get "js/clipboard.js" | minify }}
+  <script src="{{ $jsCopy.RelPermalink }}"></script>
+{{ end }}

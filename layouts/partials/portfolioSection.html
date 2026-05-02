@@ -1,0 +1,40 @@
+{{ with .Site.Data.portfolioSection }}
+{{ if .enable }}
+<section class="section portfolio" id="portfolio">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="portfolio__header mb-5">
+          <span class="top-title">{{ .topTitle }}</span>
+          {{ .title | markdownify }}
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-grid">
+      {{ range (where $.Site.RegularPages "Type" "portfolio").Reverse }}
+      <div class="portfolio-card">
+        {{ with .Params.thumbnail }}
+        <div class="portfolio-card-img">
+          <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
+        </div>
+        {{ end }}
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-tags">
+            {{ with .Params.language }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+            {{ with .Params.field }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+          </div>
+          <h3 class="portfolio-card-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h3>
+          {{ with .Params.shortDescription }}
+          <p class="portfolio-card-desc">{{ . }}</p>
+          {{ end }}
+          <a class="portfolio-card-link" href="{{ .Permalink }}">View project →</a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

@@ -1,0 +1,58 @@
+<head>
+  <meta charset="utf-8" />
+  <title>{{ .Title }}</title>
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  {{ "<!-- Fonts -->" | safeHTML }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  {{ "<!-- Slick Carousel -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }}" />
+  {{ "<!-- Font Awesome -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "plugins/font-awesome/css/font-awesome.min.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "plugins/font-awesome/css/brands.min.css" | absURL }}" />
+
+  {{ "<!-- Magnific Popup -->" | safeHTML }}
+  <link rel="stylesheet" href="{{"plugins/magnafic-popup/magnific-popup.css" | absURL }}" />
+
+  {{ "<!-- Theme stylesheet -->" | safeHTML }}
+  {{ $style := resources.Get "scss/style.scss" | css.Sass | minify }}
+  <link href="{{ $style.Permalink }}" rel="stylesheet" />
+
+  {{ "<!-- 2026 redesign -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "css/redesign.css" | absURL }}" />
+
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon" />
+  <link rel="icon" href="{{ "images/favicon.png" | absURL }}" type="image/x-icon" />
+
+  {{ with site.Params.googleAnalytics }}
+  {{ "<!-- Google Analytics -->" | safeHTML }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ . }}');
+  </script>
+  {{ end }}
+
+  {{ if (findRE "pre" .Content 1) }}
+    {{ $syntax := resources.Get "scss/syntax.css" | minify }}
+    <link href="{{ $syntax.RelPermalink }}" rel="stylesheet">
+    {{ $copyCss := resources.Get "scss/clipboard.css" | minify }}
+    <link href="{{ $copyCss.RelPermalink }}" rel="stylesheet">
+  {{ end }}
+
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  <a href="https://mas.to/@cosima_meyer" rel="me" style="display:none"></a>
+</head>

@@ -1,0 +1,57 @@
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+{{ with .Site.Data.hero }}
+{{ if .enable }}
+<section class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+        <div class="hero_content">
+          <h1 class="hero-name">Cosima Meyer</h1>
+          <p class="hero-typeit"><span class="multipleStrings"></span></p>
+          <div class="hero-social">
+            <a href="{{ .mail | absURL }}" target="_blank" rel="noopener" aria-label="Email">
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a href="{{ .github }}" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa fa-github"></i>
+            </a>
+            <a href="{{ .linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="{{ .orcid }}" target="_blank" rel="noopener" aria-label="ORCID">
+              <i class="fa fa-book"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-offset"></div>
+          <img class="hero-photo" src="{{ .image | absURL }}" alt="Cosima Meyer" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<script>
+  new TypeIt(".multipleStrings", {
+    strings: [
+      "I speak at conferences worldwide.",
+      "I build open-source tools for R and Python.",
+      "I make machine learning approachable.",
+      "I work at the intersection of data and community."
+    ],
+    breakLines: false,
+    loop: true,
+    speed: 50,
+    deleteSpeed: 30,
+    waitBeforeDelete: 2200
+  }).go();
+</script>
