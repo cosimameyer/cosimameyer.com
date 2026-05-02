@@ -562,6 +562,35 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
 }
 
+/* ---- Portfolio list page ---- */
+.portfolio-list-hero {
+  padding: 120px 0 56px;
+  background: var(--c-bg);
+}
+.portfolio-list-title {
+  font-family: var(--f-heading);
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+  color: var(--c-heading);
+  letter-spacing: -0.02em;
+  margin: 8px 0 12px;
+}
+.portfolio-list-lead {
+  font-size: 1rem;
+  color: var(--c-muted);
+  margin: 0;
+}
+/* On the list page show 3 cols same as homepage */
+.portfolio-grid--full {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 991px) {
+  .portfolio-grid--full { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 575px) {
+  .portfolio-grid--full { grid-template-columns: 1fr; }
+}
+
 /* ---- Blog section ---- */
 .blog-section {
   background: var(--c-white) !important;
