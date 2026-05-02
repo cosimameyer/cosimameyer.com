@@ -12,22 +12,26 @@
         <p class="resume-col-label">
           <i class="fa fa-briefcase"></i> Experience
         </p>
-        {{ range .experience }}
-        <div class="resume-item">
-          {{ .content | markdownify }}
+        <div class="resume-timeline">
+          {{ range .experience }}
+          <div class="resume-item">
+            {{ .content | markdownify }}
+          </div>
+          {{ end }}
         </div>
-        {{ end }}
       </div>
 
       <div class="resume-col">
         <p class="resume-col-label">
           <i class="fa fa-graduation-cap"></i> Education
         </p>
-        {{ range .education }}
-        <div class="resume-item">
-          {{ .content | markdownify }}
+        <div class="resume-timeline">
+          {{ range .education }}
+          <div class="resume-item">
+            {{ .content | markdownify }}
+          </div>
+          {{ end }}
         </div>
-        {{ end }}
       </div>
 
     </div>

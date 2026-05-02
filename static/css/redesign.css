@@ -440,7 +440,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2 !important;
 }
 
-/* ---- Resume — light + two columns ---- */
+/* ---- Resume — light bg + vertical timeline ---- */
 .resume {
   background: var(--c-white) !important;
   padding: 80px 0 !important;
@@ -455,20 +455,22 @@ h1, h2, h3, h4, h5, h6 {
 .resume-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 56px;
   align-items: start;
 }
 @media (max-width: 767px) {
-  .resume-columns { grid-template-columns: 1fr; }
+  .resume-columns { grid-template-columns: 1fr; gap: 40px; }
 }
+
+/* Column label */
 .resume-col-label {
   font-family: var(--f-heading);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--c-accent);
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -477,27 +479,73 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.85rem;
   margin: 0;
 }
+
+/* Vertical line */
+.resume-timeline {
+  position: relative;
+  padding-left: 26px;
+}
+.resume-timeline::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  bottom: 24px;
+  width: 1.5px;
+  background: linear-gradient(
+    to bottom,
+    var(--c-accent) 0%,
+    rgba(85, 124, 153, 0.12) 100%
+  );
+}
+
+/* Timeline item */
 .resume-item {
+  position: relative;
+  padding: 14px 16px;
+  margin-bottom: 10px;
   background: var(--c-bg);
   border-radius: 12px;
-  padding: 16px 18px;
-  margin-bottom: 10px;
-  border-left: 3px solid var(--c-accent);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  border-left: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.resume-item:last-child {
+  margin-bottom: 0;
 }
 .resume-item:hover {
-  border-left-color: var(--c-heading);
+  background: var(--c-white);
   box-shadow: var(--shadow-sm);
 }
+
+/* Dot on the line */
+.resume-item::before {
+  content: '';
+  position: absolute;
+  left: -22px;
+  top: 17px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--c-white);
+  border: 2.5px solid var(--c-accent);
+  z-index: 1;
+  transition: background 0.2s, border-color 0.2s;
+}
+.resume-item:hover::before {
+  background: var(--c-accent);
+}
+
+/* Content inside items */
 .resume-item h4 {
   font-family: var(--f-heading) !important;
-  font-size: 0.95rem !important;
+  font-size: 0.93rem !important;
   font-weight: 700;
   color: var(--c-heading);
   margin-bottom: 3px;
+  line-height: 1.35;
 }
 .resume-item p {
-  font-size: 0.82rem;
+  font-size: 0.81rem;
   color: var(--c-muted);
   margin: 0;
   line-height: 1.45;
