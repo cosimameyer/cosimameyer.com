@@ -547,11 +547,37 @@ h1, h2, h3, h4, h5, h6 {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--c-accent-light);
+  position: relative;
 }
 .talk-card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Type badge — overlaid on thumbnail corner */
+.talk-type-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 20px;
+  background: var(--c-accent-dark);
+  color: #fff;
+  z-index: 2;
+}
+.talk-type-keynote { background: #4A3F6B; }
+.talk-type-workshop { background: var(--c-accent); }
+.talk-type-talk { background: var(--c-accent-dark); }
+/* Badge when there's no thumbnail */
+.talk-type-no-img {
+  position: static;
+  display: inline-block;
+  margin: 0 18px 6px;
 }
 .talk-card-body {
   padding: 16px 18px 18px;

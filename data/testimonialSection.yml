@@ -9,15 +9,17 @@ testimonial:
   - name: PyCon DE & PyData 2025
     thumbnail: images/talks/code_and_community.png
     title: Code & Community - The Synergy of Community Building and Task Automation
+    type: Talk
     comment:
     time: April 25, 2025
     github: https://github.com/cosimameyer/awesome-pyladies-blogs
     slides: https://drive.google.com/file/d/1vMlaJ3vbV7ONJg24dqBFIUp6sJUjYL_u/view?usp=share_link
     event_url: https://2025.pycon.de/
-    
+
   - name: R-Ladies Abuja
     thumbnail: images/talks/from_complex_to_clear.png
     title: From Complex to Clear - Understanding Your NLP Models
+    type: Talk
     comment:
     time: March 23, 2024
     github: https://bit.ly/from-complex-to-clear
@@ -27,6 +29,7 @@ testimonial:
   - name: Career Talks 2024
     thumbnail: images/talks/career-talks-2024.png
     title: From Social Sciences to Data Science
+    type: Talk
     comment:
     time: February 15, 2024
     slides: /slides/Career_Talk_2024/index.html#0
@@ -34,24 +37,27 @@ testimonial:
   - name: PyLadiesCon 2023
     thumbnail: images/talks/pyladiescon-2023.png
     title: Sparkling Connections - Making PyLadies' Contributions Visible Through Mastodon Bots
+    type: Talk
     comment:
     time: December 2, 2023
     github: https://bit.ly/py-list
     slides: https://bit.ly/pyladiescon2023-slides
     event_url: https://pretalx.com/pyladiescon-2023/talk/NLLJLT/
-    
+
   - name: NHS-R/NHS.pycom Conference 2023
     thumbnail: images/talks/nhs-r-nhs-pycom-2023.png
     title: Building Bridges - Exploring Open-Source Library Development in R and Python
+    type: Talk
     comment:
     time: October 10, 2023
     github: https://bit.ly/nb-overviewR-overviewpy
     slides: https://docs.google.com/presentation/d/e/2PACX-1vSO_P_zks1LDAmHHqj7WvTi7Gsf0LomhlHIGkZ7zcq4Cd1dLJCUUT54eesQD5Fa0XgKqke2lhTe2hJ5/pub?start=false&loop=false&delayms=3000
     event_url: https://nhsrcommunity.com/events/nhs-r-nhs-pycom-online-conference-talks-2023-ticket-for-virtual-attendance-on-tuesday-10th-october-2023/
-    
+
   - name: Women in Data Science 2023
     thumbnail: images/talks/wids-2023.png
     title: PythonistR - A Match Made in Data Heaven
+    type: Workshop
     comment:
     time: March 23, 2023
     github: https://github.com/cosimameyer/r-python-talk/blob/main/README.md
@@ -60,6 +66,7 @@ testimonial:
 
   - name: Learning R for and With the Civil Society
     thumbnail:
+    type: Workshop
     title: Data Visualization and ShinyApps
     comment: A twelve week course where I design, implement and deliver the units on **Data Visualization** and **ShinyApp Programming** (in German). The course was awarded as 'Excellent Volunteering' by [GoVolunteer](https://blog.govolunteer.com/ausgezeichnetes-engagement/)
     time: 2021-2023
@@ -68,13 +75,15 @@ testimonial:
   - name: Women in Data Science 2022
     thumbnail: images/talks/wids-2022.jpeg
     title: From Social Sciences To Data Science
-    comment: 
+    type: Talk
+    comment:
     time: April 4, 2022
     slides: /slides/WiDS_2022_talk/index.html#0
     event_url: https://wuman307139351.wordpress.com/wids/
     
   - name: CorrelCon 2021
     thumbnail: images/talks/correlcon-2021.png
+    type: Talk
     title: Big things come in small packages – Tips and tricks for developing your own R package
     # comment: R is a great resource for data management, statistics, analysis, and visualization — and it becomes better every day. This is to a large part because of the active community that continuously creates and builds extensions for the R world. During the talk, I will provide you with tips and tricks for contributing to this world by writing packages.
     time: November 12, 2021
@@ -84,6 +93,7 @@ testimonial:
     
   - name: WoMen in Tech
     thumbnail: images/talks/git-around-the-world.png
+    type: Talk
     # comment: As part of the [WoMen in Tech](https://www.uni-mannheim.de/management-analytics/news/women-in-tech/) initiative, I was invited to talk about my usual Git workflow and showcase how to implement it with RStudio. [Here is a short workflow description](https://cosimameyer.rbind.io/post/how-to-structure-your-data-workflow-efficiently-using-r/) I wrote up as a blog post.
     title: Git Around the World
     time: April 20, 2021
@@ -92,6 +102,7 @@ testimonial:
     
   - name: Digital Social Summit 2021
     thumbnail: images/talks/digital-social-summit.png
+    type: Talk
     title: Programmieraufgabe oder Lückentext? Wir visualisieren Daten und automatisieren Reports
     # comment: In Kooperation mit den [Digital Media Women (#DMW)](https://digitalmediawomen.de/) und [DGOF](https://www.dgof.de) organisiert [Q | Agentur für Forschung GmbH](http://www.teamq.de/) die (Online-)Reihe ["Research plus"](https://www.dgof.de/dgof-laedt-zur-dritten-research-plus-online/), ein Vortrags- und Netzwerkevent rund um das Thema Innovationen in der Online-Forschung. In diesem Rahmen bin ich als Sprecherin eingeladen und stelle vor, wie ShinyApps Forschung (und vieles mehr) für eine breitere Masse zugänglich machen können.
     time: March 30, 2021
@@ -99,6 +110,7 @@ testimonial:
     
   - name: Research Plus
     thumbnail: images/talks/research-plus-2021.png
+    type: Talk
     title: Datenvisualisierung 2.0 - R Shiny oder wie ich Forschung zugänglich mache
     # comment: In Kooperation mit den Digital Media Women (#DMW) und DGOF organisiert Q | Agentur für Forschung GmbH die (Online-)Reihe “Research plus”, ein Vortrags- und Netzwerkevent rund um das Thema Innovationen in der Online-Forschung. In diesem Rahmen bin ich als Sprecherin eingeladen und stelle vor, wie ShinyApps Forschung (und vieles mehr) für eine breitere Masse zugänglich machen können.
     time: March 1, 2021
@@ -108,6 +120,7 @@ testimonial:
     
   - name: R-Ladies Tunis
     thumbnail: images/talks/nlp-rladies-tunis.png
+    type: Workshop
     title: Getting the most out of text - Using supervised and unsupervised approaches in NLP
     # comment: Text data provides an oasis of information for both researchers and non-researchers alike to explore. Natural Language Processing (NLP) methods help make sense of this difficult data type. The talk and code give you a smooth introduction to the [quanteda package](https://quanteda.io/). I will also showcase how to quickly visualize your text data and cover both supervised and unsupervised approaches in NLP. As part of the code demo, we will use text [data from the UN](https://doi.org/10.7910/DVN/0TJX8Y) as a working example to give you first insights into the structure of text data and how to work with it. If you want to see the code that we are using during the workshop in action, it's also deployed [here](https://nlp-tunis.netlify.app).
     time: January 30, 2021
@@ -118,6 +131,7 @@ testimonial:
     
   - name: R-Ladies Bergen
     thumbnail: images/talks/nlp-rladies-bergen.png
+    type: Workshop
     title: Taking text data to the next level - Using supervised and unsupervised approaches in NLP
     # comment: Text data provides an oasis of information for both researchers and non-researchers alike to explore. Natural Language Processing (NLP) methods help make sense of this difficult data type, which is written text. The talk will give you a smooth introduction to the [quanteda package](https://quanteda.io/). I will also showcase how to quickly visualize your text data and cover both supervised and unsupervised approaches in NLP. As part of a code demo, we will use text [data from the UN](https://doi.org/10.7910/DVN/0TJX8Y) as a working example to give you first insights into the structure of text data and how to work with it. If you want to see the code that we are using during the workshop in action, it's also deployed [here](https://nlp-bergen.netlify.app).
     time: December 20, 2020
@@ -128,6 +142,7 @@ testimonial:
     
   - name: Zurich Summer School for Women in Political Methodology - Mini Conference 2020
     thumbnail: images/talks/overviewr.png
+    type: Talk
     title: overviewR - Write your own R package
     # comment: As part of the mini-conference of the Zurich Summer School Women in Political Methodology 2020, I am presenting the CRAN package overviewR (written together with [Dennis Hammerschmidt](http://dennis-hammerschmidt.rbind.io/)) as well as during a Q&A (together with [Katrin Paula](https://www.hfp.tum.de/en/professorships/professorship-for-global-security-technology/)) some lessons learned from building a package.
     time: November 27, 2020
@@ -136,6 +151,7 @@ testimonial:
     
   - name: CorrelAid Workshop
     thumbnail: images/talks/shiny-apps-correlaid.png
+    type: Workshop
     title: ShinyApps - Was ist das und wie erstelle ich eine?
     # comment: As part of the mini-conference of the Zurich Summer School Women in Political Methodology 2020, I am presenting the CRAN package overviewR (written together with [Dennis Hammerschmidt](http://dennis-hammerschmidt.rbind.io/)) as well as during a Q&A (together with [Katrin Paula](https://www.hfp.tum.de/en/professorships/professorship-for-global-security-technology/)) some lessons learned from building a package.
     time: November 26, 2020
@@ -145,6 +161,7 @@ testimonial:
     
   - name: CorrelCon 2020
     thumbnail: images/talks/correlcon-2020.png
+    type: Talk
     title: Talking Shiny - Creating interactive and accessible dashboards in R
     # comment: Research produces fascinating findings. But it is often difficult to present them to a broader audience beyond the research paper. Shiny apps offer researchers (both in academia and business) sophisticated tools to generate web applications that make the results accessible, understandable, and interactive. The talk will guide you through the necessary steps to set up your own ShinyApp and discuss lessons learned from building a ShinyApp using Shiny for R, shinydashboards, and echarts4r.
     time: November 7, 2020
@@ -155,6 +172,7 @@ testimonial:
 
   - name: CorrelAid Open Online Data Meetup
     thumbnail: images/talks/oodm-2020.png
+    type: Talk
     title: Interactive Science - Using Shiny and R to Make Research Accessible (and to Let it Shine)
     # comment: Research produces fascinating findings. But it is often difficult to present them to a broader audience beyond the research paper. Shiny apps offer researchers (both in academia and business) sophisticated tools to generate web applications that make the results accessible, understandable, and interactive. The talk will guide you through the necessary steps to set up your own ShinyApp and discuss lessons learned from building a ShinyApp using Shiny for R, shinydashboards, and echarts4r.
     time: August 26, 2020
@@ -165,6 +183,7 @@ testimonial:
 
   - name: Women in Data Science 2020
     thumbnail: images/talks/wids-2020.jpg
+    type: Talk
     title: 
     # comment: I was invited to present my research and work in data science at [Women in Data Science 2020](https://survey-data-science.net/women-data-science-2020), a [global initiative](https://www.widsconference.org) to inspire and educate data scientists. The event was facilitated in collaboration with Stanford University, [SAP Next-Gen](https://www.sap.com/corporate/en/company/innovation/next-gen-innovation-platform.html), and the [International Program in Survey and Data Science](https://survey-data-science.net).
     time: June 25, 2020
