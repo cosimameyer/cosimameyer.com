@@ -1024,6 +1024,19 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   line-height: 1.4;
 }
+.resume-visiting {
+  font-size: 0.75rem !important;
+  color: var(--c-muted) !important;
+  opacity: 0.75;
+  margin-top: 5px !important;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.resume-visiting .fa-turn-down {
+  font-size: 0.65rem;
+  opacity: 0.6;
+}
 
 /* ---- Portfolio single page ---- */
 .project-single-title {

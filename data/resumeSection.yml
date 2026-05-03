@@ -10,11 +10,11 @@ experience:
   - content: >
       #### SAP
 
-      Senior Data Scientist and Lead of Data Science Methods Community
+      AI Program Manager, Senior Data Scientist and Lead of Data Science Community
   - content: >
       #### IBM
 
-      Senior Data Scientist
+      Senior Data Scientist and Lead of Data Science Methods Community
   - content: >
       #### Kienbaum
 
@@ -33,26 +33,17 @@ education:
       #### PhD in Political Science
 
       University of Mannheim, Germany
-  - content: >
-      #### Visiting researcher
-
-      Rice University, Houston, TX, USA
+    visiting: "Visiting researcher · Rice University, Houston, TX, USA"
   - content: >
       #### Master of Arts in Political Science
 
       University of Mannheim, Germany
-  - content: >
-      #### Visiting student
-
-      SciencesPo Paris, France
+    visiting: "Visiting student · SciencesPo Paris, France"
   - content: >
       #### Bachelor of Arts in Political Science and Economics
 
       University of Mannheim, Germany
-  - content: >
-      #### Visiting student
-
-      Uppsala University, Sweden
+    visiting: "Visiting student · Uppsala University, Sweden"
 
 achievements:
   - content: >
@@ -63,3 +54,7 @@ achievements:
       #### Google Women Techmakers Ambassador
 
       Recognised by Google for contributions to diversity and inclusion in tech.
+  - content: >
+      #### IBM's Innovate with Purpose Award
+
+      Recognised by IBM.
