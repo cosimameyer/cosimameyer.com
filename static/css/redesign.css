@@ -1027,15 +1027,18 @@ h1, h2, h3, h4, h5, h6 {
 .resume-visiting {
   font-size: 0.75rem !important;
   color: var(--c-muted) !important;
-  opacity: 0.75;
-  margin-top: 5px !important;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  opacity: 0.72;
+  margin-top: 6px !important;
+  padding-left: 2px;
 }
-.resume-visiting .fa-turn-down {
-  font-size: 0.65rem;
-  opacity: 0.6;
+/* Community tab: role shown as a small label above description */
+.resume-community-role {
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--c-accent) !important;
+  margin: 2px 0 4px !important;
 }
 
 /* ---- Portfolio single page ---- */

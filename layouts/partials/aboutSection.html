@@ -22,6 +22,9 @@
       <button class="resume-tab" data-tab="achievements" role="tab" aria-selected="false">
         <i class="fa-solid fa-star"></i> Achievements
       </button>
+      <button class="resume-tab" data-tab="community" role="tab" aria-selected="false">
+        <i class="fa-solid fa-people-group"></i> Community
+      </button>
     </div>
 
     <div class="resume-panel active" id="resume-experience" role="tabpanel">
@@ -39,7 +42,7 @@
           <h4>{{ index . "title" }}</h4>
           <p>{{ index . "institution" }}</p>
           {{ with index . "visiting" }}
-          <p class="resume-visiting"><i class="fa-solid fa-turn-down"></i> {{ . }}</p>
+          <p class="resume-visiting">↳ {{ . }}</p>
           {{ end }}
         </div>
         {{ end }}
@@ -50,6 +53,18 @@
       <div class="resume-timeline">
         {{ range .achievements }}
         <div class="resume-item">{{ .content | markdownify }}</div>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="resume-panel" id="resume-community" role="tabpanel">
+      <div class="resume-timeline">
+        {{ range .community }}
+        <div class="resume-item">
+          <h4>{{ index . "title" }}</h4>
+          <p class="resume-community-role">{{ index . "role" }}</p>
+          <p>{{ index . "description" }}</p>
+        </div>
         {{ end }}
       </div>
     </div>
