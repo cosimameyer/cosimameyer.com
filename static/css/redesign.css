@@ -349,20 +349,32 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--c-white) !important;
   padding: 80px 0 100px !important;
 }
-.media-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 8px;
+/* Scroll-snap carousel — mirrors .talks-carousel */
+.media-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 16px;
+  cursor: grab;
 }
-@media (max-width: 991px) {
-  .media-grid { grid-template-columns: repeat(2, 1fr); }
+.media-carousel:active {
+  cursor: grabbing;
 }
-@media (max-width: 575px) {
-  .media-grid { grid-template-columns: 1fr; }
+.media-carousel::-webkit-scrollbar {
+  height: 4px;
+}
+.media-carousel::-webkit-scrollbar-track {
+  background: var(--c-border);
+  border-radius: 2px;
+}
+.media-carousel::-webkit-scrollbar-thumb {
+  background: var(--c-accent);
+  border-radius: 2px;
 }
 
-/* Card shell */
+/* Card shell — carousel item sizing mirrors .talk-card */
 .media-card {
   background: var(--c-white);
   border-radius: var(--radius-card);
@@ -370,11 +382,19 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.22s ease, transform 0.22s ease;
+  transition: box-shadow 0.22s ease;
+  flex: 0 0 calc(33.333% - 14px);
+  min-width: 260px;
+  scroll-snap-align: start;
+}
+@media (max-width: 991px) {
+  .media-card { flex: 0 0 calc(50% - 10px); }
+}
+@media (max-width: 575px) {
+  .media-card { flex: 0 0 82vw; }
 }
 .media-card:hover {
   box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
 }
 
 /* Image / placeholder area */
