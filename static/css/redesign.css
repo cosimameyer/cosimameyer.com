@@ -1102,6 +1102,29 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--c-accent) !important;
 }
 
+/* Post meta bar — sits below title in breadcrumb header */
+.post-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 0.83rem;
+  color: var(--c-muted);
+}
+.post-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.post-meta-item .portfolio-tag {
+  font-size: 0.72rem;
+}
+.post-meta-sep {
+  color: var(--c-border);
+}
+
 /* Single blog post content — readable width */
 .singleBlog {
   background: var(--c-white) !important;

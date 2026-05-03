@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <h3 class="breadCrumb__title">{{ .Title }}</h3>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ .Site.Params.blogPageURL | absURL }}">Writing</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+          </ol>
+        </nav>
+
+        <!-- Post meta -->
+        <div class="post-meta-bar">
+          <span class="post-meta-item">
+            <i class="fa-regular fa-calendar"></i>
+            {{ .PublishDate.Format "January 2, 2006" }}
+          </span>
+          <span class="post-meta-sep">·</span>
+          <span class="post-meta-item">
+            <i class="fa-regular fa-clock"></i>
+            {{ .ReadingTime }} min read
+          </span>
+          {{ with .Params.category }}
+          <span class="post-meta-sep">·</span>
+          <span class="post-meta-item">
+            {{ range . }}<span class="portfolio-tag">{{ . }}</span> {{ end }}
+          </span>
+          {{ end }}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section singleBlog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="singleBlog__content">
+          {{ if .Params.toc }}
+            <h3>Table of Contents</h3>
+            {{ .TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" | safeHTML }}
+          {{ end }}
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

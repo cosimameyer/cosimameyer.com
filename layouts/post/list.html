@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3 class="breadCrumb__title">Writing</h3>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Writing</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section blog-section">
+  <div class="container">
+    <div class="portfolio-grid">
+      {{ range .Paginator.Pages }}
+      <div class="portfolio-card">
+        {{ with .Params.featureImage }}
+        <div class="portfolio-card-img">
+          <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
+        </div>
+        {{ end }}
+        <div class="portfolio-card-body">
+          {{ with .Params.category }}
+          <div class="portfolio-card-tags">
+            {{ range . }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+          <p class="talk-time">
+            {{ .PublishDate.Format "January 2, 2006" }}
+            {{ if .ReadingTime }}&nbsp;· {{ .ReadingTime }} min read{{ end }}
+          </p>
+          <h3 class="portfolio-card-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h3>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="mt-5 d-flex justify-content-center">
+      {{ partial "pagination" . }}
+    </div>
+
+  </div>
+</section>
+
+{{ end }}
