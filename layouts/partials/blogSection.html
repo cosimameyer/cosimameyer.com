@@ -1,0 +1,58 @@
+{{ with .Site.Data.blogSection }}
+{{ if .enable }}
+<section class="section blog-section" id="post">
+  <div class="container">
+
+    <div class="row mb-4 align-items-end">
+      <div class="col-lg-8">
+        <span class="top-title pre-line">{{ .topTitle }}</span>
+        {{ .title | markdownify }}
+      </div>
+      <div class="col-lg-4">
+        <div class="portfolio__header-button desktop">
+          <a class="btn btn-outline-secondary btn-zoom"
+             href="{{ .buttonTarget | absURL }}">See all posts</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-grid">
+      {{ $posts := where $.Site.RegularPages "Type" "post" }}
+      {{ range first 3 ($posts.ByDate.Reverse) }}
+      <div class="portfolio-card">
+        {{ with .Params.featureImage }}
+        <div class="portfolio-card-img">
+          <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
+        </div>
+        {{ end }}
+        <div class="portfolio-card-body">
+          {{ with .Params.category }}
+          <div class="portfolio-card-tags">
+            {{ range . }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+          <p class="talk-time">
+            {{ .PublishDate.Format "January 2, 2006" }}
+            {{ if .ReadingTime }}&nbsp;· {{ .ReadingTime }} min read{{ end }}
+          </p>
+          <h3 class="portfolio-card-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h3>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="portfolio__header-button mobile">
+          <a class="btn btn-outline-secondary btn-zoom"
+             href="{{ .buttonTarget | absURL }}">See all posts</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}
+{{ end }}

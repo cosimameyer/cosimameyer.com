@@ -1061,10 +1061,13 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
-/* ---- Blog / post single page ---- */
+/* ---- Blog section (homepage preview) ---- */
 .blog-section {
-  background: var(--c-white) !important;
+  background: var(--c-bg) !important;
+  padding: 80px 0 100px !important;
 }
+/* Suppress theme blog shape decoration */
+.post-preview__shape { display: none !important; }
 
 /* Breadcrumb page header (blog posts, portfolio single pages) */
 .breadCrumb {
