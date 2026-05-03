@@ -1226,21 +1226,38 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em !important;
   margin-bottom: 12px !important;
 }
+/* Breadcrumb — override Bootstrap flex with simple inline flow so items
+   can never be vertically offset from each other */
 .breadCrumb ol.breadcrumb {
-  align-items: baseline !important;
+  display: block !important;   /* kill flex; items become inline */
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1.6 !important;
+}
+.breadCrumb .breadcrumb-item {
+  display: inline !important;
+  float: none !important;
+  padding-left: 0 !important;
+  vertical-align: baseline !important;
+}
+.breadCrumb .breadcrumb-item + .breadcrumb-item::before {
+  display: inline !important;
+  padding: 0 6px !important;
+  color: var(--c-border) !important;
+  vertical-align: baseline !important;
 }
 .breadCrumb .breadcrumb-item a,
 .breadCrumb .breadcrumb-item.active {
+  display: inline !important;
   color: var(--c-muted) !important;
-  font-size: 0.85rem;
+  font-size: 0.85rem !important;
   font-weight: 400 !important;
-  line-height: 1.5 !important;
+  line-height: inherit !important;
+  vertical-align: baseline !important;
 }
 .breadCrumb .breadcrumb-item a:hover {
   color: var(--c-accent) !important;
-}
-.breadCrumb .breadcrumb-item + .breadcrumb-item::before {
-  color: var(--c-border) !important;
 }
 .post-meta li,
 .post-meta a {
@@ -1264,16 +1281,17 @@ h1, h2, h3, h4, h5, h6 {
   gap: 5px;
 }
 
-/* Project thumbnail on single page — subtle, not full-bleed */
+/* Project thumbnail on single page — small logo/preview, not a hero banner */
 .project-thumbnail {
-  width: 100%;
-  max-height: 380px;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-sm);
   display: block;
-  margin-bottom: 32px;
+  max-width: 200px;
+  max-height: 130px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  margin: 0 auto 28px;
+  opacity: 0.9;
 }
 
 /* PI card footer row for language + impact */
