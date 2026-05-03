@@ -1470,7 +1470,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
 }
 
-/* Zoom hover — use slate blue shadow instead of purple */
+/* Consistent hover shadow on all buttons */
+.btn:hover,
+.btn:focus,
 .btn-zoom:hover {
   box-shadow: 0 8px 24px rgba(85, 124, 153, 0.35) !important;
 }
