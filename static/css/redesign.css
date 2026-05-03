@@ -1320,6 +1320,13 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 5px;
 }
+/* In page headers (breadcrumb area), tags should recede — lighter, muted */
+.breadCrumb .blog-category {
+  color: var(--c-muted);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  opacity: 0.8;
+}
 
 /* PI card footer: language + field metadata */
 .project-pi-footer {
