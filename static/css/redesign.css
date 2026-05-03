@@ -1240,6 +1240,8 @@ h1, h2, h3, h4, h5, h6 {
   float: none !important;
   padding-left: 0 !important;
   vertical-align: baseline !important;
+  font-size: 0.85rem !important;   /* ensures ::before separator inherits same size as link text */
+  line-height: 1.6 !important;
 }
 .breadCrumb .breadcrumb-item + .breadcrumb-item::before {
   display: inline !important;
