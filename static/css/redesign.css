@@ -451,6 +451,20 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255,255,255,0.5);
 }
 
+/* Photo credit on media card image — mirrors hero credit style */
+.media-photo-credit {
+  position: absolute;
+  bottom: 8px;
+  right: 6px;
+  font-size: 0.52rem;
+  color: rgba(100,120,140,0.45);
+  letter-spacing: 0.04em;
+  z-index: 2;
+  pointer-events: none;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
 /* Type badge — same style as talk cards */
 .media-type-badge {
   position: absolute;

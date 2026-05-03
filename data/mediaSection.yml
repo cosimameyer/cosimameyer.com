@@ -8,7 +8,8 @@ items:
     date: "2025"
     url: "https://podcasts.apple.com/se/podcast/tech-queen-cosima-meyer-senior-data-scientist-at-sap-ex-ibm/id1625869153?i=1000687811079&l=en-GB"
     cta: "Listen"
-    image: "images/media/600x600bb.webp"   # e.g. images/media/podcast-cover.jpg
+    image: "images/media/600x600bb.webp"
+    credit: ""   # e.g. "Photo: Jane Doe"
 
   - type: press
     source: "Business Insider Germany"
@@ -18,10 +19,42 @@ items:
     cta: "Read"
     image: ""   # e.g. images/media/article-thumb.jpg
 
-  - type: interview
-    source: "Your Outlet"
-    title: "Placeholder Interview Title"
-    date: "2023"
-    url: "#"
+  - type: podcast
+    source: "Python ?"
+    title: ""
+    date: ""
+    url: ""
+    cta: "Listen"
+    image: "images/media/"   # e.g. images/media/podcast-cover.jpg
+
+  - type: podcast
+    source: "R Weekly Highlights"
+    title: "GitHub - Perks of Collaboration and Version Control"
+    date: "2022"
+    url: ""
+    cta: "Listen"
+    image: "images/media/shiny_podcast.png"   # e.g. images/media/podcast-cover.jpg
+
+  - type: podcast
+    source: "R Weekly Highlights"
+    title: "Understanding ShinyApps"
+    date: "2022"
+    url: ""
+    cta: "Listen"
+    image: "images/media/git_podcast.png"   # e.g. images/media/podcast-cover.jpg
+
+  # - type: interview
+  #   source: "Your Outlet"
+  #   title: "Placeholder Interview Title"
+  #   date: "2023"
+  #   url: "#"
+  #   cta: "Read"
+  #   image: ""   # e.g. images/media/interview-thumb.jpg
+
+  - type: press
+    source: "Inkstick Media & The World"
+    title: "Is a quota enough to secure women's participation in high-level leadership roles?"
+    date: "2022"
+    url: ""
     cta: "Read"
-    image: ""   # e.g. images/media/interview-thumb.jpg
+    image: "images/media/women.png"   # e.g. images/media/article-thumb.jpg

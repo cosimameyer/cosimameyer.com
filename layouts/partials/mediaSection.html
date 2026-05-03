@@ -26,6 +26,7 @@
           {{ end }}
           <!-- Type badge overlaid on image -->
           <span class="media-type-badge media-type-badge--{{ $type }}">{{ .type }}</span>
+          {{ with .credit }}<span class="media-photo-credit">{{ . }}</span>{{ end }}
         </div>
 
         <!-- Body -->
