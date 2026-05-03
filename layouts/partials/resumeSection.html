@@ -34,8 +34,9 @@
       <div class="resume-timeline">
         {{ range .education }}
         <div class="resume-item">
-          {{ .content | markdownify }}
-          {{ with .visiting }}
+          <h4>{{ index . "title" }}</h4>
+          <p>{{ index . "institution" }}</p>
+          {{ with index . "visiting" }}
           <p class="resume-visiting"><i class="fa-solid fa-turn-down"></i> {{ . }}</p>
           {{ end }}
         </div>

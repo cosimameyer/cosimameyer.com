@@ -29,20 +29,14 @@ experience:
       Researcher and lecturer, co-founder of Methods Bites
 
 education:
-  - content: >
-      #### PhD in Political Science
-
-      University of Mannheim, Germany
+  - title: "PhD in Political Science"
+    institution: "University of Mannheim, Germany"
     visiting: "Visiting researcher · Rice University, Houston, TX, USA"
-  - content: >
-      #### Master of Arts in Political Science
-
-      University of Mannheim, Germany
+  - title: "Master of Arts in Political Science"
+    institution: "University of Mannheim, Germany"
     visiting: "Visiting student · SciencesPo Paris, France"
-  - content: >
-      #### Bachelor of Arts in Political Science and Economics
-
-      University of Mannheim, Germany
+  - title: "Bachelor of Arts in Political Science and Economics"
+    institution: "University of Mannheim, Germany"
     visiting: "Visiting student · Uppsala University, Sweden"
 
 achievements:

@@ -35,7 +35,13 @@
     <div class="resume-panel" id="resume-education" role="tabpanel">
       <div class="resume-timeline">
         {{ range .education }}
-        <div class="resume-item">{{ .content | markdownify }}</div>
+        <div class="resume-item">
+          <h4>{{ index . "title" }}</h4>
+          <p>{{ index . "institution" }}</p>
+          {{ with index . "visiting" }}
+          <p class="resume-visiting"><i class="fa-solid fa-turn-down"></i> {{ . }}</p>
+          {{ end }}
+        </div>
         {{ end }}
       </div>
     </div>
