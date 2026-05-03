@@ -1134,6 +1134,53 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 720px !important;
 }
 
+/* ---- Alt-text / details blocks in blog posts ---- */
+.singleBlog__content details {
+  background: var(--c-accent-light);
+  border-left: 3px solid var(--c-accent);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 16px;
+  margin: 20px 0;
+  font-size: 0.88rem;
+  color: var(--c-body);
+}
+.singleBlog__content details[open] {
+  padding-bottom: 14px;
+}
+.singleBlog__content summary {
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--f-heading);
+  color: var(--c-accent);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  list-style: none;           /* hide default triangle */
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  user-select: none;
+}
+/* hide webkit default triangle */
+.singleBlog__content summary::-webkit-details-marker { display: none; }
+/* custom chevron via pseudo-element */
+.singleBlog__content summary::before {
+  content: '\f054';           /* FA6 chevron-right */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 0.6rem;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+.singleBlog__content details[open] summary::before {
+  transform: rotate(90deg);
+}
+/* content revealed below summary */
+.singleBlog__content details > *:not(summary) {
+  margin-top: 10px;
+  line-height: 1.65;
+}
+
 /* =============================================
    SLATE BLUE — buttons + contrast backgrounds
    ============================================= */
