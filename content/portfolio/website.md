@@ -1,7 +1,7 @@
 ---
 date: "2020-07-20T00:00:00Z"
 # feature: true
-shortDescription:
+shortDescription: "Custom Hugo websites for research organizations — fast, maintainable, and built to last."
 thumbnail: images/portfolio/ram-website.png
 solution: Setting up a static website using the Hugo Meghna template with some customized tweaks.
 challenge: Getting a long-lasting and maintainable website.

@@ -1061,34 +1061,72 @@ h1, h2, h3, h4, h5, h6 {
   padding: 56px 0 80px !important;
 }
 
-/* Problem / Impact card */
+/* Project header row: title/ctas left, thumbnail right */
+.project-header-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 12px;
+}
+.project-header-text {
+  flex: 1;
+  min-width: 0;
+}
+.project-header-thumb {
+  flex-shrink: 0;
+  padding-top: 6px;
+}
+.project-header-thumb img {
+  max-width: 130px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  opacity: 0.88;
+}
+@media (max-width: 576px) {
+  .project-header-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .project-header-thumb img {
+    max-width: 80px;
+    max-height: 60px;
+  }
+}
+
+/* Three-panel narrative card: Problem | What I Built | Impact */
 .project-pi-card {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 0;
   background: var(--c-white);
   border: 1px solid var(--c-border);
   border-radius: var(--radius-card);
-  padding: 28px 32px;
+  overflow: hidden;
   margin-bottom: 48px;
+}
+.project-pi-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   align-items: start;
 }
+.project-pi-block {
+  padding: 24px 28px;
+  border-right: 1px solid var(--c-border);
+}
+.project-pi-block:last-child {
+  border-right: none;
+}
 @media (max-width: 767px) {
-  .project-pi-card {
+  .project-pi-panels {
     grid-template-columns: 1fr;
   }
-  .project-pi-divider {
-    width: 100% !important;
-    height: 1px !important;
-    margin: 16px 0 !important;
+  .project-pi-block {
+    border-right: none;
+    border-bottom: 1px solid var(--c-border);
   }
-}
-.project-pi-block { padding: 4px 0; }
-.project-pi-divider {
-  width: 1px;
-  background: var(--c-border);
-  margin: 0 32px;
-  align-self: stretch;
+  .project-pi-block:last-child {
+    border-bottom: none;
+  }
 }
 .project-pi-label {
   font-size: 0.72rem;
@@ -1283,25 +1321,10 @@ h1, h2, h3, h4, h5, h6 {
   gap: 5px;
 }
 
-/* Project thumbnail on single page — small logo/preview, not a hero banner */
-.project-thumbnail {
-  display: block;
-  max-width: 200px;
-  max-height: 130px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border-radius: var(--radius-sm);
-  margin: 0 auto 28px;
-  opacity: 0.9;
-}
-
-/* PI card footer row for language + impact */
+/* PI card footer: language + field metadata */
 .project-pi-footer {
-  grid-column: 1 / -1;
   border-top: 1px solid var(--c-border);
-  margin-top: 20px;
-  padding-top: 16px;
+  padding: 14px 28px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;

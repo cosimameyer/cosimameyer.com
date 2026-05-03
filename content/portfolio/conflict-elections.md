@@ -8,7 +8,8 @@ language: R
 tags: [R, ShinyApp, Visualization]
 title: Conflict elections in Afghanistan 2019
 challenge: Making research results and data accessible.
-shortDescription:
+shortDescription: "An interactive ShinyApp turning raw conflict-election data into an explorable map — open access alongside the peer-reviewed paper."
+impact: "Peer-reviewed publication · open-access app"
 website: http://cosima-meyer.shinyapps.io/conflict-elections/
 github: https://github.com/cosimameyer/conflict-elections
 recording: https://www.youtube.com/watch?v=NOzi6GErpsA&list=PLXK26SbU8735IM-AO5zM6tLfRpSpP3Iby&index=8
