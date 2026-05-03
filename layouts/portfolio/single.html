@@ -31,7 +31,7 @@
             {{ if or .Params.github .Params.website .Params.publication .Params.slides .Params.recording }}
             <div class="project-single-ctas">
               {{ if .Params.github }}
-              <a href="{{ .Params.github | safeURL }}" target="_blank" rel="noopener" class="btn btn-primary project-cta-btn">
+              <a href="{{ .Params.github | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
               {{ end }}
