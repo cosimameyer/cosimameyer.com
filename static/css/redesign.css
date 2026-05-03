@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 8px;
   right: 6px;
   font-size: 0.52rem;
-  color: rgba(100,120,140,0.45);
+  color: rgba(255,255,255,0.45);
   letter-spacing: 0.04em;
   z-index: 2;
   pointer-events: none;
