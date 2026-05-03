@@ -1,0 +1,123 @@
+{{ define "main" }}
+
+<header class="breadCrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ "portfolio" | absURL }}">Open Source</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+          </ol>
+        </nav>
+
+        <!-- Tags -->
+        {{ with .Params.tags }}
+        <div class="portfolio-card-tags mb-3">
+          {{ range . }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+
+        <h1 class="project-single-title">{{ .Title }}</h1>
+
+        {{ with .Params.shortDescription }}
+        <p class="project-single-lead">{{ . | markdownify }}</p>
+        {{ end }}
+
+        <!-- CTA links -->
+        {{ if or .Params.github .Params.website .Params.publication .Params.slides .Params.recording }}
+        <div class="project-single-ctas">
+          {{ if .Params.github }}
+          <a href="{{ .Params.github | safeURL }}" target="_blank" rel="noopener" class="btn btn-primary project-cta-btn">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          {{ end }}
+          {{ if .Params.website }}
+          <a href="{{ .Params.website | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
+            <i class="fa-solid fa-globe"></i> Website
+          </a>
+          {{ end }}
+          {{ if .Params.publication }}
+          <a href="{{ .Params.publication | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
+            <i class="fa-regular fa-file-lines"></i> Publication
+          </a>
+          {{ end }}
+          {{ if .Params.slides }}
+          <a href="{{ .Params.slides | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
+            <i class="fa-solid fa-display"></i> Slides
+          </a>
+          {{ end }}
+          {{ if .Params.recording }}
+          <a href="{{ .Params.recording | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
+            <i class="fa-solid fa-circle-play"></i> Recording
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section project-single-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+
+        <!-- Problem / Impact card -->
+        {{ if or .Params.challenge .Params.solution }}
+        <div class="project-pi-card">
+          {{ with .Params.challenge }}
+          <div class="project-pi-block">
+            <p class="project-pi-label"><i class="fa-solid fa-circle-question"></i> Problem</p>
+            <p class="project-pi-text">{{ . | markdownify }}</p>
+          </div>
+          {{ end }}
+          {{ if and .Params.challenge .Params.solution }}
+          <div class="project-pi-divider"></div>
+          {{ end }}
+          {{ with .Params.solution }}
+          <div class="project-pi-block">
+            <p class="project-pi-label"><i class="fa-solid fa-lightbulb"></i> What I built</p>
+            <p class="project-pi-text">{{ . | markdownify }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <!-- Body content -->
+        {{ with .Content }}
+        <div class="project-single-content">
+          {{ . }}
+        </div>
+        {{ end }}
+
+        <!-- Prev / Next navigation -->
+        <nav class="project-single-nav">
+          <div class="project-nav-prev">
+            {{ if .PrevInSection }}
+            <a href="{{ .PrevInSection.Permalink }}" class="project-nav-link">
+              <span class="project-nav-dir"><i class="fa-solid fa-arrow-left"></i> Previous</span>
+              <span class="project-nav-title">{{ .PrevInSection.Title }}</span>
+            </a>
+            {{ end }}
+          </div>
+          <a href="{{ "portfolio" | absURL }}" class="project-nav-all">All projects</a>
+          <div class="project-nav-next">
+            {{ if .NextInSection }}
+            <a href="{{ .NextInSection.Permalink }}" class="project-nav-link project-nav-link--right">
+              <span class="project-nav-dir">Next <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="project-nav-title">{{ .NextInSection.Title }}</span>
+            </a>
+            {{ end }}
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
