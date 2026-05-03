@@ -47,19 +47,24 @@ achievements:
   - content: >
       #### Google Women Techmakers Ambassador
 
-      Recognised by Google for contributions to diversity and inclusion in tech.
+      Serving as a Google Women Techmakers Ambassador, enabling visibility, community, and resources to support greater diversity in technology. 
   - content: >
       #### IBM's Innovate with Purpose Award
 
-      Recognised by IBM.
+      Recognized by IBM for a project that highlights innovation with a positive impact on society, demonstrating a commitment to using technology for good.
+  - content: >
+      #### Teaching Award (2019 and 2020)
+
+      Recognized by the CDSS (University of Mannheim) for excellence in teaching, fostering a supportive learning environment and inspiring students to achieve their potential.
+
 
 community:
-  - title: "R-Ladies Cologne"
-    role: "Co-organizer"
-    description: "Building a local community for gender minorities in R in Cologne."
   - title: "R-Ladies Global"
-    role: "Member"
+    role: "Member of the Global Team"
     description: "Part of the worldwide network promoting gender diversity in the R community."
+  - title: "R-Ladies Cologne"
+    role: "Founder and Co-organizer"
+    description: "Led the local R-Ladies chapter by coordinating workshops and events to enable and promote gender diversity and inclusion in the coding community."
   - title: "RAM e.V."
-    role: "Board member"
-    description: "Supporting the association's mission and strategic development."
+    role: "Chairwoman"
+    description: "Led and coordinated the association’s operations, from awarding research prizes and funding to managing communications, digital presence, and community support initiatives."
