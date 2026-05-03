@@ -239,6 +239,23 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1 !important;
 }
 
+/* Photo credit — bottom-right of hero image, unobtrusive */
+.hero-photo-credit {
+  position: absolute;
+  bottom: 18px;
+  right: 14px;
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.75);
+  background: rgba(0,0,0,0.28);
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+  z-index: 2;
+  pointer-events: none;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 /* ---- Right panel ---- */
 .hero-right {
   position: relative;

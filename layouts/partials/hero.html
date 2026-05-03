@@ -41,6 +41,9 @@
       <img class="hero-photo"
            src="{{ .image | absURL }}"
            alt="Cosima Meyer" />
+      {{ with .imageCredit }}
+      <span class="hero-photo-credit">{{ . }}</span>
+      {{ end }}
     </div>
 
   </div>

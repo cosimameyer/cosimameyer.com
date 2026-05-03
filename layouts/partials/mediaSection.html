@@ -50,28 +50,39 @@
 (function () {
   var carousel = document.querySelector('.media-carousel');
   if (!carousel) return;
+  var cards = Array.from(carousel.querySelectorAll('.media-card'));
+  if (cards.length < 2) return;
+
+  var current = 0;
   var timer;
 
-  function advance() {
-    var card = carousel.querySelector('.media-card');
-    if (!card) return;
-    var step = card.offsetWidth + 20; /* card width + gap */
-    var max  = carousel.scrollWidth - carousel.clientWidth;
-    if (carousel.scrollLeft + 2 >= max) {
-      carousel.scrollTo({ left: 0, behavior: 'smooth' });
-    } else {
-      carousel.scrollBy({ left: step, behavior: 'smooth' });
-    }
+  function goTo(index) {
+    current = index % cards.length;
+    carousel.scrollTo({
+      left: cards[current].offsetLeft,
+      behavior: 'smooth'
+    });
   }
 
-  function start() { timer = setInterval(advance, 4000); }
-  function stop()  { clearInterval(timer); }
+  function advance() { goTo(current + 1); }
+  function start()   { timer = setInterval(advance, 4000); }
+  function stop()    { clearInterval(timer); }
+
+  /* Sync current index after manual drag */
+  function syncCurrent() {
+    var best = 0, minDist = Infinity;
+    cards.forEach(function (card, i) {
+      var dist = Math.abs(card.offsetLeft - carousel.scrollLeft);
+      if (dist < minDist) { minDist = dist; best = i; }
+    });
+    current = best;
+  }
 
   start();
   carousel.addEventListener('mouseenter', stop);
   carousel.addEventListener('mouseleave', start);
-  carousel.addEventListener('touchstart',  stop,  { passive: true });
-  carousel.addEventListener('touchend',    start, { passive: true });
+  carousel.addEventListener('touchstart', stop,  { passive: true });
+  carousel.addEventListener('touchend', function () { syncCurrent(); start(); }, { passive: true });
 }());
 </script>
 {{ end }}
