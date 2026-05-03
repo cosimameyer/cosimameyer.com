@@ -1,0 +1,59 @@
+<div id="cookie-notice">
+  <p class="cookie-text">I took great care to disable third-party cookies and scripts. A few may still be present.</p>
+  <div class="cookie-actions">
+    <a id="cookie-notice-accept" class="cookie-btn cookie-btn--accept">Accept</a>
+    <a id="cookie-notice-deny" class="cookie-btn">Decline</a>
+    <a href="/privacy/privacy/" class="cookie-btn cookie-btn--info">Privacy policy</a>
+  </div>
+</div>
+
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    if(readCookie('cookie-notice-option')=='true') {
+        {{ if hugo.IsProduction | or (eq .Site.Params.env "production") }}
+        function loadScriptAsync(scriptSrc, callback) {
+            if (typeof callback !== 'function') { throw new Error('Not a valid callback for async script load'); }
+            var script = document.createElement('script');
+            script.onload = callback;
+            script.src = scriptSrc;
+            document.head.appendChild(script);
+        }
+        loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX', function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+        })
+        {{ end }}
+    } else if (readCookie('cookie-notice-option')!='false'){
+        document.getElementById('cookie-notice').style.display = 'flex';
+    }
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-option','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+    document.getElementById('cookie-notice-deny').addEventListener("click",function() {
+        createCookie('cookie-notice-option','false',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+</script>

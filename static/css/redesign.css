@@ -901,8 +901,9 @@ h1, h2, h3, h4, h5, h6 {
 .resume-tab {
   background: none;
   border: none;
-  outline: none !important;
+  outline: 0 !important;
   box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent;
   padding: 8px 20px 12px;
   font-family: var(--f-heading);
   font-size: 0.85rem;
@@ -920,8 +921,10 @@ h1, h2, h3, h4, h5, h6 {
 .resume-tab:hover {
   color: var(--c-accent);
 }
-.resume-tab:focus {
-  outline: none !important;
+.resume-tab:focus,
+.resume-tab:focus-visible,
+.resume-tab:active {
+  outline: 0 !important;
   box-shadow: none !important;
 }
 .resume-tab.active {
@@ -1493,22 +1496,72 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--c-accent-dark) !important;
 }
 
-/* Cookie notice — same deep slate as footer */
+/* Cookie notice — clean, minimal, on-brand */
 #cookie-notice {
-  background: var(--c-accent-dark) !important;
-  color: #fff !important;
-  font-size: 0.9rem;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: var(--c-white);
+  border-top: 1px solid var(--c-border);
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.07);
+  padding: 14px 32px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
 }
-#cookie-notice .btn-primary {
-  background-color: rgba(255,255,255,0.18) !important;
-  border-color: rgba(255,255,255,0.4) !important;
-  color: #fff !important;
-  padding: 8px 18px;
-  font-size: 0.85rem;
+.cookie-text {
+  font-size: 0.82rem;
+  color: var(--c-muted);
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
 }
-#cookie-notice .btn-primary:hover {
-  background-color: rgba(255,255,255,0.3) !important;
-  border-color: rgba(255,255,255,0.6) !important;
+.cookie-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.cookie-btn {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid var(--c-border);
+  color: var(--c-muted);
+  background: transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+.cookie-btn:hover {
+  border-color: var(--c-accent);
+  color: var(--c-accent);
+}
+.cookie-btn--accept {
+  background: var(--c-accent);
+  border-color: var(--c-accent);
+  color: #fff;
+}
+.cookie-btn--accept:hover {
+  background: var(--c-accent-dark);
+  border-color: var(--c-accent-dark);
+  color: #fff;
+}
+.cookie-btn--info {
+  border: none;
+  color: var(--c-muted);
+  opacity: 0.7;
+  font-weight: 400;
+}
+.cookie-btn--info:hover {
+  opacity: 1;
+  color: var(--c-accent);
+  border: none;
 }
 
 /* ---- Footer ---- */
