@@ -27,7 +27,7 @@
           {{ with .Params.category }}
           <span class="post-meta-sep">·</span>
           <span class="post-meta-item">
-            {{ range . }}<span class="portfolio-tag">{{ . }}</span> {{ end }}
+            <i class="fa-solid fa-tag"></i> {{ delimit . " · " }}
           </span>
           {{ end }}
         </div>

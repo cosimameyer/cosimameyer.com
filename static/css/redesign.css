@@ -1226,13 +1226,15 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em !important;
   margin-bottom: 12px !important;
 }
+.breadCrumb ol.breadcrumb {
+  align-items: baseline !important;
+}
 .breadCrumb .breadcrumb-item a,
 .breadCrumb .breadcrumb-item.active {
   color: var(--c-muted) !important;
   font-size: 0.85rem;
   font-weight: 400 !important;
-  display: inline !important;
-  vertical-align: baseline !important;
+  line-height: 1.5 !important;
 }
 .breadCrumb .breadcrumb-item a:hover {
   color: var(--c-accent) !important;
@@ -1247,6 +1249,53 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post-meta a:hover {
   color: var(--c-accent) !important;
+}
+
+/* Category / tag label — plain text with icon, used on blog cards and post header */
+.blog-category {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--c-accent);
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Project thumbnail on single page — subtle, not full-bleed */
+.project-thumbnail {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  display: block;
+  margin-bottom: 32px;
+}
+
+/* PI card footer row for language + impact */
+.project-pi-footer {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--c-border);
+  margin-top: 20px;
+  padding-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project-pi-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--c-muted);
+}
+.project-pi-meta i {
+  color: var(--c-accent);
+  font-size: 0.75rem;
 }
 
 /* Post meta bar — sits below title in breadcrumb header */

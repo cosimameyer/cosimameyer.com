@@ -27,9 +27,7 @@
         {{ end }}
         <div class="portfolio-card-body">
           {{ with .Params.category }}
-          <div class="portfolio-card-tags">
-            {{ range . }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
-          </div>
+          <p class="blog-category"><i class="fa-solid fa-tag"></i> {{ delimit . " · " }}</p>
           {{ end }}
           <p class="talk-time">
             {{ .PublishDate.Format "January 2, 2006" }}

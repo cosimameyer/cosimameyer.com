@@ -14,9 +14,7 @@
 
         <!-- Tags -->
         {{ with .Params.tags }}
-        <div class="portfolio-card-tags mb-3">
-          {{ range . }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
-        </div>
+        <p class="blog-category mb-3"><i class="fa-solid fa-tag"></i> {{ delimit . " · " }}</p>
         {{ end }}
 
         <h1 class="project-single-title">{{ .Title }}</h1>
@@ -66,6 +64,11 @@
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
 
+        <!-- Thumbnail -->
+        {{ with .Params.thumbnail }}
+        <img src="{{ . | absURL }}" alt="{{ $.Title }}" class="project-thumbnail" loading="lazy" />
+        {{ end }}
+
         <!-- Problem / Impact card -->
         {{ if or .Params.challenge .Params.solution }}
         <div class="project-pi-card">
@@ -82,6 +85,21 @@
           <div class="project-pi-block">
             <p class="project-pi-label"><i class="fa-solid fa-lightbulb"></i> What I built</p>
             <p class="project-pi-text">{{ . | markdownify }}</p>
+          </div>
+          {{ end }}
+          <!-- Footer: language + impact -->
+          {{ if or .Params.language .Params.impact }}
+          <div class="project-pi-footer">
+            {{ with .Params.language }}
+            <span class="project-pi-meta">
+              <i class="fa-solid fa-code"></i> {{ . }}
+            </span>
+            {{ end }}
+            {{ with .Params.impact }}
+            <span class="project-pi-meta">
+              <i class="fa-solid fa-chart-line"></i> {{ . }}
+            </span>
+            {{ end }}
           </div>
           {{ end }}
         </div>
