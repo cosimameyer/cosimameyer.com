@@ -923,9 +923,14 @@ h1, h2, h3, h4, h5, h6 {
 .resume-tab:hover {
   color: var(--c-accent);
 }
+.resume-tab:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 .resume-tab.active {
   color: var(--c-accent);
   border-bottom-color: var(--c-accent);
+  background: rgba(61, 106, 140, 0.05);
 }
 
 /* Tab panels */
@@ -1457,7 +1462,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
 }
 
-/* Outline buttons (See all post / See all projects) */
+/* Outline buttons — subtle hover, never solid-fill */
 .btn-outline-secondary {
   color: var(--c-accent) !important;
   border-color: var(--c-accent) !important;
@@ -1465,9 +1470,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-outline-secondary:hover,
 .btn-outline-secondary:focus {
-  background-color: var(--c-accent) !important;
+  background-color: rgba(61, 106, 140, 0.08) !important;
   border-color: var(--c-accent) !important;
-  color: #fff !important;
+  color: var(--c-accent) !important;
 }
 
 /* Consistent hover shadow on all buttons */
