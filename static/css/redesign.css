@@ -894,31 +894,28 @@ h1, h2, h3, h4, h5, h6 {
 /* Tab navigation */
 .resume-tabs {
   display: flex;
-  gap: 4px;
-  border-bottom: 2px solid var(--c-border);
+  gap: 0;
+  border-bottom: 1px solid var(--c-border);
   margin-bottom: 32px;
 }
 .resume-tab {
   background: none;
   border: none;
-  padding: 10px 18px 12px;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 8px 20px 12px;
   font-family: var(--f-heading);
-  font-size: 0.88rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 500;
   color: var(--c-muted);
   cursor: pointer;
   position: relative;
-  margin-bottom: -2px;        /* sit on top of border-bottom */
+  margin-bottom: -1px;
   border-bottom: 2px solid transparent;
-  border-radius: 6px 6px 0 0;
   transition: color 0.18s, border-color 0.18s;
   display: flex;
   align-items: center;
   gap: 6px;
-}
-.resume-tab .fa {
-  font-size: 0.8rem;
-  margin: 0;
 }
 .resume-tab:hover {
   color: var(--c-accent);
@@ -929,8 +926,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .resume-tab.active {
   color: var(--c-accent);
+  font-weight: 600;
   border-bottom-color: var(--c-accent);
-  background: rgba(61, 106, 140, 0.05);
+  background: none;
 }
 
 /* Tab panels */
