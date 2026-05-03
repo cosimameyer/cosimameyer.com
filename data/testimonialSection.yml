@@ -2,18 +2,29 @@
 enable: true
 topTitle: Speaking
 title: >
-  ## On Stages Worldwide
+  ## Sharing What I Know
 
 testimonial:
 
+  - name: PyCon DE & PyData 2026
+    thumbnail: images/talks/debugging_the_ghost.png
+    title: Why Did the Model Do That? Debugging the Ghost in the Machine
+    type: Talk
+    comment:
+    time: April 16, 2026
+    github: https://cosimameyer.github.io/explainable-ml/
+    slides: https://cosimameyer.github.io/explainable-ml/slides/2026-xai-presentation.html#/title-slide
+    event_url: https://2026.pycon.de/
+    
   - name: PyCon DE & PyData 2025
     thumbnail: images/talks/code_and_community.png
     title: Code & Community - The Synergy of Community Building and Task Automation
     type: Talk
     comment:
     time: April 25, 2025
-    github: https://github.com/cosimameyer/awesome-pyladies-blogs
+    github: https://github.com/cosimameyer/community-bots
     slides: https://drive.google.com/file/d/1vMlaJ3vbV7ONJg24dqBFIUp6sJUjYL_u/view?usp=share_link
+    recording: https://www.youtube.com/watch?v=N2Wx1XZ__M0
     event_url: https://2025.pycon.de/
 
   - name: R-Ladies Abuja
@@ -47,7 +58,7 @@ testimonial:
   - name: NHS-R/NHS.pycom Conference 2023
     thumbnail: images/talks/nhs-r-nhs-pycom-2023.png
     title: Building Bridges - Exploring Open-Source Library Development in R and Python
-    type: Talk
+    type: Keynote
     comment:
     time: October 10, 2023
     github: https://bit.ly/nb-overviewR-overviewpy
@@ -61,6 +72,7 @@ testimonial:
     comment:
     time: March 23, 2023
     github: https://github.com/cosimameyer/r-python-talk/blob/main/README.md
+    recording: https://www.youtube.com/watch?v=3KXxk-GrRWo
     slides: /slides/wids_2023_workshop/#/title-slide
     event_url: https://wuman307139351.wordpress.com/wids/
 
@@ -93,7 +105,7 @@ testimonial:
     
   - name: WoMen in Tech
     thumbnail: images/talks/git-around-the-world.png
-    type: Talk
+    type: Workshop
     # comment: As part of the [WoMen in Tech](https://www.uni-mannheim.de/management-analytics/news/women-in-tech/) initiative, I was invited to talk about my usual Git workflow and showcase how to implement it with RStudio. [Here is a short workflow description](https://cosimameyer.rbind.io/post/how-to-structure-your-data-workflow-efficiently-using-r/) I wrote up as a blog post.
     title: Git Around the World
     time: April 20, 2021

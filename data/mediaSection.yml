@@ -1,21 +1,20 @@
 enable: true
 topTitle: "Press"
-title: "## As Featured In"
 
 items:
   - type: podcast
-    source: "Your Podcast Name"
-    title: "Placeholder Podcast Episode Title"
-    date: "2024"
-    url: "#"
+    source: "Queens of Tech Podcast | 100 Voices of Impact"
+    title: "Tech Queen: Cosima Meyer"
+    date: "2025"
+    url: "https://podcasts.apple.com/se/podcast/tech-queen-cosima-meyer-senior-data-scientist-at-sap-ex-ibm/id1625869153?i=1000687811079&l=en-GB"
     cta: "Listen"
-    image: ""   # e.g. images/media/podcast-cover.jpg
+    image: "images/media/600x600bb.webp"   # e.g. images/media/podcast-cover.jpg
 
   - type: press
-    source: "Your Publication"
-    title: "Placeholder Press Article Title"
+    source: "Business Insider Germany"
+    title: "Zukunftsmacherinnen 2024 von Business Insider: Das sind die neuen 26 Frauen!"
     date: "2024"
-    url: "#"
+    url: "https://www.businessinsider.de/wirtschaft/zukunftsmacherinnen-2024-das-sind-die-neuen-frauen/"
     cta: "Read"
     image: ""   # e.g. images/media/article-thumb.jpg
 
