@@ -397,16 +397,18 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-md);
 }
 
-/* Image / placeholder area */
+/* Image / placeholder area — fixed height keeps cards compact */
 .media-card-img {
   position: relative;
-  aspect-ratio: 16 / 9;
+  height: 160px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 .media-card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform 0.35s ease;
 }
 .media-card:hover .media-card-img img {
@@ -420,19 +422,19 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 .media-card-img--podcast   .media-card-placeholder {
   background: linear-gradient(135deg, #3D6A8C 0%, #5A8BAD 100%);
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.5);
 }
 .media-card-img--press     .media-card-placeholder {
   background: linear-gradient(135deg, var(--c-accent-dark) 0%, var(--c-accent) 100%);
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.5);
 }
 .media-card-img--interview .media-card-placeholder {
   background: linear-gradient(135deg, #264D6B 0%, #3D6A8C 100%);
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.5);
 }
 
 /* Type badge — same style as talk cards */
@@ -457,32 +459,39 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Card body */
 .media-card-body {
-  padding: 16px 18px 18px;
+  padding: 12px 14px 14px;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 .media-source {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--c-accent);
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .media-title {
   font-family: var(--f-heading) !important;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--c-heading);
-  line-height: 1.4;
+  line-height: 1.35;
   margin: 0 0 4px;
   flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .media-date {
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   color: var(--c-muted);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .media-cta {
   font-size: 0.8rem;

@@ -45,5 +45,34 @@
 
   </div>
 </section>
+
+<script>
+(function () {
+  var carousel = document.querySelector('.media-carousel');
+  if (!carousel) return;
+  var timer;
+
+  function advance() {
+    var card = carousel.querySelector('.media-card');
+    if (!card) return;
+    var step = card.offsetWidth + 20; /* card width + gap */
+    var max  = carousel.scrollWidth - carousel.clientWidth;
+    if (carousel.scrollLeft + 2 >= max) {
+      carousel.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      carousel.scrollBy({ left: step, behavior: 'smooth' });
+    }
+  }
+
+  function start() { timer = setInterval(advance, 4000); }
+  function stop()  { clearInterval(timer); }
+
+  start();
+  carousel.addEventListener('mouseenter', stop);
+  carousel.addEventListener('mouseleave', start);
+  carousel.addEventListener('touchstart',  stop,  { passive: true });
+  carousel.addEventListener('touchend',    start, { passive: true });
+}());
+</script>
 {{ end }}
 {{ end }}
