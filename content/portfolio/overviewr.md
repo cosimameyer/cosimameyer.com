@@ -9,6 +9,7 @@ language: R
 field: Software development
 title: overviewR
 featured: true
+tags: [R, Package, Open Source]
 website: https://cosimameyer.github.io/overviewR/
 github: https://github.com/cosimameyer/overviewR
 slides: https://cosimameyer.rbind.io/slides/overviewr/talk#1

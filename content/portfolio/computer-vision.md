@@ -6,6 +6,7 @@ thumbnail: images/portfolio/computer-vision.png
 solution: Using computer vision to identify sentiments of state leaders at the UN General Assembly
 field: ML, Computer Vision
 language: R
+tags: [R, ML, Computer Vision]
 challenge: Identifying state ledaers' sentiments across different topics.
 shortDescription:
 link: false

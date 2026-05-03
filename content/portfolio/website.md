@@ -7,6 +7,7 @@ solution: Setting up a static website using the Hugo Meghna template with some c
 challenge: Getting a long-lasting and maintainable website.
 language: CSS, HTML, Markdown, a bit JavaScript
 field: Website development
+tags: [CSS, HTML, JavaScript]
 title: Customized websites
 website: https://ram-ev.de
 links: true

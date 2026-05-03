@@ -9,6 +9,7 @@ language: Mainly R but also language-agnostic blog posts
 field: Blog
 title: Methods Bites
 featured: true
+tags: [R, Blog]
 website: https://www.mzes.uni-mannheim.de/socialsciencedatalab/
 links: true
 ---

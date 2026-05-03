@@ -5,6 +5,7 @@ thumbnail: images/portfolio/conflict-elections.png
 solution: A ShinyApp that visualizes conflict elections in Afghanistan 2019
 field: ShinyApp, Visualization
 language: R
+tags: [R, ShinyApp, Visualization]
 title: Conflict elections in Afghanistan 2019
 challenge: Making research results and data accessible.
 shortDescription:

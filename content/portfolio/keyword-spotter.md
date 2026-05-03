@@ -9,6 +9,7 @@ language: Python, R
 field: ML, Computer Vision
 title: Audio Keyword Spotting Algorithm
 featured: true
+tags: [Python, R, ML]
 github: https://github.com/CorrelAid/codingchallenge1020_team2
 links: true
 ---

@@ -3,8 +3,8 @@
 
   <div class="portfolio-list-hero">
     <div class="container">
-      <span class="top-title pre-line">My Projects</span>
-      <h1 class="portfolio-list-title">Open source, research &amp; data science</h1>
+      <span class="top-title pre-line">Open Source</span>
+      <h1 class="portfolio-list-title">Tools Built for the Community</h1>
       <p class="portfolio-list-lead">Packages, tools, and projects built in R and Python.</p>
     </div>
   </div>
@@ -13,29 +13,15 @@
     <div class="container">
 
       <!-- Filter bar -->
-      <div class="portfolio-filter-bar">
+      <div class="portfolio-filter-bar" id="portfolio-filter-bar">
         <button class="pf-btn active" data-filter="all">All</button>
-        {{ $pages := .Pages }}
-        {{ $languages := slice }}
-        {{ range $pages }}
-          {{ with .Params.language }}{{ $languages = $languages | append . }}{{ end }}
-        {{ end }}
-        {{ $fields := slice }}
-        {{ range $pages }}
-          {{ with .Params.field }}{{ $fields = $fields | append . }}{{ end }}
-        {{ end }}
-        <!-- Language filters -->
-        {{ range ($languages | uniq) }}
-        <button class="pf-btn" data-filter="{{ . }}">{{ . }}</button>
-        {{ end }}
-        <!-- Field filters (split on comma) -->
-        {{ $fieldTags := slice }}
-        {{ range $fields }}
-          {{ range (split . ", ") }}
-            {{ $fieldTags = $fieldTags | append (trim . " ") }}
+        {{ $allTags := slice }}
+        {{ range .Pages }}
+          {{ range .Params.tags }}
+            {{ $allTags = $allTags | append . }}
           {{ end }}
         {{ end }}
-        {{ range ($fieldTags | uniq) }}
+        {{ range ($allTags | uniq) }}
         <button class="pf-btn" data-filter="{{ . }}">{{ . }}</button>
         {{ end }}
       </div>
@@ -44,8 +30,7 @@
       <div class="portfolio-grid portfolio-grid--full" id="portfolio-cards">
         {{ range .Pages.ByDate.Reverse }}
         <div class="portfolio-card"
-          data-language="{{ .Params.language }}"
-          data-field="{{ .Params.field }}">
+          data-tags="{{ delimit .Params.tags "," }}">
           {{ with .Params.thumbnail }}
           <div class="portfolio-card-img">
             <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
@@ -53,8 +38,9 @@
           {{ end }}
           <div class="portfolio-card-body">
             <div class="portfolio-card-tags">
-              {{ with .Params.language }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
-              {{ with .Params.field }}<span class="portfolio-tag">{{ . }}</span>{{ end }}
+              {{ range .Params.tags }}
+              <span class="portfolio-tag">{{ . }}</span>
+              {{ end }}
             </div>
             <h3 class="portfolio-card-title">
               <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -79,7 +65,9 @@
 
 <script>
 (function () {
-  var btns  = document.querySelectorAll('.pf-btn');
+  var bar   = document.getElementById('portfolio-filter-bar');
+  if (!bar) return;
+  var btns  = bar.querySelectorAll('.pf-btn');
   var cards = document.querySelectorAll('#portfolio-cards .portfolio-card');
   var none  = document.getElementById('portfolio-no-results');
 
@@ -88,13 +76,14 @@
       btns.forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
 
-      var f = btn.dataset.filter;
+      var f = btn.dataset.filter.toLowerCase();
       var visible = 0;
 
       cards.forEach(function (card) {
-        var lang  = (card.dataset.language || '').toLowerCase();
-        var field = (card.dataset.field    || '').toLowerCase();
-        var match = f === 'all' || lang.indexOf(f.toLowerCase()) > -1 || field.indexOf(f.toLowerCase()) > -1;
+        var tags = (card.dataset.tags || '').toLowerCase();
+        var match = f === 'all' || tags.split(',').some(function (t) {
+          return t.trim() === f;
+        });
         card.style.display = match ? '' : 'none';
         if (match) visible++;
       });

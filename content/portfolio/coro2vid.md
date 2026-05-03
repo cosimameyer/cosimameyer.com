@@ -6,6 +6,7 @@ shortDescription:
 thumbnail: images/portfolio/coro2vid.png
 solution: Coro2vid-19 is a search engine that uses academic articles related to coronavirus. Our goal is to help users to quickly identify relevant articles on a specific topic using keyword searches as well as to identify related articles and groups of authors from more than 22,000 academic articles between 1950 and 2020.
 field: ShinyApp, NLP, ML
+tags: [R, ShinyApp, NLP, ML]
 title: Coro2vid-19 - Leveraging knowledge about coronaviruses to fight Covid-19
 language: R
 links: true

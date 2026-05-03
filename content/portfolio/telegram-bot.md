@@ -8,6 +8,7 @@ solution: A bot that sends you flashcards every morning and evening in Telegram 
 challenge: Learning complex concepts can be demanding and it might be hard to remember everything. Research has shown that repetition can help.
 language: Python, AWS
 field: Software development
+tags: [Python, AWS, Chatbot]
 title: Telegram Bot
 github: https://github.com/dennis-hammerschmidt/telegram-bot
 links: true
