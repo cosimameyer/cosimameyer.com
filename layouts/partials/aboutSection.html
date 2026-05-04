@@ -29,10 +29,13 @@
 
     <div class="resume-panel active" id="resume-experience" role="tabpanel">
       <div class="resume-timeline">
-        {{ range .experience }}
-        <div class="resume-item">{{ .content | markdownify }}</div>
+        {{ range $i, $item := .experience }}
+        <div class="resume-item resume-item--collapsible{{ if ge $i 2 }} resume-item--hidden{{ end }}"{{ if ge $i 2 }} style="display:none"{{ end }}>{{ $item.content | markdownify }}</div>
         {{ end }}
       </div>
+      <button class="resume-expand-btn" id="experience-expand-btn" aria-expanded="false">
+        Show more <i class="fa-solid fa-chevron-down"></i>
+      </button>
     </div>
 
     <div class="resume-panel" id="resume-education" role="tabpanel">
@@ -62,7 +65,9 @@
         {{ range .community }}
         <div class="resume-item">
           <h4>{{ index . "title" }}</h4>
-          <p class="resume-community-role">{{ index . "role" }}</p>
+          <p class="resume-community-role">
+            {{ index . "role" }}{{ with index . "period" }}<span class="resume-community-period">{{ . }}</span>{{ end }}
+          </p>
           <p>{{ index . "description" }}</p>
         </div>
         {{ end }}
@@ -92,6 +97,19 @@
       document.getElementById('resume-' + tab.dataset.tab).classList.add('active');
     });
   });
+
+  var expandBtn = document.getElementById('experience-expand-btn');
+  if (expandBtn) {
+    expandBtn.addEventListener('click', function () {
+      var collapsible = document.querySelectorAll('#resume-experience .resume-item--hidden');
+      var expanded = expandBtn.getAttribute('aria-expanded') === 'true';
+      collapsible.forEach(function (el) { el.style.display = expanded ? 'none' : 'block'; });
+      expandBtn.setAttribute('aria-expanded', String(!expanded));
+      expandBtn.innerHTML = expanded
+        ? 'Show more <i class="fa-solid fa-chevron-down"></i>'
+        : 'Show less <i class="fa-solid fa-chevron-up"></i>';
+    });
+  }
 }());
 </script>
 {{ end }}

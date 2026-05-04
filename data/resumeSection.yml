@@ -61,10 +61,13 @@ achievements:
 community:
   - title: "R-Ladies Global"
     role: "Member of the Global Team"
+    period: "2023–2025"
     description: "Part of the worldwide network promoting gender diversity in the R community."
   - title: "R-Ladies Cologne"
     role: "Founder and Co-organizer"
+    period: "2021–2024"
     description: "Led the local R-Ladies chapter by coordinating workshops and events to enable and promote gender diversity and inclusion in the coding community."
   - title: "RAM e.V."
     role: "Chairwoman"
+    period: "2016–2022"
     description: "Led and coordinated the association’s operations, from awarding research prizes and funding to managing communications, digital presence, and community support initiatives."
