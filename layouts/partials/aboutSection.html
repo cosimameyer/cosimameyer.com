@@ -66,7 +66,7 @@
         <div class="resume-item">
           <h4>{{ index . "title" }}</h4>
           <p class="resume-community-role">
-            {{ index . "role" }}{{ with index . "period" }}<span class="resume-community-period">{{ . }}</span>{{ end }}
+            <span class="resume-community-role-title">{{ index . "role" }}</span>{{ with index . "period" }}<span class="resume-community-period">{{ . }}</span>{{ end }}
           </p>
           <p>{{ index . "description" }}</p>
         </div>
