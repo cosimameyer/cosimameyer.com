@@ -1,5 +1,5 @@
 ---
-title: Add a panel feature to show multiple languages in Hugo blog posts
+title: Add a Panel Feature to Show Multiple Languages in Hugo Blog Posts
 author: Cosima Meyer
 date: '2024-09-04'
 slug: [panel-feature-hugo-blog-posts]

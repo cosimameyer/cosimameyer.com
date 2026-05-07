@@ -1,5 +1,5 @@
 ---
-title: How to get a zero inbox using Apple Mail
+title: How to Get a Zero Inbox Using Apple Mail
 author: Cosima Meyer
 date: '2021-03-16'
 slug: how-to-get-a-zero-inbox-using-apple-mail

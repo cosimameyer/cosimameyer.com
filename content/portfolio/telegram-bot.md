@@ -4,7 +4,8 @@ date: "2020-07-20T00:00:00Z"
 shortDescription: "A spaced-repetition flashcard bot delivered via Telegram — serverless, automated, and running daily on AWS Lambda."
 thumbnail: images/portfolio/telegram-bot.png
 solution: A bot that sends you flashcards every morning and evening in Telegram using Python and AWS Lambda.
-challenge: Learning complex concepts can be demanding and it might be hard to remember everything. Research has shown that repetition can help.
+challenge: Spaced repetition is proven to help long-term retention, but existing tools require manual effort and are easy to skip.
+impact: "Fully automated via AWS Lambda — serverless, zero-maintenance daily delivery"
 language: Python, AWS
 field: Software development
 tags: [Python, AWS, Chatbot]

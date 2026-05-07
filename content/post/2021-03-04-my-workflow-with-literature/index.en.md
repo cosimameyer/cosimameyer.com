@@ -1,5 +1,5 @@
 ---
-title: My workflow with academic literature
+title: My Workflow With Academic Literature
 author: Cosima Meyer
 date: '2021-03-10'
 slug: my-workflow-with-academic-literature

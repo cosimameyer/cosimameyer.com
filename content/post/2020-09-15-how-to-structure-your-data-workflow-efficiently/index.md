@@ -1,5 +1,5 @@
 ---
-title: How to structure your data workflow efficiently using R
+title: How to Structure Your Data Workflow Efficiently Using R
 author: Cosima Meyer
 date: '2020-09-15'
 slug: how-to-structure-your-data-workflow-efficiently-using-r
@@ -12,7 +12,7 @@ The positive aspects of a structured data workflow are at hand: You will always 
 
 There is no right or wrong, and various workflows are possible. We proposed one workflow in this [blog post on Methods Bites](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/efficient-data-r/). I have developed my own (simple) structure[^1] throughout the years that I use whenever I start a new project and that I am sharing with you here as a step-by-step guide.
 
-### Work with R projects and Github
+### Work With R Projects and Github
 
 I love **R projects**. They are great. You can have a neat folder structure, and it's easy to keep your files together (I also use it to maintain this website!). If you did not have the chance yet, I recommend giving it a try. 
 
@@ -50,7 +50,7 @@ Hit "Commit" and -- and that's essential -- "push" to push it to your Github. If
 
 <!-- Sometimes Github tends to be counterintuitive but here's a -->
 
-### Set up your folder structure
+### Set up Your Folder Structure
 
 Once you're here, I usually set up my folder structure. It mainly follows the following pattern:
 
@@ -114,17 +114,17 @@ file.create("code/helper.R")
 
 Now that we have the folders and files, I will walk you through them and tell you what I use them for.
 
-#### `data` folder
+#### `data` Folder
 
 The `data/` folder has two sub-folders: `raw` and `processed`. As the names suggest, put your raw and untouched data in the `raw` data folder, and if you want to save any changes, store them in `processed`. This allows you to produce replicable results (if you document all your steps in your code files) and to redo the data wrangling again with your raw data.
 
-#### `code` folder
+#### `code` Folder
 
 All the files that we've created above are stored in this folder. Again, similar to the data folder, the file names are relatively straightforward. The `1_data_preparation` file is meant to include all the pre-processing steps; in `2_merging` you can merge the data (both files can also be combined into one); you can fit all descriptives in `3_descriptives`; `4_analysis` contains your analysis and regression diagnostics; and create beautiful visualizations in `5_visualization`. I've also created a `helper.R` file where you can store all your helper functions.
 
 As I said above, the code that I gave you is flexible, and you can set up the files that fit best for your workflow (and it might differ depending on the project you're working on). I like the enumeration because it allows me to easily follow my steps in the sequential order they are meant to be executed.
 
-#### `figures` folder
+#### `figures` Folder
 In this folder, you will store all your visualizations and use Overleaf and follow [this guide](https://www.overleaf.com/learn/how-to/How_do_I_connect_an_Overleaf_project_with_a_repo_on_GitHub,_GitLab_or_BitBucket%3F), you can link them directly to your writing project in Overleaf.
 
 [^1]: You can always increase the complexity of the structure, depending on your needs. Here's [another example](https://www.r-bloggers.com/2018/08/structuring-r-projects/) of a more complex folder structure.

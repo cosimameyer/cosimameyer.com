@@ -1,5 +1,5 @@
 ---
-title: Tweaking Hugo Portio theme
+title: Tweaking Hugo Portio Theme
 author: Cosima Meyer
 date: '2022-04-30'
 slug: [tweaking-hugo-portio-theme]
@@ -18,7 +18,7 @@ I collected all the essential tweaks that I made to the [Hugo Portio theme](http
 
 ---
 
-## Adjust "about" section
+## Adjust "About" Section
 
 To center my image on the landing page, I replaced the first `col-lg-6` class with `container centered` in the `layouts/partials/hero.html` file. To keep the image right-aligned but to increase the image size, I replaced the second `col-lg-6` with `col-lg-9`.
 
@@ -82,7 +82,7 @@ And the website is like this:
 
 ---
 
-## Typing effect
+## Typing Effect
 
 Adding my beloved typing effect couldn't be easier. I already explained how I did it for [Hugo Academic]() and just did the very same thing for this theme.
 
@@ -111,7 +111,7 @@ And that's it, here's your typing effect 🥳
 
 ---
 
-## Talk section
+## Talk Section
 The Portio theme does not come with a talk section by default. I thus adjusted the `testimonialSection.html` so that it is a good fit.
 
 The main part of the file now looks like this:
@@ -143,7 +143,7 @@ And this is what the `testimonialSection.yml` input file can look like:
 ```yml
   - event_name:       R-Ladies Bergen
     thumbnail:        images/talks/nlp-rladies-bergen.png
-    title:            Taking text data to the next level - Using supervised and unsupervised approaches in NLP
+    title:            Taking Text Data to the Next Level - Unsupervised and Supervised Approaches in NLP @R-Ladies Bergen
     comment:          Add some Description
     time:             December 20, 2020
     github:           https://github.com/cosimameyer/nlp-rladies-bergen
@@ -161,7 +161,7 @@ In the following case, I didn't add a description but the rest looks like this:
 
 ---
 
-## Add a link section to the portfolio
+## Add a Link Section to the Portfolio
 
 The portfolio section links to a short description where you can showcase your service, your client, the challenge, and your solution. I think this is a fantastic approach to also presenting a data science portfolio. My projects are mainly open-source, so there is usually no "real" client involved and instead of services, I usually rely on languages. So this needed some tweaking. After adjusting the `portfolio/single.html` for the main part like this:
 
@@ -236,7 +236,7 @@ If you further add a `| markdownify` after challenge and solution (for instance 
 
 ---
 
-## Remove pattern
+## Remove Pattern
 
 The default theme has a few dynamic patterns (bubbles and patterns of crosses) moving up and down. I like the dynamic effect the bubbles generate because they are more transparent and clean (you can see both patterns in the right upper corner of the image below). 
 
@@ -257,7 +257,7 @@ and either delete it or use `<!-- Pattern -->` to remove it.
 
 ---
 
-## GDPR and cookie consent
+## GDPR and Cookie Consent
 
 [Hugo](https://gohugo.io/about/hugo-and-gdpr/) has a great guide on how to disable all services which I followed. 
 
@@ -267,7 +267,7 @@ I also hosted the fonts myself. To do this, I followed [Chris' guide](https://ww
 
 ---
 
-## Details tag
+## Details Tag
 
 To add the option to unfold code with the common `<details> <summary>Summary text</summary> HERE COMES SOME TEXT </details>` logic, I added a `detail-tag.html` file to `layouts/shortcodes/` which contains:
 
@@ -289,7 +289,7 @@ HERE COMES SOME TEXT
 {{< /detail-tag >}}
 
 ---
-## Add a table of content to your blog posts
+## Add a Table of Content to Your Blog Posts
 
 To do this, I set up [another shortcode](https://codingreflections.com/hugo-table-of-contents/). It's really simple - just copy the following lines and create a new `toc.html` file and store it in `layouts/shortcodes/`.
 
@@ -306,7 +306,7 @@ You can now call your table of content using
 
 ---
 
-## Adjust image size
+## Adjust Image Size
 Images are, by default, quite large in the Portio theme. I added the following code to `_common.scss`:
 
 ```css
@@ -353,7 +353,7 @@ I prefer using HTML code to adjust the image size and leave the `alt` parameter 
 
 ---
 
-## Add clipboard buttons to the code
+## Add Clipboard Buttons to the Code
 
 I like the integration that GitHub offers - to follow this example, I used [Justin's tutorial](https://digitaldrummerj.me/hugo-add-copy-code-snippet-button/) and implemented a "Copy" button that shows up next to code lines.
 
@@ -363,7 +363,7 @@ print('This is a great example how to copy your code')
 
 ---
 
-## Setting up an RSS feed of your website
+## Setting up an RSS Feed of Your Website
 
 An RSS feed can come in handy if you want to publish the content of your blog, [for instance on R-bloggers](post/adding-your-hugo-academic-blog-to-r-bloggers-and-python-bloggers/).
 For Hugo Portio, you need to add an `rss.xlm` file and tweak it a bit. But that ist straightforward:
@@ -376,7 +376,7 @@ And that's all you need 🥳
 
 ---
 
-## Embedding a slide show in your blog post
+## Embedding a Slide Show in Your Blog Post
 
 I added a `slideshow.html` file to `layouts/shortcodes/slideshow.html` which has the following content: 
 
@@ -390,7 +390,7 @@ Calling now {{</* slideshow "https://cosimameyer.com/slides/correlcon2021/talk.h
 
 ---
 
-## Embedding a toot
+## Embedding a Toot
 
 To embed toots (that's what the [tweets on Mastodon are called](https://cosimameyer.com/post/2022-11-13-first-steps-in-mastodon/)), I follow a similar logic. 🐘 I followed the example by [Seb](https://github.com/Wivik/hugo-shortcodes/tree/master/toot) here. It's straightforward:
 

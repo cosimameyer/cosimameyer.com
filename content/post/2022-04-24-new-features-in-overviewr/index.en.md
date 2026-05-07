@@ -1,5 +1,5 @@
 ---
-title: New features in {overviewR}
+title: New Features in {overviewR}
 author: ''
 date: '2022-04-24'
 slug: new-features-in-overviewr
@@ -36,7 +36,7 @@ library(magrittr) # A Forward-Pipe Operator for R
 
 ---
 
-## Multiple time arguments 
+## Multiple Time Arguments
 
 `overview_tab` allows you to use multiple time arguments. Here are some examples how to use the function:
 
@@ -100,7 +100,7 @@ overview_plot(dat = toydata, id = ccode, time = year, color = before)
 
 ---
 
-## Change dot size in `overview_plot`
+## Change Dot Size in `overview_plot`
 
 You can also change the dot size in `overview_plot`.
 
@@ -113,7 +113,7 @@ overview_plot(dat = toydata, id = ccode, time = year, dot_size = 5)
 
 ---
 
-## Visuale cross plots with `overview_crossplot`
+## Visuale Cross Plots With `overview_crossplot`
 
 `overview_crosstab` has now its visualizing counter-part with `overview_crossplot`!
 
@@ -135,7 +135,7 @@ overview_crossplot(
 
 ---
 
-## Compare two datasets directly
+## Compare Two Datasets Directly
 
 Using `overview_overlap`, you can now compare the overlap in time and id variables across two data sets visually. <!--The visualization comes with two features - a bar plot and a Venn diagram.-->
 
@@ -169,7 +169,7 @@ overview_overlap(
 -->
 ---
 
-## Use `data.table` under the hood
+## Use `data.table` Under the Hood
 
 And, last but not least, `overview_tab` and `overview_na` now also work if you're using `data.table` objects 🥳 (Thanks to my old team @ Kienbaum for being patient enough to explain and let me learn the (not so intuitive) syntax 👩🏼‍💻)
 
@@ -189,7 +189,7 @@ Here's a more detailed overview of what each function can do:
 
 ---
 
-## New website
+## New Website
 
 And, as a bonus, we also updated our [package website](https://cosimameyer.github.io/overviewR/) using the [{preferably} theme](https://preferably.amirmasoudabdol.name/) ✨
 

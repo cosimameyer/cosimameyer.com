@@ -1,5 +1,5 @@
 ---
-title: 'Telegram bot using Python and AWS Lambda'
+title: 'Telegram Bot Using Python and AWS Lambda'
 summary: ''
 tags: []
 category: [Python, Telegram bot, AWS Lambda]

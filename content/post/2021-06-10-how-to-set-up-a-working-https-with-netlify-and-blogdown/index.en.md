@@ -1,5 +1,5 @@
 ---
-title: How to set up a working HTTPS encryption with Netlify, blogdown, and rbind.io
+title: How to Set up a Working Https Encryption With Netlify, Blogdown, and rbind.io
 author: Cosima Meyer
 date: '2021-06-18'
 slug: how-to-set-up-a-working-https-encryption
@@ -16,11 +16,11 @@ featureImage: images/single-blog/security.png
 
 If you host a website, it is worth considering using the secure `HTTPS` encryption instead of `HTTP` (also in light of the GDPR).[^1] As someone who is less experienced in setting this up, this can be challenging, particularly if you use a domain that you do not personally own. This post is meant to give a (really) short step-by-step guide for those in a similar situation.  
 
-### The situation
+### The Situation
 
 I build my homepage using the wonderful [`blogdown` package](https://bookdown.org/yihui/blogdown/) with a [customized version of the Hugo Academic theme](https://cosimameyer.rbind.io/post/how-to-integrate-a-typing-effect-in-hugo-academic/). To deploy the website, I rely on [Netlify](https://www.netlify.com/), which works like a charm! Since I did not want the default `netlify.app` domain (suffix) to be my domain, I [oppened an issue to request the `rbind.io` suffix](https://github.com/rbind/support/issues/674). Setting this up is extremely straightforward and well explained [here](https://support.rbind.io/about/). Well, now that this worked, I wanted to be able to use `HTTPS` instead of `HTTP`. And here, the challenge began.
 
-### The solution 💡
+### The Solution 💡
 
 In retrospect, it was all nicely explained in the answer to my issue, which I was not aware of back then. I hope this post will pop up for future users and point them quickly to the solution.
 

@@ -1,5 +1,5 @@
 ---
-date: "2020-03-28T00:00:00Z"
+date: ""
 # feature: true
 challenge: Getting a quick (and accessible) overview of the research on coronaviruses.
 shortDescription: "A search engine helping researchers navigate 70 years of coronavirus literature — built during the early days of COVID-19."

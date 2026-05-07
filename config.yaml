@@ -25,7 +25,7 @@ menu:
     - name: Speaking
       url: '#testimonial'
       weight: 2
-    - name: Press
+    - name: Media
       url: '#media'
       weight: 3
     - name: Open Source

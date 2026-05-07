@@ -1,5 +1,5 @@
 ---
-title: Helpful R commands
+title: Helpful R Commands
 author: Cosima Meyer
 date: '2020-09-22'
 slug: helpful-r-commands
@@ -25,7 +25,7 @@ featureImage: images/single-blog/helpful.png
 
 This blog post will be regularly updated and is a "brain dump" for all the cool commands that I came across. I hope it helps me to remember them and can also serve others as a repository 👩🏼‍💻 
 
-### Frequency tables
+### Frequency Tables
 
 A next step in our `overviewR` package will be the implementation of a good-looking and easy to access frequency tables and plots (something that I use all the time). Until we have a ready-to-print version in `overviewR`, here is a snippet of `tidyverse` code that can easily generate them :)
 
@@ -47,7 +47,7 @@ Which returns:
 # 2 1 250 0.83
 ```
 
-### Save an R file with an automated date
+### Save an R File With an Automated Date
 
 Let's assume you want to have an individual copy of your file that has a time stamp on it. This is how you could do it:
 
@@ -61,7 +61,7 @@ save(data_set, file = name)
 
 Just replace the path where you want to store your file and add the object that contains your `data_set`. The `name` object could look something like this: `../data/conflict-2020-12-01.RData`. R automatically replaced `Sys.Date()` with today's date and you get your time stamp 🙂 This way I make sure to never overwrite previously saved data sets.
 
-### Save your `xaringan` slides as a PDF!
+### Save Your `xaringan` Slides as a PDF!
 
 I love [`xaringan`](https://github.com/yihui/xaringan) slides -- they are beautiful, easy to create and have many more advantages. The only caveat, if it counts as one, is that it's difficult to save them as a good-looking PDF file. That's what I thought at least until [Theresa Gessler](https://www.ipz.uzh.ch/en/institut/mitarbeitende/staff/tgessler.html) gave me the most straightforward solution to do this! 👩‍💻
 
@@ -75,7 +75,7 @@ remotes::install_github('rstudio/pagedown')
 pagedown::chrome_print("path/your-talk.Rmd")
 ```
 
-### Split strings into single columns by a pre-defined separator
+### Split Strings Into Single Columns by a Pre-Defined Separator
 
 ```r
 library(splitstackshape) # Stack and Reshape Datasets After 
@@ -132,7 +132,7 @@ Which yields the following output:
 
 Again, if you have no letters present, the `separate` command also returns `NA`.
 
-### Get root overview of your working directory
+### Get Root Overview of Your Working Directory
 
 ```r
 library(fs) # Cross-Platform File System Operations Based on 'libuv'

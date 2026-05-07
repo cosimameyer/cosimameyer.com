@@ -1,0 +1,7 @@
+{{ $address := .Get "address" | base64Encode }}
+<a href="#" 
+   data-contact="{{ $address }}" 
+   onclick="this.href='mailto:' + atob(this.dataset.contact)"
+   class="email-link">
+   {{ .Get "text" | default "Get in touch" }}
+</a>

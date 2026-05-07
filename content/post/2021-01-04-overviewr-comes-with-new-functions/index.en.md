@@ -1,5 +1,5 @@
 ---
-title: overviewR comes with new functions
+title: overviewR Comes With New Functions
 author: Cosima Meyer
 date: '2021-01-04'
 slug: overviewr-comes-with-new-functions

@@ -1,5 +1,5 @@
 ---
-title: How to implement a redirect from your old GitHub page to your new website
+title: How to Implement a Redirect From Your Old GitHub Page to Your New Website
 author: Cosima Meyer
 date: '2020-12-28'
 slug: implement-a-redirect-from-your-old-github-page-to-your-new-website

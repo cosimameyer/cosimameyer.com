@@ -1,5 +1,5 @@
 ---
-title: 'Update of overviewR with new functions!'
+title: 'Update of overviewR With New Functions!'
 summary: ''
 tags: []
 category: [R-post, R, package, overviewR]

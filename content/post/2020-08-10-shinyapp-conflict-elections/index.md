@@ -1,5 +1,5 @@
 ---
-title: 'ShinyApp: Conflict elections in Afghanistan 2019'
+title: 'ShinyApp: Conflict Elections in Afghanistan 2019'
 summary: ''
 tags: []
 category: [R, ShinyApp]

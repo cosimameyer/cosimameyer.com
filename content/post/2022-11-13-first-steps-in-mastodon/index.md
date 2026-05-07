@@ -1,5 +1,5 @@
 ---
-title: First steps in Mastodon
+title: First Steps in Mastodon
 author: Cosima Meyer
 date: '2022-11-13'
 slug: [first-steps-in-mastodon]
@@ -33,7 +33,7 @@ But how do you get started if you also want to join the party?
 
 {{< toc >}}
 
-## Choosing an instance
+## Choosing an Instance
 
 It's easy to choose between instances (the first question you'll encounter when thinking about signing up). There's a [questionnaire/filter function that suggests possible ones](https://t.co/9wEHJSh5ZR). While the choice is important (Mastodon is decentralized and an influx of users on "your chosen server instance" can affect your experience), I didn’t overthink it. Things change so quickly these days and, as far as I understand, [migration within Mastodon is also generally possible](https://t.co/PSImD4lQph). And choosing one server instance over another doesn’t mean that you’re limited to your specific instance and cannot interact with others. You can interact with (and follow - unless they restrict it) everyone on Mastodon across servers! 
 
@@ -42,7 +42,7 @@ It's easy to choose between instances (the first question you'll encounter when 
 If you have your Mastodon account now up and running, add a bio 😊 This helps people to get to know you and it feels more like a social gathering than an anonymous network.
 You can also add your Mastodon handle to your Twitter profile so that people can find you.
 
-## Migrate your contacts and find new ones
+## Migrate Your Contacts and Find New Ones
 
 To find your contacts on Mastodon, there are great tools such as [debirdify](https://pruvisto.org/debirdify/), [Fedifinder](https://fedifinder.glitch.me), or [Twitodon](https://twitodon.com).
 
@@ -70,7 +70,7 @@ There are also static lists that you directly import - one of them is [this Goog
 
 ## Tooting at Mastodon
 
-### General points 
+### General Points 
 
 While it's a decentralized system where servers have their own rules and manners, here’s a [nice summary of how tooting works at Mastodon](https://axbom.com/mastodon-tips/). 
 
@@ -85,15 +85,15 @@ There are a few things that I discovered that are different than on Twitter:
 - Reblog/"retweet" posts! Just a "like" (or a favorite) doesn't work to make it visible to others.
 
 
-### Netiquette: Introduce yourself
+### Netiquette: Introduce Yourself
 
 And now, and that's definitely one thing I really like about Mastodon: there's a great netiquette of introductions. So just introduce yourself by adding the hashtag `#introduction` 🤗 (and pin it to your profile)
 
-### Cross-posting at Twitter and Mastodon
+### Cross-Posting at Twitter and Mastodon
 
 If you want to cross-post on both services, there are also helper tools for this such as [crossposter](https://crossposter.masto.donte.com.br) or [Moa](https://t.co/0yF6DbEpKy).
 
-### The search function
+### The Search Function
 
 The search function does not work as you expect it to. It doesn't have a full text search. So it's best to bookmark a toot once you see (and like) it. 
 
@@ -101,14 +101,14 @@ The search function does not work as you expect it to. It doesn't have a full te
 
 ## Verification at Mastodon
 
-### Your website
+### Your Website
 
 If you want to have a verification sign (it's not a blue check mark but green and for free ✅), you can add 
 `<a rel="me" href="instance/your_mastodon-handle"></a>` on your website and link the website to your profile. I use Hugo Portio and added it to the `head.html` file. [Here's more to it](https://cedricbatailler.me/blog/how-verification-works-on-mastodon/) and [Alison Hill]() also Hugo also updated the Apéro theme.
 
 <!--{{< statictweet "1591166271353225221" >}}-->
 
-### Your GitHub profile
+### Your GitHub Profile
 
 It also works for your GitHub profile if your Mastadon page is the only website you're referring to in your GitHub profile ([adding the reference to your README doesn't work - unfortunately](https://github.com/community/community/discussions/5720)). There are two options, how you can add the verification on your GitHub page:
 
@@ -122,24 +122,24 @@ Here’s [a good guide on how it works (and why you should rethink the use of pr
 
 But with all the contact info that people provide in their bios, it’s also easy to reach out to them in other ways - which is a nice feature 😊
 
-## Mobile app
+## Mobile App
 At the time of writing this post, there were two major apps for iOS around that I tried. I first started with ["Mastodon"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) and experienced some lags. I read that [there will be more work on the app](https://mastodon.social/@Gargron/109340170654544788) - so good news! Until then, I switched to ["Metatext"](https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974) which, for me, works like a charm.
 
 *Update - April 23, 2023:* The official Mastodon app works better now (and it has also a multi-account view - very neat!). There is also a "new kid" around: [Ice Cubes](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884) - it's my favorite so far!
 
-## And more
+## And More
 
-### Embed your toots on your Hugo website
+### Embed Your Toots on Your Hugo Website
 If you want to embed a toot in your Hugo website, I describe how to do it in an easy way [here](https://cosimameyer.com//post/2022-04-16-how-to-adapt-hugo-portio-to-a-more-personal-website/#embedding-a-toot) based on [Seb's solution](https://github.com/Wivik/hugo-shortcodes). 
 
 {{< statictoot link="https://fosstodon.org/@rladies_cologne/109369690415656565" >}}
 
-### Using the Mastodon API with `{rtoot}`
+### Using the Mastodon Api With `{rtoot}`
 For all the academics (and more) who are looking into Twitter data and will likely miss [`{rtweet}`](https://cran.r-project.org/web/packages/rtweet/index.html), [`{rtoot}`](https://cran.r-project.org/web/packages/rtoot/index.html)[^1] is on CRAN 🎉 
 
 <!--{{< statictweet "1591103455699296256" >}}-->
 
-### Analyze your Twitter data
+### Analyze Your Twitter Data
 And, if you're curious about what your Twitter data looks like and want to get some insights out of them, [Observable](https://twitter.com/observablehq) has a [nice framework (and guide) for you](https://observablehq.com/@observablehq/save-and-analyze-your-twitter-archive).
 
 

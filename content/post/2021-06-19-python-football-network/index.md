@@ -1,5 +1,5 @@
 ---
-title: 'Using Python to scrape and visualize networks in European football'
+title: 'Using Python to Scrape and Visualize Networks in European Football'
 subitle: 'Visualizing team compositions with plotly in Python'
 author: Cosima Meyer
 date: '2021-06-19'
@@ -31,9 +31,9 @@ Now that I've been following the German Bundesliga for some seasons (more irregu
 
 The complete code can also be accessed in my [GitHub](https://github.com/cosimameyer/uefa-networks-2020/).
 
-## How do I get there?
+## How Do I Get There?
 
-### Import relevant libraries
+### Import Relevant Libraries
 
 ```python
 import pandas as pd
@@ -56,7 +56,7 @@ If these libraries are not installed yet, [here](https://packaging.python.org/tu
 <!-- ``` -->
 <!-- </details> -->
 
-### Scrape the data
+### Scrape the Data
 To scrape the data, I followed this [guide](https://medium.com/@devkosal/scraping-data-with-beautifulsoup-and-selectorgadget-in-python-3-decf798e1a1e).
 It is a combination of [SelectorGadget](https://selectorgadget.com) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/). BeautifulSoup pulls data from HTML and XML files. SelectorGadget helps to define the CSS selectors to extract specific parts of BeautifulSoup's output. 
 You will get an HTML output that I restrict to the desired text (using SelectorGadget to define which text I need). However, since the resulting object still contains output that I did not want to have included, I further had to do some data wrangling until I got the desired data frame.
@@ -140,7 +140,7 @@ player = text_split[119]
  'Defenders: Francesco Acerbi (Lazio), Alessandro Bastoni (Inter), Leonardo Bonucci (Juventus),
 ```
 
-### Do some data wrangling
+### Do Some Data Wrangling
 
 As always, some data wrangling is needed. 
 
@@ -330,7 +330,7 @@ teams_m.head()
 
 Et voilà, that's my data frame!
 
-### Getting the visualization
+### Getting the Visualization
 
 Now the fun part of visualization starts :-) I follow [this approach](https://medium.com/kenlok/how-to-create-sankey-diagrams-from-dataframes-in-python-e221c1b4d6b0), which also provides the great function `genSankey` below.
 

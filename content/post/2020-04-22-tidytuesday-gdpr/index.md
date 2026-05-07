@@ -1,5 +1,5 @@
 ---
-title: 'TidyTuesday - GDPR violations'
+title: 'TidyTuesday - GDPR Violations'
 summary: ''
 tags: []
 category: [R, tidytuesday, data visualization]

@@ -1,5 +1,5 @@
 ---
-title: Teaching stats and programming
+title: Teaching Stats and Programming
 author: Cosima Meyer
 date: '2021-09-28'
 slug: teaching-stats-and-programming

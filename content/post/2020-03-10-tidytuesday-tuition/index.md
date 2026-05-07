@@ -1,5 +1,5 @@
 ---
-title: 'TidyTuesday - Tuition fees'
+title: 'TidyTuesday - Tuition Fees'
 summary: ''
 tags: []
 category: [R, tidytuesday, data visualization]

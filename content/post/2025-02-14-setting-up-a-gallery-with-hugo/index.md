@@ -1,5 +1,5 @@
 ---
-title: Setting up a gallery with Hugo
+title: Setting up a Gallery With Hugo
 author: Cosima Meyer
 date: '2025-02-14'
 slug: setting-up-a-gallery-with-hugo

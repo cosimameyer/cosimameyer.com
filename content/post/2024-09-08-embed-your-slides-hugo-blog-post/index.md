@@ -1,5 +1,5 @@
 ---
-title: How to embed your slides in a Hugo blog post
+title: How to Embed Your Slides in a Hugo Blog Post
 author: Cosima Meyer
 date: '2024-09-08'
 slug: embed-your-slides-hugo-blog-post
@@ -34,7 +34,7 @@ For example, calling `{{</* slideshow "LINK_TO_SLIDE" */>}}` (and replacing `LIN
 
 This works for many different formats - here are a few examples and how to embed them:
 
-### Quarto-based
+### Quarto-Based
 ```markdown
 {{</* slideshow "https://cosimameyer.com/slides/pyladiescon-2023/#/title-slide.html#1" */>}}
 ```
@@ -43,7 +43,7 @@ This works for many different formats - here are a few examples and how to embed
 
 These slides are [Quarto-based](https://quarto.org/docs/presentations/) and the link has more explanation if you want to play around with them yourself. 
 
-### R-Markdown based
+### R-Markdown Based
 
 But it also works with other slides such as [RMarkdown-based versions](https://github.com/yihui/xaringan).
 

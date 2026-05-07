@@ -1,5 +1,5 @@
 ---
-title: R-Ladies Cologne - Our first year in the books!
+title: R-Ladies Cologne - Our First Year in the Books!
 author: Cosima Meyer
 slug: r-ladies-cologne-our-first-year-in-the-books
 category: [R, R-post, Python, Python-post]

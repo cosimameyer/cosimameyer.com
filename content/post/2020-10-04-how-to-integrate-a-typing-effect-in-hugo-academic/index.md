@@ -1,5 +1,5 @@
 ---
-title: How to integrate a typing effect in Hugo Academic
+title: How to Integrate a Typing Effect in Hugo Academic
 author: Cosima Meyer
 date: '2020-10-04'
 slug: how-to-integrate-a-typing-effect-in-hugo-academic

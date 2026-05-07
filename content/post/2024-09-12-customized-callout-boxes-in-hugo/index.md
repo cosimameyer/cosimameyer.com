@@ -1,5 +1,5 @@
 ---
-title: Add customized callout boxes to your Hugo blog posts
+title: Add Customized Callout Boxes to Your Hugo Blog Posts
 author: Cosima Meyer
 date: '2024-09-11'
 slug: customized-callout-boxes-in-hugo

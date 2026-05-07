@@ -942,23 +942,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/* Column label (kept for backward compat, now unused) */
-.resume-col-label {
-  font-family: var(--f-heading);
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--c-accent);
-  margin-bottom: 22px;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-.resume-col-label .fa {
-  font-size: 0.85rem;
-  margin: 0;
-}
 
 /* Vertical line */
 .resume-timeline {
@@ -975,7 +958,7 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(
     to bottom,
     var(--c-accent) 0%,
-    rgba(85, 124, 153, 0.1) 100%
+    color-mix(in srgb, var(--c-accent) 10%, transparent) 100%
   );
 }
 
@@ -1039,12 +1022,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Community tab: role + period inline */
 .resume-community-role {
-  font-size: 0.85rem !important;
+  font-size: 0.8rem !important;
   font-weight: 500 !important;
   text-transform: none !important;
   letter-spacing: 0 !important;
   color: var(--c-muted) !important;
-  margin: 2px 0 6px !important;
+  margin: 0 !important;
   display: flex !important;
   align-items: center;
   gap: 10px;
@@ -1060,12 +1043,9 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.65;
 }
 
-/* ---- Experience expand/collapse ---- */
+/* ---- Section expand/collapse (all tabs) ---- */
 .resume-item--hidden {
   display: none;
-}
-.resume-item--hidden.resume-item--visible {
-  display: block;
 }
 .resume-expand-btn {
   background: none !important;

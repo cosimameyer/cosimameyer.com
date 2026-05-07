@@ -1,5 +1,5 @@
 ---
-title: 'Methods Bites - How to write your own R package and publish it on CRAN'
+title: 'Methods Bites - How to Write Your Own R Package and Publish It on CRAN'
 summary: ''
 tags: []
 category: [R, package, Methods Bites]

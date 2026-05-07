@@ -1,5 +1,5 @@
 ---
-title: R-Ladies Cologne joins the family
+title: R-Ladies Cologne Joins the Family
 author: ''
 date: '2022-04-14'
 slug: new-r-ladies-chapter-cologne

@@ -40,38 +40,47 @@
 
     <div class="resume-panel" id="resume-education" role="tabpanel">
       <div class="resume-timeline">
-        {{ range .education }}
-        <div class="resume-item">
-          <h4>{{ index . "title" }}</h4>
-          <p>{{ index . "institution" }}</p>
-          {{ with index . "visiting" }}
+        {{ range $i, $item := .education }}
+        <div class="resume-item resume-item--collapsible{{ if ge $i 2 }} resume-item--hidden{{ end }}"{{ if ge $i 2 }} style="display:none"{{ end }}>
+          <h4>{{ index $item "title" }}</h4>
+          <p>{{ index $item "institution" }}</p>
+          {{ with index $item "visiting" }}
           <p class="resume-visiting">↳ {{ . }}</p>
           {{ end }}
         </div>
         {{ end }}
       </div>
+      <button class="resume-expand-btn" id="education-expand-btn" aria-expanded="false">
+        Show more <i class="fa-solid fa-chevron-down"></i>
+      </button>
     </div>
 
     <div class="resume-panel" id="resume-achievements" role="tabpanel">
       <div class="resume-timeline">
-        {{ range .achievements }}
-        <div class="resume-item">{{ .content | markdownify }}</div>
+        {{ range $i, $item := .achievements }}
+        <div class="resume-item resume-item--collapsible{{ if ge $i 2 }} resume-item--hidden{{ end }}"{{ if ge $i 2 }} style="display:none"{{ end }}>{{ $item.content | markdownify }}</div>
         {{ end }}
       </div>
+      <button class="resume-expand-btn" id="achievements-expand-btn" aria-expanded="false">
+        Show more <i class="fa-solid fa-chevron-down"></i>
+      </button>
     </div>
 
     <div class="resume-panel" id="resume-community" role="tabpanel">
       <div class="resume-timeline">
-        {{ range .community }}
-        <div class="resume-item">
-          <h4>{{ index . "title" }}</h4>
+        {{ range $i, $item := .community }}
+        <div class="resume-item resume-item--collapsible{{ if ge $i 2 }} resume-item--hidden{{ end }}"{{ if ge $i 2 }} style="display:none"{{ end }}>
+          <h4>{{ index $item "title" }}</h4>
           <p class="resume-community-role">
-            <span class="resume-community-role-title">{{ index . "role" }}</span>{{ with index . "period" }}<span class="resume-community-period">{{ . }}</span>{{ end }}
+            <span class="resume-community-role-title">{{ index $item "role" }}</span>{{ with index $item "period" }}<span class="resume-community-period">{{ . }}</span>{{ end }}
           </p>
-          <p>{{ index . "description" }}</p>
+          <p>{{ index $item "description" }}</p>
         </div>
         {{ end }}
       </div>
+      <button class="resume-expand-btn" id="community-expand-btn" aria-expanded="false">
+        Show more <i class="fa-solid fa-chevron-down"></i>
+      </button>
     </div>
 
     <!-- LinkedIn CTA -->
@@ -98,18 +107,20 @@
     });
   });
 
-  var expandBtn = document.getElementById('experience-expand-btn');
-  if (expandBtn) {
-    expandBtn.addEventListener('click', function () {
-      var collapsible = document.querySelectorAll('#resume-experience .resume-item--hidden');
-      var expanded = expandBtn.getAttribute('aria-expanded') === 'true';
-      collapsible.forEach(function (el) { el.style.display = expanded ? 'none' : 'block'; });
-      expandBtn.setAttribute('aria-expanded', String(!expanded));
-      expandBtn.innerHTML = expanded
+  ['experience', 'education', 'achievements', 'community'].forEach(function (section) {
+    var btn = document.getElementById(section + '-expand-btn');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var panel = document.getElementById('resume-' + section);
+      var hidden = panel.querySelectorAll('.resume-item--hidden');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      hidden.forEach(function (el) { el.style.display = expanded ? 'none' : 'block'; });
+      btn.setAttribute('aria-expanded', String(!expanded));
+      btn.innerHTML = expanded
         ? 'Show more <i class="fa-solid fa-chevron-down"></i>'
         : 'Show less <i class="fa-solid fa-chevron-up"></i>';
     });
-  }
+  });
 }());
 </script>
 {{ end }}
