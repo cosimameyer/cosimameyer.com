@@ -18,7 +18,7 @@ image:
 projects: []
 ---
 
-![small_image](https://media.giphy.com/media/UwrdbvJz1CNck/giphy.gif)
+{{< gif src="https://media.giphy.com/media/UwrdbvJz1CNck/giphy.gif" caption="via [GIPHY](https://giphy.com/gifs/UwrdbvJz1CNck)" >}}
 
 Have you ever wondered how to set up a smart sorting system for Apple Mail that allows you to keep an eye on the emails that really matter? Well, then you are in a similar situation as I was. The approach that I present here works perfectly for me, and it is surprising how a few tweaks in your mailbox can make such a big difference! 
 

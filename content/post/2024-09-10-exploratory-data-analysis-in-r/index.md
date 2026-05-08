@@ -562,5 +562,5 @@ Finally, as you have seen, R already provides a good starting set of functions f
 
 So let's start exploring your data!
 
-[![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDI4cXRwa2I3NTJzYXN6eHc3cjV5OHRjM3h2ZDFkZGYxZmNzc29wOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UAkLHNaScd6Zjlx5eZ/giphy.gif)](https://giphy.com/gifs/disneyprincess-UAkLHNaScd6Zjlx5eZ)
+{{< gif src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDI4cXRwa2I3NTJzYXN6eHc3cjV5OHRjM3h2ZDFkZGYxZmNzc29wOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UAkLHNaScd6Zjlx5eZ/giphy.gif" caption="via [Disney Princess on GIPHY](https://giphy.com/gifs/disneyprincess-UAkLHNaScd6Zjlx5eZ)" >}}
 {{< detail-tag "Alternative text" >}}A gif showing a person on a simple sailing boat sailing away (to new shores) and exploring the world.{{< /detail-tag >}}

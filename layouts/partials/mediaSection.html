@@ -33,6 +33,7 @@
         <div class="media-card-body">
           <p class="media-source">{{ .source }}</p>
           <h4 class="media-title">{{ .title }}</h4>
+          {{ with .english_title }}<p class="media-title-en">{{ . }}</p>{{ end }}
           <p class="media-date">{{ .date }}</p>
           <a href="{{ .url | safeURL }}" target="_blank" rel="noopener" class="media-cta">
             {{ with .cta }}{{ . }}{{ else }}Read{{ end }}

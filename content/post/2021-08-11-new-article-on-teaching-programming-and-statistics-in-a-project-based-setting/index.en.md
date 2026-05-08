@@ -33,7 +33,7 @@ The article comes with supplementary material: [a syllabus template in LaTeX](ht
 
 And, to further spark the fire of R, all this wouldn't have been possible without such a great community that also provides accessible, high-quality online resources for free - my special thanks go to [RStudio](https://education.rstudio.com), [R-Ladies](https://rladies.org), and [CorrelAid](https://correlaid.org)!
 
-[![smaller_image](https://media.giphy.com/media/HFe0B3yZyxBDNx4tnv/giphy.gif)](https://giphy.com/gifs/rainbow-spongebob-r-HFe0B3yZyxBDNx4tnv?utm_source=media-link&utm_medium=landing&utm_campaign=Media%20Links&utm_term=)
+{{< gif src="https://media.giphy.com/media/HFe0B3yZyxBDNx4tnv/giphy.gif" caption="via [GIPHY](https://giphy.com/gifs/rainbow-spongebob-r-HFe0B3yZyxBDNx4tnv)" >}}
 
 [^1]: If you click on the tree-based display, the order of the files and folders becomes more accessible:
 ![small_image](/images/single-blog/treebased.png)
