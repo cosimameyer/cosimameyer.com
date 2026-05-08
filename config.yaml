@@ -34,9 +34,6 @@ menu:
     - name: Writing
       url: '#post'
       weight: 5
-    - name: Contact
-      url: 'mailto:contact@cosimameyer.com'
-      weight: 6
   sitemap:
     # - name: About me
     #   url: about
