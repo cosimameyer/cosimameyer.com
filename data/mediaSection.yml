@@ -24,14 +24,6 @@ items:
     image: ""   # e.g. images/media/article-thumb.jpg
 
   - type: podcast
-    source: "Python ?"
-    title: ""
-    date: ""
-    url: ""
-    cta: "Listen"
-    image: "images/media/"   # e.g. images/media/podcast-cover.jpg
-
-  - type: podcast
     source: "R Weekly Highlights"
     title: "GitHub - Perks of Collaboration and Version Control"
     date: "2022"

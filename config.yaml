@@ -64,6 +64,10 @@ params:
       url: https://github.com/cosimameyer
       weight: 3
 markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
   highlight:
     anchorLineNos: false
     codeFences: true

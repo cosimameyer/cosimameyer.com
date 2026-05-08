@@ -39,18 +39,68 @@
 
 <section class="section singleBlog">
   <div class="container">
+    {{ if strings.Contains .TableOfContents "<li>" }}
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="singleBlog__content">
+          {{ .Content }}
+        </div>
+      </div>
+      <div class="col-lg-3 offset-lg-1 d-none d-lg-block">
+        <aside class="post-toc" id="post-toc">
+          <p class="post-toc__label">On this page</p>
+          {{ .TableOfContents | safeHTML }}
+        </aside>
+      </div>
+    </div>
+    {{ else }}
     <div class="row">
       <div class="col-lg-12">
         <div class="singleBlog__content">
-          {{ if .Params.toc }}
-            <h3>Table of Contents</h3>
-            {{ .TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" | safeHTML }}
-          {{ end }}
           {{ .Content }}
         </div>
       </div>
     </div>
+    {{ end }}
   </div>
 </section>
+
+<script>
+(function () {
+  var toc = document.getElementById('post-toc');
+  if (!toc) return;
+  var links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+  if (!links.length) return;
+
+  var headings = links.map(function (a) {
+    return document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+  }).filter(Boolean);
+
+  var activeId = null;
+  function setActive(id) {
+    if (id === activeId) return;
+    activeId = id;
+    links.forEach(function (a) {
+      a.classList.toggle('toc-active', decodeURIComponent(a.getAttribute('href').slice(1)) === id);
+    });
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) setActive(entry.target.id);
+    });
+  }, { rootMargin: '-80px 0px -68% 0px', threshold: 0 });
+
+  headings.forEach(function (h) { observer.observe(h); });
+  if (headings[0]) setActive(headings[0].id);
+
+  links.forEach(function (a) {
+    a.addEventListener('click', function () {
+      var id = decodeURIComponent(a.getAttribute('href').slice(1));
+      setActive(id);
+    });
+  });
+}());
+</script>
 
 {{ end }}

@@ -21,7 +21,10 @@
         </li>
         {{ end }}
       </ul>
-      <a href="mailto:contact@cosimameyer.com" class="btn btn-primary nav-cta ms-3">Get in touch</a>
+      <a href="#"
+         data-contact="{{ (.Site.Data.hero.mail) | base64Encode }}"
+         onclick="this.href='mailto:'+atob(this.dataset.contact)"
+         class="btn btn-primary nav-cta ms-3">Get in touch</a>
     </div>
 
   </div>

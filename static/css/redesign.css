@@ -11,6 +11,7 @@
   --c-accent:       #3D6A8C;
   --c-accent-dark:  #264D6B;
   --c-accent-light: #E8F2F8;
+  --c-highlight:    rgba(61, 106, 140, 0.18);
   --c-white:        #FFFFFF;
   --c-border:       #E2E8F0;
 
@@ -1477,6 +1478,59 @@ h1, h2, h3, h4, h5, h6 {
 .singleBlog__content details > *:not(summary) {
   margin-top: 8px;
   line-height: 1.65;
+}
+
+/* ---- Link highlights ---- */
+.singleBlog__content a,
+.project-single-content a,
+.project-pi-text a,
+.about-bio-text a,
+.resume-item a {
+  background: linear-gradient(var(--c-highlight), var(--c-highlight));
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 90%;
+  text-decoration: none;
+}
+
+/* ---- Floating TOC ---- */
+.post-toc {
+  position: sticky;
+  top: 88px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.post-toc__label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--c-muted);
+  margin-bottom: 0.6rem;
+}
+.post-toc #TableOfContents ul { list-style: none; padding-left: 0.75rem; margin: 0; }
+.post-toc #TableOfContents > ul { padding-left: 0; }
+.post-toc #TableOfContents a {
+  display: block;
+  padding: 2px 0;
+  color: var(--c-body);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.post-toc #TableOfContents a:hover { color: var(--c-accent); }
+.post-toc #TableOfContents a.toc-active {
+  color: var(--c-accent);
+  font-weight: 600;
+}
+
+/* ---- Scroll offset for sticky navbar ---- */
+.singleBlog__content h1,
+.singleBlog__content h2,
+.singleBlog__content h3,
+.singleBlog__content h4 {
+  scroll-margin-top: 88px;
 }
 
 /* =============================================

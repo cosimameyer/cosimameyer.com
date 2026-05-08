@@ -9,7 +9,7 @@ language: Mainly R but also language-agnostic blog posts
 field: Blog
 impact: "Part of the MZES Social Science Data Lab · read by researchers worldwide"
 title: Methods Bites
-featured: true
+featured: false
 tags: [R, Blog]
 website: https://www.mzes.uni-mannheim.de/socialsciencedatalab/
 links: true
