@@ -154,10 +154,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .hero-pretitle {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--c-muted);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
   margin-bottom: 18px;
 }
@@ -520,6 +520,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.media-title-en {
+  font-size: 0.78rem;
+  color: var(--c-muted);
+  font-style: italic;
+  margin: 2px 0 4px;
+}
 .media-date {
   font-size: 0.74rem;
   color: var(--c-muted);
@@ -833,19 +839,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--c-heading);
   line-height: 1.4;
+  margin-bottom: 2px;
+}
+.talk-title-en {
+  font-size: 0.8rem;
+  color: var(--c-muted);
+  font-style: italic;
   margin-bottom: 4px;
 }
 .talk-time {
   font-size: 0.78rem;
   color: var(--c-muted);
   margin-bottom: 10px;
-}
-.talk-comment {
-  font-size: 0.83rem;
-  color: var(--c-body);
-  line-height: 1.55;
-  margin-bottom: 10px;
-  flex: 1;
 }
 .talk-links {
   display: flex;
@@ -866,6 +871,177 @@ h1, h2, h3, h4, h5, h6 {
   transition: color 0.18s;
 }
 .talk-links a:hover {
+  color: var(--c-accent);
+}
+
+/* ---- Talk filter bar (mirrors portfolio-filter-bar) ---- */
+.talks-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+/* ---- Speaking invite CTA ---- */
+.talks-invite {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--c-border);
+}
+
+.talks-invite__text {
+  font-size: 0.95rem;
+  color: var(--c-muted);
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.talks-invite__btn {
+  display: inline-block;
+  background: none;
+  border: 1.5px solid var(--c-accent);
+  color: var(--c-accent) !important;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 7px 20px;
+  border-radius: 20px;
+  text-decoration: none !important;
+  letter-spacing: 0.02em;
+  transition: background 0.18s, color 0.18s;
+}
+
+.talks-invite__btn:hover {
+  background: var(--c-accent);
+  color: #fff !important;
+  box-shadow: 0 8px 24px rgba(85, 124, 153, 0.35);
+}
+
+/* ---- Flip cards ---- */
+.talk-card--flippable {
+  background: transparent;
+  border-color: transparent;
+  overflow: visible;
+  box-shadow: none !important;
+  perspective: 1200px;
+  cursor: pointer;
+}
+
+.talk-card-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.talk-card--flippable .talk-card-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.talk-card--flippable.is-flipped .talk-card-inner {
+  transform: rotateY(180deg);
+}
+
+.talk-card--flippable .talk-card-front {
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow 0.22s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.talk-card--flippable:hover:not(.is-flipped) .talk-card-front {
+  box-shadow: var(--shadow-md);
+}
+
+.talk-card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border-radius: var(--radius-card);
+  background: var(--c-accent-dark);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.talk-back-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.talk-back-description p {
+  margin-bottom: 0;
+}
+
+.talk-back-description a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.talk-back-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.talk-back-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.talk-back-tag--audience {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.talk-flip-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.talk-flip-hint {
+  font-size: 0.7rem;
+  color: var(--c-muted);
+  text-align: right;
+  margin-top: 8px;
+  margin-bottom: 0;
+  opacity: 0.5;
+  transition: opacity 0.2s, color 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.talk-card--flippable:hover .talk-flip-hint {
+  opacity: 1;
   color: var(--c-accent);
 }
 
@@ -1566,7 +1742,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
 }
 
-/* Consistent hover shadow on all buttons */
+/* Consistent radius + hover shadow on all buttons */
+.btn {
+  border-radius: 40px !important;
+}
 .btn:hover,
 .btn:focus,
 .btn-zoom:hover {
@@ -1724,4 +1903,27 @@ h1, h2, h3, h4, h5, h6 {
 /* Override old footer footer row when site-footer not used */
 .footer__footer {
   display: none !important;
+}
+
+/* ---- GIF figure with attribution ---- */
+.gif-figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.gif-figure img {
+  max-width: 100%;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+.gif-caption {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--c-muted);
+  font-style: italic;
+}
+.gif-caption a {
+  color: var(--c-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }

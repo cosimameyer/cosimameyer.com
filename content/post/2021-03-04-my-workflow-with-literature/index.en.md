@@ -47,7 +47,7 @@ I came back to JabRef because I experienced it as most stable and user-friendly 
 
 And that's it -- now let the writing part begin!
 
-![small_image](https://media.giphy.com/media/rdma0nDFZMR32/giphy.gif)
+{{< gif src="https://media.giphy.com/media/rdma0nDFZMR32/giphy.gif" caption="via [GIPHY](https://giphy.com/gifs/rdma0nDFZMR32)" >}}
 
 [^*]: This post contains links to products that I use in my regular work life and bought myself. As always, these workflows are never a one-size-fits-all solution and present just a snapshot of what currently works well for me.
 [^1]: I came across the idea of a watch folder when using [Mendeley](https://www.mendeley.com/?interaction_required=true). Although I am no longer using it, I have a watch folder where all documents that still need to be added to my reading program [(GoodNotes)](https://www.goodnotes.com) are stored.  

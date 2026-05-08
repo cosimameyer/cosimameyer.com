@@ -261,6 +261,6 @@ And to reiterate what I concluded in the other post: Python provides a very good
 
 Let's start wrangling and developing!
 
-[![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHV0dTJrNnY1bjF3OTcwcjJ6Mnc5YjI2Z3R2bGV2ZzVzZ25wbzF5cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2IudUHdI075HL02Pkk/giphy.gif)](https://giphy.com/gifs/pudgypenguins-data-code-coding-2IudUHdI075HL02Pkk)
+{{< gif src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHV0dTJrNnY1bjF3OTcwcjJ6Mnc5YjI2Z3R2bGV2ZzVzZ25wbzF5cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2IudUHdI075HL02Pkk/giphy.gif" caption="via [Pudgy Penguins on GIPHY](https://giphy.com/gifs/pudgypenguins-data-code-coding-2IudUHdI075HL02Pkk)" >}}
 {{< detail-tag "Alternative text" >}}A gif showing a penguin in front of a screen with the word "Coding" in the upper part of the image.{{< /detail-tag >}}
 

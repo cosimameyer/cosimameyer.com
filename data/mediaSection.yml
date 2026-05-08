@@ -1,7 +1,7 @@
 enable: true
-topTitle: "Press"
+topTitle: "Media"
 title: >
-  ## In the Press & On Air
+  ## Podcasts & Press
 
   A selection of podcasts, features, and interviews on my work in data science, open source, and community building.
 
@@ -18,6 +18,7 @@ items:
   - type: press
     source: "Business Insider Germany"
     title: "Zukunftsmacherinnen 2024 von Business Insider: Das sind die neuen 26 Frauen!"
+    english_title: "Future Makers 2024: Business Insider's 26 Women Shaping Tomorrow"
     date: "2024-10-24"
     url: "https://www.businessinsider.de/wirtschaft/zukunftsmacherinnen-2024-das-sind-die-neuen-frauen/"
     cta: "Read"

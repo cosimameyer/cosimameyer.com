@@ -182,6 +182,6 @@ What's important to remember when you're using the implementation:
 
 Happy tabbing 🙌
 
-![smaller_image](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzVlM2RpYzEyNnZ6YWlpb2lsZDAxbHp3aDNmNGNjbjA1aTAwNjIyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aYzxVt2lMrZXW/giphy.gif)
+{{< gif src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzVlM2RpYzEyNnZ6YWlpb2lsZDAxbHp3aDNmNGNjbjA1aTAwNjIyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aYzxVt2lMrZXW/giphy.gif" caption="via [GIPHY](https://giphy.com/gifs/aYzxVt2lMrZXW)" >}}
 
 

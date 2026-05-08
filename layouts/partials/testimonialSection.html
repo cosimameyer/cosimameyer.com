@@ -6,48 +6,114 @@
       <span class="top-title pre-line">{{ .topTitle }}</span>
       {{ .title | markdownify }}
     </div>
-    <div class="talks-carousel">
+
+    {{ if .topics }}
+    <div class="talks-filter-bar" id="talks-filter-bar">
+      <button class="pf-btn active" data-filter="all">All</button>
+      {{ range .topics }}
+      <button class="pf-btn" data-filter="{{ . }}">{{ . }}</button>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="talks-carousel" id="talks-cards">
       {{ range .testimonial }}
-      <div class="talk-card">
-        {{ if .thumbnail }}
-        <div class="talk-card-img">
-          <img src="{{ .thumbnail | absURL }}" alt="{{ .title }}" loading="lazy" />
-          {{ with .type }}<span class="talk-type-badge talk-type-{{ . | lower }}">{{ . }}</span>{{ end }}
-        </div>
-        {{ end }}
-        <div class="talk-card-body">
-          {{ if not .thumbnail }}{{ with .type }}<span class="talk-type-badge talk-type-{{ . | lower }} talk-type-no-img">{{ . }}</span>{{ end }}{{ end }}
-          <p class="talk-event">{{ .name }}</p>
-          <h4 class="talk-title">{{ .title }}</h4>
-          <p class="talk-time">{{ .time }}</p>
-          {{ with .comment }}<p class="talk-comment">{{ . | markdownify }}</p>{{ end }}
-          <div class="talk-links">
-            {{ if .slides }}
-            <a href="{{ .slides | safeURL }}" target="_blank" rel="noopener">
-              <i class="fa-regular fa-file-lines"></i> Slides
-            </a>
+      {{ $talk := . }}
+      <div class="talk-card{{ if .comment }} talk-card--flippable{{ end }}" data-tags="{{ delimit .tags "," }}"{{ if .comment }} onclick="this.classList.toggle('is-flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('is-flipped')}" role="button" tabindex="0"{{ end }}>
+        <div class="talk-card-inner">
+          <div class="talk-card-front">
+            {{ if .thumbnail }}
+            <div class="talk-card-img">
+              <img src="{{ .thumbnail | absURL }}" alt="{{ .title }}" loading="lazy" />
+              {{ with .type }}<span class="talk-type-badge talk-type-{{ . | lower }}">{{ . }}</span>{{ end }}
+            </div>
             {{ end }}
-            {{ if .recording }}
-            <a href="{{ .recording | safeURL }}" target="_blank" rel="noopener">
-              <i class="fa-solid fa-circle-play"></i> Recording
-            </a>
-            {{ end }}
-            {{ if .github }}
-            <a href="{{ .github | safeURL }}" target="_blank" rel="noopener">
-              <i class="fa-brands fa-github"></i> Code
-            </a>
-            {{ end }}
-            {{ if .event_url }}
-            <a href="{{ .event_url | safeURL }}" target="_blank" rel="noopener">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> Event
-            </a>
-            {{ end }}
+            <div class="talk-card-body">
+              {{ if not .thumbnail }}{{ with .type }}<span class="talk-type-badge talk-type-{{ . | lower }} talk-type-no-img">{{ . }}</span>{{ end }}{{ end }}
+              <p class="talk-event">{{ .name }}</p>
+              <h4 class="talk-title">{{ .title }}</h4>
+              {{ with .english_title }}<p class="talk-title-en">{{ . }}</p>{{ end }}
+              <p class="talk-time">{{ .time }}</p>
+              <div class="talk-links">
+                {{ if .slides }}
+                <a href="{{ .slides | safeURL }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+                  <i class="fa-regular fa-file-lines"></i> Slides
+                </a>
+                {{ end }}
+                {{ if .recording }}
+                <a href="{{ .recording | safeURL }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+                  <i class="fa-solid fa-circle-play"></i> Recording
+                </a>
+                {{ end }}
+                {{ if .github }}
+                <a href="{{ .github | safeURL }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                {{ end }}
+                {{ if .event_url }}
+                <a href="{{ .event_url | safeURL }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Event
+                </a>
+                {{ end }}
+              </div>
+              {{ with .comment }}<p class="talk-flip-hint" aria-hidden="true"><i class="fa-solid fa-circle-info"></i> Details</p>{{ end }}
+            </div>
           </div>
+          {{ with .comment }}
+          <div class="talk-card-back">
+            <div class="talk-back-description">{{ . | markdownify }}</div>
+            {{ if or $talk.audience $talk.lang }}
+            <div class="talk-back-tags">
+              {{ with $talk.audience }}<span class="talk-back-tag talk-back-tag--audience">{{ . }}</span>{{ end }}
+              {{ with $talk.lang }}<span class="talk-back-tag talk-back-tag--lang">{{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
+            <span class="talk-flip-back"><i class="fa-solid fa-rotate-left"></i> Back</span>
+          </div>
+          {{ end }}
         </div>
       </div>
       {{ end }}
     </div>
+
+    <p class="portfolio-no-results" id="talks-no-results" style="display:none;">No talks match this filter.</p>
+
+    <div class="talks-invite">
+      <p class="talks-invite__text">Available for talks in English and German.</p>
+      <a class="talks-invite__btn" href="#" data-contact="{{ site.Data.hero.mail | base64Encode }}" onclick="this.href='mailto:'+atob(this.dataset.contact)">Get in touch</a>
+    </div>
   </div>
 </section>
+
+<script>
+(function () {
+  var bar = document.getElementById('talks-filter-bar');
+  if (!bar) return;
+  var btns  = bar.querySelectorAll('.pf-btn');
+  var cards = document.querySelectorAll('#talks-cards .talk-card');
+  var none  = document.getElementById('talks-no-results');
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      btns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+
+      var f = btn.dataset.filter.toLowerCase();
+      var visible = 0;
+
+      cards.forEach(function (card) {
+        var tags = (card.dataset.tags || '').toLowerCase();
+        var match = f === 'all' || tags.split(',').some(function (t) {
+          return t.trim() === f;
+        });
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+
+      none.style.display = visible === 0 ? 'block' : 'none';
+    });
+  });
+}());
+</script>
 {{ end }}
 {{ end }}

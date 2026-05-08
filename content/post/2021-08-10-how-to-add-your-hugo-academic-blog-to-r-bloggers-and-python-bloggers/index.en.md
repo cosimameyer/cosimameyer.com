@@ -56,7 +56,7 @@ I call the following URL to access these posts: `https://cosimameyer.rbind.io/ca
 
 And that's it! If this page looks good and your full blog post is displayed, you're almost good to go. Check if your feed coheres to the requirements and add the required info to [the form](https://www.r-bloggers.com/add-your-blog/) -- now it's just waiting (a bit) until it's checked and accepted 😊
 
-![smaller_image](https://media.giphy.com/media/GiWEowj3nQv9C/giphy.gif)
+{{< gif src="https://media.giphy.com/media/GiWEowj3nQv9C/giphy.gif" caption="via [GIPHY](https://giphy.com/gifs/GiWEowj3nQv9C)" >}}
 
 [^2]: For home, the original first line only included the following elements: `home = ["HTML", "CSS", "RSS"]` but since my default setting also contained `JSON` and `WebAppManifest`, I left it as it was and just added the additional lines for `taxonomy` and `taxonomyTerm`. As a short disclaimer: I am not entirely sure whether I needed to add these two new lines to `[outputs]`. But since including them worked without any problem, I left them in.
 [^1]: This [GitHub issue](https://github.com/wowchemy/wowchemy-hugo-modules/issues/144) gave me the solution. You can automatically access your RSS feed because RSS is enabled by default.
