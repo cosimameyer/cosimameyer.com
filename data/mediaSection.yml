@@ -1,50 +1,52 @@
 enable: true
-topTitle: "Media"
+topTitle: "Press"
+title: >
+  ## In the Press & On Air
+
+  A selection of podcasts, features, and interviews on my work in data science, open source, and community building.
 
 items:
   - type: podcast
     source: "Queens of Tech Podcast | 100 Voices of Impact"
     title: "Tech Queen: Cosima Meyer"
-    date: "2025-02-01"
+    date: "2025"
     url: "https://podcasts.apple.com/se/podcast/tech-queen-cosima-meyer-senior-data-scientist-at-sap-ex-ibm/id1625869153?i=1000687811079&l=en-GB"
     cta: "Listen"
     image: "images/media/600x600bb.webp"
-    credit: "Cover: Jasmine Moradi"   # e.g. "Photo: Jane Doe"
+    credit: ""   # e.g. "Photo: Jane Doe"
 
   - type: press
     source: "Business Insider Germany"
     title: "Zukunftsmacherinnen 2024 von Business Insider: Das sind die neuen 26 Frauen!"
-    date: "2024-10-24"
+    date: "2024"
     url: "https://www.businessinsider.de/wirtschaft/zukunftsmacherinnen-2024-das-sind-die-neuen-frauen/"
     cta: "Read"
-    image: "images/media/business_insider.jpg"  
-    credit: "Social Media Card: Business Insider Deutschland" # e.g. images/media/article-thumb.jpg
+    image: ""   # e.g. images/media/article-thumb.jpg
 
   - type: podcast
-    source: "The Real Python Podcast"
-    title: "Episode 222: Using Virtual Environments in Docker & Comparing Python Dev Tools"
-    date: "2024-09-27"
-    url: "https://realpython.com/podcasts/rpp/222/"
+    source: "Python ?"
+    title: ""
+    date: ""
+    url: ""
     cta: "Listen"
-    image: "images/media/python_podcast.png"   # e.g. images/media/podcast-cover.jpg
+    image: "images/media/"   # e.g. images/media/podcast-cover.jpg
 
   - type: podcast
     source: "R Weekly Highlights"
     title: "GitHub - Perks of Collaboration and Version Control"
-    date: "2022-11-04"
-    url: "https://rweekly.fireside.fm/95"
+    date: "2022"
+    url: ""
     cta: "Listen"
-    image: "images/media/git_podcast.png"   # e.g. images/media/podcast-cover.jpg
-    credit: "Cover: R Weekly"
+    image: "images/media/shiny_podcast.png"   # e.g. images/media/podcast-cover.jpg
 
   - type: podcast
     source: "R Weekly Highlights"
     title: "Understanding ShinyApps"
-    date: "2022-09-28"
-    url: "https://rweekly.fireside.fm/99"
+    date: "2022"
+    url: ""
     cta: "Listen"
-    image: "images/media/shiny_podcast.png"   # e.g. images/media/podcast-cover.jpg
-    credit: "Cover: R Weekly"
+    image: "images/media/git_podcast.png"   # e.g. images/media/podcast-cover.jpg
+
   # - type: interview
   #   source: "Your Outlet"
   #   title: "Placeholder Interview Title"
@@ -56,16 +58,7 @@ items:
   - type: press
     source: "Inkstick Media & The World"
     title: "Is a quota enough to secure women's participation in high-level leadership roles?"
-    date: "2022-08-04"
-    url: "https://inkstickmedia.com/civil-workshopping-part-i/"
+    date: "2022"
+    url: ""
     cta: "Read"
     image: "images/media/women.png"   # e.g. images/media/article-thumb.jpg
-
-  - type: interview
-    source: "WUMANetzwerk"
-    title: "Interview with WUMANetzwerk"
-    date: "2019-12-03"
-    url: "https://wuman307139351.wordpress.com/2019/12/03/cosima-meyer-universitaet-mannheim/"
-    cta: "Read"
-    image: "images/media/wuman.png"   # e.g. images/media/interview
-

@@ -717,6 +717,13 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial__header h2 {
   font-family: var(--f-heading) !important;
 }
+.talks__header > p,
+.portfolio__header > p,
+.media__header > p,
+.blog-section .row > [class*="col"] > p {
+  font-weight: 300;
+  font-size: 0.95rem;
+}
 /* Scroll-snap carousel — shows ~3 cards, drag/scroll to see rest */
 .talks-carousel {
   display: flex;
