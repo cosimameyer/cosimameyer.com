@@ -401,6 +401,8 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 calc(33.333% - 14px);
   min-width: 260px;
   scroll-snap-align: start;
+  text-decoration: none;
+  color: inherit;
 }
 @media (max-width: 991px) {
   .media-card { flex: 0 0 calc(50% - 10px); }
@@ -1486,6 +1488,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Suppress theme blog shape decoration */
 .post-preview__shape { display: none !important; }
+
+/* ---- Blog carousel (homepage) ---- */
+.blog-card .talk-title a {
+  color: inherit;
+  text-decoration: none !important;
+  transition: color 0.18s;
+}
+.blog-card .talk-title a:hover {
+  color: var(--c-accent);
+}
+/* CTA card — centred "Show all posts" button */
+.blog-card--cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--c-accent-light);
+  border: 2px dashed var(--c-border);
+  min-height: 180px;
+}
+.blog-card-cta-inner {
+  text-align: center;
+  padding: 24px;
+}
 
 /* Breadcrumb page header (blog posts, portfolio single pages) */
 .breadCrumb {
