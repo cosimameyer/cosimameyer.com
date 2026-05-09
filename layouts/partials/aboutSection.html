@@ -30,7 +30,7 @@
     <div class="resume-panel active" id="resume-experience" role="tabpanel">
       <div class="resume-timeline">
         {{ range $i, $item := .experience }}
-        <div class="resume-item resume-item--collapsible{{ if ge $i 2 }} resume-item--hidden{{ end }}"{{ if ge $i 2 }} style="display:none"{{ end }}>{{ $item.content | markdownify }}</div>
+        <div class="resume-item resume-item--collapsible{{ if ge $i 3 }} resume-item--hidden{{ end }}"{{ if ge $i 3 }} style="display:none"{{ end }}>{{ $item.content | markdownify }}</div>
         {{ end }}
       </div>
       <button class="resume-expand-btn" id="experience-expand-btn" aria-expanded="false">
@@ -41,7 +41,7 @@
     <div class="resume-panel" id="resume-education" role="tabpanel">
       <div class="resume-timeline">
         {{ range $i, $item := .education }}
-        <div class="resume-item resume-item--collapsible{{ if ge $i 2 }} resume-item--hidden{{ end }}"{{ if ge $i 2 }} style="display:none"{{ end }}>
+        <div class="resume-item resume-item--collapsible{{ if ge $i 3 }} resume-item--hidden{{ end }}"{{ if ge $i 3 }} style="display:none"{{ end }}>
           <h4>{{ index $item "title" }}</h4>
           <p>{{ index $item "institution" }}</p>
           {{ with index $item "visiting" }}
@@ -58,7 +58,7 @@
     <div class="resume-panel" id="resume-achievements" role="tabpanel">
       <div class="resume-timeline">
         {{ range $i, $item := .achievements }}
-        <div class="resume-item resume-item--collapsible{{ if ge $i 2 }} resume-item--hidden{{ end }}"{{ if ge $i 2 }} style="display:none"{{ end }}>{{ $item.content | markdownify }}</div>
+        <div class="resume-item resume-item--collapsible{{ if ge $i 3 }} resume-item--hidden{{ end }}"{{ if ge $i 3 }} style="display:none"{{ end }}>{{ $item.content | markdownify }}</div>
         {{ end }}
       </div>
       <button class="resume-expand-btn" id="achievements-expand-btn" aria-expanded="false">
@@ -69,7 +69,7 @@
     <div class="resume-panel" id="resume-community" role="tabpanel">
       <div class="resume-timeline">
         {{ range $i, $item := .community }}
-        <div class="resume-item resume-item--collapsible{{ if ge $i 2 }} resume-item--hidden{{ end }}"{{ if ge $i 2 }} style="display:none"{{ end }}>
+        <div class="resume-item resume-item--collapsible{{ if ge $i 3 }} resume-item--hidden{{ end }}"{{ if ge $i 3 }} style="display:none"{{ end }}>
           <h4>{{ index $item "title" }}</h4>
           <p class="resume-community-role">
             <span class="resume-community-role-title">{{ index $item "role" }}</span>{{ with index $item "period" }}<span class="resume-community-period">{{ . }}</span>{{ end }}
