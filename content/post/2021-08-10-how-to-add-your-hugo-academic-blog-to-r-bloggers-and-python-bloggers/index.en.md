@@ -48,9 +48,9 @@ For the Hugo Academic theme, there was not much more I needed to change (anymore
 And that's all you need 🥳
 
 
-I categorize all blog posts (as I also have non-R/Python-related posts and want to keep R and Python-bloggers clean and tidy). It's also in their policies where both feeds request to feed in only ["meaty" posts and to avoid submitting short snippets](https://www.r-bloggers.com/add-your-blog/). To access all R and Python-related posts, I use the categories `R-post` and `Python-post`. I sometimes make short (data science) posts that link to new Methods Bites posts, for instance, or also have a [blog post with helpful code snippets](https://cosimameyer.rbind.io/post/helpful-r-commands/), which I do not want to include in the feeds. 
+I categorize all blog posts (as I also have non-R/Python-related posts and want to keep R and Python-bloggers clean and tidy). It's also in their policies where both feeds request to feed in only ["meaty" posts and to avoid submitting short snippets](https://www.r-bloggers.com/add-your-blog/). To access all R and Python-related posts, I use the categories `R-post` and `Python-post`. I sometimes make short (data science) posts that link to new Methods Bites posts, for instance, or also have a [blog post with helpful code snippets](https://cosimameyer.com/post/helpful-r-commands/), which I do not want to include in the feeds. 
 
-I call the following URL to access these posts: `https://cosimameyer.rbind.io/category/r-post/index.xml` (or `https://cosimameyer.rbind.io/category/python-post/index.xml` for Python posts). If you want to check how your RSS feed with R posts looks like, enter it [here](https://simplepie.org/demo/). The image below shows a screenshot of my results when entering my RSS feed for the category "R-post," including a preview of one post.
+I call the following URL to access these posts: `https://cosimameyer.com/category/r-post/index.xml` (or `https://cosimameyer.com/category/python-post/index.xml` for Python posts). If you want to check how your RSS feed with R posts looks like, enter it [here](https://simplepie.org/demo/). The image below shows a screenshot of my results when entering my RSS feed for the category "R-post," including a preview of one post.
 
 ![small_image](/images/single-blog/rss-feed.png)
 

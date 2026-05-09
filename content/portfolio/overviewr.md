@@ -13,6 +13,6 @@ tags: [R, Package, Open Source]
 impact: "Available on CRAN · featured in rOpenSci"
 website: https://cosimameyer.github.io/overviewR/
 github: https://github.com/cosimameyer/overviewR
-slides: https://cosimameyer.rbind.io/slides/overviewr/talk#1
+slides: https://cosimameyer.com/slides/overviewr/talk.html#1
 links: true
 ---

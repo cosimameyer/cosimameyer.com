@@ -16,7 +16,7 @@ authors: []
 I had the great pleasure to talk about NLP at [R-Ladies Bergen](https://www.meetup.com/rladies-bergen/events/274392883/) yesterday. Thanks to everyone for making this event so much fun! 
 The talk covers both unsupervised and supervised approaches and introduces you to [`quanteda`](https://quanteda.io/), an R package that allows you to perform NLP tasks. 
 
-All material can be accessed [**here**](https://github.com/cosimameyer/nlp-rladies-bergen) (including [slides](http://cosimameyer.rbind.io/slides/nlp-rladies/talk#1), [raw](https://github.com/cosimameyer/nlp-rladies-bergen/tree/main/code) and [deployed](https://nlp-bergen.netlify.app/) code as well as the [recording](https://youtu.be/bvqur70ZmyM)). The talk itself is heavily based on this [blogpost](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/advancing-text-mining/).
+All material can be accessed [**here**](https://github.com/cosimameyer/nlp-rladies-bergen) (including [slides](https://cosimameyer.com/slides/nlp-rladies/talk.html#1), [raw](https://github.com/cosimameyer/nlp-rladies-bergen/tree/main/code) and [deployed](https://nlp-bergen.netlify.app/) code as well as the [recording](https://youtu.be/bvqur70ZmyM)). The talk itself is heavily based on this [blogpost](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/advancing-text-mining/).
 
 Here are some further insights into the talk:
 
@@ -189,7 +189,7 @@ data %>%
 
 <!--<img src="/images/single-blog/negative-sentiment.png" width="400" />-->
 
-These figures above show the output of more basic supervised and unsupervised models in NLP that you can use and that we covered during the talk. And as you work more and more with textual data, you will see that there is so much more in the field of NLP including [document similarity](http://cosimameyer.rbind.io/slides/nlp-rladies/talk#56), [text generation](https://arxiv.org/abs/1906.01946) or even [chat bots](http://cosimameyer.rbind.io/slides/nlp-rladies/talk#57) that you can create using your knowledge and starting with the same simple steps that I presented in the talk 👩🏼‍💻
+These figures above show the output of more basic supervised and unsupervised models in NLP that you can use and that we covered during the talk. And as you work more and more with textual data, you will see that there is so much more in the field of NLP including [document similarity](https://cosimameyer.com/slides/nlp-rladies/talk.html#56), [text generation](https://arxiv.org/abs/1906.01946) or even [chat bots](https://cosimameyer.com/slides/nlp-rladies/talk.html#57) that you can create using your knowledge and starting with the same simple steps that I presented in the talk 👩🏼‍💻
 
 
 If you want more resources, you can access them here:

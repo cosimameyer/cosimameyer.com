@@ -18,7 +18,7 @@ If you host a website, it is worth considering using the secure `HTTPS` encrypti
 
 ### The Situation
 
-I build my homepage using the wonderful [`blogdown` package](https://bookdown.org/yihui/blogdown/) with a [customized version of the Hugo Academic theme](https://cosimameyer.rbind.io/post/how-to-integrate-a-typing-effect-in-hugo-academic/). To deploy the website, I rely on [Netlify](https://www.netlify.com/), which works like a charm! Since I did not want the default `netlify.app` domain (suffix) to be my domain, I [oppened an issue to request the `rbind.io` suffix](https://github.com/rbind/support/issues/674). Setting this up is extremely straightforward and well explained [here](https://support.rbind.io/about/). Well, now that this worked, I wanted to be able to use `HTTPS` instead of `HTTP`. And here, the challenge began.
+I build my homepage using the wonderful [`blogdown` package](https://bookdown.org/yihui/blogdown/) with a [customized version of the Hugo Academic theme](https://cosimameyer.com/post/how-to-integrate-a-typing-effect-in-hugo-academic/). To deploy the website, I rely on [Netlify](https://www.netlify.com/), which works like a charm! Since I did not want the default `netlify.app` domain (suffix) to be my domain, I [oppened an issue to request the `rbind.io` suffix](https://github.com/rbind/support/issues/674). Setting this up is extremely straightforward and well explained [here](https://support.rbind.io/about/). Well, now that this worked, I wanted to be able to use `HTTPS` instead of `HTTP`. And here, the challenge began.
 
 ### The Solution 💡
 
