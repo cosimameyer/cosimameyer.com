@@ -293,7 +293,7 @@ class: inverse, middle, center
 
 `r fontawesome::fa(name = "linkedin", fill = "white")` [cosimameyer](https://www.linkedin.com/in/cosimameyer/)
 
-`r fontawesome::fa(name = "globe", fill = "white")` [cosimameyer.rbind.io](http://cosimameyer.rbind.io) 
+`r fontawesome::fa(name = "globe", fill = "white")` [cosimameyer.com](http://cosimameyer.com) 
 
 `r fontawesome::fa(name = "github", fill = "white")` Code und Slides </br></br>
 [bit.ly/shinyApp-material](http://bit.ly/shinyApp-material)

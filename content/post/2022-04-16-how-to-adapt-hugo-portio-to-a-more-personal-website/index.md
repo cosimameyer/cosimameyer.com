@@ -147,7 +147,7 @@ And this is what the `testimonialSection.yml` input file can look like:
     comment:          Add some Description
     time:             December 20, 2020
     github:           https://github.com/cosimameyer/nlp-rladies-bergen
-    slides:           https://cosimameyer.rbind.io/slides/nlp-rladies/talk#1
+    slides:           https://cosimameyer.com/slides/nlp-rladies/talk.html#1
     recording:        https://youtu.be/bvqur70ZmyM
     event_url:        https://www.meetup.com/rladies-bergen/events/274392883/
 ```
