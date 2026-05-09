@@ -1,4 +1,5 @@
 ---
+weight: 4
 date: "2020-07-02T00:00:00Z"
 # feature: true
 challenge: Exploratory data analysis in R requires repetitive boilerplate — no lightweight package existed for quick scope and coverage summaries.

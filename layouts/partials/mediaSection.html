@@ -48,44 +48,5 @@
   </div>
 </section>
 
-<script>
-(function () {
-  var carousel = document.querySelector('.media-carousel');
-  if (!carousel) return;
-  var cards = Array.from(carousel.querySelectorAll('.media-card'));
-  if (cards.length < 2) return;
-
-  var current = 0;
-  var timer;
-
-  function goTo(index) {
-    current = index % cards.length;
-    carousel.scrollTo({
-      left: cards[current].offsetLeft,
-      behavior: 'smooth'
-    });
-  }
-
-  function advance() { goTo(current + 1); }
-  function start()   { timer = setInterval(advance, 4000); }
-  function stop()    { clearInterval(timer); }
-
-  /* Sync current index after manual drag */
-  function syncCurrent() {
-    var best = 0, minDist = Infinity;
-    cards.forEach(function (card, i) {
-      var dist = Math.abs(card.offsetLeft - carousel.scrollLeft);
-      if (dist < minDist) { minDist = dist; best = i; }
-    });
-    current = best;
-  }
-
-  start();
-  carousel.addEventListener('mouseenter', stop);
-  carousel.addEventListener('mouseleave', start);
-  carousel.addEventListener('touchstart', stop,  { passive: true });
-  carousel.addEventListener('touchend', function () { syncCurrent(); start(); }, { passive: true });
-}());
-</script>
 {{ end }}
 {{ end }}

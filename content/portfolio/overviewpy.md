@@ -1,4 +1,5 @@
 ---
+weight: 5
 date: ""
 challenge: Exploratory data analysis in Python requires repetitive boilerplate — no lightweight package existed for quick scope and coverage summaries of panel data.
 shortDescription: "A Python package that makes exploratory data analysis faster and more systematic. In particular helpful for panel data."

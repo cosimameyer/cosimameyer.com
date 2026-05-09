@@ -1,4 +1,5 @@
 ---
+weight: 12
 date: ""
 # feature: true
 challenge: Getting a quick (and accessible) overview of the research on coronaviruses.

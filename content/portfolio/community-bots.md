@@ -1,4 +1,5 @@
 ---
+weight: 3
 date: ""
 featured: true
 shortDescription: "Automated bots amplifying PyLadies and R-Ladies community content on Bluesky."

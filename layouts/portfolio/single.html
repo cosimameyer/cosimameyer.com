@@ -1,9 +1,14 @@
 {{ define "main" }}
 
-<header class="breadCrumb">
-  <div class="container">
+<header class="breadCrumb project-hero">
+  {{ with .Params.thumbnail }}
+  <div class="project-hero-bg" style="background-image: url('{{ . | absURL }}')"></div>
+  <div class="project-hero-fade"></div>
+  {{ end }}
+
+  <div class="container project-hero-inner">
     <div class="row">
-      <div class="col-lg-10 offset-lg-1">
+      <div class="col-lg-8 offset-lg-1">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">Home</a></li>
@@ -12,62 +17,46 @@
           </ol>
         </nav>
 
-        <!-- Header row: text left, thumbnail right -->
-        <div class="project-header-row">
-          <div class="project-header-text">
+        {{ with .Params.tags }}
+        <p class="blog-category mb-2"><i class="fa-solid fa-tag"></i> {{ delimit . " · " }}</p>
+        {{ end }}
 
-            <!-- Tags -->
-            {{ with .Params.tags }}
-            <p class="blog-category mb-2"><i class="fa-solid fa-tag"></i> {{ delimit . " · " }}</p>
-            {{ end }}
+        <h1 class="project-single-title">{{ .Title }}</h1>
 
-            <h1 class="project-single-title">{{ .Title }}</h1>
+        {{ with .Params.shortDescription }}
+        <p class="project-single-lead">{{ . | markdownify }}</p>
+        {{ end }}
 
-            {{ with .Params.shortDescription }}
-            <p class="project-single-lead">{{ . | markdownify }}</p>
-            {{ end }}
-
-            <!-- CTA links -->
-            {{ if or .Params.github .Params.website .Params.publication .Params.slides .Params.recording }}
-            <div class="project-single-ctas">
-              {{ if .Params.github }}
-              <a href="{{ .Params.github | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-              {{ end }}
-              {{ if .Params.website }}
-              <a href="{{ .Params.website | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
-                <i class="fa-solid fa-globe"></i> Website
-              </a>
-              {{ end }}
-              {{ if .Params.publication }}
-              <a href="{{ .Params.publication | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
-                <i class="fa-regular fa-file-lines"></i> Publication
-              </a>
-              {{ end }}
-              {{ if .Params.slides }}
-              <a href="{{ .Params.slides | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
-                <i class="fa-solid fa-display"></i> Slides
-              </a>
-              {{ end }}
-              {{ if .Params.recording }}
-              <a href="{{ .Params.recording | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
-                <i class="fa-solid fa-circle-play"></i> Recording
-              </a>
-              {{ end }}
-            </div>
-            {{ end }}
-
-          </div><!-- /project-header-text -->
-
-          <!-- Thumbnail — small logo alongside title -->
-          {{ with .Params.thumbnail }}
-          <div class="project-header-thumb">
-            <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
-          </div>
+        {{ if or .Params.github .Params.website .Params.publication .Params.slides .Params.recording }}
+        <div class="project-single-ctas">
+          {{ if .Params.github }}
+          <a href="{{ .Params.github | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
           {{ end }}
+          {{ if .Params.website }}
+          <a href="{{ .Params.website | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
+            <i class="fa-solid fa-globe"></i> Website
+          </a>
+          {{ end }}
+          {{ if .Params.publication }}
+          <a href="{{ .Params.publication | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
+            <i class="fa-regular fa-file-lines"></i> Publication
+          </a>
+          {{ end }}
+          {{ if .Params.slides }}
+          <a href="{{ .Params.slides | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
+            <i class="fa-solid fa-display"></i> Slides
+          </a>
+          {{ end }}
+          {{ if .Params.recording }}
+          <a href="{{ .Params.recording | safeURL }}" target="_blank" rel="noopener" class="btn btn-outline-secondary project-cta-btn">
+            <i class="fa-solid fa-circle-play"></i> Recording
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
 
-        </div><!-- /project-header-row -->
       </div>
     </div>
   </div>

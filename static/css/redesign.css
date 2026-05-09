@@ -265,11 +265,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Soft circle behind photo */
 .hero-circle {
   position: absolute;
-  width: 580px;
-  height: 580px;
+  width: 660px;
+  height: 660px;
   background: rgba(155, 185, 210, 0.28);
   border-radius: 50%;
-  top: 54%;
+  top: 50%;
   left: 46%;
   transform: translate(-50%, -50%);
   z-index: 0;
@@ -706,6 +706,54 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio-card-link:hover {
   gap: 8px;
   color: var(--c-accent);
+}
+
+/* ---- Portfolio carousel (homepage) ---- */
+.portfolio-carousel {
+  display: flex;
+  gap: 26px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 16px;
+  cursor: grab;
+}
+.portfolio-carousel:active {
+  cursor: grabbing;
+}
+.portfolio-carousel::-webkit-scrollbar {
+  height: 4px;
+}
+.portfolio-carousel::-webkit-scrollbar-track {
+  background: var(--c-border);
+  border-radius: 2px;
+}
+.portfolio-carousel::-webkit-scrollbar-thumb {
+  background: var(--c-accent);
+  border-radius: 2px;
+}
+.portfolio-carousel .portfolio-card {
+  flex: 0 0 calc(33.333% - 18px);
+  min-width: 260px;
+  scroll-snap-align: start;
+}
+@media (max-width: 991px) {
+  .portfolio-carousel .portfolio-card { flex: 0 0 calc(50% - 13px); }
+}
+@media (max-width: 575px) {
+  .portfolio-carousel .portfolio-card { flex: 0 0 82vw; }
+}
+.portfolio-card--cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--c-accent-light);
+  border: 2px dashed var(--c-border) !important;
+  min-height: 200px;
+}
+.portfolio-card-cta-inner {
+  text-align: center;
+  padding: 24px;
 }
 
 /* ---- Talks (replaces testimonial carousel) ---- */
@@ -1332,6 +1380,32 @@ h1, h2, h3, h4, h5, h6 {
     width: 80px;
     height: 60px;
   }
+}
+
+/* ---- Portfolio single: full-bleed hero ---- */
+header.breadCrumb.project-hero {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 64px !important;
+}
+.project-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center right;
+  z-index: 0;
+}
+.project-hero-fade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, var(--c-bg) 52%, transparent 80%),
+    linear-gradient(rgba(248,250,252,0.55), rgba(248,250,252,0.55));
+  z-index: 1;
+}
+.project-hero-inner {
+  position: relative;
+  z-index: 2;
 }
 
 /* Three-panel narrative card: Problem | What I Built | Impact */
