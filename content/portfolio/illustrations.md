@@ -1,4 +1,5 @@
 ---
+weight: 6
 date: ""
 shortDescription: "Visual explainers making machine learning and data science concepts more approachable through illustration."
 thumbnail: images/portfolio/illustrations.png

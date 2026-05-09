@@ -1,4 +1,5 @@
 ---
+weight: 8
 date: ""
 challenge: Identifying agricultural key words in radio shows.
 shortDescription: "NLP model detecting agricultural keywords in radio broadcasts for the GIZ development challenge."

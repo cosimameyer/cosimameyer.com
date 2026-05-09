@@ -1,4 +1,5 @@
 ---
+weight: 13
 date: "2020-08-10T00:00:00Z"
 # feature: true
 challenge: Methodological know-how from MZES workshops lived in slides and repositories — not discoverable or accessible to the wider research community.

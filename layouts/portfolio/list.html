@@ -28,8 +28,8 @@
 
       <!-- Cards -->
       <div class="portfolio-grid portfolio-grid--full" id="portfolio-cards">
-        {{ range .Pages.ByDate.Reverse }}
-        <div class="portfolio-card"
+        {{ range sort .Pages "Params.weight" "asc" }}
+<div class="portfolio-card"
           data-tags="{{ delimit .Params.tags "," }}">
           {{ with .Params.thumbnail }}
           <div class="portfolio-card-img">

@@ -1,4 +1,5 @@
 ---
+weight: 7
 date: "2020-07-20T00:00:00Z"
 # feature: true
 shortDescription: "A spaced-repetition flashcard bot delivered via Telegram — serverless, automated, and running daily on AWS Lambda."

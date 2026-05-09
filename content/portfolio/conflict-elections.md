@@ -1,4 +1,5 @@
 ---
+weight: 10
 date: "2020-08-10T00:00:00Z"
 # feature: true
 thumbnail: images/portfolio/conflict-elections.png

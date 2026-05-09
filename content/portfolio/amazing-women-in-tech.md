@@ -1,4 +1,5 @@
 ---
+weight: 2
 date: ""
 featured: true
 shortDescription: "The project aims to make women more visible in the world of programming, statistics, and STEM in general. The illustrations are shared along with a short portrait on social media."

@@ -1,4 +1,5 @@
 ---
+weight: 9
 date: ""
 # feature: true
 thumbnail: images/portfolio/autocracy-democracy.png

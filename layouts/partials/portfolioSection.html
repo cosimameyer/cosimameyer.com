@@ -13,40 +13,18 @@
       <div class="col-lg-6">
         <div class="portfolio__header-button desktop">
           <a class="btn btn-outline-secondary btn-zoom m-3"
-            href="{{ .buttonTarget | absURL }}">See more projects</a>
+            href="{{ .buttonTarget | absURL }}">See all projects</a>
         </div>
       </div>
     </div>
 
-    {{/* Collect all featured pages and their tags */}}
     {{ $portfolio := where $.Site.RegularPages "Type" "portfolio" }}
     {{ $featured  := where $portfolio "Params.featured" true }}
-    {{ if not $featured }}
-      {{ $featured = first 3 ($portfolio.ByDate.Reverse) }}
-    {{ end }}
+    {{ $rest      := where $portfolio "Params.featured" "ne" true }}
 
-    {{/* Build unique tag list from .Params.tags */}}
-    {{ $allTags := slice }}
-    {{ range $featured }}
-      {{ range .Params.tags }}
-        {{ $allTags = $allTags | append . }}
-      {{ end }}
-    {{ end }}
-    {{ $uniqueTags := $allTags | uniq }}
-
-    {{ if $uniqueTags }}
-    <div class="portfolio-filter-bar" id="portfolio-filter-bar">
-      <button class="pf-btn active" data-filter="all">All</button>
-      {{ range $uniqueTags }}
-      <button class="pf-btn" data-filter="{{ . }}">{{ . }}</button>
-      {{ end }}
-    </div>
-    {{ end }}
-
-    <div class="portfolio-grid" id="portfolio-cards">
-      {{ range $featured }}
-      <div class="portfolio-card"
-           data-tags="{{ delimit .Params.tags "," }}">
+    <div class="portfolio-carousel" id="portfolio-carousel">
+      {{ range sort $featured "Params.weight" "asc" }}
+      <div class="portfolio-card">
         {{ with .Params.thumbnail }}
         <div class="portfolio-card-img">
           <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
@@ -68,17 +46,44 @@
         </div>
       </div>
       {{ end }}
-    </div>
 
-    <p class="portfolio-no-results" id="portfolio-no-results" style="display:none;">
-      No projects match this filter.
-    </p>
+      {{ range sort $rest "Params.weight" "asc" }}
+      <div class="portfolio-card">
+        {{ with .Params.thumbnail }}
+        <div class="portfolio-card-img">
+          <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" />
+        </div>
+        {{ end }}
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-tags">
+            {{ range .Params.tags }}
+            <span class="portfolio-tag">{{ . }}</span>
+            {{ end }}
+          </div>
+          <h3 class="portfolio-card-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h3>
+          {{ with .Params.shortDescription }}
+          <p class="portfolio-card-desc">{{ . }}</p>
+          {{ end }}
+          <a class="portfolio-card-link" href="{{ .Permalink }}">View project →</a>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- CTA card -->
+      <div class="portfolio-card portfolio-card--cta">
+        <div class="portfolio-card-cta-inner">
+          <a class="btn btn-outline-secondary btn-zoom" href="{{ .buttonTarget | absURL }}">See all projects</a>
+        </div>
+      </div>
+    </div>
 
     <div class="row mt-4">
       <div class="col-lg-12">
         <div class="portfolio__header-button mobile">
           <a class="btn btn-outline-secondary btn-zoom"
-            href="{{ .buttonTarget | absURL }}">See more projects</a>
+            href="{{ .buttonTarget | absURL }}">See all projects</a>
         </div>
       </div>
     </div>
@@ -86,35 +91,5 @@
   </div>
 </section>
 
-<script>
-(function () {
-  var bar   = document.getElementById('portfolio-filter-bar');
-  if (!bar) return;
-  var btns  = bar.querySelectorAll('.pf-btn');
-  var cards = document.querySelectorAll('#portfolio-cards .portfolio-card');
-  var none  = document.getElementById('portfolio-no-results');
-
-  btns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      btns.forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-
-      var f = btn.dataset.filter.toLowerCase();
-      var visible = 0;
-
-      cards.forEach(function (card) {
-        var tags = (card.dataset.tags || '').toLowerCase();
-        var match = f === 'all' || tags.split(',').some(function (t) {
-          return t.trim() === f;
-        });
-        card.style.display = match ? '' : 'none';
-        if (match) visible++;
-      });
-
-      none.style.display = visible === 0 ? 'block' : 'none';
-    });
-  });
-}());
-</script>
 {{ end }}
 {{ end }}
