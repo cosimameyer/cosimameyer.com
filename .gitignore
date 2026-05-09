@@ -1,9 +1,5 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
 .DS_Store
-public/*
 *.DS_Store
 **/.DS_Store
-package.jsonCLAUDE.md
+public/*
+resources/_gen/
