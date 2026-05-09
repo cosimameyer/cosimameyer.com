@@ -8,7 +8,7 @@ title: >
 
 topics:
   - Explainable ML
-  - NLP & Text Analysis
+  - Machine Learning
   - Open Source
   - Community Building
   - Career Transitions
@@ -23,6 +23,7 @@ testimonial:
     audience: Technical
     tags:
       - Explainable ML
+      - Machine Learning
     comment: Black-box models make decisions that affect people but rarely explain themselves. This talk offers a decision tree that allows practitioners to choose the right approach.
     time: April 16, 2026
     github: https://cosimameyer.github.io/explainable-ml/
@@ -38,6 +39,7 @@ testimonial:
     tags:
       - Community Building
       - Open Source
+      - Machine Learning
     comment: Bots aren't just for solo productivity — they can power community infrastructure at scale. This talk shows how automation helped make PyLadies contributions visible and kept members connected across chapters.
     time: April 25, 2025
     github: https://github.com/cosimameyer/community-bots
@@ -52,7 +54,7 @@ testimonial:
     lang: English
     audience: Technical
     tags:
-      - NLP & Text Analysis
+      - Machine Learning
       - Explainable ML
     comment: NLP models are powerful but often feel like black boxes. This talk introduces accessible techniques for understanding what your text models are actually doing — without sacrificing usability.
     time: March 23, 2024
@@ -164,7 +166,6 @@ testimonial:
     audience: Mixed
     tags:
       - Open Source
-      - Community Building
     title: Git Around the World
     comment: A walkthrough of my Git workflow using RStudio — covering branching, committing, and how to structure data projects so they stay maintainable over time. [Here's a short workflow description](https://cosimameyer.com/post/how-to-structure-your-data-workflow-efficiently-using-r/) I wrote up as a blog post.
     time: April 20, 2021
@@ -205,7 +206,7 @@ testimonial:
     lang: English
     audience: Technical
     tags:
-      - NLP & Text Analysis
+      - Machine Learning
     title: Getting the most out of text - Using supervised and unsupervised approaches in NLP
     comment: Text data is everywhere — and [quanteda](https://quanteda.io/) makes it manageable. This workshop covers the full NLP pipeline from raw text to supervised and unsupervised models, using [UN speech data](https://doi.org/10.7910/DVN/0TJX8Y) as a working example.
     time: January 30, 2021
@@ -220,7 +221,7 @@ testimonial:
     lang: English
     audience: Technical
     tags:
-      - NLP & Text Analysis
+      - Machine Learning
     title: Taking text data to the next level - Using supervised and unsupervised approaches in NLP
     comment: A deep dive into NLP with [quanteda](https://quanteda.io/) — text visualization, supervised classification, and topic modeling — with hands-on practice using real [UN text data](https://doi.org/10.7910/DVN/0TJX8Y).
     time: December 20, 2020
