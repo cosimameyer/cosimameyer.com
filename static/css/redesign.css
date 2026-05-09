@@ -710,7 +710,7 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial,
 .talks {
   background: var(--c-bg) !important;
-  padding: 80px 0 100px !important;
+  padding: 60px 0 60px !important;
 }
 .testimonial__background_shape {
   display: none !important;
@@ -726,6 +726,9 @@ h1, h2, h3, h4, h5, h6 {
 .talks__header h2,
 .testimonial__header h2 {
   font-family: var(--f-heading) !important;
+}
+.talks__header.mb-5 {
+  margin-bottom: 1.25rem !important;
 }
 .talks__header > p,
 .portfolio__header > p,
@@ -879,20 +882,19 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 /* ---- Speaking invite CTA ---- */
 .talks-invite {
   text-align: center;
-  margin-top: 48px;
-  padding-top: 32px;
-  border-top: 1px solid var(--c-border);
+  margin-top: 24px;
+  padding-top: 20px;
 }
 
 .talks-invite__text {
   font-size: 0.95rem;
-  color: var(--c-muted);
+  color: var(--c-body);
   font-weight: 400;
   margin-bottom: 14px;
 }
