@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths-ignore:
+  workflow_dispatch:
       - "README.md"
       - "LICENSE"
       - ".git/**"
