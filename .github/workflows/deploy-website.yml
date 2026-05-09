@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths-ignore:
-  workflow_dispatch:
       - "README.md"
       - "LICENSE"
       - ".git/**"
       - "public/**"
       - "node_modules/**"
+  workflow_dispatch:
 
 jobs:
   deploy:
