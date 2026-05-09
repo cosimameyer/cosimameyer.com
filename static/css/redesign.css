@@ -1927,3 +1927,173 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/* ---- Code blocks — on-brand light syntax theme ---- */
+/* Block container */
+.highlight {
+  position: relative;
+  margin: 1.75rem 0 !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--c-border) !important;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Language label — injected by clipboard.js as direct child of .highlight,
+   same coordinate space as .copy-code-button so it's perfectly flush. */
+.code-lang-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--c-muted);
+  color: rgba(255,255,255,0.9);
+  font-family: var(--f-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  line-height: 1.4;
+  border-bottom-right-radius: 6px;
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Copy button — same palette as language label */
+.copy-code-button {
+  top: 0 !important;
+  right: 0 !important;
+  background: var(--c-accent-dark) !important;
+  color: rgba(255,255,255,0.85) !important;
+  border: none !important;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 0 !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  padding: 5px 12px !important;
+  opacity: 1 !important;
+  transition: background 0.18s, color 0.18s;
+}
+.copy-code-button:hover,
+.copy-code-button:focus {
+  background: var(--c-accent) !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* Code base — light on-brand background */
+.chroma {
+  background-color: #F0F5F9 !important;
+  color: var(--c-heading) !important;
+  border-radius: 0 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.7 !important;
+}
+.highlight > .chroma {
+  padding: 32px 20px 18px !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  position: relative !important;
+  z-index: auto !important;
+}
+/* Remove default pre margin so no gap appears at the bottom */
+.highlight pre {
+  margin: 0 !important;
+}
+/* Suppress the clipboard.css floating-above language label (top:-29px approach) */
+.chroma [data-lang]::before {
+  display: none !important;
+}
+
+/* Token color overrides — replace Monokai with on-brand slate palette */
+/* Keywords */
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kp,
+.chroma .kr,
+.chroma .kt  { color: #264D6B !important; font-weight: 600 !important; }
+/* KeywordNamespace, Tags */
+.chroma .kn,
+.chroma .nt  { color: #3D6A8C !important; }
+/* Functions, Classes, Decorators, Identifiers */
+.chroma .nf,
+.chroma .nc,
+.chroma .nd,
+.chroma .na,
+.chroma .nx,
+.chroma .ne  { color: #3D6A8C !important; }
+/* Strings */
+.chroma .s,  .chroma .sa, .chroma .sb, .chroma .sc,
+.chroma .dl, .chroma .sd, .chroma .s2, .chroma .se,
+.chroma .sh, .chroma .si, .chroma .sx, .chroma .sr,
+.chroma .s1, .chroma .ss, .chroma .ld { color: #2E7D52 !important; }
+/* Numbers */
+.chroma .m,  .chroma .mb, .chroma .mf, .chroma .mh,
+.chroma .mi, .chroma .il, .chroma .mo, .chroma .l  { color: #6B4FA0 !important; }
+/* Operators */
+.chroma .o,
+.chroma .ow  { color: #94A3B8 !important; font-weight: 500 !important; }
+/* Comments */
+.chroma .c,  .chroma .ch, .chroma .cm, .chroma .c1,
+.chroma .cs, .chroma .cp, .chroma .cpf { color: #94A3B8 !important; font-style: italic !important; }
+/* Errors */
+.chroma .err { color: #B91C1C !important; background: transparent !important; }
+/* Generic diff */
+.chroma .gd  { color: #B91C1C !important; }
+.chroma .gi  { color: #166534 !important; }
+
+/* Inline code (not inside a highlight block) */
+.singleBlog__content :not(pre) > code {
+  background: #E8F2F8;
+  color: #264D6B;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+/* ---- Markdown tables ---- */
+.singleBlog__content table {
+  display: table;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  border: 1px solid var(--c-border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+}
+.singleBlog__content table thead tr {
+  background: var(--c-accent-light);
+}
+.singleBlog__content table th {
+  padding: 11px 18px;
+  text-align: left;
+  font-family: var(--f-heading);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--c-accent-dark);
+  border-bottom: 2px solid var(--c-border);
+  white-space: nowrap;
+}
+.singleBlog__content table td {
+  padding: 10px 18px;
+  color: var(--c-body);
+  border-bottom: 1px solid var(--c-border);
+  vertical-align: top;
+  line-height: 1.55;
+}
+.singleBlog__content table tbody tr:last-child td {
+  border-bottom: none;
+}
+.singleBlog__content table tbody tr:hover {
+  background: var(--c-accent-light);
+}
