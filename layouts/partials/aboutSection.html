@@ -33,9 +33,11 @@
         <div class="resume-item resume-item--collapsible{{ if ge $i 3 }} resume-item--hidden{{ end }}"{{ if ge $i 3 }} style="display:none"{{ end }}>{{ $item.content | markdownify }}</div>
         {{ end }}
       </div>
+      {{ if gt (len .experience) 3 }}
       <button class="resume-expand-btn" id="experience-expand-btn" aria-expanded="false">
         Show more <i class="fa-solid fa-chevron-down"></i>
       </button>
+      {{ end }}
     </div>
 
     <div class="resume-panel" id="resume-education" role="tabpanel">
@@ -50,9 +52,11 @@
         </div>
         {{ end }}
       </div>
+      {{ if gt (len .education) 3 }}
       <button class="resume-expand-btn" id="education-expand-btn" aria-expanded="false">
         Show more <i class="fa-solid fa-chevron-down"></i>
       </button>
+      {{ end }}
     </div>
 
     <div class="resume-panel" id="resume-achievements" role="tabpanel">
@@ -61,9 +65,11 @@
         <div class="resume-item resume-item--collapsible{{ if ge $i 3 }} resume-item--hidden{{ end }}"{{ if ge $i 3 }} style="display:none"{{ end }}>{{ $item.content | markdownify }}</div>
         {{ end }}
       </div>
+      {{ if gt (len .achievements) 3 }}
       <button class="resume-expand-btn" id="achievements-expand-btn" aria-expanded="false">
         Show more <i class="fa-solid fa-chevron-down"></i>
       </button>
+      {{ end }}
     </div>
 
     <div class="resume-panel" id="resume-community" role="tabpanel">
@@ -78,9 +84,11 @@
         </div>
         {{ end }}
       </div>
+      {{ if gt (len .community) 3 }}
       <button class="resume-expand-btn" id="community-expand-btn" aria-expanded="false">
         Show more <i class="fa-solid fa-chevron-down"></i>
       </button>
+      {{ end }}
     </div>
 
     <!-- LinkedIn CTA -->
@@ -104,15 +112,29 @@
       tab.classList.add('active');
       tab.setAttribute('aria-selected','true');
       document.getElementById('resume-' + tab.dataset.tab).classList.add('active');
+      collapseAll();
     });
   });
 
-  ['experience', 'education', 'achievements', 'community'].forEach(function (section) {
+  var SECTIONS = ['experience', 'education', 'achievements', 'community'];
+
+  function collapseAll() {
+    SECTIONS.forEach(function (section) {
+      var btn   = document.getElementById(section + '-expand-btn');
+      var panel = document.getElementById('resume-' + section);
+      if (!btn || !panel) return;
+      panel.querySelectorAll('.resume-item--hidden').forEach(function (el) { el.style.display = 'none'; });
+      btn.setAttribute('aria-expanded', 'false');
+      btn.innerHTML = 'Show more <i class="fa-solid fa-chevron-down"></i>';
+    });
+  }
+
+  SECTIONS.forEach(function (section) {
     var btn = document.getElementById(section + '-expand-btn');
     if (!btn) return;
     btn.addEventListener('click', function () {
-      var panel = document.getElementById('resume-' + section);
-      var hidden = panel.querySelectorAll('.resume-item--hidden');
+      var panel   = document.getElementById('resume-' + section);
+      var hidden  = panel.querySelectorAll('.resume-item--hidden');
       var expanded = btn.getAttribute('aria-expanded') === 'true';
       hidden.forEach(function (el) { el.style.display = expanded ? 'none' : 'block'; });
       btn.setAttribute('aria-expanded', String(!expanded));
@@ -121,6 +143,11 @@
         : 'Show less <i class="fa-solid fa-chevron-up"></i>';
     });
   });
+
+  // Reset on real page navigation (bfcache restore or full reload)
+  window.addEventListener('pageshow', function () { collapseAll(); });
+  // Reset on same-page hash navigation (e.g. navbar links like #post → #about)
+  window.addEventListener('hashchange', function () { collapseAll(); });
 }());
 </script>
 {{ end }}
