@@ -70,7 +70,7 @@ testimonial:
     audience: General
     tags:
       - Career Transitions
-    comment: A candid look at the winding road from political science to data science — what transferred, what didn't, and what I'd tell my earlier self about making the switch.
+    comment: A look at the road from political science to data science — what transferred, what didn't, and what I'd tell my earlier self about making the switch.
     time: February 15, 2024
     slides: https://cosimameyer.github.io/talks/slides/career-talk-2024/index.html#0
 
@@ -255,7 +255,7 @@ testimonial:
     comment: A beginner-friendly introduction to Shiny — what it is, how it works, and how to build your first interactive app in R — with a live demo using election data.
     time: November 26, 2020
     github: https://github.com/cosimameyer/conflict-elections
-    slides: /slides/correlaid-workshop/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/correlaid-workshop/talk.html#1
     event_url:
 
   - name: CorrelCon 2020
