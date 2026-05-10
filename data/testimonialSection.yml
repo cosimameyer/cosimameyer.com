@@ -169,7 +169,7 @@ testimonial:
     title: Git Around the World
     comment: A walkthrough of my Git workflow using RStudio — covering branching, committing, and how to structure data projects so they stay maintainable over time. [Here's a short workflow description](https://cosimameyer.com/post/how-to-structure-your-data-workflow-efficiently-using-r/) I wrote up as a blog post.
     time: April 20, 2021
-    slides: /slides/git-wit/index.html#1
+    slides: https://cosimameyer.github.io/talks/slides/git-wit/index.html#1
     event_url: https://www.uni-mannheim.de/management-analytics/news/women-in-tech/
 
   - name: Digital Social Summit 2021
