@@ -86,7 +86,7 @@ testimonial:
     comment: How a Mastodon bot can reconnect PyLadies — and what that taught me about building community infrastructure.
     time: December 2, 2023
     github: https://bit.ly/py-list
-    slides: https://bit.ly/pyladiescon2023-slides
+    slides: https://cosimameyer.github.io/talks/slides/pyladiescon-2023/#/title-slide
     event_url: https://pretalx.com/pyladiescon-2023/talk/NLLJLT/
 
   - name: NHS-R/NHS.pycom Conference 2023
