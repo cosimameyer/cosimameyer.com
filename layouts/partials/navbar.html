@@ -29,3 +29,33 @@
 
   </div>
 </nav>
+
+<script>
+(function () {
+  var toggler = document.querySelector('.navbar-toggler');
+  var collapse = document.querySelector('#navbarCollapse');
+  if (!toggler || !collapse) return;
+
+  toggler.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var open = collapse.classList.contains('show');
+    if (open) {
+      collapse.classList.remove('show');
+      toggler.classList.add('collapsed');
+      toggler.setAttribute('aria-expanded', 'false');
+    } else {
+      collapse.classList.add('show');
+      toggler.classList.remove('collapsed');
+      toggler.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('#mainNav') && collapse.classList.contains('show')) {
+      collapse.classList.remove('show');
+      toggler.classList.add('collapsed');
+      toggler.setAttribute('aria-expanded', 'false');
+    }
+  });
+}());
+</script>

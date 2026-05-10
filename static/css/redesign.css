@@ -304,6 +304,7 @@ h1, h2, h3, h4, h5, h6 {
     order: 1;
     min-height: 45vh;
     justify-content: center;
+    padding-top: 76px;
   }
   .hero-circle {
     width: 320px;
@@ -1136,6 +1137,22 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0;
   border-bottom: 1px solid var(--c-border);
   margin-bottom: 32px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  flex-wrap: nowrap;
+}
+@media (max-width: 991px) {
+  .resume-tabs {
+    scrollbar-width: none;
+  }
+  .resume-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .resume-tab {
+    padding: 8px 14px 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
 }
 .resume-tab {
   background: none;
@@ -2160,9 +2177,10 @@ header.breadCrumb.project-hero {
 
 /* ---- Markdown tables ---- */
 .singleBlog__content table {
-  display: table;
+  display: block;
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-collapse: collapse;
   margin: 2rem 0;
   font-size: 0.9rem;
