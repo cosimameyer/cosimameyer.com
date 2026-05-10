@@ -269,7 +269,7 @@ testimonial:
     comment: Shiny apps give research a second life. This talk walks through building a Shiny app from scratch with shinydashboards and echarts4r, with lessons from a real-world deployment.
     time: November 7, 2020
     github: https://github.com/cosimameyer/conflict-elections
-    slides: /slides/correlcon/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/correlcon/talk.html#1
     recording: https://www.youtube.com/watch?v=NOzi6GErpsA&list=PLXK26SbU8735IM-AO5zM6tLfRpSpP3Iby&index=8
     event_url: https://correlaid.org/en/events/2020-11/correlcon/
 
