@@ -285,7 +285,7 @@ testimonial:
     comment: How R Shiny can make research interactive and accessible — with a live demo of the [conflict-elections app](http://cosima-meyer.shinyapps.io/conflict-elections/) showing what's possible when you hand control to the reader.
     time: August 26, 2020
     github: bit.ly/shinyApp-material
-    slides: /slides/interactive-science/correlaid.html#1
+    slides: https://cosimameyer.github.io/talks/slides/interactive-science/index.html#1
     event_url: https://correlaid.org/en/events/2020-08/oodm3-interactive-science/
     website: http://cosima-meyer.shinyapps.io/conflict-elections/
 
