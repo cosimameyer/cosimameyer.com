@@ -212,7 +212,7 @@ testimonial:
     comment: Text data is everywhere — and [quanteda](https://quanteda.io/) makes it manageable. This workshop covers the full NLP pipeline from raw text to supervised and unsupervised models, using [UN speech data](https://doi.org/10.7910/DVN/0TJX8Y) as a working example.
     time: January 30, 2021
     github: https://github.com/cosimameyer/nlp-rladies-tunis
-    slides: /slides/nlp-rladies-tunis/index.html#1
+    slides: https://cosimameyer.github.io/talks/slides/nlp-rladies-tunis/index.html#1
     recording: https://www.youtube.com/watch?v=NYuTFy_JRLA
     event_url:
 
@@ -227,7 +227,7 @@ testimonial:
     comment: A deep dive into NLP with [quanteda](https://quanteda.io/) — text visualization, supervised classification, and topic modeling — with hands-on practice using real [UN text data](https://doi.org/10.7910/DVN/0TJX8Y).
     time: December 20, 2020
     github: https://github.com/cosimameyer/nlp-rladies-bergen
-    slides: /slides/nlp-rladies/index.html#1
+    slides: https://cosimameyer.github.io/talks/slides/nlp-rladies/index.html#1
     recording: https://youtu.be/bvqur70ZmyM
     event_url: https://www.meetup.com/rladies-bergen/events/274392883/
 
