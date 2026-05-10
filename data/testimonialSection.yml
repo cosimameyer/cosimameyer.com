@@ -197,7 +197,7 @@ testimonial:
     comment: A non-expert talk on how Shiny apps can bring research to life — a demo of building interactive web applications in R that let people explore data without needing to read a paper.
     time: March 1, 2021
     github: https://github.com/cosimameyer/conflict-elections
-    slides: /slides/research-plus/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/research-plus/talk.html#
     event_url: https://www.dgof.de/dgof-laedt-zur-dritten-research-plus-online/
 
   - name: R-Ladies Tunis
@@ -241,7 +241,7 @@ testimonial:
     comment: Presenting [overviewR](https://github.com/cosimameyer/overviewR) — a CRAN package for panel data — alongside practical lessons learned from co-authoring and publishing software.
     time: November 27, 2020
     github: https://github.com/cosimameyer/overviewR
-    slides: /slides/overviewR/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/overviewR/talk.html#1
 
   - name: CorrelAid Workshop
     thumbnail: images/talks/shiny-apps-correlaid.png
