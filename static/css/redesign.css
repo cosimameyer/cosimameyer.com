@@ -2176,11 +2176,18 @@ header.breadCrumb.project-hero {
 }
 
 /* ---- Markdown tables ---- */
-.singleBlog__content table {
-  display: block;
-  width: 100%;
+.singleBlog__content .table-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  margin: 2rem 0;
+}
+.singleBlog__content .table-scroll table {
+  margin: 0;
+}
+.singleBlog__content table {
+  display: table;
+  width: 100%;
+  overflow-x: auto;
   border-collapse: collapse;
   margin: 2rem 0;
   font-size: 0.9rem;

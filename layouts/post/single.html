@@ -67,6 +67,17 @@
 
 <script>
 (function () {
+  document.querySelectorAll('.singleBlog__content table').forEach(function (table) {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'table-scroll';
+    table.parentNode.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  });
+}());
+</script>
+
+<script>
+(function () {
   var toc = document.getElementById('post-toc');
   if (!toc) return;
   var links = Array.from(toc.querySelectorAll('a[href^="#"]'));
