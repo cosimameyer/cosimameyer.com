@@ -57,19 +57,20 @@ jobs:
           HUGO_ENV: production
         run: hugo --minify
 
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
       - name: Sync site files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
-          local-dir: ./public/
-          server-dir: /web/cosimameyer.com/
-          timeout: 300000
-          exclude: |
-            **/slides/**
-            **/images/**
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          lftp -u "$FTP_USERNAME,$FTP_PASSWORD" sftp://"$FTP_SERVER" <<'EOF'
+          set sftp:auto-confirm yes
+          mirror --reverse --delete --exclude-glob=slides/ --exclude-glob=images/ ./public/ /web/cosimameyer.com/
+          bye
+          EOF
 
   sync-heavy-assets:
     needs: detect-changes
@@ -96,16 +97,18 @@ jobs:
           HUGO_ENV: production
         run: hugo --minify
 
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
       - name: Sync slides and images
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
-          local-dir: ./public/
-          server-dir: /web/cosimameyer.com/
-          timeout: 300000
-          include: |
-            **/slides/**
-            **/images/**
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          lftp -u "$FTP_USERNAME,$FTP_PASSWORD" sftp://"$FTP_SERVER" <<'EOF'
+          set sftp:auto-confirm yes
+          mirror --reverse --delete ./public/slides/ /web/cosimameyer.com/slides/
+          mirror --reverse --delete ./public/images/ /web/cosimameyer.com/images/
+          bye
+          EOF
