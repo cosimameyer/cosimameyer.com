@@ -1883,7 +1883,7 @@ header.breadCrumb.project-hero {
   color: var(--c-accent-dark) !important;
 }
 
-/* Cookie notice — clean, minimal, on-brand */
+/* Cookie notice */
 #cookie-notice {
   position: fixed;
   bottom: 0;
