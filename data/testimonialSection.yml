@@ -142,7 +142,7 @@ testimonial:
       - Career Transitions
     comment: A talk about career transitions and what it means to bring a social scientist's mindset into data science — covering the skills that transferred, the gaps, and the unexpected advantages.
     time: April 4, 2022
-    slides: /slides/WiDS_2022_talk/index.html#0
+    slides: https://cosimameyer.github.io/talks/slides/wids-2022-talk/index.html#0
     event_url: https://wuman307139351.wordpress.com/wids/
 
   - name: CorrelCon 2021
