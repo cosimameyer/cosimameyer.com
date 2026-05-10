@@ -70,9 +70,9 @@ testimonial:
     audience: General
     tags:
       - Career Transitions
-    comment: A candid look at the winding road from political science to data science — what transferred, what didn't, and what I'd tell my earlier self about making the switch.
+    comment: A look at the road from political science to data science — what transferred, what didn't, and what I'd tell my earlier self about making the switch.
     time: February 15, 2024
-    slides: /slides/Career_Talk_2024/index.html#0
+    slides: https://cosimameyer.github.io/talks/slides/career-talk-2024/index.html#0
 
   - name: PyLadiesCon 2023
     thumbnail: images/talks/pyladiescon-2023.png
@@ -86,7 +86,7 @@ testimonial:
     comment: How a Mastodon bot can reconnect PyLadies — and what that taught me about building community infrastructure.
     time: December 2, 2023
     github: https://bit.ly/py-list
-    slides: https://bit.ly/pyladiescon2023-slides
+    slides: https://cosimameyer.github.io/talks/slides/pyladiescon-2023/#/title-slide
     event_url: https://pretalx.com/pyladiescon-2023/talk/NLLJLT/
 
   - name: NHS-R/NHS.pycom Conference 2023
@@ -116,7 +116,7 @@ testimonial:
     time: March 23, 2023
     github: https://github.com/cosimameyer/r-python-talk/blob/main/README.md
     recording: https://www.youtube.com/watch?v=3KXxk-GrRWo
-    slides: /slides/wids_2023_workshop/#/title-slide
+    slides: https://cosimameyer.github.io/talks/slides/wids-2023-workshop/index.html
     event_url: https://wuman307139351.wordpress.com/wids/
 
   - name: Learning R for and With the Civil Society
@@ -142,7 +142,7 @@ testimonial:
       - Career Transitions
     comment: A talk about career transitions and what it means to bring a social scientist's mindset into data science — covering the skills that transferred, the gaps, and the unexpected advantages.
     time: April 4, 2022
-    slides: /slides/WiDS_2022_talk/index.html#0
+    slides: https://cosimameyer.github.io/talks/slides/wids-2022-talk/index.html#0
     event_url: https://wuman307139351.wordpress.com/wids/
 
   - name: CorrelCon 2021
@@ -156,7 +156,7 @@ testimonial:
     comment: R gets better every day because people contribute to it. This talk gives you the confidence and tools to write and publish your own package — no matter where you're starting from.
     time: November 12, 2021
     github: https://github.com/cosimameyer/writing_packages/
-    slides: /slides/correlcon2021/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/correlcon2021/index.html#1
     event_url: https://correlaid.org/en/events/2021-11/correlcon/
 
   - name: WoMen in Tech
@@ -169,7 +169,7 @@ testimonial:
     title: Git Around the World
     comment: A walkthrough of my Git workflow using RStudio — covering branching, committing, and how to structure data projects so they stay maintainable over time. [Here's a short workflow description](https://cosimameyer.com/post/how-to-structure-your-data-workflow-efficiently-using-r/) I wrote up as a blog post.
     time: April 20, 2021
-    slides: /slides/git-wit/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/git-wit/index.html#1
     event_url: https://www.uni-mannheim.de/management-analytics/news/women-in-tech/
 
   - name: Digital Social Summit 2021
@@ -184,6 +184,7 @@ testimonial:
     comment: A live demonstration of how R can transform static research outputs into interactive, automated reports — making findings accessible to audiences who'll never open a methods section.
     time: March 30, 2021
     event_url: https://digital-social-summit.de
+    slides: https://cosimameyer.github.io/talks/slides/dss2021/index.html#
 
   - name: Research Plus
     thumbnail: images/talks/research-plus-2021.png
@@ -197,7 +198,7 @@ testimonial:
     comment: A non-expert talk on how Shiny apps can bring research to life — a demo of building interactive web applications in R that let people explore data without needing to read a paper.
     time: March 1, 2021
     github: https://github.com/cosimameyer/conflict-elections
-    slides: /slides/research-plus/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/research-plus/index.html#
     event_url: https://www.dgof.de/dgof-laedt-zur-dritten-research-plus-online/
 
   - name: R-Ladies Tunis
@@ -211,7 +212,7 @@ testimonial:
     comment: Text data is everywhere — and [quanteda](https://quanteda.io/) makes it manageable. This workshop covers the full NLP pipeline from raw text to supervised and unsupervised models, using [UN speech data](https://doi.org/10.7910/DVN/0TJX8Y) as a working example.
     time: January 30, 2021
     github: https://github.com/cosimameyer/nlp-rladies-tunis
-    slides: /slides/nlp-rladies-tunis/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/nlp-rladies-tunis/index.html#1
     recording: https://www.youtube.com/watch?v=NYuTFy_JRLA
     event_url:
 
@@ -226,7 +227,7 @@ testimonial:
     comment: A deep dive into NLP with [quanteda](https://quanteda.io/) — text visualization, supervised classification, and topic modeling — with hands-on practice using real [UN text data](https://doi.org/10.7910/DVN/0TJX8Y).
     time: December 20, 2020
     github: https://github.com/cosimameyer/nlp-rladies-bergen
-    slides: /slides/nlp-rladies/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/nlp-rladies/index.html#1
     recording: https://youtu.be/bvqur70ZmyM
     event_url: https://www.meetup.com/rladies-bergen/events/274392883/
 
@@ -241,7 +242,7 @@ testimonial:
     comment: Presenting [overviewR](https://github.com/cosimameyer/overviewR) — a CRAN package for panel data — alongside practical lessons learned from co-authoring and publishing software.
     time: November 27, 2020
     github: https://github.com/cosimameyer/overviewR
-    slides: /slides/overviewR/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/overviewR/index.html#1
 
   - name: CorrelAid Workshop
     thumbnail: images/talks/shiny-apps-correlaid.png
@@ -255,7 +256,7 @@ testimonial:
     comment: A beginner-friendly introduction to Shiny — what it is, how it works, and how to build your first interactive app in R — with a live demo using election data.
     time: November 26, 2020
     github: https://github.com/cosimameyer/conflict-elections
-    slides: /slides/correlaid-workshop/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/correlaid-workshop/index.html#1
     event_url:
 
   - name: CorrelCon 2020
@@ -269,7 +270,7 @@ testimonial:
     comment: Shiny apps give research a second life. This talk walks through building a Shiny app from scratch with shinydashboards and echarts4r, with lessons from a real-world deployment.
     time: November 7, 2020
     github: https://github.com/cosimameyer/conflict-elections
-    slides: /slides/correlcon/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/correlcon/index.html#1
     recording: https://www.youtube.com/watch?v=NOzi6GErpsA&list=PLXK26SbU8735IM-AO5zM6tLfRpSpP3Iby&index=8
     event_url: https://correlaid.org/en/events/2020-11/correlcon/
 
@@ -284,7 +285,7 @@ testimonial:
     comment: How R Shiny can make research interactive and accessible — with a live demo of the [conflict-elections app](http://cosima-meyer.shinyapps.io/conflict-elections/) showing what's possible when you hand control to the reader.
     time: August 26, 2020
     github: bit.ly/shinyApp-material
-    slides: /slides/interactive-science/correlaid.html#1
+    slides: https://cosimameyer.github.io/talks/slides/interactive-science/index.html#1
     event_url: https://correlaid.org/en/events/2020-08/oodm3-interactive-science/
     website: http://cosima-meyer.shinyapps.io/conflict-elections/
 
