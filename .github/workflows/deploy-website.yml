@@ -13,7 +13,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  detect-changes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      heavy_assets: ${{ steps.filter.outputs.heavy_assets }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect changed paths
+        id: filter
+        run: |
+          if git diff --name-only HEAD^ HEAD | grep -qE '^static/(slides|images)/'; then
+            echo "heavy_assets=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "heavy_assets=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy-site:
+    needs: detect-changes
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -36,7 +57,7 @@ jobs:
           HUGO_ENV: production
         run: hugo --minify
 
-      - name: Sync files
+      - name: Sync site files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -46,3 +67,45 @@ jobs:
           local-dir: ./public/
           server-dir: /web/cosimameyer.com/
           timeout: 300000
+          exclude: |
+            **/slides/**
+            **/images/**
+
+  sync-heavy-assets:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.heavy_assets == 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    concurrency:
+      group: ${{ github.workflow }}-heavy-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.143.1'
+          extended: true
+
+      - name: Build Hugo Site
+        env:
+          HUGO_ENV: production
+        run: hugo --minify
+
+      - name: Sync slides and images
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./public/
+          server-dir: /web/cosimameyer.com/
+          timeout: 300000
+          include: |
+            **/slides/**
+            **/images/**
