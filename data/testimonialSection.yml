@@ -116,7 +116,7 @@ testimonial:
     time: March 23, 2023
     github: https://github.com/cosimameyer/r-python-talk/blob/main/README.md
     recording: https://www.youtube.com/watch?v=3KXxk-GrRWo
-    slides: /slides/wids_2023_workshop/#/title-slide
+    slides: https://cosimameyer.github.io/talks/slides/wids-2023-workshop/index.html
     event_url: https://wuman307139351.wordpress.com/wids/
 
   - name: Learning R for and With the Civil Society
