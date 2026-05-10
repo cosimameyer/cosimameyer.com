@@ -72,7 +72,7 @@ testimonial:
       - Career Transitions
     comment: A candid look at the winding road from political science to data science — what transferred, what didn't, and what I'd tell my earlier self about making the switch.
     time: February 15, 2024
-    slides: /slides/Career_Talk_2024/index.html#0
+    slides: https://cosimameyer.github.io/talks/slides/career-talk-2024/index.html#0
 
   - name: PyLadiesCon 2023
     thumbnail: images/talks/pyladiescon-2023.png
