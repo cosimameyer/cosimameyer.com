@@ -156,7 +156,7 @@ testimonial:
     comment: R gets better every day because people contribute to it. This talk gives you the confidence and tools to write and publish your own package — no matter where you're starting from.
     time: November 12, 2021
     github: https://github.com/cosimameyer/writing_packages/
-    slides: /slides/correlcon2021/talk.html#1
+    slides: https://cosimameyer.github.io/talks/slides/correlcon2021/talk.html#1
     event_url: https://correlaid.org/en/events/2021-11/correlcon/
 
   - name: WoMen in Tech
