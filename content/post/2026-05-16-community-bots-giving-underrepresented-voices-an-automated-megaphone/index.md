@@ -14,8 +14,8 @@ tags:
   - Bluesky
   - Community
   - Automation
-postImage: images/single-blog/rladies-pyladies-bots.png
-featureImage: images/single-blog/rladies-pyladies-bots.png
+postImage: images/single-blog/rladies-pyladies-bots_rebranded.png
+featureImage: images/single-blog/rladies-pyladies-bots_rebranded.png
 ---
 
 I started the community-bots project because I kept noticing how much great content exists in the PyLadies and RLadies+ communities - blog posts and open-source libraries - and how little of it may travel beyond each community's immediate circle. This feels like a missed opportunity and so I built bots to help.
