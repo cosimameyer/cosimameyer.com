@@ -33,6 +33,7 @@
 {{ $script := resources.Get "js/script.js" | minify }}
 <script src="{{ $script.Permalink }}"></script>
 {{- template "partials/cookie_consent.html" . }}
+{{- template "partials/email_challenge.html" . }}
 
 {{ if (findRE "<pre" .Content 1) }}
   {{ $jsCopy := resources.Get "js/clipboard.js" | minify }}

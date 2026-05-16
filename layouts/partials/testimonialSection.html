@@ -80,7 +80,7 @@
 
     <div class="talks-invite">
       <p class="talks-invite__text">Available for talks in English and German.</p>
-      <a class="talks-invite__btn" href="#" data-contact="{{ site.Data.hero.mail | base64Encode }}" onclick="this.href='mailto:'+atob(this.dataset.contact)">Get in touch</a>
+      <a class="talks-invite__btn" href="#" data-contact="{{ site.Data.hero.mail | base64Encode }}" onclick="event.preventDefault(); showEmailChallenge(this)">Get in touch</a>
     </div>
   </div>
 </section>

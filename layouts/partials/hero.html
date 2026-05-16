@@ -25,7 +25,7 @@
       <div class="hero-social">
         <a href="#"
            data-contact="{{ .mail | base64Encode }}"
-           onclick="this.href='mailto:'+atob(this.dataset.contact)"
+           onclick="event.preventDefault(); showEmailChallenge(this)"
            class="hero-social-btn" aria-label="Email">
           <i class="fa-solid fa-envelope"></i>
         </a>

@@ -23,7 +23,7 @@
       </ul>
       <a href="#"
          data-contact="{{ (.Site.Data.hero.mail) | base64Encode }}"
-         onclick="this.href='mailto:'+atob(this.dataset.contact)"
+         onclick="event.preventDefault(); showEmailChallenge(this)"
          class="btn btn-primary nav-cta ms-3">Get in touch</a>
     </div>
 
