@@ -1,0 +1,78 @@
+<div id="email-challenge-overlay"
+     style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); z-index:9999; align-items:center; justify-content:center;"
+     onclick="if(event.target===this) closeEmailChallenge()">
+  <div style="background:#fff; border-radius:8px; padding:2rem; max-width:360px; width:90%; position:relative;">
+    <button onclick="closeEmailChallenge()"
+            style="position:absolute; top:0.75rem; right:1rem; background:none; border:none; font-size:1.25rem; cursor:pointer; line-height:1;"
+            aria-label="Close">&times;</button>
+    <h5 style="margin-bottom:0.75rem;">Just a quick check</h5>
+    <p id="email-challenge-question" style="margin-bottom:1rem;"></p>
+    <input type="text" inputmode="numeric" pattern="[0-9]*" id="email-challenge-input" class="form-control"
+           placeholder="Your answer" style="margin-bottom:0.75rem;" />
+    <p id="email-challenge-error"
+       style="color:#dc3545; display:none; font-size:0.875rem; margin-bottom:0.5rem;">
+      Not quite — give it another try.
+    </p>
+    <button onclick="submitEmailChallenge()" class="btn btn-primary">Confirm</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  var questions = [
+    { q: 'What is 4 + 7?',   a: 11 },
+    { q: 'What is 13 − 5?',  a: 8  },
+    { q: 'What is 3 × 4?',  a: 12 },
+    { q: 'What is 18 ÷ 3?', a: 6  },
+    { q: 'What is 9 + 6?',   a: 15 },
+    { q: 'What is 20 − 8?',  a: 12 },
+    { q: 'What is 5 × 3?',  a: 15 },
+    { q: 'What is 24 ÷ 4?', a: 6  },
+    { q: 'What is 7 + 8?',   a: 15 },
+    { q: 'What is 17 − 9?',  a: 8  },
+  ];
+
+  var currentAnswer = null;
+  var currentEmail  = null;
+
+  window.showEmailChallenge = function (el) {
+    currentEmail = atob(el.dataset.contact);
+    var q = questions[Math.floor(Math.random() * questions.length)];
+    currentAnswer = q.a;
+    document.getElementById('email-challenge-question').textContent = q.q;
+    document.getElementById('email-challenge-input').value = '';
+    document.getElementById('email-challenge-error').style.display = 'none';
+    var overlay = document.getElementById('email-challenge-overlay');
+    overlay.style.display = 'flex';
+    setTimeout(function () {
+      document.getElementById('email-challenge-input').focus();
+    }, 50);
+  };
+
+  window.closeEmailChallenge = function () {
+    document.getElementById('email-challenge-overlay').style.display = 'none';
+    currentAnswer = null;
+    currentEmail  = null;
+  };
+
+  window.submitEmailChallenge = function () {
+    var val = parseInt(document.getElementById('email-challenge-input').value, 10);
+    if (val === currentAnswer) {
+      var email = currentEmail;
+      closeEmailChallenge();
+      window.location.href = 'mailto:' + email;
+    } else {
+      document.getElementById('email-challenge-error').style.display = 'block';
+      document.getElementById('email-challenge-input').value = '';
+      document.getElementById('email-challenge-input').focus();
+    }
+  };
+
+  document.addEventListener('keydown', function (e) {
+    var overlay = document.getElementById('email-challenge-overlay');
+    if (overlay.style.display !== 'flex') return;
+    if (e.key === 'Enter')  submitEmailChallenge();
+    if (e.key === 'Escape') closeEmailChallenge();
+  });
+}());
+</script>
