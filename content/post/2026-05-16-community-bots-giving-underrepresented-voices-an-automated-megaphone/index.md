@@ -42,6 +42,14 @@ The bots have grown to 1,900+ followers on Bluesky combined (as of May 2026) and
 
 I also had the chance to talk about the project at [PyConDE/PyData 2025](https://drive.google.com/file/d/1vMlaJ3vbV7ONJg24dqBFIUp6sJUjYL_u/view) and [PyLadiesCon 2023](https://bit.ly/pyladiescon2023-slides), which was a lot of fun.
 
+### A Refactored Codebase Ready to Contribute To
+
+Something I spent quite a bit of time on recently was refactoring the codebase to make it more pleasant to work with - both for myself and for anyone who wants to jump in. The code is now organized into six standalone bot modules, each doing one thing: promoting blog posts, promoting packages, boosting posts by hashtag, boosting mentions, posting anniversaries, and collecting metadata. Dependency management runs through [`uv`](https://docs.astral.sh/uv/) with [`pre-commit`](https://pre-commit.com/) hooks, so getting set up locally comes down to running `uv sync`.
+
+One addition I'm particularly happy with is `debug.py` - a single entry point for testing any bot module locally. You set four knobs (which bot, what to debug, which platform, and whether to actually post) and it defaults to a safe dry-run mode that logs everything the bot would do without touching any live account. The [debug guide](https://cosimameyer.github.io/community-bots/contribute/debug_guide/) in the docs walks through all seven scenarios in detail, including what to watch for and how to handle the most common issues.
+
+The full [documentation](https://cosimameyer.github.io/community-bots/) also covers the [architecture](https://cosimameyer.github.io/community-bots/contribute/architecture/) - how the bots are structured, how data flows through the system, and how the GitHub Actions schedules are set up - as well as a [contribution guide](https://cosimameyer.github.io/community-bots/contribute/contribute/) if you want to get involved at the code level.
+
 ### Want to Get Involved?
 
 The bots depend on the curated lists that feed them, and those lists are open for contributions. If you know of a PyLadies or RLadies+ blog, a library built by a community member, or a woman in tech worth highlighting, I'd love to hear from you - and so would the bots! You can find everything at [cosimameyer.github.io/community-bots](https://cosimameyer.github.io/community-bots/).
