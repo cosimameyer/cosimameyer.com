@@ -44,11 +44,11 @@ I also had the chance to talk about the project at [PyConDE/PyData 2025](https:/
 
 ### Want to Get Involved?
 
-#### Share content
+#### Share Content
 
 The curated lists that the bots draw from are open for contributions. If you know of a PyLadies or RLadies+ blog, a library built by a community member, or a woman in tech worth highlighting, I'd love to hear from you!
 
-#### Contribute to the code
+#### Contribute to the Code
 
 If you want to dive deeper into the code, I recently refactored the codebase to make it easier to contribute to. The bots are now organized into standalone modules, each responsible for one thing, with dependency management through [`uv`](https://docs.astral.sh/uv/) and [`pre-commit`](https://pre-commit.com/) hooks. Getting set up locally is as simple as running `uv sync`. One addition I'm particularly happy with is `debug.py` - a single entry point for testing any bot module locally. You configure which bot, which scenario, which platform, and whether to actually post, and it defaults to a dry-run mode that logs everything the bot would do without touching any live account. The [debug guide](https://cosimameyer.github.io/community-bots/contribute/debug_guide/) walks through each scenario in detail, and the full [documentation](https://cosimameyer.github.io/community-bots/) also covers the [architecture](https://cosimameyer.github.io/community-bots/contribute/architecture/) and a [contribution guide](https://cosimameyer.github.io/community-bots/contribute/contribute/).
 
